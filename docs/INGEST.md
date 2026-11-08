@@ -14,6 +14,8 @@ Every 30 minutes a GitHub Action (`.github/workflows/ingest.yml`) fetches the la
 
 The same health table is shown on each Action run's summary page (Actions → Ingest headlines → a run).
 
+**Target:** at least 27 of 30 sources fetching OK (`sourcesOk`, `meetsTarget` in `health.json`). The number of outlets with articles in the last 24 h is reported next to it but is not the target, because some small outlets publish only a few times a week. Polskie Radio's robots.txt blocks non-search bots; we respect it, so it shows as `blocked`.
+
 ## What we store (and what we don't)
 
 Each record holds only: `outletId`, `title`, `lead` (≤ 300 characters, from the feed or the page's meta description), `url` (canonical), `publishedAt`, `fetchedAt`. **No article text** is stored. For sitemap and scrape sources the fetcher opens each new article page only to read its `<head>` metadata (title, description, publish time, canonical link).

@@ -303,13 +303,17 @@ async function main() {
   if (ONLY) for (const [id, s] of Object.entries(prev)) if (!sources[id]) sources[id] = s;
   const allIds = Object.keys(reg).sort();
   const with24 = allIds.filter((id) => (count24[id] || 0) > 0);
+  // Target (founder decision, PUN-13): count sources fetching OK; the 24 h article count is tracked alongside.
+  const healthy = allIds.filter((id) => sources[id] && sources[id].status === 'ok');
   const health = {
     generatedAt: NOW_ISO,
     runSeconds: Math.round((Date.now() - START) / 1000),
+    sourcesOk: healthy.length,
     outletsWithArticles24h: with24.length,
     outletsTotal: allIds.length,
     target: TARGET_OUTLETS,
-    meetsTarget: with24.length >= TARGET_OUTLETS,
+    targetMetric: 'sourcesOk',
+    meetsTarget: healthy.length >= TARGET_OUTLETS,
     failing: allIds.filter((id) => sources[id] && sources[id].status !== 'ok'),
     noArticles24h: allIds.filter((id) => !(count24[id] > 0)),
     sources: Object.fromEntries(allIds.filter((id) => sources[id]).map((id) => [id, sources[id]])),
@@ -319,7 +323,7 @@ async function main() {
   const lines = [
     `## Headline ingest — ${NOW_ISO}`,
     '',
-    `**${with24.length}/${allIds.length}** outlets have articles from the last 24 h (target ${TARGET_OUTLETS}). New this run: ${totalNew}. Run time: ${health.runSeconds}s.`,
+    `**${healthy.length}/${allIds.length}** sources fetching OK (target ${TARGET_OUTLETS}). ${with24.length}/${allIds.length} outlets have articles from the last 24 h. New this run: ${totalNew}. Run time: ${health.runSeconds}s.`,
     '',
     '| Outlet | Type | Status | New | 24 h | Last success | Note |',
     '|---|---|---|---:|---:|---|---|',
