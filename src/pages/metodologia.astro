@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { Content } from '../data/methodology.md';
+import { CLASSIC, POLISH, OWNERSHIP, RELIABILITY } from '../lib/dataset';
+import { meta } from '../lib/data';
+import { classicLabel, polishLabel, ownershipLabel, reliabilityLabel } from '../lib/labels';
+---
+<Base title="Metodologia" description="Jak Punkt Widzenia ocenia orientację polityczną, własność i wiarygodność polskich mediów.">
+  <h1>Metodologia</h1>
+  <p class="lead">Jak oceniamy media: dwie osie orientacji politycznej, własność i wiarygodność. Każda ocena w katalogu ma podane źródła.</p>
+
+  <div class="prose">
+    <Content />
+
+    <h2>Skale używane na stronie</h2>
+    <dl class="kv">
+      <dt>Lewica–prawica</dt><dd>{CLASSIC.map((v) => classicLabel[v]).join(' · ')}</dd>
+      <dt>Rząd–opozycja</dt><dd>{POLISH.map((v) => polishLabel[v]).join(' · ')}</dd>
+      <dt>Własność</dt><dd>{OWNERSHIP.map((v) => ownershipLabel[v]).join(' · ')}</dd>
+      <dt>Wiarygodność</dt><dd>{RELIABILITY.map((v) => reliabilityLabel[v]).join(' · ')}</dd>
+    </dl>
+    <p class="meta">Wersja metodologii: {meta.methodologyVersion}. Wersja danych: {meta.datasetVersion} (aktualizacja {meta.updated}).</p>
+
+    <h2>Błąd w ocenie?</h2>
+    <p>Jeśli masz źródła, które podważają którąś z ocen, <a href="/zglos-poprawke/">zgłoś poprawkę</a>. Każde zgłoszenie sprawdzamy.</p>
+  </div>
+</Base>

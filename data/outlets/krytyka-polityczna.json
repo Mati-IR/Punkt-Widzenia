@@ -1,0 +1,98 @@
+{
+  "id": "krytyka-polityczna",
+  "published": true,
+  "name": "Krytyka Polityczna",
+  "type": "online",
+  "segment": "independent",
+  "url": "https://krytykapolityczna.pl",
+  "description": {
+    "pl": "Lewicowy dziennik internetowy i wydawnictwo, prowadzone przez Stowarzyszenie im. Stanisława Brzozowskiego."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "left",
+      "economic": -2,
+      "sociocultural": -2,
+      "rationale": {
+        "pl": "euro|topics: linia lewicowa; Eurozine: wyraźnie lewicowy profil. Gospodarczo (−2) i społecznie (−2) lewicowa."
+      },
+      "sourceIds": [
+        "eurotopics-kp",
+        "eurozine-kp"
+      ],
+      "asOf": "2026-11-08",
+      "contested": false
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Brak wskaźników strukturalnych i brak zewnętrznych danych o tonie wobec rządu i opozycji – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "eurotopics-kp",
+        "kp-onas"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "reader-funded",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Stowarzyszenie im. Stanisława Brzozowskiego",
+        "country": "PL",
+        "sourceId": "kp-onas"
+      }
+    ],
+    "fundingModel": [
+      "donations",
+      "grants",
+      "copy-sales"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 2,
+    "total": 5,
+    "label": "high",
+    "rationale": {
+      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: wydawca z KRS, redaktor naczelny, sprawozdania i darczyńcy opisani."
+    },
+    "sourceIds": [
+      "kp-onas"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false,
+    "provisional": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
+        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
+      }
+    }
+  ]
+}

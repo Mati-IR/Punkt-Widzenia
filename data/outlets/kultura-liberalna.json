@@ -1,0 +1,98 @@
+{
+  "id": "kultura-liberalna",
+  "published": true,
+  "name": "Kultura Liberalna",
+  "type": "online",
+  "segment": "independent",
+  "url": "https://kulturaliberalna.pl",
+  "description": {
+    "pl": "Tygodnik internetowy wydawany przez Fundację Kultura Liberalna, finansowany z darowizn, wpłat patronów i grantów."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center-left",
+      "economic": 0,
+      "sociocultural": -1,
+      "rationale": {
+        "pl": "Eurozine: centrowa, liberalna organizacja medialna. Gospodarczo centrowa (0), społecznie liberalna (−1). Średnia −0,5 to przypadek graniczny (§1.5) – wartość zatwierdzona: centrolewica. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "eurozine-kl",
+        "kl-onas"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Brak wskaźników strukturalnych i brak zewnętrznych danych o tonie – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "eurozine-kl",
+        "kl-onas"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "reader-funded",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Fundacja Kultura Liberalna",
+        "country": "PL",
+        "sourceId": "kl-onas"
+      }
+    ],
+    "fundingModel": [
+      "donations",
+      "crowdfunding",
+      "grants"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 2,
+    "total": 5,
+    "label": "high",
+    "rationale": {
+      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: redaktor naczelny, zespół, fundacja i dotacje publiczne opisane."
+    },
+    "sourceIds": [
+      "kl-onas"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false,
+    "provisional": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
+        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
+      }
+    }
+  ]
+}

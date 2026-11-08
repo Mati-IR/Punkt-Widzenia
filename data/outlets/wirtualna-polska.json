@@ -1,0 +1,108 @@
+{
+  "id": "wirtualna-polska",
+  "published": true,
+  "name": "Wirtualna Polska",
+  "type": "portal",
+  "segment": "mainstream",
+  "url": "https://www.wp.pl",
+  "description": {
+    "pl": "Jeden z największych polskich portali; wydawca należy do giełdowej grupy Wirtualna Polska Holding kontrolowanej przez założycieli."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center-left",
+      "economic": 0,
+      "sociocultural": -1,
+      "rationale": {
+        "pl": "euro|topics określa linię jako liberalną. Gospodarczo centrowy (0), społecznie umiarkowanie liberalny (−1). Średnia −0,5 to przypadek graniczny (§1.5) – wartość zatwierdzona: centrolewica. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "eurotopics-wp",
+        "wp-onas"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Brak zewnętrznych danych o tonie i brak wskaźników strukturalnych – status sporny do czasu próbki treści. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "eurotopics-wp",
+        "wp-onas"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "polish-private",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Wirtualna Polska Media S.A.",
+        "country": "PL",
+        "sourceId": "wp-onas"
+      },
+      {
+        "level": "owner",
+        "name": "Wirtualna Polska Holding S.A.",
+        "country": "PL",
+        "sourceId": "wp-onas"
+      },
+      {
+        "level": "ultimate-owner",
+        "name": "Jacek Świderski, Michał Brański, Krzysztof Sierota (założyciele) i ich spółki",
+        "country": "PL",
+        "sourceId": "xyz-wp-wezwanie-2026"
+      }
+    ],
+    "fundingModel": [
+      "advertising"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 1,
+    "total": 4,
+    "label": "mixed",
+    "rationale": {
+      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podany wydawca i grupa; nie znaleziono stopki redakcyjnej z redaktorem naczelnym."
+    },
+    "sourceIds": [
+      "wp-onas"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false,
+    "provisional": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
+        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
+      }
+    }
+  ]
+}

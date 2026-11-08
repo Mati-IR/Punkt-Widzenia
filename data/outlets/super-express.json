@@ -1,0 +1,107 @@
+{
+  "id": "super-express",
+  "published": true,
+  "name": "Super Express",
+  "type": "daily",
+  "segment": "mainstream",
+  "url": "https://www.se.pl",
+  "description": {
+    "pl": "Ogólnopolski dziennik tabloidowy wydawany przez TIME S.A. z Grupy ZPR Media."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center",
+      "economic": 0,
+      "sociocultural": 0,
+      "rationale": {
+        "pl": "Tabloid bez stałej linii gospodarczej i światopoglądowej. Brak zewnętrznych badań linii – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "se-redakcja"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Brak udokumentowanych wskaźników powiązań z obozem politycznym i brak zewnętrznych danych o tonie – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "se-redakcja"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "polish-private",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "TIME S.A.",
+        "country": "PL",
+        "sourceId": "se-redakcja"
+      },
+      {
+        "level": "owner",
+        "name": "Grupa ZPR Media",
+        "country": "PL",
+        "sourceId": "se-redakcja"
+      },
+      {
+        "level": "ultimate-owner",
+        "name": "Zbigniew Benbenek",
+        "country": "PL",
+        "sourceId": "bankier-zpr-benbenek"
+      }
+    ],
+    "fundingModel": [
+      "copy-sales",
+      "advertising"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 1,
+    "corrections": 1,
+    "transparency": 2,
+    "total": 4,
+    "label": "mixed",
+    "rationale": {
+      "pl": "Rzetelność faktów: 1. Sprawozdanie KRRiT za 2025 r.: kara 109 tys. zł dla wydawcy (Time S.A., decyzja DMM-116/2025 z 29.04.2025) za treści dyskryminujące ze względu na religię lub przekonania w audycji „Nocna zmiana” w kanale Super Expressu w YouTube oraz upomnienie dotyczące rzetelności i obiektywizmu dla tego kanału. Metodologia wymienia kary KRRiT w przedziale 0 pkt, ale kara nie dotyczyła nieprawdziwych informacji, a decyzje nie dotyczą wydania drukowanego ani se.pl – stąd 1 pkt i status sporny. Fact-checkerzy (Demagog, AFP Sprawdzam, FakeNews.pl): nie znaleziono wykazanych fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podany wydawca, redaktor naczelny i zespół; materiały sponsorowane oznaczone."
+    },
+    "sourceIds": [
+      "se-redakcja",
+      "krrit-sprawozdanie-2025"
+    ],
+    "asOf": "2026-11-08",
+    "contested": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (KRRiT 2025): rzetelność faktów 2 → 1, ocena łączna wysoka → mieszana (sporne); usunięto oznaczenie „wstępna”.",
+        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+---
+// Five-step visual scale with the selected position highlighted.
+interface Props {
+  values: readonly string[];
+  labels: Record<string, string>;
+  value: string;
+}
+const { values, labels, value } = Astro.props;
+const idx = values.indexOf(value);
+---
+<div class="scale" aria-hidden="true">
+  {values.map((_, i) => <span class:list={{ on: i === idx }}></span>)}
+</div>
+<div class="scale-labels" aria-hidden="true">
+  <span>{labels[values[0]]}</span><span>{labels[values[values.length - 1]]}</span>
+</div>
+<p><strong>{labels[value]}</strong> <span class="sr-only">(pozycja {idx + 1} z {values.length})</span></p>

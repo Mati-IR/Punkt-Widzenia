@@ -1,0 +1,117 @@
+{
+  "id": "tvp-info",
+  "published": true,
+  "name": "TVP Info",
+  "type": "tv",
+  "segment": "mainstream",
+  "url": "https://www.tvp.info",
+  "description": {
+    "pl": "Całodobowy kanał informacyjny publicznej Telewizji Polskiej. Od grudnia 2023 r. TVP działa w stanie likwidacji, z nowym kierownictwem powołanym poza dotychczasową procedurą."
+  },
+  "reach": [
+    {
+      "metric": "tv-avg-viewers",
+      "value": 92000,
+      "period": "2026-07",
+      "sourceId": "spidersweb-tv-2026-07"
+    },
+    {
+      "metric": "tv-share",
+      "value": 2,
+      "unit": "%",
+      "period": "2026-08",
+      "sourceId": "hdtv-news-2026-08"
+    }
+  ],
+  "leaning": {
+    "classic": {
+      "value": "center",
+      "economic": 0,
+      "sociocultural": -1,
+      "rationale": {
+        "pl": "Gospodarczo bez wyraźnej linii (0); społecznie umiarkowanie liberalna (−1) w okresie po zmianie kierownictwa. Średnia −0,5 to przypadek graniczny (§1.5) – wartość zatwierdzona: centrum. Widownia mieszana: w 2024 r. TVP wciąż główne źródło dla 28% wyborców PiS (CBOS). Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "osce-odihr-2025",
+        "cbos-2024-71"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "government-aligned",
+      "rationale": {
+        "pl": "Monitoring ODIHR (kampania prezydencka 2025): TVP1 i TVP Info relacjonowały kandydata wspieranego przez PiS przeważnie negatywnie, a kandydata KO głównie pozytywnie lub neutralnie; ODIHR uznało, że porzuciły misję publiczną. Wskaźnik strukturalny: kierownictwo powołane w ramach procesu zainicjowanego przez rząd (likwidacja). Oznaczone jako sporne: ocena opiera się na okresie wyborczym, a sam regulator (KRRiT) jest oceniany jako upolityczniony. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "osce-odihr-2025",
+        "cbos-2024-71"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "state-public",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "brand",
+        "name": "TVP Info",
+        "sourceId": "tvp-centruminformacji"
+      },
+      {
+        "level": "publisher",
+        "name": "Telewizja Polska S.A. w likwidacji",
+        "country": "PL",
+        "sourceId": "osce-odihr-2025"
+      },
+      {
+        "level": "ultimate-owner",
+        "name": "Skarb Państwa",
+        "country": "PL",
+        "share": 100,
+        "sourceId": "demagog-owners-2023"
+      }
+    ],
+    "fundingModel": [
+      "public-funding",
+      "advertising"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 1,
+    "corrections": 1,
+    "transparency": 1,
+    "total": 3,
+    "label": "mixed",
+    "rationale": {
+      "pl": "Rzetelność faktów: 1 – nadawca publiczny ma ustawowy obowiązek bezstronności; ODIHR stwierdziło jego naruszenie w kampanii 2025. Zaufanie do TVP było historycznie najniższe wśród badanych marek (DNR 2023: 28%). Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: strona TVP podaje spółkę, ale nie znaleziono stopki redakcyjnej TVP Info."
+    },
+    "sourceIds": [
+      "osce-odihr-2025",
+      "demagog-dnr-2023",
+      "tvp-centruminformacji"
+    ],
+    "asOf": "2026-11-08",
+    "contested": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    }
+  ]
+}

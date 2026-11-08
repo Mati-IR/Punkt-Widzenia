@@ -1,0 +1,991 @@
+{
+ "oko-press|2026-10-05": {
+  "status": "ok",
+  "snapshot": "20261005075545",
+  "candidates": [
+   {
+    "title": "3 godziny temu  Artykuł   Oliwia Gęsiarz     Czy chce pani, żebyśmy respektowali pani prawa? Porodówki nie nadążają za nowym Standardem       Oliwia Gęsiarz",
+    "url": "https://oko.press/prawa-porodowki-nie-nadazaja-za-nowym-standardem"
+   },
+   {
+    "title": "Bośnia: Unia nie zaczyna się od niebieskiej flagi, ale od tego, że ktoś sprawdza rachunki",
+    "url": "https://oko.press/bosnia-unia-nie-zaczyna-sie-od-niebieskiej-flagi"
+   },
+   {
+    "title": "Sieć, w którą można bezpiecznie spaść. Z przyjaciół, sąsiadów, znajomych [ROZMOWA]",
+    "url": "https://oko.press/siec-w-ktora-mozna-bezpiecznie-spasc-rozmowa"
+   },
+   {
+    "title": "Rzeka, która niesie lęk. Jak chińskie kopalnie w Mjanmie zmieniają życie mieszkańców Tajlandii",
+    "url": "https://oko.press/rzeka-ktora-niesie-lek-jak-chinskie-kopalnie-w-mjanmie-zmieniaja-zycie-mieszkancow-tajlandii"
+   },
+   {
+    "title": "Klient, nasz cham. Rozmowy przy kasie",
+    "url": "https://oko.press/klient-nasz-cham-rozmowy-przy-kasie"
+   },
+   {
+    "title": "Rachunek za ogień. Czy twój ubezpieczyciel podpala twój dom?",
+    "url": "https://oko.press/rachunek-za-ogien-czy-twoj-ubezpieczyciel-podpala-twoj-dom"
+   },
+   {
+    "title": "Straż Łowiecka bezradna wobec myśliwych. Komu na tym zależy?",
+    "url": "https://oko.press/straz-lowiecka-bezradna-wobec-mysliwych"
+   },
+   {
+    "title": "Kobiety Watykanu, wyjątki w chrześcijańskim mizogonizmie",
+    "url": "https://oko.press/kobiety-watykanu-wyjatki-w-chrzescijanskim-mizogonizmie"
+   },
+   {
+    "title": "Nie będzie marszu we Lwowie. Rząd odcina się od prowokacji Mateckiego",
+    "url": "https://oko.press/nie-bedzie-marszu-we-lwowie-rzad-odcina-sie-od-mateckiego"
+   },
+   {
+    "title": "Podpalić Europę. Jak rosyjski pułkownik, jego syn z FSB i kubański tancerz werbowali terrorystów",
+    "url": "https://oko.press/podpalali-europe-rosyjska-siatka-szpiegowska-sabotaze"
+   },
+   {
+    "title": "UJAWNIAMY. Działają na rzecz Putina. Co robią w piśmie naukowym związanym z Akademią Sztuki Wojennej?",
+    "url": "https://oko.press/ujawniamy-dzialaja-na-rzecz-putina-co-robia-w-pismie-naukowym-zwiazanym-z-akademia-sztuki-wojennej"
+   },
+   {
+    "title": "Czy Romanowski naprawdę jest w Naddniestrzu? Niekoniecznie. Nowe ustalenia OKO.press",
+    "url": "https://oko.press/czy-romanowski-jest-w-naddniestrzu-najnowsze-ustalenia"
+   },
+   {
+    "title": "ABW zajmowała się BitBay już w 2018 roku. Chodziło o pranie pieniędzy. Trwa proces [UJAWNIAMY]",
+    "url": "https://oko.press/afera-zondacrypto-szara-eminencja-postawiona-przed-sadem-ujawniamy"
+   },
+   {
+    "title": "Warszawska uczelnia, właściciele z Moskwy i studia dla polskich służb [UJAWNIAMY]",
+    "url": "https://oko.press/warszawska-uczelnia-wlasciciele-z-moskwy-studia-dla-polskich-sluzb"
+   },
+   {
+    "title": "Działa już nowy pakiet CPN, ceny paliw spadły",
+    "url": "https://oko.press/na-zywo/na-zywo-relacja/dziala-juz-nowy-pakiet-cpn-ceny-paliw-spadly"
+   },
+   {
+    "title": "Dymy na lewicy po wyborach w Krakowie [PROGRAM POLITYCZNY]",
+    "url": "https://oko.press/dymy-na-lewicy-po-wyborach-w-krakowie-program-polityczny"
+   },
+   {
+    "title": "Jak Rosja rozgrywa Polskę i Europę [PROGRAM POLITYCZNY]",
+    "url": "https://oko.press/jak-rosja-rozgrywa-polske-i-europe-program-polityczny"
+   },
+   {
+    "title": "Kampania wrześniowa – rząd vs prezydent [PROGRAM POLITYCZNY]",
+    "url": "https://oko.press/kampania-wrzesniowa-rzad-vs-prezydent"
+   },
+   {
+    "title": "Głód w Oleszkach. Reportaż spod okupacji",
+    "url": "https://oko.press/glod-w-oleszkach-reportaz-spod-okupacji"
+   },
+   {
+    "title": "Nazywam się Człowiek Śmieć. Patrz, co wyrzucasz",
+    "url": "https://oko.press/nazywam-sie-czlowiek-smiec-patrz-co-wyrzucasz"
+   },
+   {
+    "title": "Kanada między dwoma kontynentami. Czy może sobie pozwolić na zbliżenie z UE?",
+    "url": "https://oko.press/kanada-zblizenie-z-ue"
+   },
+   {
+    "title": "Czy Ursula von der Leyen jest królową Unii Europejskiej?",
+    "url": "https://oko.press/czy-ursula-von-der-leyen-jest-krolowa-unii-europejskiej"
+   },
+   {
+    "title": "Piractwo wraca, całe na biało. A może nigdy nie zniknęło? [PODCAST]",
+    "url": "https://oko.press/piractwo-wraca-podcast"
+   },
+   {
+    "title": "Boty i ludzie bronią Nawrockiego przed OKO.press. Toksyczny nacjonalizm w pigułce",
+    "url": "https://oko.press/boty-i-ludzie-bronia-nawrockiego-przed-oko-press-toksyczny-nacjonalizm-w-pigulce"
+   },
+   {
+    "title": "Czy wiedziała, co robi? Lindsay Clancy, troje martwych dzieci i granice osądzania",
+    "url": "https://oko.press/czy-wiedziala-co-robi-lindsay-clancy-troje-martwych-dzieci-i-granice-osadzania"
+   }
+  ]
+ },
+ "oko-press|2026-10-07": {
+  "status": "ok",
+  "snapshot": "20261007075628",
+  "candidates": [
+   {
+    "title": "39 minut temu  Artykuł   Agata Kołodziej     Paweł Sobków, Roman Ż. i scenariusz gangsterskiego filmu. Znany biznesmen wypływa w kolejnej podejrzanej sprawie       Agata Kołodziej",
+    "url": "https://oko.press/pawel-sobkow-roman-z-i-scenariusz-gangsterskiego-filmu-znany-biznesmen-wyplywa-w-kolejnych-podejrzanych-sprawach"
+   },
+   {
+    "title": "Czarnecki i Braun wśród putinistów. Ujawniamy, kim są ich „koledzy” z indyjskiej organizacji",
+    "url": "https://oko.press/indyjska-organizacja-czarnecki-i-braun-wsrod-putinistow"
+   },
+   {
+    "title": "Rosjanie niszczą dronami ukraińskie mosty, serwerownie i centra danych [PŁK LEWANDOWSKI O WOJNIE]",
+    "url": "https://oko.press/rosjanie-niszcza-dronami-ukrainskie-mosty-serwerownie-i-centra-danych-plk-lewandowski-o-wojnie"
+   },
+   {
+    "title": "Dlaczego francuscy uczniowie protestują – eksplozja wandalizmu czy próba uratowania systemu edukacji?",
+    "url": "https://oko.press/dlaczego-francuscy-uczniowie-protestuja"
+   },
+   {
+    "title": "Putin przenosi poddanych do ZSRR, do wojny mają się przyzwyczaić [GOWORIT MOSKWA NA URODZINY PUTINA]",
+    "url": "https://oko.press/putin-przenosi-poddanych-do-zsrr-do-wojny-maja-sie-przyzwyczaic-goworit-moskwa-na-urodziny-putina"
+   },
+   {
+    "title": "Warszawa kontra dziki. Trzaskowski chce rzezi, miłośnicy zwierząt zaskarżają decyzję o odstrzale",
+    "url": "https://oko.press/warszawa-kontra-dziki-trzaskowski-chce-rzezi-milosnicy-zwierzat-zaskarzaja-decyzje-o-odstrzale"
+   },
+   {
+    "title": "Neurony sterowane światłem. Nobel 2026 za optogenetykę",
+    "url": "https://oko.press/neurony-sterowane-swiatlem-nobel-2026-za-optogenetyke"
+   },
+   {
+    "title": "Ujawniamy: Znany biznesmen był słupem prawdziwych właścicieli Zondacrypto. To on kierował ewakuacją giełdy z Polski",
+    "url": "https://oko.press/ujawniamy-znany-biznesmen-byl-slupem-prawdziwych-wlascicieli-zondacrypto-to-on-kierowal-ewakuacja-gieldy-z-polski"
+   },
+   {
+    "title": "Bolsonaryzm bez Bolsonaro. Po I turze wyborów w Brazylii",
+    "url": "https://oko.press/bolsonaryzm-bez-bolsonaro-po-i-turze-wyborow-w-brazylii"
+   },
+   {
+    "title": "Podpalić Europę. Jak rosyjski pułkownik, jego syn z FSB i kubański tancerz werbowali terrorystów",
+    "url": "https://oko.press/podpalali-europe-rosyjska-siatka-szpiegowska-sabotaze"
+   },
+   {
+    "title": "UJAWNIAMY. Działają na rzecz Putina. Co robią w piśmie naukowym związanym z Akademią Sztuki Wojennej?",
+    "url": "https://oko.press/ujawniamy-dzialaja-na-rzecz-putina-co-robia-w-pismie-naukowym-zwiazanym-z-akademia-sztuki-wojennej"
+   },
+   {
+    "title": "Czy Romanowski naprawdę jest w Naddniestrzu? Niekoniecznie. Nowe ustalenia OKO.press",
+    "url": "https://oko.press/czy-romanowski-jest-w-naddniestrzu-najnowsze-ustalenia"
+   },
+   {
+    "title": "PKP Intercity: od grudnia 600 połączeń dziennie",
+    "url": "https://oko.press/na-zywo/na-zywo-relacja/pkp-intercity-od-grudnia-600-polaczen-dziennie"
+   },
+   {
+    "title": "Polscy politycy mają dużo mniejszy wpływ na ceny paliw, niż potrafią przyznać",
+    "url": "https://oko.press/wyjasniamy/polscy-politycy-maja-duzo-mniejszy-wplyw-na-ceny-paliw-niz-potrafia-przyznac"
+   },
+   {
+    "title": "Klient, nasz cham. Rozmowy przy kasie",
+    "url": "https://oko.press/klient-nasz-cham-rozmowy-przy-kasie"
+   },
+   {
+    "title": "Dymy na lewicy po wyborach w Krakowie [PROGRAM POLITYCZNY]",
+    "url": "https://oko.press/dymy-na-lewicy-po-wyborach-w-krakowie-program-polityczny"
+   },
+   {
+    "title": "Jak Rosja rozgrywa Polskę i Europę [PROGRAM POLITYCZNY]",
+    "url": "https://oko.press/jak-rosja-rozgrywa-polske-i-europe-program-polityczny"
+   },
+   {
+    "title": "Kampania wrześniowa – rząd vs prezydent [PROGRAM POLITYCZNY]",
+    "url": "https://oko.press/kampania-wrzesniowa-rzad-vs-prezydent"
+   },
+   {
+    "title": "Głód w Oleszkach. Reportaż spod okupacji",
+    "url": "https://oko.press/glod-w-oleszkach-reportaz-spod-okupacji"
+   },
+   {
+    "title": "Nazywam się Człowiek Śmieć. Patrz, co wyrzucasz",
+    "url": "https://oko.press/nazywam-sie-czlowiek-smiec-patrz-co-wyrzucasz"
+   },
+   {
+    "title": "Chat, na kogo głosować? Kraków, czyli pierwsze wybory ery AI [PODCAST]",
+    "url": "https://oko.press/wybory-krakow-ai"
+   },
+   {
+    "title": "Kanada między dwoma kontynentami. Czy może sobie pozwolić na zbliżenie z UE?",
+    "url": "https://oko.press/kanada-zblizenie-z-ue"
+   },
+   {
+    "title": "Paweł Sobków, Roman Ż. i scenariusz gangsterskiego filmu. Znany biznesmen wypływa w kolejnej podejrzanej sprawie",
+    "url": "https://oko.press/pawel-sobkow-roman-z-i-scenariusz-gangsterskiego-filmu-znany-biznesmen-wyplywa-w-kolejnych-podejrzanych-sprawach"
+   },
+   {
+    "title": "Czy wiedziała, co robi? Lindsay Clancy, troje martwych dzieci i granice osądzania",
+    "url": "https://oko.press/czy-wiedziala-co-robi-lindsay-clancy-troje-martwych-dzieci-i-granice-osadzania"
+   },
+   {
+    "title": "AfD po zwycięstwie w Saksonii-Anhalt. Prorosyjska lewica BSW może otworzyć jej drogę do władzy",
+    "url": "https://oko.press/afd-po-zwyciestwie-w-saksonii-anhalt-prorosyjska-lewica-bsw-moze-otworzyc-jej-droge-do-wladzy"
+   }
+  ]
+ },
+ "oko-press|2026-10-12": {
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1147)>"
+ },
+ "oko-press|2026-10-14": {
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1147)>"
+ },
+ "oko-press|2026-10-15": {
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1147)>"
+ },
+ "oko-press|2026-10-17": {
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1147)>"
+ },
+ "oko-press|2026-10-18": {
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1147)>"
+ },
+ "oko-press|2026-10-19": {
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1147)>"
+ },
+ "oko-press|2026-10-22": {
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1147)>"
+ },
+ "oko-press|2026-10-27": {
+  "status": "error",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Basic Constraints of CA cert not marked critical (_ssl.c:1147)>"
+ },
+ "do-rzeczy|2026-10-05": {
+  "status": "ok",
+  "snapshot": "20261005080552",
+  "candidates": [
+   {
+    "title": "Tajne spotkanie kilku państw NATO w Polsce? \"Przeciek nie był przypadkowy\"    Opinie  Kraj",
+    "url": "https://dorzeczy.pl/opinie/952408/tajne-spotkanie-nato-w-polsce-bielan-nieprzypadkowy-przeciek.html"
+   },
+   {
+    "title": "PiS wycofuje się z głośnego projektu. \"Błędna decyzja rządu Morawieckiego\"    5   paź   2026    9:54",
+    "url": "https://dorzeczy.pl/ekonomia/952426/czarnek-o-wycofaniu-sie-pis-ze-skladki-zdrowotnej-uderzyl-w-morawieckiego.html"
+   },
+   {
+    "title": "\"Agresja polityczna\". Były prezydent krytykuje Nawrockiego    5   paź   2026    9:43",
+    "url": "https://dorzeczy.pl/opinie/952420/prezydent-nawrocki-podpisal-ustawe-ws-paliw-komorowski-to-nie-bylo-oredzie.html"
+   },
+   {
+    "title": "Afera wokół pizzy Książula. \"Ale się wkur***em\"    5   paź   2026    9:43",
+    "url": "https://rozrywka.dorzeczy.pl/show-biznes/952423/ksiazulo-wypuszcza-wlasna-pizze-w-zabce-wybuchla-afera.html"
+   },
+   {
+    "title": "Tajne spotkanie kilku państw NATO w Polsce? \"Przeciek nie był przypadkowy\"    5   paź   2026    9:12",
+    "url": "https://dorzeczy.pl/opinie/952408/tajne-spotkanie-nato-w-polsce-bielan-nieprzypadkowy-przeciek.html"
+   },
+   {
+    "title": "Czekała 46 godzin na SOR-ze. Śmiercią kobiety zajmie się prokuratura    5   paź   2026    9:09",
+    "url": "https://dorzeczy.pl/kraj/952402/kobieta-zmarla-po-czekaniu-46-godzin-na-sor-ze-prokuratura-zbada-sprawe.html"
+   },
+   {
+    "title": "\"Oni już całkiem oszaleli\". Burza po kpinach z prezydenta w TVP    5   paź   2026    8:58",
+    "url": "https://dorzeczy.pl/opinie/952396/komorowski-i-schnpef-smieja-sie-z-nawrockiego-burza-w-sieci.html"
+   },
+   {
+    "title": "Biały Dom obawia się epidemii dżumy. USA monitorują sytuację w Rosji    5   paź   2026    8:33",
+    "url": "https://dorzeczy.pl/swiat/952381/epidemia-dzumy-w-rosji-usa-monitoruja-sytuacje.html"
+   },
+   {
+    "title": "\"To jest chore\". Zajączkowska-Hernik o szokującej sprawie    5   paź   2026    8:29",
+    "url": "https://dorzeczy.pl/opinie/952378/thais-descufon-ofiara-napasci-sprawca-nieukarany-zajaczkowska-hernik-chore.html"
+   },
+   {
+    "title": "\"Czuję ich tęsknotę\". Pierwsze takie odznaczenie w historii    5   paź   2026    8:21",
+    "url": "https://rozrywka.dorzeczy.pl/muzyka/952369/quebonafide-odznaczony-przez-cienkowska-obiecuje-fanom-powrot.html"
+   },
+   {
+    "title": "Szczepan Twardoch z Nagrodą Nike. \"Najważniejsza powieść, jaką napisałem\"    5   paź   2026    8:18",
+    "url": "https://dorzeczy.pl/kraj/952366/szczepan-twardoch-laureatem-nagrody-literackiej-nike-2026.html"
+   },
+   {
+    "title": "Biskup w asyście policji. Parafianie otoczyli kościół    5   paź   2026    7:15",
+    "url": "https://dorzeczy.pl/religia/952357/grojec-biskup-w-asyscie-policji-parafianie-otoczyli-kosciol.html"
+   },
+   {
+    "title": "\"Absolutnie nieodpowiedzialny\". Polityk KO uderza w Nawrockiego    5   paź   2026    7:02",
+    "url": "https://dorzeczy.pl/opinie/952348/prezydent-podpisal-ustawe-o-nadzwyczajnych-zyskach-szczerba-nawrocki-ulegl.html"
+   },
+   {
+    "title": "U Tomasza Kammela zdiagnozowano złośliwy nowotwór. \"Rak się nie zastanawia\"    5   paź   2026    6:28",
+    "url": "https://rozrywka.dorzeczy.pl/show-biznes/952342/tomasz-kammel-ujawnil-chorobe-zdiagnozowano-mi-raka.html"
+   },
+   {
+    "title": "\"Pośmiewisko\". Bosak reaguje na zdjęcie wiceminister    5   paź   2026    6:26",
+    "url": "https://dorzeczy.pl/opinie/952336/sobkowiak-czarnecka-pozuje-z-bronia-i-nawiazuje-do-mentzena-bosak-odpowiada.html"
+   },
+   {
+    "title": "Atak Rosji na Ukrainę. Kolejny alert RCB w Polsce    5   paź   2026    5:50",
+    "url": "https://dorzeczy.pl/kraj/952327/atak-rosji-na-ukraine-kolejny-alert-rcb-na-wschodzie-polski.html"
+   },
+   {
+    "title": "Kreml grozi kolejnemu państwu. \"Przekształci się w nową Ukrainę\"    4   paź   2026   21:29",
+    "url": "https://dorzeczy.pl/opinie/952318/miedwiediew-grozi-armenii-powodem-ue.html"
+   },
+   {
+    "title": "Tajemnicza śmierć w Rosji. Media piszą o dżumie, Kreml zaprzecza    4   paź   2026   20:42",
+    "url": "https://dorzeczy.pl/swiat/952315/dzuma-w-rosji-tajemnicza-smierc-darii-szypilowej.html"
+   },
+   {
+    "title": "Raper uderza w Eldo: Legitymizuje polityków    4   paź   2026   19:59",
+    "url": "https://rozrywka.dorzeczy.pl/952312/wini-zaatakowal-eldo-i-peje-chodzi-o-polityke-i-nawrockiego.html"
+   },
+   {
+    "title": "Korwin-Mikke: Mentzen się skompromitował    4   paź   2026   19:00    Wideo",
+    "url": "https://dorzeczy.pl/opinie/952276/pobor-do-wojska-korwin-mikke-mentzen-sie-skompromitowal.html"
+   },
+   {
+    "title": "Chcą zdekryminalizować aborcję. W Szkocji zawrzało    4   paź   2026   18:58",
+    "url": "https://dorzeczy.pl/swiat/952300/szkocja-biskupi-przeciw-dekryminalizacji-aborcji.html"
+   },
+   {
+    "title": "Politico: Polska i Rumunia powiedziały \"nie\" Ukrainie    4   paź   2026   18:14",
+    "url": "https://dorzeczy.pl/kraj/952297/eksport-zboza-politico-polska-i-rumunia-odmowily-ukrainie.html"
+   },
+   {
+    "title": "Pieskow ostrzega \"gorące głowy\" w Polsce. \"Użyjemy całego arsenału\"    4   paź   2026   17:32",
+    "url": "https://dorzeczy.pl/swiat/952294/pieskow-ostrzega-gorace-glowy-chodzi-o-obwod-krolewiecki.html"
+   },
+   {
+    "title": "\"Kiedy zawalczy w klatce?\". Rzecznik rządu drwi z prezydenta Nawrockiego    4   paź   2026   17:11",
+    "url": "https://dorzeczy.pl/opinie/952291/szlapka-atakuje-nawrockiego-kiedy-zawalczy-w-klatce.html"
+   },
+   {
+    "title": "Czy szkoły są gotowe na atak? Polacy w sondażu nie mają wątpliwości    4   paź   2026   17:00",
+    "url": "https://dorzeczy.pl/kraj/952285/sondaz-szkoly-sa-gotowe-na-atak-polacy-odpowiedzieli.html"
+   }
+  ]
+ },
+ "do-rzeczy|2026-10-07": {
+  "status": "ok",
+  "snapshot": "20261007075445",
+  "candidates": [
+   {
+    "title": "Nowy sondaż partyjny. Koalicja Tuska bez szans    Sondaż  Opinie  Obserwator mediów  Kraj",
+    "url": "https://dorzeczy.pl/sondaz/953284/nowy-sondaz-partyjny-koalicja-tuska-bez-szans.html"
+   },
+   {
+    "title": "Dino nie zwalnia tempa. Polska sieć coraz bliżej Biedronki    7   paź   2026    9:41",
+    "url": "https://dorzeczy.pl/ekonomia/953329/dino-nie-zwalnia-tempa-polska-siec-coraz-blizej-biedronki.html"
+   },
+   {
+    "title": "Awantura o odwołanie proboszcza. Na jaw wyszły nowe fakty    7   paź   2026    9:35",
+    "url": "https://dorzeczy.pl/kraj/953323/odwolanie-proboszcza-w-grojcu-nieoficjalnie-poszlo-o-pieniadze.html"
+   },
+   {
+    "title": "Celebrytka wściekła na Polaków. \"Tylko czekać, aż będzie za co doj**ać\"    7   paź   2026    9:22",
+    "url": "https://dorzeczy.pl/opinie/953317/blanka-lipinska-murem-z-ksiazulem-uderzyla-w-polska-mentalnosc.html"
+   },
+   {
+    "title": "UE chce narzucić absurdalne rygory na rybaków, w tym zakładanie kamer    7   paź   2026    9:01    Wideo",
+    "url": "https://dorzeczy.pl/ekonomia/953314/ue-chce-narzucic-absurdalne-rygory-na-rybakow-a-sejm-to-proceduje.html"
+   },
+   {
+    "title": "Były żołnierz SS Galizien pochowany z honorami we Lwowie    7   paź   2026    8:59",
+    "url": "https://dorzeczy.pl/swiat/953311/lwow-byly-zolnierz-ss-galizien-pochowany-z-honorami.html"
+   },
+   {
+    "title": "Przeżyła nieudaną egzekucję. Odzyskała przytomność i mowę    7   paź   2026    8:50",
+    "url": "https://dorzeczy.pl/swiat/953299/nieudana-egzekucja-w-tennessee-christa-pike-moze-juz-mowic.html"
+   },
+   {
+    "title": "Nowy sondaż partyjny. Koalicja Tuska bez szans    7   paź   2026    8:21",
+    "url": "https://dorzeczy.pl/sondaz/953284/nowy-sondaz-partyjny-koalicja-tuska-bez-szans.html"
+   },
+   {
+    "title": "Znany dziennikarz w żałobie. Stracił kolejną bliską osobę    7   paź   2026    8:21",
+    "url": "https://dorzeczy.pl/opinie/953287/nie-zyje-mama-przemyslawa-babiarza-rok-temu-stracil-zone.html"
+   },
+   {
+    "title": "Skandal w Wałbrzychu. Migranci tłumaczyli, że u nich to normalne    7   paź   2026    8:20",
+    "url": "https://dorzeczy.pl/kraj/953281/cudzoziemcy-ktorzy-w-walbrzychu-zabili-koze-unikna-kary.html"
+   },
+   {
+    "title": "Lisicki i Cejrowski o koniach prezydenta i Niemcach drażniących Rosję    7   paź   2026    7:40    Wideo",
+    "url": "https://dorzeczy.pl/plus/antysystem/953266/antysystem-lisicki-i-cejrowski-o-koniach-prezydenta-niemcach-i-rosji.html"
+   },
+   {
+    "title": "Incydent w Parlamencie Europejskim. Flaga Izraela zrzucona na podłogę    7   paź   2026    7:05",
+    "url": "https://dorzeczy.pl/unia-europejska/953257/rima-hassan-zrzucila-flage-izraela-na-podloge-w-pe.html"
+   },
+   {
+    "title": "Duża inwestycja w USA. \"Od II wojny nie było niczego podobnego\"    7   paź   2026    6:15",
+    "url": "https://dorzeczy.pl/swiat/953239/duza-inwestycja-w-usa-trump-stocznia-najwieksza-od-ii-wojny.html"
+   },
+   {
+    "title": "Trump o kontynuowaniu wojny na Ukrainie: To absurdalne    7   paź   2026    5:55",
+    "url": "https://dorzeczy.pl/swiat/953236/trump-o-kontynuowaniu-wojny-na-ukrainie-to-absurdalne.html"
+   },
+   {
+    "title": "Akcja, która zszokowała Niemców. AK dokonała niemal niemożliwego    7   paź   2026    5:45",
+    "url": "https://historia.dorzeczy.pl/druga-wojna-swiatowa/953185/akcja-wieniec-akcja-ktora-zszokowala-niemcow.html"
+   },
+   {
+    "title": "Złe wieści dla Polaków. Rachunki mogą być znacząco wyższe    7   paź   2026    5:30",
+    "url": "https://dorzeczy.pl/ekonomia/953215/zle-wiesci-dla-polakow-rachunki-za-gaz-moga-byc-wyzsze.html"
+   },
+   {
+    "title": "Lisicki: Co jeszcze musi się wydarzyć na Ukrainie, żeby Zachód zrozumiał?    7   paź   2026    5:30    Wideo",
+    "url": "https://dorzeczy.pl/opinie/953230/lisicki-co-jeszcze-musi-sie-wydarzyc-na-ukrainie-zeby-zachod-zrozumial.html"
+   },
+   {
+    "title": "Wejście do UE. Ukraina stawia Brukseli warunek    6   paź   2026   22:49",
+    "url": "https://dorzeczy.pl/ekonomia/953224/wejscie-do-ue-kijow-stawia-brukseli-warunek.html"
+   },
+   {
+    "title": "Watykan: Nowe decyzje służące ochronie małoletnich    6   paź   2026   22:00",
+    "url": "https://dorzeczy.pl/swiat/953218/watykan-nowe-decyzje-sluzace-ochronie-maloletnich.html"
+   },
+   {
+    "title": "Zadyma w Strasburgu    6   paź   2026   21:25",
+    "url": "https://dorzeczy.pl/opinie/953212/czarnecki-zadyma-w-strasburgu.html"
+   },
+   {
+    "title": "Wyjaśniła się przyszłość Jana Urbana. Prezes PZPN ogłosił decyzję    6   paź   2026   21:08",
+    "url": "https://dorzeczy.pl/sport/953209/reprezentacja-polski-kulesza-podjal-decyzje-ws-urbana.html"
+   },
+   {
+    "title": "Sprawa Romanowskiego. Wójcik: Chodzi o to, żeby spektakl dalej trwał    6   paź   2026   21:08",
+    "url": "https://dorzeczy.pl/opinie/953206/list-zelazny-dla-romanowskiego-wojcik-komentuje.html"
+   },
+   {
+    "title": "Tusk przyłapany na gorącym uczynku. Będzie mandat?    6   paź   2026   20:35",
+    "url": "https://dorzeczy.pl/kraj/953200/tusk-przeszedl-na-czerwonym-swietle-co-z-mandatem.html"
+   },
+   {
+    "title": "Dżuma w Rosji? Kreml reaguje na propozycję USA    6   paź   2026   20:26",
+    "url": "https://dorzeczy.pl/opinie/953194/dzuma-w-rosji-kreml-reaguje-na-propozycje-waszyngtonu.html"
+   },
+   {
+    "title": "Kłopoty wiceministra z PSL. Sejmowa komisja za uchyleniem immunitetu    6   paź   2026   20:03",
+    "url": "https://dorzeczy.pl/kraj/953188/bartoszewski-moze-stracic-immunitet-jest-decyzja-komisji.html"
+   }
+  ]
+ },
+ "do-rzeczy|2026-10-12": {
+  "status": "ok",
+  "snapshot": "20261012080229",
+  "candidates": [
+   {
+    "title": "Tusk grzmi na YouTube: Mówimy o zbrodni stanu i za to będą odpowiadać    Kraj  Opinie  Świat",
+    "url": "https://dorzeczy.pl/kraj/955510/donald-tusk-grzmi-na-youtube-o-pegasusie-zbrodnia-stanu.html"
+   },
+   {
+    "title": "Nowacka: Policja będzie dzisiaj we wszystkich polskich szkołach    12   paź   2026    9:42",
+    "url": "https://dorzeczy.pl/opinie/955540/nowacka-policja-bedzie-dzisiaj-we-wszystkich-polskich-szkolach.html"
+   },
+   {
+    "title": "Zełenski przedstawił Tuskowi potrzeby. \"Polski podatnik to nie bankomat\"    12   paź   2026    9:30",
+    "url": "https://dorzeczy.pl/kraj/955537/zelenski-przedstawil-tuskowi-potrzeby-polski-podatnik-to-nie-bankomat.html"
+   },
+   {
+    "title": "Trump dogadał się z Putinem. Współpracownik Nawrockiego komentuje    12   paź   2026    9:27",
+    "url": "https://dorzeczy.pl/swiat/955534/deal-trumpa-z-putinem-przydacz-prezydent-nawrocki-i-ja-jestesmy-za-sankcjami.html"
+   },
+   {
+    "title": "\"Posypałam się\". Znana piosenkarka wydała oświadczenie    12   paź   2026    9:21",
+    "url": "https://rozrywka.dorzeczy.pl/muzyka/955528/maryla-rodowicz-przeprasza-po-wystepie-na-roztanczonym-narodowym.html"
+   },
+   {
+    "title": "\"Resortowe dziecko i obrzydliwy typ\". Cejrowski poszedł do Wojewódzkiego    12   paź   2026    8:57",
+    "url": "https://dorzeczy.pl/opinie/955522/cejrowski-w-podcascie-wojewodzkiego-zapowiedz-rozmowy-wywolala-burze.html"
+   },
+   {
+    "title": "Majchrowski o Gibale: Miał miałki program    12   paź   2026    8:45",
+    "url": "https://dorzeczy.pl/opinie/955513/majchrowski-o-lukaszu-gibale-mial-mialki-program.html"
+   },
+   {
+    "title": "Tusk grzmi na YouTube: Mówimy o zbrodni stanu i za to będą odpowiadać    12   paź   2026    8:40",
+    "url": "https://dorzeczy.pl/kraj/955510/donald-tusk-grzmi-na-youtube-o-pegasusie-zbrodnia-stanu.html"
+   },
+   {
+    "title": "\"Rząd zajmuje się Minecraftem?!\". Morawiecki uderza w Tuska    12   paź   2026    8:38",
+    "url": "https://dorzeczy.pl/opinie/955507/morawiecki-do-tuska-atak-hybrydowy-na-polske-a-rzad-zajmuje-sie-minecraftem.html"
+   },
+   {
+    "title": "Kanał Zero rozbił bank. Stanowski triumfuje    12   paź   2026    8:17",
+    "url": "https://dorzeczy.pl/opinie/955495/kanal-zero-pobil-rekord-wyswietlen-stanowski-pokazal-wyniki.html"
+   },
+   {
+    "title": "Centralizacja UE. Polski rząd oddaje nadzór nad giełdą i depozytami    12   paź   2026    8:03",
+    "url": "https://dorzeczy.pl/ekonomia/955489/centralizacja-ue-esma-przejmuje-kontrole-nad-gieldami.html"
+   },
+   {
+    "title": "Trump ogłasza rozejm energetyczny między Ukrainą a Rosją    12   paź   2026    7:47",
+    "url": "https://dorzeczy.pl/opinie/955477/rozejm-energetyczny-trump-oglasza.html"
+   },
+   {
+    "title": "Nowy sondaż. Klęska koalicji Tuska    12   paź   2026    7:11",
+    "url": "https://dorzeczy.pl/sondaz/955471/nowy-sondaz-kleska-koalicji-tuska-pis-i-konfederacja-za-ko.html"
+   },
+   {
+    "title": "Budowa schronów. Są problemy z wydatkowaniem pieniędzy    12   paź   2026    6:50",
+    "url": "https://dorzeczy.pl/opinie/955465/budowa-schronow-sa-problemy-z-wydawaniem-pieniedzy.html"
+   },
+   {
+    "title": "Dawanie Zełenskiemu sprzętu na wojnę? Jasne stanowisko Magyara    12   paź   2026    6:32",
+    "url": "https://dorzeczy.pl/swiat/955462/dawanie-zelenskiemu-sprzetu-na-wojne-jasne-stanowisko-magyara.html"
+   },
+   {
+    "title": "Teatr, Szekspir i sprawa polska. Największa gwiazda polskiej sceny    12   paź   2026    6:10",
+    "url": "https://historia.dorzeczy.pl/xix-wiek/955432/helena-modrzejewska-najwieksza-gwiazda-polskiego-teatru.html"
+   },
+   {
+    "title": "Wybory w Krakowie. Podano oficjalne wyniki    12   paź   2026    5:57",
+    "url": "https://dorzeczy.pl/opinie/955453/wybory-w-krakowie-sa-oficjalne-wyniki.html"
+   },
+   {
+    "title": "Pierwszy Oktorberfest. Tradycja piwnego festiwalu wcale nie zaczęła się od piwa    12   paź   2026    5:26",
+    "url": "https://historia.dorzeczy.pl/xix-wiek/955450/pierwszy-oktorberfest-tradycja-i-historia-piwnego-festiwalu.html"
+   },
+   {
+    "title": "Gibała kontra Piątkowska. Tak zagłosowali wyborcy PiS i Konfederacji    11   paź   2026   23:03",
+    "url": "https://dorzeczy.pl/opinie/955438/gibala-kontra-piatkowska-tak-zaglosowali-wyborcy-pis-i-konfederacji.html"
+   },
+   {
+    "title": "Piątkowska zabrała głos. \"Jedna pięść i do przodu\"    11   paź   2026   22:30",
+    "url": "https://dorzeczy.pl/opinie/955423/piatkowska-podziekowala-tuskowi-i-twardo-zwrocila-sie-do-gibaly.html"
+   },
+   {
+    "title": "\"Krakowianie odzyskali swoje miasto\". Łukasz Gibała zabrał głos    11   paź   2026   21:57",
+    "url": "https://dorzeczy.pl/opinie/955417/wyniki-wyborow-w-krakowie-lukasz-gibala-zabral-glos.html"
+   },
+   {
+    "title": "Polityczny nokaut w Krakowie. \"Wiatr zmian?\", \"za rok w całej Polsce\"    11   paź   2026   21:29",
+    "url": "https://dorzeczy.pl/opinie/955411/gibala-v-piatkowska-polityczny-nokaut-w-krakowie-fala-komentarzy.html"
+   },
+   {
+    "title": "Kraków wybrał nowego prezydenta. Są wyniki exit poll    11   paź   2026   21:00",
+    "url": "https://dorzeczy.pl/kraj/955363/piatkowska-kontra-gibala-krakow-wybral-nowego-prezydenta.html"
+   },
+   {
+    "title": "Mimo operacji Leon XIV nie rezygnuje z zaplanowanych wyjazdów    11   paź   2026   20:58",
+    "url": "https://dorzeczy.pl/religia/955402/mimo-operacji-leon-xiv-nie-rezygnuje-z-zaplanowanych-wyjazdow.html"
+   },
+   {
+    "title": "Chciał wysyłania kobiet na wojnę. Znów ma radę dla Kijowa    11   paź   2026   20:27",
+    "url": "https://dorzeczy.pl/opinie/955399/chcial-wysylania-kobiet-na-wojne-znow-ma-rade-dla-kijowa.html"
+   }
+  ]
+ },
+ "do-rzeczy|2026-10-14": {
+  "status": "ok",
+  "snapshot": "20261014060209",
+  "candidates": [
+   {
+    "title": "Apoteoza ucieczki i kultura strachu    Opinie  Kraj  DoRzeczy+  Tylko na DoRzeczy.pl      Łukasz   Warzecha",
+    "url": "https://dorzeczy.pl/opinie/956452/lukasz-warzecha-apoteoza-ucieczki-i-kultura-strachu.html"
+   },
+   {
+    "title": "Berek nie czeka na ruch prezydenta. Złoży dziś ślubowanie w Sejmie    14   paź   2026    8:01",
+    "url": "https://dorzeczy.pl/kraj/956503/berek-zlozy-slubowanie-w-sejmie-najnowsze-ustalenia.html"
+   },
+   {
+    "title": "Szef policji dostał cztery zegarki. Nie ujawnił części darczyńców    14   paź   2026    7:43",
+    "url": "https://dorzeczy.pl/ekonomia/956500/boron-dostal-cztery-zegarki-czesc-darczyncow-nieznana.html"
+   },
+   {
+    "title": "Apoteoza ucieczki i kultura strachu    14   paź   2026    7:00",
+    "url": "https://dorzeczy.pl/opinie/956452/lukasz-warzecha-apoteoza-ucieczki-i-kultura-strachu.html"
+   },
+   {
+    "title": "Wybory uzupełniające do Senatu. 12 komitetów, ale mniej kandydatów    14   paź   2026    6:59",
+    "url": "https://dorzeczy.pl/kraj/956497/wybory-uzupelniajace-do-senatu-12-komitetow-mniej-kandydatow.html"
+   },
+   {
+    "title": "Kulisy budowania paktu senackiego prawicy. Oto wstępny podział miejsc    14   paź   2026    6:21",
+    "url": "https://dorzeczy.pl/kraj/956491/pakt-senacki-prawicy-znamy-wstepny-podzial-miejsc.html"
+   },
+   {
+    "title": "Możesz dostawać wyższą emeryturę. ZUS radzi, co zrobić    14   paź   2026    6:10",
+    "url": "https://dorzeczy.pl/ekonomia/956458/twoja-emerytura-moze-byc-wyzsza-zus-podpowiada-co-zrobic-by-dostawac-wiecej.html"
+   },
+   {
+    "title": "Polacy kupują nowe mieszkania. Wyraźny trend    14   paź   2026    6:00",
+    "url": "https://dorzeczy.pl/ekonomia/956347/wzrosla-sprzedaz-nowych-mieszkan-w-polsce-nowe-oferty-deweloperow.html"
+   },
+   {
+    "title": "Nowe informacje w sprawie męża celebrytki. Sąd zdecydował    14   paź   2026    5:45",
+    "url": "https://dorzeczy.pl/opinie/956272/maz-gwiazdy-krolowych-zycia-zostaje-w-areszcie-sad-zdecydowal.html"
+   },
+   {
+    "title": "Kołodziejczak nie odpowiada na wezwanie KO. W partii mówią o jego końcu    13   paź   2026   22:59",
+    "url": "https://dorzeczy.pl/kraj/956488/michal-kolodziejczak-nie-odpowiada-na-wezwanie-ko-w-partii-mowia-o-jego-koncu.html"
+   },
+   {
+    "title": "Obiekt przypominający drona znaleziony na plaży w Karwii    13   paź   2026   22:45",
+    "url": "https://dorzeczy.pl/kraj/956485/obiekt-przypominajacy-drona-znaleziony-na-plazy-w-karwii.html"
+   },
+   {
+    "title": "Polska nadal wyłączona z paktu migracyjnego? Bruksela szykuje decyzję    13   paź   2026   22:27",
+    "url": "https://dorzeczy.pl/kraj/956482/bruksela-zdecyduje-o-zobowiazaniach-polski-chodzi-o-pakt-migracyjny.html"
+   },
+   {
+    "title": "Ustawa cenzorska. Bosak: Nie ulegniemy presji. Ma być wolność słowa    13   paź   2026   22:25",
+    "url": "https://dorzeczy.pl/opinie/956479/ustawa-cenzorska-dsa-bosak-nie-ulegniemy-presji-ma-byc-wolnosc-slowa.html"
+   },
+   {
+    "title": "Burza wokół zakazu reklamy alkoholu. \"To forma odpowiedzialności zbiorowej\"    13   paź   2026   21:52",
+    "url": "https://dorzeczy.pl/ekonomia/956473/burza-wokol-zakazu-reklamy-alkoholu-pejo-to-forma-odpowiedzialnosci-zbiorowej.html"
+   },
+   {
+    "title": "\"Rosja jest gotowa podarować Kijowowi królewski prezent\"    13   paź   2026   21:45",
+    "url": "https://dorzeczy.pl/plus/956470/rosja-jest-gotowa-podarowac-kijowowi-krolewski-prezent.html"
+   },
+   {
+    "title": "Morawiecki: Uważajcie - idzie brygada Tuska!    13   paź   2026   21:32",
+    "url": "https://dorzeczy.pl/opinie/956467/kolodziejczak-mroz-gorgon-i-inni-morawiecki-idzie-brygada-tuska.html"
+   },
+   {
+    "title": "\"Nie ma w zarzutach żadnej logiki\". Ekonomista ostrzega ws. Glapińskiego    13   paź   2026   20:56",
+    "url": "https://dorzeczy.pl/ekonomia/956449/prof-dabrowski-ostrzega-ze-sprawa-glapinskiego-moze-zniechecic-inwestorow-do-polski.html"
+   },
+   {
+    "title": "Trump o oleju napędowym z Rosji i danych wywiadowczych dla Ukrainy    13   paź   2026   20:48",
+    "url": "https://dorzeczy.pl/swiat/956446/trump-o-oleju-napedowym-z-rosji-i-danych-wywiadowczych-dla-ukrainy.html"
+   },
+   {
+    "title": "\"Nie ma takiej opcji\". Jednoznaczna deklaracja ministra    13   paź   2026   20:40",
+    "url": "https://dorzeczy.pl/opinie/956440/pgz-na-sprzedaz-balczun-nie-ma-takich-planow-to-strategiczne-aktywo-w-polsce.html"
+   },
+   {
+    "title": "Nerwowo w KO po klęsce w Krakowie. \"Wiedzieliśmy o tym od początku\"    13   paź   2026   20:21",
+    "url": "https://dorzeczy.pl/kraj/956434/nerwowo-w-ko-po-klesce-piatkowskiej-w-krakowie-wiedzielismy-o-tym-od-poczatku.html"
+   },
+   {
+    "title": "Papież Leon XIV przeszedł operację. Jest komunikat Watykanu    13   paź   2026   20:09",
+    "url": "https://dorzeczy.pl/swiat/956428/papiez-leona-xiv-przeszedl-operacje-jest-komunikat-watykanu.html"
+   },
+   {
+    "title": "Komisja Wenecka: reaktywacja    13   paź   2026   20:09",
+    "url": "https://dorzeczy.pl/opinie/956431/mariusz-muszynski-komisja-wenecka-reaktywacja.html"
+   },
+   {
+    "title": "Ardanowski: Problem z Kołodziejczakiem jest poważniejszy    13   paź   2026   19:51",
+    "url": "https://dorzeczy.pl/opinie/956416/ardanowski-michal-kolodziejczak-byl-prowadzony-przez-sluzby.html"
+   },
+   {
+    "title": "Premier Węgier chce obowiązkowych testów na narkotyki w parlamencie    13   paź   2026   19:50",
+    "url": "https://dorzeczy.pl/swiat/956422/posel-rysowal-flintstonow-i-gral-w-bingo-premier-zaproponowal-testy-narkotykowe.html"
+   },
+   {
+    "title": "Kolejny cyberatak. W tle Polska    13   paź   2026   19:42",
+    "url": "https://dorzeczy.pl/ekonomia/956410/hakerzy-zaatakowali-siec-supermakertow-albert-heijn-w-holandii-polski-serwer.html"
+   }
+  ]
+ },
+ "do-rzeczy|2026-10-15": {
+  "status": "ok",
+  "snapshot": "20261015080530",
+  "candidates": [
+   {
+    "title": "\"Chodzi o usunięcie prezydenta i zarządzanie dekretami Czarzastego\"    Kraj  Opinie",
+    "url": "https://dorzeczy.pl/kraj/957166/co-sie-dzieje-w-tk-chodzi-o-usuniecie-prezydenta.html"
+   },
+   {
+    "title": "Setki milionów dla TVP. Kolejna dotacja od państwa    15   paź   2026    9:55",
+    "url": "https://dorzeczy.pl/opinie/957205/ogromna-kwota-na-tvp-kolejne-540-mln-zl-z-budzetu-panstwa.html"
+   },
+   {
+    "title": "\"Pisowskie bojówki\". Minister o sytuacji w TK    15   paź   2026    9:54",
+    "url": "https://dorzeczy.pl/opinie/957202/sedziowie-tk-z-ochrona-sop-kierwinski-nie-powstrzymaja-nas-pisowskie-bojowki.html"
+   },
+   {
+    "title": "Berek ujawnia kulisy rozmowy w cztery oczy z Święczkowskim    15   paź   2026    9:53",
+    "url": "https://dorzeczy.pl/kraj/957199/berek-powiedzialem-swieczkowskiemu-ze-moze-doprowadzic-do-tragedii.html"
+   },
+   {
+    "title": "Święczkowski opisuje, co działo się w TK po przybyciu Berka    15   paź   2026    9:46",
+    "url": "https://dorzeczy.pl/opinie/957196/swieczkowski-opisuje-co-dzialo-sie-w-tk-po-przybyciu-berka.html"
+   },
+   {
+    "title": "\"Szturm na TK Wam się nie uda!\". Były premier zabrał głos    15   paź   2026    9:17",
+    "url": "https://dorzeczy.pl/opinie/957190/slubowanie-berka-morawiecki-o-sytuacji-w-tk-dosc-kpiny-z-panstwa.html"
+   },
+   {
+    "title": "Burza w Kanale Zero. \"Co za bezwartościowe pier…\"    15   paź   2026    9:16",
+    "url": "https://dorzeczy.pl/opinie/957187/slowik-ostro-uderzyl-w-tekst-kolezanki-naczelna-zeropl-odpowiada.html"
+   },
+   {
+    "title": "\"Trybunał nie jest Telewizją Polską\". Matczak ostro o Berku    15   paź   2026    8:55",
+    "url": "https://dorzeczy.pl/opinie/957181/matczak-o-sytuacji-w-tk-berek-daje-pretekst-drugiej-stronie.html"
+   },
+   {
+    "title": "Konflikt Trumpa z Zełenskim. Zaczęło się od jednej rozmowy    15   paź   2026    8:50",
+    "url": "https://dorzeczy.pl/opinie/957178/konflikt-trumpa-z-zelenskim-zaczelo-sie-od-jednej-rozmowy.html"
+   },
+   {
+    "title": "\"Nie może być obojętny\". Polityk o postawie prezydenta    15   paź   2026    8:46",
+    "url": "https://dorzeczy.pl/opinie/957172/protesty-przed-tk-sasin-ciesze-sie-ze-zdecydowanej-postawy-prezydenta.html"
+   },
+   {
+    "title": "\"Chodzi o usunięcie prezydenta i zarządzanie dekretami Czarzastego\"    15   paź   2026    8:12",
+    "url": "https://dorzeczy.pl/kraj/957166/co-sie-dzieje-w-tk-chodzi-o-usuniecie-prezydenta.html"
+   },
+   {
+    "title": "\"Słyszałem, jakie są rokowania\". Trump o chorobie papieża    15   paź   2026    7:48",
+    "url": "https://dorzeczy.pl/swiat/957163/leon-xiv-chory-na-nowotwor-trump-zyczy-papiezowi-powrotu-do-zdrowia.html"
+   },
+   {
+    "title": "\"Słyszałem krzyk Święczkowskiego\". Relacja sędziego TK    15   paź   2026    7:32",
+    "url": "https://dorzeczy.pl/opinie/957160/sedzia-patyra-o-awanturze-w-tk-slyszalem-krzyk-swieczkowskiego.html"
+   },
+   {
+    "title": "Tusk postawi się Brukseli? Nowe informacje    15   paź   2026    6:58",
+    "url": "https://dorzeczy.pl/kraj/957151/szczyt-ue-w-brukseli-tusk-ma-zaprezentowac-twarde-stanowisko-polski-ws-ets.html"
+   },
+   {
+    "title": "Musk: Ukraina nie może wykorzystywać Starlinka do ataków na Rosję    15   paź   2026    6:57",
+    "url": "https://dorzeczy.pl/opinie/957154/elon-musk-ukraina-nie-moze-wykorzystywac-starlinka-do-atakow-na-rosje.html"
+   },
+   {
+    "title": "Komisja weryfikacyjna nadużywa władzy? \"Sprawa jest kompromitująca\"    15   paź   2026    6:55",
+    "url": "https://dorzeczy.pl/opinie/957001/komisja-weryfikacyjna-naduzywa-wladzy-sprawa-kamienicy-w-sadzie.html"
+   },
+   {
+    "title": "\"Da mi pani skończyć?\". Spięcie ws. Berka    15   paź   2026    6:28",
+    "url": "https://dorzeczy.pl/opinie/957145/slubowanie-berka-pobozy-prezydent-nawrocki-prezentuje-twarda-postawe-ws-tk.html"
+   },
+   {
+    "title": "Nowy sondaż po atakach w szkołach. Tak Polacy oceniają rząd Tuska    15   paź   2026    6:27",
+    "url": "https://dorzeczy.pl/kraj/957148/ataki-w-szkolach-prawie-polowa-polakow-pozytywnie-ocenia-reakcje-rzadu-tuska.html"
+   },
+   {
+    "title": "Kolosalny posąg Ramzesa II znaleziony na polu    15   paź   2026    6:25",
+    "url": "https://historia.dorzeczy.pl/archeologia/957136/kolosalny-posag-ramzesa-ii-znaleziony-na-polu.html"
+   },
+   {
+    "title": "Wjechał samochodem w dziurę i zażądał fortuny. Gmina musi zapłacić    15   paź   2026    6:25",
+    "url": "https://dorzeczy.pl/ekonomia/957106/wjechal-samochodem-w-dziure-i-zazadal-fortuny-gmina-musi-zaplacic.html"
+   },
+   {
+    "title": "Nadchodzi przełom na rynku mieszkań. Ceny mogą gwałtownie spaść    15   paź   2026    6:15",
+    "url": "https://dorzeczy.pl/ekonomia/957052/nadchodzi-przelom-na-rynku-mieszkan-ceny-moga-gwaltownie-spasc.html"
+   },
+   {
+    "title": "Możesz dostać pieniądze na węgiel, drewno i pellet. Oto warunki    15   paź   2026    6:15",
+    "url": "https://dorzeczy.pl/ekonomia/956968/zbliza-sie-sezon-grzewczy-kto-moze-otrzymac-zasilek-na-zakup-opalu.html"
+   },
+   {
+    "title": "Moody's – dziękuję!    15   paź   2026    5:59",
+    "url": "https://dorzeczy.pl/opinie/955762/piotr-gabryel-moodys-dziekuje.html"
+   },
+   {
+    "title": "Dwaj sędziowie Trybunału Konstytucyjnego otrzymali ochronę SOP    15   paź   2026    5:58",
+    "url": "https://dorzeczy.pl/kraj/957139/kierwinski-dwaj-sedziowie-tk-otrzymali-ochrone-sop.html"
+   },
+   {
+    "title": "Niemieckie zbrodnie na najsłabszych. Ilu niepełnosprawnych zabili?    15   paź   2026    5:35",
+    "url": "https://historia.dorzeczy.pl/druga-wojna-swiatowa/957127/niemiecka-zbrodnia-w-swieciu-zbrodnicza-akcja-t4.html"
+   }
+  ]
+ },
+ "do-rzeczy|2026-10-17": {
+  "status": "ok",
+  "snapshot": "20261017080235",
+  "candidates": [
+   {
+    "title": "\"Donald Tusk kłamie\". Poseł PiS uderza w rzecznika policji    Opinie  Kraj  Obserwator mediów",
+    "url": "https://dorzeczy.pl/opinie/958216/protesty-przed-tk-dziedziczak-z-pis-tusk-i-rzecznik-policji-klamia.html"
+   },
+   {
+    "title": "Zmiana w Prokuraturze Krajowej. Szef BBN bije na alarm    17   paź   2026   10:00",
+    "url": "https://dorzeczy.pl/kraj/958228/gryszczynska-odwolana-z-pk-grodecki-oslabienie-w-walce-z-cybeprzestepcami.html"
+   },
+   {
+    "title": "Tylu cywilów zginęło na Ukrainie. Przerażający bilans    17   paź   2026    9:22",
+    "url": "https://dorzeczy.pl/swiat/958219/wojna-na-ukrainie-tylko-we-wrzesniu-zginelo-co-najmniej-328-cywilow.html"
+   },
+   {
+    "title": "\"Donald Tusk kłamie\". Poseł PiS uderza w rzecznika policji    17   paź   2026    8:37",
+    "url": "https://dorzeczy.pl/opinie/958216/protesty-przed-tk-dziedziczak-z-pis-tusk-i-rzecznik-policji-klamia.html"
+   },
+   {
+    "title": "Trump zdecydował ws. Rosji. \"To leży w interesie narodowym\"    17   paź   2026    7:45",
+    "url": "https://dorzeczy.pl/swiat/958204/trump-znosi-czesc-sankcji-i-cel-na-rosje-nowy-dekret-prezydenta-usa.html"
+   },
+   {
+    "title": "Pokolenie Wokulskiego    17   paź   2026    7:30",
+    "url": "https://dorzeczy.pl/opinie/958078/pospieszalski-pokolenie-wokulskiego.html"
+   },
+   {
+    "title": "300, 500 czy 1000 zł? Tyle gotówki warto przygotować na sytuację kryzysową    17   paź   2026    7:15",
+    "url": "https://dorzeczy.pl/ekonomia/958006/ile-gotowki-warto-miec-w-domu-na-wypadek-kryzysu-banki-centralne-podaja-konkretne-kwoty.html"
+   },
+   {
+    "title": "Nie każdy emeryt musi wymieniać dowód. Decyduje data wydania dokumentu    17   paź   2026    6:45",
+    "url": "https://dorzeczy.pl/ekonomia/957832/nie-kazdy-emeryt-musi-wymieniac-dowod-sprawdz-date-wydania-dokumentu.html"
+   },
+   {
+    "title": "Były minister do Tuska: Znowu łżesz! Chcesz też zastraszyć społeczeństwo    16   paź   2026   22:49",
+    "url": "https://dorzeczy.pl/opinie/958201/interwencja-na-marszalkowskiej-ziobro-tusk-znowu-lzesz.html"
+   },
+   {
+    "title": "Szokujące słowa w relacji TVP Info. Zatrzymany mężczyzna jako \"nożownik\"    16   paź   2026   22:13",
+    "url": "https://dorzeczy.pl/kraj/958177/szokujace-slowa-w-relacji-tvp-info-zatrzymany-mezczyzna-jako-nozownik.html"
+   },
+   {
+    "title": "\"Można spodziewać się jakiejś eskalacji\". Tusk wie nawet kiedy    16   paź   2026   21:17",
+    "url": "https://dorzeczy.pl/opinie/958162/tusk-mowi-o-eskalacji-ze-strony-rosji-przed-wigilia.html"
+   },
+   {
+    "title": "Tusk przed sobotnią manifestacją pod TK: Policja będzie działała stanowczo    16   paź   2026   21:13",
+    "url": "https://dorzeczy.pl/opinie/958159/tusk-przed-sobotnia-manifestacja-pod-tk-policja-bedzie-dzialala-stanowczo.html"
+   },
+   {
+    "title": "Tusk powiedział to wprost. Celem jest \"wysadzenie z siodła\" Święczkowskiego    16   paź   2026   20:46",
+    "url": "https://dorzeczy.pl/opinie/958150/tusk-powiedzial-to-wprost-celem-jest-wysadzenie-z-siodla-swieczkowskiego.html"
+   },
+   {
+    "title": "Gliński: Tusk kłamie, że ktoś zaatakował nożem policjantkę przed TK    16   paź   2026   20:19",
+    "url": "https://dorzeczy.pl/opinie/958132/glinski-tusk-klamie-ze-ktos-zaatakowal-nozem-policjantke-przed-tk.html"
+   },
+   {
+    "title": "Nóż przy zatrzymanym w biurze Borowskiego. Mentzen: To jest legalne    16   paź   2026   20:08",
+    "url": "https://dorzeczy.pl/opinie/958123/noz-przy-zatrzymanym-w-biurze-borowskiego-mentzen-to-jest-legalne.html"
+   },
+   {
+    "title": "Komu (i jak) bije dzwon?    16   paź   2026   19:45",
+    "url": "https://dorzeczy.pl/opinie/958069/semka-komu-i-jak-bije-dzwon.html"
+   },
+   {
+    "title": "\"Polisa na spokojną karierę”. Prawnik o braku śledztwa ws. Kołodziejczaka    16   paź   2026   19:39",
+    "url": "https://dorzeczy.pl/opinie/958111/polisa-na-spokojna-kariere-prawnik-o-braku-sledztwa-ws-kolodziejczaka.html"
+   },
+   {
+    "title": "\"Nagranie pokazuje, kto był agresywny\". \"Tuskowi puściły ostatnie hamulce\"    16   paź   2026   19:34",
+    "url": "https://dorzeczy.pl/opinie/958102/bedzie-pacyfikacja-przed-tk-tuskowi-puscily-ostatnie-hamulce.html"
+   },
+   {
+    "title": "Koniec ważnej dyskusji w Watykanie. Jest kontynuacja z Franciszkiem    16   paź   2026   19:00",
+    "url": "https://dorzeczy.pl/opinie/957967/chmielewski-koniec-waznej-dyskusji-w-watykanie-jest-kontynuacja-z-franciszkiem.html"
+   },
+   {
+    "title": "\"Dziadzia, idź już na emeryturę\". Przydacz ostro zwrócił się do Tuska    16   paź   2026   18:50",
+    "url": "https://dorzeczy.pl/opinie/958066/dziadzia-idz-juz-na-emeryture-przydacz-ostro-zwrocil-sie-do-tuska.html"
+   },
+   {
+    "title": "Papież rozmawiał z Putinem. Prośba do prezydenta Rosji    16   paź   2026   18:42",
+    "url": "https://dorzeczy.pl/swiat/958054/papiez-leon-xiv-rozmawial-z-putinem-prosba-do-prezydenta-rosji.html"
+   },
+   {
+    "title": "Polski atom nie ruszy na czas. NIK ujawnia, co zawiodło    16   paź   2026   18:14",
+    "url": "https://dorzeczy.pl/ekonomia/958045/polska-elektrownia-jadrowa-opozniona-o-3-lata-nik-wskazuje-przyczyny.html"
+   },
+   {
+    "title": "Dowódca wojsk NATO w Europie jasno: Rosja nie zaatakuje Sojuszu    16   paź   2026   17:56",
+    "url": "https://dorzeczy.pl/opinie/958039/dowodca-wojsk-nato-w-europie-rosja-nie-zaatakuje-sojuszu.html"
+   },
+   {
+    "title": "Ministerstwo odcina się od interwencji w Łącznej. \"Nie uczestniczyliśmy\"    16   paź   2026   17:52",
+    "url": "https://dorzeczy.pl/kraj/958036/ministerstwo-umywa-rece-nowe-informacje-o-akcji-sluzb-w-zoo-w-lacznej.html"
+   },
+   {
+    "title": "Tusk obwinia Nawrockiego i Kaczyńskiego. \"Odpowiedzialność za agresję\"    16   paź   2026   17:27",
+    "url": "https://dorzeczy.pl/kraj/958027/tusk-obwinia-nawrockiego-i-kaczynskiego-odpowiedzialnosc-za-wzrost-agresji.html"
+   }
+  ]
+ },
+ "do-rzeczy|2026-10-18": {
+  "status": "no-snapshot"
+ },
+ "do-rzeczy|2026-10-19": {
+  "status": "ok",
+  "snapshot": "20261019130316",
+  "candidates": [
+   {
+    "title": "Kto ma rację w sporze Tuska z Nawrockim? Polacy wydali werdykt    Kraj  Sondaż",
+    "url": "https://dorzeczy.pl/kraj/959005/sondaz-kto-ma-racje-w-sporze-tuska-z-nawrockim-polacy-wydali-werdykt.html"
+   },
+   {
+    "title": "Obajtek uderza w Tuska. \"Mam dowody na ręczne sterowanie cenami paliw\"    19   paź   2026   14:59",
+    "url": "https://dorzeczy.pl/ekonomia/959092/daniel-obajtek-uderza-w-tuska-mam-dowody-na-reczne-sterowanie-cenami-paliw.html"
+   },
+   {
+    "title": "Godzina policyjna w niektórych miastach. Francja reaguje na zamieszki    19   paź   2026   14:57",
+    "url": "https://dorzeczy.pl/swiat/959086/francja-wprowadza-godzine-policyjna-w-niektorych-miastach.html"
+   },
+   {
+    "title": "Nawrocki skierował wniosek do Tuska. \"Teraz wszystko w rękach premiera\"    19   paź   2026   14:56",
+    "url": "https://dorzeczy.pl/kraj/959083/nawrocki-skierowal-wniosek-do-tuska-wszystko-w-rekach-premiera.html"
+   },
+   {
+    "title": "Czarnek nie wytrzymał. \"Czy Motyka jest chory na umyśle?\"    19   paź   2026   14:36",
+    "url": "https://dorzeczy.pl/opinie/959074/czarnek-nie-wytrzymal-czy-motyka-jest-chory-na-umysle.html"
+   },
+   {
+    "title": "Piotr W. nie odzyskał pieniędzy po wyjściu na wolność? Policja zabrała głos    19   paź   2026   14:29",
+    "url": "https://dorzeczy.pl/kraj/959065/policja-wydala-komunikat-co-z-pieniedzmi-piotra-w.html"
+   },
+   {
+    "title": "\"Nie ma mojej zgody\". Szef policji wystosował list do funkcjonariuszy    19   paź   2026   14:25",
+    "url": "https://dorzeczy.pl/kraj/959059/nie-ma-mojej-zgody-szef-policji-wystosowal-list-do-funkcjonariuszy.html"
+   },
+   {
+    "title": "Kolejna dziennikarka Polsatu w Kanale Zero. Dołączyła do kolegów    19   paź   2026   14:21",
+    "url": "https://dorzeczy.pl/opinie/959053/malgorzata-frydrych-w-kanale-zero-wczesniej-byla-w-polsacie.html"
+   },
+   {
+    "title": "Polacy w sondażu ocenili Nawrockiego. Może mieć powody do zadowolenia    19   paź   2026   14:18",
+    "url": "https://dorzeczy.pl/kraj/959047/sondaz-prezydent-nawrocki-oceniony-przez-polakow.html"
+   },
+   {
+    "title": "Aktorka wydała oświadczenie. \"Pozywam TVN\"    19   paź   2026   13:59",
+    "url": "https://rozrywka.dorzeczy.pl/show-biznes/959041/zborowska-wrona-oswiadczyla-ze-pozywa-tvn-fani-nie-sa-zadowoleni.html"
+   },
+   {
+    "title": "Trump stawia Ukrainę pod ścianą. Brytyjska prasa o możliwym scenariuszu    19   paź   2026   13:58",
+    "url": "https://dorzeczy.pl/swiat/959035/trump-stawia-ukraine-pod-sciana-brytyjska-prasa-wskazuje-mozliwy-scenariusz.html"
+   },
+   {
+    "title": "Dron nad Litwą. Wilno twierdzi, że nadleciał z Polski    19   paź   2026   13:34",
+    "url": "https://dorzeczy.pl/kraj/959020/rozbiezne-komunikaty-warszawy-i-wilna-chodzi-o-drona-ktory-eksplodowal-na-litwie.html"
+   },
+   {
+    "title": "\"Porwanie Piusa XIII\". Już dziś spotkanie z Pawłem Lisickim    19   paź   2026   13:33",
+    "url": "https://dorzeczy.pl/kraj/959017/nowa-ksiazka-pawla-lisickiego-spotkanie-w-agere-contra.html"
+   },
+   {
+    "title": "Kto ma rację w sporze Tuska z Nawrockim? Polacy wydali werdykt    19   paź   2026   13:01",
+    "url": "https://dorzeczy.pl/kraj/959005/sondaz-kto-ma-racje-w-sporze-tuska-z-nawrockim-polacy-wydali-werdykt.html"
+   },
+   {
+    "title": "Gwiazda TVN w centrum zamieszek. \"Raca leciała na mnie\"    19   paź   2026   12:59",
+    "url": "https://dorzeczy.pl/opinie/959002/sandra-hajduk-z-tvn-w-centrum-zamieszek-w-paryzu-to-ja-spotkalo.html"
+   },
+   {
+    "title": "Polityk ostrzega: Tusk chce, żeby decyzje TK zapadały w jego gabinecie    19   paź   2026   12:26",
+    "url": "https://dorzeczy.pl/opinie/958990/tusk-chce-zeby-decyzje-tk-zapadaly-w-jego-gabinecie.html"
+   },
+   {
+    "title": "Mróz-Gorgoń: Mieliśmy poczucie, że można zrobić taki WOŚP w promocji Polski    19   paź   2026   12:22",
+    "url": "https://dorzeczy.pl/opinie/958993/mroz-gorgon-mielismy-poczucie-ze-mozemy-zrobic-taki-wosp-w-promocji-polski.html"
+   },
+   {
+    "title": "Dziennikarce puściły nerwy. Zaczęła krzyczeć na gościa w studiu    19   paź   2026   12:19",
+    "url": "https://dorzeczy.pl/opinie/958987/wielowieyskiej-puscily-nerwy-krzyczala-w-studiu-na-poslanke-pis.html"
+   },
+   {
+    "title": "Żołnierz zatrzymany za szpiegostwo. Ma ukraińskie obywatelstwo    19   paź   2026   12:18",
+    "url": "https://dorzeczy.pl/kraj/958981/zolnierz-podejrzany-o-szpiegostwo-zatrzymany-w-lodzi.html"
+   },
+   {
+    "title": "Dziennikarka TVP zachwycona Tuskiem. Oto, czego dokonał premier    19   paź   2026   12:01",
+    "url": "https://rozrywka.dorzeczy.pl/958975/dziennikarka-tvp-zachwycona-tuskiem-czego-dokonal-premier.html"
+   },
+   {
+    "title": "Kierowcy tracą dokumenty i płacą mandaty. Warszawska policja nie odpuszcza    19   paź   2026   11:52",
+    "url": "https://dorzeczy.pl/kraj/958966/policja-wystawila-mandaty-na-ponad-14-mln-zl-wielka-akcja-w-warszawie.html"
+   },
+   {
+    "title": "Rubcow nie będzie ścigany przez Interpol. Uchroniła go decyzja policji    19   paź   2026   11:34",
+    "url": "https://dorzeczy.pl/kraj/958957/rubcow-nie-bedzie-scigany-przez-interpol-policja-odmowila.html"
+   },
+   {
+    "title": "\"To się skończy linczem\". Minister o konkursach w TVP    19   paź   2026   11:34",
+    "url": "https://dorzeczy.pl/opinie/958954/minister-cienkowska-tlumaczy-brak-konkursow-w-tvp-zaskakujace-slowa.html"
+   },
+   {
+    "title": "Putin planuje \"nową Jałtę\"? Sikorski: Chce w prezencie ukraińskie terytoria    19   paź   2026   11:28",
+    "url": "https://dorzeczy.pl/opinie/958951/rosja-chce-porozumienia-mocarstw-bez-ukrainy-sikorski-zabral-glos.html"
+   },
+   {
+    "title": "Rządowa regulacja uderzy w małe polskie przedsiębiorstwa. \"Będą znikać\"    19   paź   2026   11:01",
+    "url": "https://dorzeczy.pl/ekonomia/958942/rzadowa-regulacja-o-alkoholu-uderzy-w-male-polskie-browary.html"
+   }
+  ]
+ }
+}

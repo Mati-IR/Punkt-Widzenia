@@ -1,0 +1,101 @@
+{
+  "id": "radio-zet",
+  "published": true,
+  "name": "Radio ZET",
+  "type": "radio",
+  "segment": "mainstream",
+  "url": "https://wiadomosci.radiozet.pl",
+  "description": {
+    "pl": "Ogólnopolska prywatna stacja radiowa; od 2024 r. Eurozet w całości należy do Agory."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center",
+      "economic": 0,
+      "sociocultural": 0,
+      "rationale": {
+        "pl": "Brak wyraźnej linii gospodarczej i światopoglądowej. Brak zewnętrznych badań widowni lub treści dla Radia ZET – oznaczone jako sporne do czasu próbki treści. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "radiozet-site"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Brak udokumentowanych wskaźników powiązań z którymkolwiek obozem; brak zewnętrznych danych o tonie – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "radiozet-site"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "polish-private",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Eurozet sp. z o.o.",
+        "country": "PL",
+        "sourceId": "radiozet-site"
+      },
+      {
+        "level": "owner",
+        "name": "Agora S.A.",
+        "country": "PL",
+        "share": 100,
+        "sourceId": "gtlaw-eurozet-2024"
+      }
+    ],
+    "fundingModel": [
+      "advertising"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 1,
+    "total": 4,
+    "label": "mixed",
+    "rationale": {
+      "pl": "Sprawozdanie KRRiT za 2025 r.: brak decyzji o karze i upomnień wobec Radia ZET. Według zestawienia wyroków dołączonego do sprawozdania Sąd Apelacyjny w Warszawie w marcu 2025 r. prawomocnie utrzymał uchylenie kary 476 tys. zł, nałożonej w 2023 r. za rzekomą dezinformację o przejeździe prezydenta Ukrainy; sąd I instancji uznał, że nadawca dochował rzetelności. Fact-checkerzy (Demagog, AFP Sprawdzam, FakeNews.pl) i Rada Etyki Mediów: nie znaleziono wykazanych fałszywych informacji tej redakcji z ostatnich 24 miesięcy (przegląd 2026-11-08). Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podany wydawca; nie znaleziono stopki redakcyjnej z redaktorem naczelnym."
+    },
+    "sourceIds": [
+      "radiozet-site",
+      "krrit-sprawozdanie-2025"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (KRRiT 2025, wyrok sądu); usunięto oznaczenie „wstępna”.",
+        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
+      }
+    }
+  ]
+}

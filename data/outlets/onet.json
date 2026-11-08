@@ -1,0 +1,115 @@
+{
+  "id": "onet",
+  "published": true,
+  "name": "Onet",
+  "type": "portal",
+  "segment": "mainstream",
+  "url": "https://www.onet.pl",
+  "description": {
+    "pl": "Jeden z największych polskich portali informacyjnych, wydawany przez Ringier Axel Springer Polska."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center-left",
+      "economic": 0,
+      "sociocultural": -1,
+      "rationale": {
+        "pl": "Gospodarczo centrowy (0), społecznie umiarkowanie liberalny (−1). Średnia −0,5 to przypadek graniczny (§1.5) – wartość zatwierdzona: centrolewica. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "osce-odihr-2025",
+        "onet-onas"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "leans-government",
+      "rationale": {
+        "pl": "ODIHR (2025): Onet poświęcił najwięcej miejsca kandydatowi wspieranemu przez PiS, przeważnie w negatywnym tonie, a kandydatowi KO – głównie pozytywnie lub neutralnie. Brak wskaźnika strukturalnego; ocena oparta na okresie wyborczym – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "osce-odihr-2025",
+        "onet-onas"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "foreign",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Ringier Axel Springer Polska sp. z o.o.",
+        "country": "PL",
+        "sourceId": "onet-onas"
+      },
+      {
+        "level": "owner",
+        "name": "Ringier Axel Springer Media AG",
+        "country": "CH",
+        "sourceId": "demagog-owners-2023"
+      },
+      {
+        "level": "ultimate-owner",
+        "name": "Axel Springer SE",
+        "country": "DE",
+        "sourceId": "mediapost-axelspringer-2025"
+      },
+      {
+        "level": "ultimate-owner",
+        "name": "Ringier AG",
+        "country": "CH",
+        "sourceId": "demagog-owners-2023"
+      }
+    ],
+    "fundingModel": [
+      "advertising",
+      "subscriptions"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 2,
+    "total": 5,
+    "label": "high",
+    "rationale": {
+      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podany redaktor naczelny i wydawca."
+    },
+    "sourceIds": [
+      "onet-onas"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false,
+    "provisional": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
+        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Checks every PR and push to main: dataset validation + type check + static build.
+# Deployment is done by Cloudflare Pages' own Git integration (no secrets needed here) — see docs/DEPLOY.md.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build # astro check + astro build; fails on any invalid outlet record

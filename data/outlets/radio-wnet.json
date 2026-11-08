@@ -1,0 +1,97 @@
+{
+  "id": "radio-wnet",
+  "published": true,
+  "name": "Radio Wnet",
+  "type": "radio",
+  "segment": "independent",
+  "url": "https://wnet.fm",
+  "description": {
+    "pl": "Prywatne radio założone w 2009 r. przez Krzysztofa Skowrońskiego, wspierane m.in. przez słuchaczy i spółdzielnię Wnet."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center-right",
+      "economic": 0,
+      "sociocultural": 2,
+      "rationale": {
+        "pl": "Społecznie konserwatywne, katolickie (+2), gospodarczo bez wyraźnej linii (0). Średnia +1 = centroprawica. Brak zewnętrznego profilu – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "wnet-redakcja",
+        "wiki-radiownet"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "leans-opposition",
+      "rationale": {
+        "pl": "Jedyny udokumentowany wskaźnik jest historyczny (2013: doniesienia o wpłacie od PiS, którym zaprzeczał redaktor naczelny). Brak danych o tonie w badanym okresie – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "wiki-radiownet",
+        "rp-skowronski-2013"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "polish-private",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Radio Wnet sp. z o.o.",
+        "country": "PL",
+        "sourceId": "wiki-radiownet"
+      }
+    ],
+    "fundingModel": [
+      "donations",
+      "advertising"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 1,
+    "total": 4,
+    "label": "mixed",
+    "rationale": {
+      "pl": "Sprawozdanie KRRiT za 2025 r.: brak decyzji o karze i upomnień wobec Radia WNET. Fact-checkerzy (Demagog, AFP Sprawdzam, FakeNews.pl) i Rada Etyki Mediów: nie znaleziono wykazanych fałszywych informacji tej redakcji z ostatnich 24 miesięcy (przegląd 2026-11-08). Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: redaktor naczelny i zespół podani; brak informacji o udziałowcach i finansowaniu."
+    },
+    "sourceIds": [
+      "wnet-redakcja",
+      "krrit-sprawozdanie-2025"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (KRRiT 2025); zdjęto status sporny wynikający z braku źródła zewnętrznego; usunięto oznaczenie „wstępna”.",
+        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
+      }
+    }
+  ]
+}

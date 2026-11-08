@@ -1,0 +1,692 @@
+[
+  {
+    "id": "osce-odihr-2025",
+    "title": "Republic of Poland, Presidential Election 18 May and 1 June 2025 – ODIHR Limited Election Observation Mission Final Report (media: s. 25–27)",
+    "publisher": "OSCE/ODIHR",
+    "url": "https://www.osce.org/files/f/documents/2/b/599685.pdf",
+    "date": "2025-10-20",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "cbos-2024-71",
+    "title": "Zmiany w popularności informacyjnych programów telewizyjnych (Komunikat z badań nr 71/2024, lipiec 2024; tab. 2: główne źródło informacji wg elektoratów)",
+    "publisher": "CBOS",
+    "url": "https://cbos.pl/PL/publikacje/raporty/open_file.php?id=6849",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "dnr-2026-pl",
+    "title": "Digital News Report 2026 – Poland",
+    "publisher": "Reuters Institute for the Study of Journalism",
+    "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/poland",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "dnr-2025-pl",
+    "title": "Digital News Report 2025 – Poland",
+    "publisher": "Reuters Institute for the Study of Journalism",
+    "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2025/poland",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "presspl-dnr-2026",
+    "title": "W Polsce gwałtownie spadło zaufanie do newsów. Raport Reuters Institute (omówienie DNR 2026)",
+    "publisher": "Press.pl",
+    "url": "https://www.press.pl/tresc/93617,w-polsce-gwaltownie-spadlo-zaufanie-do-newsow_-raport-reuters-institute",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "demagog-dnr-2023",
+    "title": "Większość Polaków nie ufa mediom. TVP znowu na dole rankingu (omówienie Digital News Report 2023)",
+    "publisher": "Stowarzyszenie Demagog",
+    "url": "https://demagog.org.pl/analizy_i_raporty/wiekszosc-polakow-nie-ufa-mediom-tvp-znowu-na-dole-rankingu/",
+    "date": "2023-06-27",
+    "accessed": "2026-11-08",
+    "type": "factcheck"
+  },
+  {
+    "id": "demagog-owners-2023",
+    "title": "Do kogo należą media w Polsce? Sprawdzamy najpopularniejsze",
+    "publisher": "Stowarzyszenie Demagog",
+    "url": "https://demagog.org.pl/analizy_i_raporty/do-kogo-naleza-media-w-polsce-sprawdzamy-najpopularniejsze/",
+    "date": "2023-12-22",
+    "accessed": "2026-11-08",
+    "type": "factcheck"
+  },
+  {
+    "id": "demagog-media-2026",
+    "title": "Media manipulują pracą Demagoga, jednocześnie pokazują, jakich polityków wspierają",
+    "publisher": "Stowarzyszenie Demagog",
+    "url": "https://demagog.org.pl/analizy_i_raporty/media-manipuluja-praca-demagoga-jednoczesnie-pokazuja-jakich-politykow-wspieraja/",
+    "accessed": "2026-11-08",
+    "type": "factcheck"
+  },
+  {
+    "id": "ipi-mjrc-2025",
+    "title": "Media Capture Monitoring Report: Poland (s. 17: reklama spółek Skarbu Państwa 2015–2020, badanie T. Kowalskiego)",
+    "publisher": "International Press Institute / Media and Journalism Research Center",
+    "url": "https://journalismresearch.org/wp-content/uploads/2025/12/Poland-2025-V2.pdf",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "wprost-krrit-2025",
+    "title": "TV Republika na czele niechlubnego zestawienia. KRRiT ujawniła dane (kary nałożone w 2025 r.)",
+    "publisher": "Wprost",
+    "url": "https://www.wprost.pl/12345285",
+    "date": "2026-06-01",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "eurotopics-gw",
+    "title": "euro|topics: Gazeta Wyborcza – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://www.eurotopics.net/en/148554/gazeta-wyborcza",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurotopics-rp",
+    "title": "euro|topics: Rzeczpospolita – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://www.eurotopics.net/en/148775/rzeczpospolita",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurotopics-polityka",
+    "title": "euro|topics: Polityka – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://www.eurotopics.net/en/148750/polityka",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurotopics-newsweek",
+    "title": "euro|topics: Newsweek Polska – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://eurotopics.net/en/148735/newsweek-polska",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurotopics-dorzeczy",
+    "title": "euro|topics: Do Rzeczy – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://www.eurotopics.net/en/148616/do-rzeczy",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurotopics-wp",
+    "title": "euro|topics: Wirtualna Polska – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://www.eurotopics.net/en/177456/wirtualna-polska",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurotopics-kj",
+    "title": "euro|topics: klubjagiellonski.pl – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://www.eurotopics.net/en/225136/klubjagiellonski-pl",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurotopics-kp",
+    "title": "euro|topics: Krytyka Polityczna – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://eurotopics.net/en/148658/krytyka-polityczna",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurotopics-tp",
+    "title": "euro|topics: Tygodnik Powszechny – profil medium",
+    "publisher": "euro|topics",
+    "url": "https://eurotopics.net/en/210236/tygodnik-powszechny",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurozine-kl",
+    "title": "Eurozine: Kultura Liberalna – profil czasopisma partnerskiego",
+    "publisher": "Eurozine",
+    "url": "https://eurozine.com/journals/kultura-liberalna",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "eurozine-kp",
+    "title": "Eurozine: Krytyka Polityczna – profil czasopisma partnerskiego",
+    "publisher": "Eurozine",
+    "url": "https://eurozine.com/journals/krytyka-polityczna",
+    "accessed": "2026-11-08",
+    "type": "research"
+  },
+  {
+    "id": "superbiz-paramount-2026",
+    "title": "Fuzja gigantów w USA stała się faktem. Jest zgoda na przejęcie TVN",
+    "publisher": "Super Biznes (se.pl)",
+    "url": "https://superbiz.se.pl/wiadomosci/fuzja-gigantow-w-usa-stala-sie-faktem-jest-zgoda-na-przejecie-tvn-aa-QmP2-AQqi-A18Z.html",
+    "date": "2026-09-22",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "wiki-tvn-wbd",
+    "title": "TVN Warner Bros. Discovery (hasło encyklopedyczne; spółka zależna Skydance od października 2026)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/TVN_Warner_Bros._Discovery",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "polsatnews-onas",
+    "title": "Polsat News – O nas (nadawca: Telewizja Polsat sp. z o.o., KRS 0000388899)",
+    "publisher": "Polsat News",
+    "url": "https://www.polsatnews.pl/o-nas/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "inwestycje-polsat-2026",
+    "title": "Spór o sukcesję w Grupie Polsat Plus został ostatecznie zakończony (TiVi Foundation)",
+    "publisher": "Inwestycje.pl",
+    "url": "https://inwestycje.pl/biznes/spor-o-sukcesje-w-grupie-zostal-ostatecznie-zakonczony/",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "polsatplus-q1-2026",
+    "title": "Polsat Plus Group: performance in Q1 2026",
+    "publisher": "Grupa Polsat Plus",
+    "url": "https://grupapolsatplus.pl/en/archive/polsat-plus-groups-performance-q1-2026-high-sales-its-new-multi-play-offer-acquisition-new",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "polsat-interia-cbos-2023",
+    "title": "Interia liderem wiarygodności wśród portali w Polsce w 2023 roku według badania CBOS (komunikat wydawcy)",
+    "publisher": "Grupa Polsat Plus",
+    "url": "https://www.polsatmedia.pl/Aktualnosc_6786/Interia-Liderem-Wiarygodnosci-Wsrod-Portali-W-Polsce-W-2023-Roku-Wedlug-Badania-CBOS_1890474/index.html",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "polsat-interia-lider",
+    "title": "Grupa Polsat – Interia liderem Internetu (komunikat wydawcy)",
+    "publisher": "Grupa Polsat Plus",
+    "url": "https://www.polsatmedia.pl/Aktualnosc_6786/Grupa-Polsat---Interia-Liderem-Internetu_1920712/index.html",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "tvp-centruminformacji",
+    "title": "Centrum Informacji TVP – Telewizja Polska S.A.",
+    "publisher": "Telewizja Polska S.A.",
+    "url": "https://centruminformacji.tvp.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "tvrepublika-onas",
+    "title": "Telewizja Republika – O nas (Telewizja Republika S.A.; prezes zarządu i redaktor naczelny; darowizny przez Fundację Niezależne Media)",
+    "publisher": "Telewizja Republika S.A.",
+    "url": "https://tvrepublika.pl/o-nas",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "moneypl-republika-2023",
+    "title": "TV Republika oazą niezależnych mediów? Sprawdziliśmy jej powiązania (akcjonariat wg KRS z lipca 2023)",
+    "publisher": "Money.pl",
+    "url": "https://www.money.pl/gospodarka/tv-republika-oaza-niezaleznych-mediow-sprawdzilismy-jej-powiazania-6986411131652864a.html",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "moneypl-republika-2025",
+    "title": "55 mln zł od widzów. Tak Telewizja Republika zarabia",
+    "publisher": "Money.pl",
+    "url": "https://www.money.pl/gospodarka/55-mln-zl-od-widzow-tak-telewizja-republika-zarabia-7329625778383008a.html",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "pr24-site",
+    "title": "Polskie Radio 24 – serwis internetowy",
+    "publisher": "Polskie Radio S.A.",
+    "url": "https://www.polskieradio24.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "rmf24-site",
+    "title": "RMF24 – serwis (stopka: Grupa RMF sp. z o.o. sp. k.; oznaczanie artykułów sponsorowanych)",
+    "publisher": "Grupa RMF",
+    "url": "https://www.rmf24.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "radiozet-site",
+    "title": "Radio ZET Wiadomości – serwis (stopka: Eurozet sp. z o.o.)",
+    "publisher": "Eurozet",
+    "url": "https://wiadomosci.radiozet.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "gtlaw-eurozet-2024",
+    "title": "Greenberg Traurig advised Agora on the final phase of the acquisition of Eurozet (Agora jedynym wspólnikiem)",
+    "publisher": "Greenberg Traurig",
+    "url": "https://gtlaw.com/it/news/2024/06/press-releases/greenberg-traurig-advised-agora-on-the-final-phase-of-the-acquisition-of-eurozet",
+    "date": "2024-06-21",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "wprost-maryja-wlasciciel",
+    "title": "Wprost: Prowincja Warszawska Redemptorystów jest właścicielem Radia Maryja",
+    "publisher": "Wprost",
+    "url": "https://www.wprost.pl/314606",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "krrit-maryja-koncesja",
+    "title": "KRRiT – dokument dot. koncesji 003/P/2001-R (Warszawska Prowincja Redemptorystów, program „Radio Maryja”)",
+    "publisher": "Krajowa Rada Radiofonii i Telewizji",
+    "url": "https://www.gov.pl/attachment/0939b9d3-1557-40a5-9ca1-8c0b6feb45bd",
+    "accessed": "2026-11-08",
+    "type": "regulator"
+  },
+  {
+    "id": "radiomaryja-kontakt",
+    "title": "Radio Maryja – Kontakt",
+    "publisher": "Radio Maryja",
+    "url": "https://www.radiomaryja.pl/kontakt/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "wyborcza-site",
+    "title": "Wyborcza.pl – serwis (stopka: Wyborcza sp. z o.o.)",
+    "publisher": "Wyborcza sp. z o.o.",
+    "url": "https://wyborcza.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "gazetapl-site",
+    "title": "Gazeta.pl – serwis (stopka: Gazeta.pl sp. z o.o.)",
+    "publisher": "Gazeta.pl sp. z o.o.",
+    "url": "https://www.gazeta.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "biznesradar-ptwp-gremi",
+    "title": "PTWP obejmie większościowy pakiet Gremi Media",
+    "publisher": "Biznesradar",
+    "url": "https://www.biznesradar.pl/a/141516,ptwp-obejmie-wiekszosciowy-pakiet-gremi-media",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "rp-site",
+    "title": "rp.pl – serwis (oznaczanie materiałów partnerów)",
+    "publisher": "Gremi Media",
+    "url": "https://www.rp.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "fakt-onas",
+    "title": "Fakt – O nas (redaktor naczelny; wydawca Ringier Axel Springer Polska sp. z o.o.)",
+    "publisher": "Ringier Axel Springer Polska",
+    "url": "https://www.fakt.pl/o-nas",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "newsweek-onas",
+    "title": "Newsweek Polska – O nas (redaktor naczelny; wydawca RASP)",
+    "publisher": "Ringier Axel Springer Polska",
+    "url": "https://www.newsweek.pl/o-nas",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "onet-onas",
+    "title": "Onet – O nas (redaktor naczelny; wydawca RASP)",
+    "publisher": "Ringier Axel Springer Polska",
+    "url": "https://www.onet.pl/o-nas",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "mediapost-axelspringer-2025",
+    "title": "Axel Springer Reaches Next Stage Of Corporate Transition (JV Ringier Axel Springer Polska pozostaje w Axel Springer)",
+    "publisher": "MediaPost",
+    "url": "https://www.mediapost.com/publications/article/402191/axel-springer-reaches-next-stage-of-corporate-tran.html",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "se-redakcja",
+    "title": "Super Express – redakcja se.pl (wydawca TIME S.A., Grupa ZPR; redaktor naczelny)",
+    "publisher": "TIME S.A.",
+    "url": "https://www.se.pl/redakcja/redakcja-se-pl-aa-Nxjf-oyM6-NQvb.html",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "bankier-zpr-benbenek",
+    "title": "Polska Press zmieni właściciela? Orlen otrzymał ofertę (Grupa ZPR Media – właściciel Zbigniew Benbenek)",
+    "publisher": "Bankier.pl",
+    "url": "https://www.bankier.pl/wiadomosc/Polska-Press-zmieni-wlasciciela-Orlen-otrzymal-oferte-8698063.html",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "wp-onas",
+    "title": "Wirtualna Polska – O nas (Wirtualna Polska Media S.A.; Wirtualna Polska Holding S.A.)",
+    "publisher": "Wirtualna Polska Media S.A.",
+    "url": "https://onas.wp.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "xyz-wp-wezwanie-2026",
+    "title": "Szefowie Wirtualnej Polski chcą skupić 100 proc. akcji spółki",
+    "publisher": "XYZ.pl",
+    "url": "https://xyz.pl/dzieje-sie/wp-holding-planuje-skup-akcji-wlasnych-w-ramach-wezwania-3871",
+    "date": "2026-03-31",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "interia-site",
+    "title": "Interia – serwis",
+    "publisher": "Grupa Interia.pl",
+    "url": "https://www.interia.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "okopress-karnowscy",
+    "title": "Media Karnowskich: optymalizacja podatków (udziałowcy Fratrii)",
+    "publisher": "OKO.press",
+    "url": "https://oko.press/media-karnowskich-optymalizacja-podatkow",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "moneypl-karnowscy",
+    "title": "Bracia Karnowscy – Fratria, „Sieci”, wPolsce24 (serwis tematyczny)",
+    "publisher": "Money.pl",
+    "url": "https://www.money.pl/wiadomosci/bracia-karnowscy.html",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "wpolityce-site",
+    "title": "wPolityce.pl – serwis (redaktor naczelny w stopce)",
+    "publisher": "Fratria",
+    "url": "https://wpolityce.pl/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "polityka-redakcja",
+    "title": "Polityka – Redakcja i wydawca (POLITYKA Sp. z o.o. S.K.A., KRS 0000445981)",
+    "publisher": "POLITYKA Sp. z o.o. S.K.A.",
+    "url": "https://www.polityka.pl/opolityce/redakcja",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "dorzeczy-onas",
+    "title": "Do Rzeczy – O nas (Do Rzeczy S.A.; redaktor naczelny)",
+    "publisher": "Do Rzeczy S.A.",
+    "url": "https://dorzeczy.pl/o-nas",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "biznesradar-pmpg-orlepioro",
+    "title": "PMPG Polskie Media zwiększyły do 81% udziały w spółce Orle Pióro",
+    "publisher": "Biznesradar",
+    "url": "https://www.biznesradar.pl/a/29782,pmpg-polskie-media-zwiekszyly-do-81-udzialy-w-spolce-orle-pioro",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "okopress-onas",
+    "title": "OKO.press – O nas (Fundacja Ośrodek Kontroli Obywatelskiej OKO, KRS 0000620036; sprawozdania finansowe)",
+    "publisher": "Fundacja OKO",
+    "url": "https://oko.press/o-nas",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "okopress-etyka",
+    "title": "OKO.press – Zasady etyki dziennikarskiej (w tym zasady korekt)",
+    "publisher": "Fundacja OKO",
+    "url": "https://oko.press/zasady-etyki-dziennikarskiej",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "zero-redakcja",
+    "title": "Zero.pl – Redakcja",
+    "publisher": "Kanał Zero",
+    "url": "https://zero.pl/redakcja",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "android-kanalzero-2024",
+    "title": "Stanowski: Kanał Zero w 2024 r. – przychody od sponsorów i z YouTube",
+    "publisher": "Android.com.pl",
+    "url": "https://android.com.pl/rozrywka/867689-stanowski-kanal-zero-2024-zarobki/",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "android-zero-portal-2026",
+    "title": "Stanowski uruchamia portal Zero",
+    "publisher": "Android.com.pl",
+    "url": "https://android.com.pl/rozrywka/711512-stanowski-portal-zero/",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "kp-onas",
+    "title": "Krytyka Polityczna – O nas (wydawca: Stowarzyszenie im. Stanisława Brzozowskiego, KRS 0000242083)",
+    "publisher": "Stowarzyszenie im. S. Brzozowskiego",
+    "url": "https://krytykapolityczna.pl/o-nas/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "kj-dokumenty",
+    "title": "Klub Jagielloński – Dane, dokumenty i sprawozdania",
+    "publisher": "Stowarzyszenie Klub Jagielloński",
+    "url": "https://klubjagiellonski.pl/o-klubie-jagiellonskim/dane-dokumenty-i-sprawozdania/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "okopress-kj",
+    "title": "PiS oceniają ledwo na trójkę, ale wciąż jest im najbliższy. Klub Jagielloński zmieni polską prawicę?",
+    "publisher": "OKO.press",
+    "url": "https://oko.press/pis-oceniaja-ledwo-na-troje-ale-wciaz-jest-im-najblizszy-klub-jagiellonski-zmieni-polska-prawice",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "kl-onas",
+    "title": "Kultura Liberalna – O nas (Fundacja Kultura Liberalna; redakcja)",
+    "publisher": "Fundacja Kultura Liberalna",
+    "url": "https://kulturaliberalna.pl/o-nas/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "tp-wydawca",
+    "title": "Tygodnik Powszechny – Wydawca",
+    "publisher": "Tygodnik Powszechny sp. z o.o.",
+    "url": "https://www.tygodnikpowszechny.pl/wydawca-25460",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "tp-redakcja",
+    "title": "Tygodnik Powszechny – Redakcja",
+    "publisher": "Tygodnik Powszechny sp. z o.o.",
+    "url": "https://www.tygodnikpowszechny.pl/redakcja-25447",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "bankier-tp-iti",
+    "title": "Grupa ITI podarowała udziały w Tygodniku Powszechnym Fundacji",
+    "publisher": "Bankier.pl",
+    "url": "https://www.bankier.pl/wiadomosc/Grupa-ITI-podarowala-udzialy-w-Tygodniku-Powszechnym-Fundacji-2460525.html",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "techleap-vesper-tp",
+    "title": "Vesper Investment acquires 38% of Tygodnik Powszechny",
+    "publisher": "Techleap Finder",
+    "url": "https://finder.techleap.nl/news/feed/vesper-investment-acquires-38-of-tygodnik-powszechny",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "frontstory-onas",
+    "title": "Frontstory.pl – O nas (wydawca: Fundacja Reporterów, KRS 0000367130)",
+    "publisher": "Fundacja Reporterów",
+    "url": "https://frontstory.pl/o-nas/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "nczas-site",
+    "title": "nczas.info – stopka (właściciel: 5S Media sp. z o.o., KRS 0000637269; redaktor naczelny Tomasz Sommer)",
+    "publisher": "5S Media sp. z o.o.",
+    "url": "https://nczas.info/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "wiki-sommer",
+    "title": "Tomasz Sommer (hasło encyklopedyczne)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tomasz_Sommer",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "radio357-onas",
+    "title": "Radio 357 – O nas (357 sp. z o.o.; finansowanie przez słuchaczy, brak bloków reklamowych)",
+    "publisher": "357 sp. z o.o.",
+    "url": "https://radio357.pl/o-nas/",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "antyweb-357-patroni",
+    "title": "Radio 357 wygrywa z Radiem Nowy Świat (liczba patronów)",
+    "publisher": "Antyweb",
+    "url": "https://antyweb.pl/radio-357-wygrywa-z-radiem-nowy-swiat",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "wnet-redakcja",
+    "title": "Radio Wnet – Redakcja (redaktor naczelny Krzysztof Skowroński)",
+    "publisher": "Radio Wnet",
+    "url": "https://wnet.fm/redakcja",
+    "accessed": "2026-11-08",
+    "type": "outlet"
+  },
+  {
+    "id": "rp-skowronski-2013",
+    "title": "Krzysztof Skowroński o finansowaniu mediów (wywiad)",
+    "publisher": "Rzeczpospolita",
+    "url": "https://www.rp.pl/wydarzenia/art5513561-krzysztof-skowronski-o-finansowaniu-mediow",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "wiki-radiownet",
+    "title": "Radio Wnet (hasło encyklopedyczne)",
+    "publisher": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Radio_Wnet",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "spidersweb-tv-2026-07",
+    "title": "Polacy i telewizja: najpopularniejsze kanały i programy, lipiec 2026 (dane Nielsen/KRRiT)",
+    "publisher": "Spider's Web",
+    "url": "https://spidersweb.pl/2026/08/polacy-telewizja-najpopularniejsze-kanaly-programy-lipiec-2026.html",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "hdtv-news-2026-08",
+    "title": "To najpopularniejsza stacja informacyjna w Polsce (udziały w oglądalności, sierpień 2026)",
+    "publisher": "HDTVPolska",
+    "url": "https://hdtvpolska.com/to-najpopularniejsza-stacja-informacyjna-w-polsce-znow-wyprzedzila-tvn-polsat-i-tvp/",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "antyweb-radio-2026",
+    "title": "Najpopularniejsze stacje radiowe FM 2026 (Radio Track)",
+    "publisher": "Antyweb",
+    "url": "https://antyweb.pl/najpopularniejsze-stacje-radiowe-fm-2026",
+    "accessed": "2026-11-08",
+    "type": "press"
+  },
+  {
+    "id": "krrit-sprawozdanie-2025",
+    "title": "Sprawozdanie Krajowej Rady Radiofonii i Telewizji z działalności w 2025 roku (druk sejmowy nr 2725; rozdz. 2.1.4: kary i upomnienia; załącznik nr 2: wykaz decyzji o ukaraniu)",
+    "publisher": "Krajowa Rada Radiofonii i Telewizji / Sejm RP",
+    "url": "https://api.sejm.gov.pl/sejm/term10/prints/2725/2725.pdf",
+    "date": "2026-05-29",
+    "accessed": "2026-11-08",
+    "type": "regulator"
+  },
+  {
+    "id": "demagog-republika-2024",
+    "title": "Prawdziwe polskie wiadomości, czyli jak Republika i wPolsce24 opowiadają o świecie. Raport Demagoga (próbka: październik 2024)",
+    "publisher": "Stowarzyszenie Demagog",
+    "url": "https://demagog.org.pl/analizy_i_raporty/prawdziwe-polskie-wiadomosci-czyli-jak-republika-i-wpolsce24-opowiadaja-o-swiecie-raport-demagoga/",
+    "date": "2024-11-21",
+    "accessed": "2026-11-08",
+    "type": "factcheck"
+  },
+  {
+    "id": "wprost-zero-schnepf-2026",
+    "title": "Burza wokół Wysockiej-Schnepf i Stanowskiego. Sąd nie miał wątpliwości (Sąd Apelacyjny w Warszawie oddala zażalenie na zabezpieczenie)",
+    "publisher": "Wprost",
+    "url": "https://www.wprost.pl/12302442",
+    "date": "2026-04-14",
+    "accessed": "2026-11-08",
+    "type": "press"
+  }
+]

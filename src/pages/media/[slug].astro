@@ -1,0 +1,125 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Scale from '../../components/Scale.astro';
+import Sources from '../../components/Sources.astro';
+import { CLASSIC, POLISH } from '../../lib/dataset';
+import { isDraft } from '../../lib/data';
+import {
+  classicLabel, polishLabel, ownershipLabel, segmentLabel, reliabilityLabel, typeLabel,
+  chainLevelLabel, fundingLabel, reachLabel, scoreLabel,
+} from '../../lib/labels';
+
+export async function getStaticPaths() {
+  const outlets = await getCollection('outlets');
+  return outlets.map((outlet) => ({ params: { slug: outlet.id }, props: { outlet } }));
+}
+
+const { outlet } = Astro.props as { outlet: CollectionEntry<'outlets'> };
+const d = outlet.data;
+const { classic, polish } = d.leaning;
+const own = d.ownership;
+const rel = d.reliability;
+const anyContested = classic.contested || polish.contested || rel.contested;
+const signed = (n: number) => (n > 0 ? `+${n}` : n < 0 ? `−${-n}` : '0');
+const avg = (classic.economic + classic.sociocultural) / 2;
+const fix = `/zglos-poprawke/?media=${outlet.id}`;
+const num = new Intl.NumberFormat('pl-PL');
+
+const desc = `${d.name}: orientacja ${classicLabel[classic.value].toLowerCase()}, ${polishLabel[polish.value].toLowerCase()}; własność: ${ownershipLabel[own.category].toLowerCase()}; wiarygodność: ${reliabilityLabel[rel.label].toLowerCase()}.`;
+const topOwner = [...own.chain].reverse().find((c) => c.level !== 'brand');
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsMediaOrganization',
+  name: d.name,
+  ...(d.url ? { url: d.url } : {}),
+  ...(topOwner ? { parentOrganization: { '@type': 'Organization', name: topOwner.name } } : {}),
+};
+---
+<Base title={`${d.name} — orientacja, własność, wiarygodność`} description={desc}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <p class="meta"><a href="/">← Wszystkie media</a></p>
+  <h1>{d.name}</h1>
+  <ul class="tags" aria-label="Cechy">
+    <li class:list={['tag', { indep: d.segment === 'independent' }]}>{segmentLabel[d.segment]}</li>
+    <li class="tag">{typeLabel[d.type]}</li>
+    {anyContested && <li class="tag warn">Sporne</li>}
+    {rel.provisional && <li class="tag prov">Wiarygodność wstępna</li>}
+  </ul>
+  {isDraft && <p class="notice" role="note"><strong>Wersja wstępna danych</strong> — część ocen jest sporna lub wstępna i zostanie uzupełniona w kolejnej wersji. <a href="/metodologia/">Metodologia</a>.</p>}
+  <p class="lead">{d.description.pl}</p>
+  {d.url && <p><a href={d.url} rel="noopener nofollow" target="_blank">{d.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a></p>}
+
+  {d.reach.length > 0 && (
+    <section class="panel" aria-labelledby="h-reach">
+      <h2 id="h-reach">Zasięg</h2>
+      <dl class="kv">
+        {d.reach.map((r) => <><dt>{reachLabel[r.metric]}</dt><dd>{num.format(r.value)}{r.unit && (r.unit === '%' ? '%' : ` ${r.unit}`)} <span class="meta">({r.period})</span></dd></>)}
+      </dl>
+      <Sources ids={d.reach.map((r) => r.sourceId)} />
+    </section>
+  )}
+
+  <section class="panel" aria-labelledby="h-classic">
+    <h2 id="h-classic">Oś lewica–prawica {classic.contested && <span class="tag warn">Sporne</span>}</h2>
+    <Scale values={CLASSIC} labels={classicLabel} value={classic.value} />
+    <dl class="kv axes">
+      <dt>Gospodarka</dt><dd><strong>{signed(classic.economic)}</strong></dd>
+      <dt>Sprawy społeczne</dt><dd><strong>{signed(classic.sociocultural)}</strong></dd>
+      <dt>Średnia</dt><dd>{signed(avg).replace('.', ',')} → {classicLabel[classic.value]}</dd>
+    </dl>
+    <p class="meta">Skala −2 (lewica) … +2 (prawica). Wynik to średnia obu wymiarów, dlatego pokazujemy też każdy z osobna. Stan na {classic.asOf}.</p>
+    <p>{classic.rationale.pl}</p>
+    <Sources ids={classic.sourceIds} />
+  </section>
+
+  <section class="panel" aria-labelledby="h-polish">
+    <h2 id="h-polish">Oś rząd–opozycja {polish.contested && <span class="tag warn">Sporne</span>}</h2>
+    <Scale values={POLISH} labels={polishLabel} value={polish.value} />
+    <p class="meta">Stan na {polish.asOf}.</p>
+    <p>{polish.rationale.pl}</p>
+    <Sources ids={polish.sourceIds} />
+  </section>
+
+  <section class="panel" aria-labelledby="h-own">
+    <h2 id="h-own">Własność</h2>
+    <dl class="kv">
+      <dt>Kategoria</dt>
+      <dd>{ownershipLabel[own.category]}{own.secondaryTags.length > 0 && <span class="meta"> (także: {own.secondaryTags.map((t) => ownershipLabel[t].toLowerCase()).join(', ')})</span>}</dd>
+      <dt>Finansowanie</dt><dd>{own.fundingModel.map((f) => fundingLabel[f]).join(' · ')}</dd>
+    </dl>
+    <h3 class="sub">Łańcuch własności</h3>
+    <ol class="chain">
+      {own.chain.map((c) => (
+        <li><span class="meta">{chainLevelLabel[c.level]}:</span> {c.name}{c.country && c.country !== 'PL' && <span class="meta"> ({c.country})</span>}{c.share !== undefined && <strong> — {num.format(c.share)}%</strong>}</li>
+      ))}
+    </ol>
+    <p class="meta">Stan na {own.asOf}.</p>
+    <Sources ids={own.chain.map((c) => c.sourceId)} />
+  </section>
+
+  <section class="panel" aria-labelledby="h-rel">
+    <h2 id="h-rel">Wiarygodność {rel.provisional && <span class="tag prov">Wstępna</span>} {rel.contested && <span class="tag warn">Sporne</span>}</h2>
+    {rel.provisional && <p class="meta">Ocena wstępna: opiera się tylko na naszym sprawdzeniu strony redakcji, bez przeglądu fact-checkerów. Uzupełnimy ją w kolejnej wersji.</p>}
+    <dl class="kv">
+      <dt>Ocena ogólna</dt><dd><strong>{reliabilityLabel[rel.label]}</strong> ({rel.total}/6)</dd>
+      <dt>Rzetelność faktów</dt><dd>{scoreLabel[rel.factualRecord]}</dd>
+      <dt>Sprostowania</dt><dd>{scoreLabel[rel.corrections]}</dd>
+      <dt>Przejrzystość</dt><dd>{scoreLabel[rel.transparency]}</dd>
+    </dl>
+    <p>{rel.rationale.pl}</p>
+    <p class="meta">Stan na {rel.asOf}.</p>
+    <Sources ids={rel.sourceIds} />
+  </section>
+
+  {d.changelog.length > 0 && (
+    <section aria-labelledby="h-log">
+      <h2 id="h-log">Historia zmian</h2>
+      <ul class="sources">
+        {[...d.changelog].sort((a, b) => b.date.localeCompare(a.date)).map((c) => <li><span class="meta">{c.date}:</span> {c.change.pl}</li>)}
+      </ul>
+    </section>
+  )}
+
+  <p class="meta">Ostatnia weryfikacja: {d.lastReviewed}. {anyContested && 'Część ocen jest sporna. '}Widzisz błąd? <a href={fix}>Zgłoś poprawkę</a>.</p>
+</Base>

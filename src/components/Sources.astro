@@ -1,0 +1,26 @@
+---
+import { resolve } from '../lib/data';
+import { sourceTypeLabel } from '../lib/labels';
+
+interface Props {
+  ids: string[];
+  label?: string;
+}
+const { ids, label = 'Źródła' } = Astro.props;
+const sources = resolve([...new Set(ids)]);
+---
+<details>
+  <summary>{label} ({sources.length})</summary>
+  <ol class="sources">
+    {
+      sources.map((s) => (
+        <li>
+          {s.url ? <a href={s.url} rel="noopener nofollow" target="_blank">{s.title}</a> : s.title}
+          {s.publisher && <>, {s.publisher}</>}
+          {s.date && <>, {s.date}</>}
+          <span class="meta"> ({sourceTypeLabel[s.type]}; dostęp: {s.accessed})</span>
+        </li>
+      ))
+    }
+  </ol>
+</details>

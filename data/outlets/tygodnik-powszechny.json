@@ -1,0 +1,113 @@
+{
+  "id": "tygodnik-powszechny",
+  "published": true,
+  "name": "Tygodnik Powszechny",
+  "type": "weekly",
+  "segment": "independent",
+  "url": "https://www.tygodnikpowszechny.pl",
+  "description": {
+    "pl": "Katolicki tygodnik społeczno-kulturalny z Krakowa (od 1945 r.). Większościowym udziałowcem wydawcy jest Fundacja Tygodnika Powszechnego; ok. 38% udziałów ma od 2024–25 r. inwestor prywatny."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center",
+      "economic": 0,
+      "sociocultural": 0,
+      "rationale": {
+        "pl": "euro|topics: tytuł katolicki; tradycja liberalnego katolicyzmu. Gospodarczo (0) i światopoglądowo (0) centrowy – umiarkowane stanowiska w sprawach Kościoła i obyczajowych. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "eurotopics-tp",
+        "tp-redakcja"
+      ],
+      "asOf": "2026-11-08",
+      "contested": false
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Brak wskaźników strukturalnych powiązań z obozem politycznym; brak zewnętrznych danych o tonie – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "eurotopics-tp",
+        "tp-redakcja"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "reader-funded",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Tygodnik Powszechny sp. z o.o.",
+        "country": "PL",
+        "sourceId": "tp-wydawca"
+      },
+      {
+        "level": "owner",
+        "name": "Fundacja Tygodnika Powszechnego",
+        "country": "PL",
+        "share": 51,
+        "sourceId": "bankier-tp-iti"
+      },
+      {
+        "level": "owner",
+        "name": "Fundacja Rodzinna Fortitudo (przez Vesper Investment)",
+        "country": "PL",
+        "share": 38,
+        "sourceId": "techleap-vesper-tp"
+      }
+    ],
+    "fundingModel": [
+      "copy-sales",
+      "subscriptions",
+      "advertising"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 2,
+    "total": 5,
+    "label": "high",
+    "rationale": {
+      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: wydawca, redakcja i fundacja opisane; materiały partnerów oznaczone."
+    },
+    "sourceIds": [
+      "tp-wydawca",
+      "tp-redakcja"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false,
+    "provisional": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
+        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "wpolityce",
+  "published": true,
+  "name": "wPolityce.pl",
+  "type": "portal",
+  "segment": "mainstream",
+  "url": "https://wpolityce.pl",
+  "description": {
+    "pl": "Portal informacyjno-publicystyczny spółki Fratria braci Karnowskich, która wydaje też tygodnik „Sieci” i prowadzi kanał wPolsce24."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "right",
+      "economic": 1,
+      "sociocultural": 2,
+      "rationale": {
+        "pl": "Społecznie wyraźnie konserwatywny (+2), gospodarczo umiarkowanie prawicowy (+1). Średnia +1,5 to przypadek graniczny (§1.5) – wartość zatwierdzona: prawica. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "ipi-mjrc-2025",
+        "osce-odihr-2025"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "opposition-aligned",
+      "rationale": {
+        "pl": "Wskaźnik strukturalny: tygodnik „Sieci” tego samego wydawcy otrzymał w 2020 r. 31% środków reklamowych spółek Skarbu Państwa w swojej kategorii (IPI/MJRC); dziennikarze odchodzący z TVP zasilili kanał wPolsce24 (ODIHR). Demagog opisuje wybiórcze przedstawianie jego ocen na korzyść jednego obozu."
+      },
+      "sourceIds": [
+        "ipi-mjrc-2025",
+        "demagog-media-2026",
+        "osce-odihr-2025"
+      ],
+      "asOf": "2026-11-08",
+      "contested": false
+    }
+  },
+  "ownership": {
+    "category": "polish-private",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Fratria sp. z o.o.",
+        "country": "PL",
+        "sourceId": "moneypl-karnowscy"
+      },
+      {
+        "level": "owner",
+        "name": "Jacek Karnowski",
+        "country": "PL",
+        "sourceId": "okopress-karnowscy"
+      },
+      {
+        "level": "owner",
+        "name": "Michał Karnowski",
+        "country": "PL",
+        "sourceId": "okopress-karnowscy"
+      },
+      {
+        "level": "owner",
+        "name": "Spółdzielczy Instytut Naukowy G. Bierecki",
+        "country": "PL",
+        "sourceId": "okopress-karnowscy"
+      },
+      {
+        "level": "owner",
+        "name": "Apella S.A.",
+        "country": "PL",
+        "sourceId": "okopress-karnowscy"
+      }
+    ],
+    "fundingModel": [
+      "advertising",
+      "subscriptions"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 1,
+    "corrections": 1,
+    "transparency": 1,
+    "total": 3,
+    "label": "mixed",
+    "rationale": {
+      "pl": "Rzetelność faktów: 1 – Demagog udokumentował wybiórcze, manipulacyjne przedstawianie wyników fact-checkingu. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: redaktor naczelny podany; brak informacji o właścicielach na stronie."
+    },
+    "sourceIds": [
+      "demagog-media-2026",
+      "wpolityce-site"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    }
+  ]
+}

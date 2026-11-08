@@ -1,0 +1,109 @@
+{
+  "id": "radio-maryja",
+  "published": true,
+  "name": "Radio Maryja",
+  "type": "radio",
+  "segment": "mainstream",
+  "url": "https://www.radiomaryja.pl",
+  "description": {
+    "pl": "Katolicka rozgłośnia ogólnopolska prowadzona przez Warszawską Prowincję Redemptorystów (o. Tadeusz Rydzyk). Wchodzi w skład grupy instytucji obejmującej m.in. TV Trwam i Nasz Dziennik."
+  },
+  "reach": [
+    {
+      "metric": "radio-share",
+      "value": 2.1,
+      "unit": "%",
+      "period": "2026",
+      "sourceId": "antyweb-radio-2026"
+    }
+  ],
+  "leaning": {
+    "classic": {
+      "value": "center-right",
+      "economic": 0,
+      "sociocultural": 2,
+      "rationale": {
+        "pl": "Społecznie wyraźnie konserwatywna, katolicka (+2); gospodarczo bez wyraźnej linii (0). Średnia daje centroprawicę. Oznaczone jako sporne: uśrednienie dwóch wymiarów (§2) może zaniżać pozycję mediów skrajnych tylko w jednym wymiarze – pytanie metodologiczne do założyciela. Widownia: osoby praktykujące kilka razy w tygodniu i o poglądach prawicowych (CBOS 2024). Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "cbos-2024-71",
+        "radiomaryja-kontakt"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "opposition-aligned",
+      "rationale": {
+        "pl": "Widownia skupiona w elektoracie prawicowym i religijnym (CBOS 2024). Brak zewnętrznego monitoringu tonu w badanym okresie, dlatego ocena sporna. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "cbos-2024-71",
+        "wprost-maryja-wlasciciel"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "church-linked",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "brand",
+        "name": "Radio Maryja",
+        "sourceId": "krrit-maryja-koncesja"
+      },
+      {
+        "level": "owner",
+        "name": "Warszawska Prowincja Zgromadzenia Najświętszego Odkupiciela (Redemptoryści)",
+        "country": "PL",
+        "sourceId": "krrit-maryja-koncesja"
+      }
+    ],
+    "fundingModel": [
+      "donations"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 1,
+    "total": 4,
+    "label": "mixed",
+    "rationale": {
+      "pl": "Sprawozdanie KRRiT za 2025 r.: brak decyzji o karze i upomnień wobec Radia Maryja (jedno postępowanie skargowe). Ostatnia znaleziona kara KRRiT (2012, ukryta reklama) wykracza poza okres 24 miesięcy. Fact-checkerzy (Demagog, AFP Sprawdzam, FakeNews.pl) i Rada Etyki Mediów: nie znaleziono wykazanych fałszywych informacji tej redakcji z ostatnich 24 miesięcy (przegląd 2026-11-08). Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: strona kontaktowa podaje instytucje powiązane; nie znaleziono informacji o finansowaniu i stopki redakcyjnej."
+    },
+    "sourceIds": [
+      "radiomaryja-kontakt",
+      "krrit-sprawozdanie-2025"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (KRRiT 2025); zdjęto status sporny wynikający z braku przeglądu; usunięto oznaczenie „wstępna”.",
+        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
+      }
+    }
+  ]
+}

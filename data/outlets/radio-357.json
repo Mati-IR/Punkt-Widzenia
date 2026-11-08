@@ -1,0 +1,103 @@
+{
+  "id": "radio-357",
+  "published": true,
+  "name": "Radio 357",
+  "type": "radio",
+  "segment": "independent",
+  "url": "https://radio357.pl",
+  "description": {
+    "pl": "Radio internetowe założone w 2021 r. przez byłych dziennikarzy radiowej Trójki, finansowane przez słuchaczy (patronów), bez bloków reklamowych."
+  },
+  "reach": [
+    {
+      "metric": "patrons",
+      "value": 50000,
+      "period": "2023-05",
+      "sourceId": "radio357-onas"
+    }
+  ],
+  "leaning": {
+    "classic": {
+      "value": "center-left",
+      "economic": 0,
+      "sociocultural": -1,
+      "rationale": {
+        "pl": "Gospodarczo centrowe (0), społecznie umiarkowanie liberalne (−1). Średnia −0,5 to przypadek graniczny (§1.5); brak zewnętrznego profilu – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "radio357-onas",
+        "antyweb-357-patroni"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Brak wskaźników strukturalnych i zewnętrznych danych o tonie – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "radio357-onas",
+        "antyweb-357-patroni"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "reader-funded",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "357 sp. z o.o.",
+        "country": "PL",
+        "sourceId": "radio357-onas"
+      }
+    ],
+    "fundingModel": [
+      "crowdfunding"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 1,
+    "total": 4,
+    "label": "mixed",
+    "rationale": {
+      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podana spółka i model finansowania; nie znaleziono redaktora naczelnego ani udziałowców. Brak zewnętrznego źródła – status sporny."
+    },
+    "sourceIds": [
+      "radio357-onas"
+    ],
+    "asOf": "2026-11-08",
+    "contested": true,
+    "provisional": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
+        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
+      }
+    }
+  ]
+}

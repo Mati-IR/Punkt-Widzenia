@@ -1,0 +1,112 @@
+{
+  "id": "kanal-zero",
+  "published": true,
+  "name": "Kanał Zero",
+  "type": "youtube",
+  "segment": "independent",
+  "url": "https://zero.pl",
+  "description": {
+    "pl": "Medium internetowe Krzysztofa Stanowskiego: kanał YouTube (od 2024 r.), portal Zero.pl (od marca 2026 r.) i kanał telewizyjny (od maja 2026 r.). Finansowany głównie przez sponsorów i przychody z YouTube."
+  },
+  "reach": [
+    {
+      "metric": "youtube-subscribers",
+      "value": 2100000,
+      "period": "2026-02",
+      "sourceId": "android-zero-portal-2026"
+    }
+  ],
+  "leaning": {
+    "classic": {
+      "value": "center",
+      "economic": 0,
+      "sociocultural": 0,
+      "rationale": {
+        "pl": "Szerokie spektrum gości i prowadzących, bez stałej linii gospodarczej i światopoglądowej. Brak zewnętrznego badania linii – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "dnr-2026-pl",
+        "zero-redakcja"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Mieszane sygnały: szerokie spektrum gości; DNR 2026 odnotowuje program z udziałem byłego prezydenta Andrzeja Dudy; w 2025 r. założyciel kandydował na prezydenta, co spowodowało odejście co najmniej jednego współpracownika (DNR 2025). Status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "dnr-2026-pl",
+        "dnr-2025-pl"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "polish-private",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Kanał Zero S.A.",
+        "country": "PL",
+        "sourceId": "android-kanalzero-2024"
+      },
+      {
+        "level": "ultimate-owner",
+        "name": "Krzysztof Stanowski",
+        "country": "PL",
+        "share": 100,
+        "sourceId": "android-kanalzero-2024"
+      }
+    ],
+    "fundingModel": [
+      "advertising",
+      "platform-revenue"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 1,
+    "total": 4,
+    "label": "mixed",
+    "rationale": {
+      "pl": "Sprawozdanie KRRiT za 2025 r.: 4 postępowania wobec Kanału Zero jako platformy wideo, bez kary i bez upomnienia. W listopadzie 2025 r. Sąd Okręgowy w Warszawie udzielił zabezpieczenia w procesie o ochronę dóbr osobistych wytoczonym przez Dorotę Wysocką-Schnepf przeciw Kanałowi Zero i jego dziennikarzom; Sąd Apelacyjny oddalił zażalenie w kwietniu 2026 r. To zabezpieczenie, nie wyrok co do istoty sprawy. Fact-checkerzy (Demagog, AFP Sprawdzam, FakeNews.pl) i Rada Etyki Mediów: nie znaleziono wykazanych fałszywych informacji tej redakcji z ostatnich 24 miesięcy (przegląd 2026-11-08). Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: redaktor naczelna Zero.pl podana; brak informacji o właścicielu i finansowaniu na stronie."
+    },
+    "sourceIds": [
+      "zero-redakcja",
+      "krrit-sprawozdanie-2025",
+      "wprost-zero-schnepf-2026"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (KRRiT 2025, postępowanie sądowe); usunięto oznaczenie „wstępna”.",
+        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
+      }
+    }
+  ]
+}

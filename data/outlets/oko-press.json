@@ -1,0 +1,98 @@
+{
+  "id": "oko-press",
+  "published": true,
+  "name": "OKO.press",
+  "type": "online",
+  "segment": "independent",
+  "url": "https://oko.press",
+  "description": {
+    "pl": "Serwis dziennikarstwa śledczego i fact-checkingu założony w 2016 r., wydawany przez fundację i finansowany głównie przez darczyńców."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center-left",
+      "economic": -1,
+      "sociocultural": -2,
+      "rationale": {
+        "pl": "Społecznie wyraźnie liberalny (−2), gospodarczo umiarkowanie lewicowy (−1). Średnia −1,5 to przypadek graniczny (§1.5) – wartość zatwierdzona: centrolewica. Brak zewnętrznego profilu linii. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "okopress-onas",
+        "okopress-etyka"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "leans-government",
+      "rationale": {
+        "pl": "Redakcja była silnie krytyczna wobec rządów PiS; wobec obecnego rządu krytyczna w części tematów. Brak zewnętrznych danych o tonie – status sporny. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "okopress-onas",
+        "okopress-etyka"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "reader-funded",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Fundacja Ośrodek Kontroli Obywatelskiej OKO",
+        "country": "PL",
+        "sourceId": "okopress-onas"
+      }
+    ],
+    "fundingModel": [
+      "donations",
+      "grants"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 2,
+    "transparency": 2,
+    "total": 6,
+    "label": "high",
+    "rationale": {
+      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Opublikowane zasady korekt (korekta oznaczana na początku materiału). Przejrzystość: KRS, sprawozdania finansowe, zespół i zasady etyki opublikowane. Brak zewnętrznego źródła oceny – status sporny do czasu przeglądu fact-checków."
+    },
+    "sourceIds": [
+      "okopress-etyka",
+      "okopress-onas"
+    ],
+    "asOf": "2026-11-08",
+    "contested": true,
+    "provisional": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
+        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
+      }
+    }
+  ]
+}

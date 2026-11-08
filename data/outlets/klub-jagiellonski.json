@@ -1,0 +1,97 @@
+{
+  "id": "klub-jagiellonski",
+  "published": true,
+  "name": "Klub Jagielloński",
+  "type": "online",
+  "segment": "independent",
+  "url": "https://klubjagiellonski.pl",
+  "description": {
+    "pl": "Portal publicystyczny i centrum analiz prowadzone przez stowarzyszenie o profilu republikańsko-konserwatywnym."
+  },
+  "reach": [],
+  "leaning": {
+    "classic": {
+      "value": "center",
+      "economic": -1,
+      "sociocultural": 1,
+      "rationale": {
+        "pl": "euro|topics: platforma republikańsko-konserwatywnego think tanku. Społecznie umiarkowanie konserwatywny (+1), gospodarczo prospołeczny/interwencjonistyczny (−1). Średnia 0 = centrum. Oznaczone jako sporne: uśrednienie maskuje odrębne profile w obu wymiarach (pytanie metodologiczne). Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "eurotopics-kj",
+        "kj-dokumenty"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    },
+    "polish": {
+      "value": "independent-mixed",
+      "rationale": {
+        "pl": "Według badania ankietowego środowiska (OKO.press) członkowie oceniali PiS nisko, choć jako partię najbliższą. Brak powiązań strukturalnych; status sporny bez próbki treści. Bez własnej próbki treści (§3.3) – próbka planowana w kolejnej wersji."
+      },
+      "sourceIds": [
+        "okopress-kj",
+        "eurotopics-kj"
+      ],
+      "asOf": "2026-11-08",
+      "contested": true
+    }
+  },
+  "ownership": {
+    "category": "reader-funded",
+    "secondaryTags": [],
+    "chain": [
+      {
+        "level": "publisher",
+        "name": "Stowarzyszenie Klub Jagielloński",
+        "country": "PL",
+        "sourceId": "kj-dokumenty"
+      }
+    ],
+    "fundingModel": [
+      "donations",
+      "grants"
+    ],
+    "asOf": "2026-11-08"
+  },
+  "reliability": {
+    "factualRecord": 2,
+    "corrections": 1,
+    "transparency": 2,
+    "total": 5,
+    "label": "high",
+    "rationale": {
+      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: KRS, sprawozdania i dokumenty opublikowane."
+    },
+    "sourceIds": [
+      "kj-dokumenty"
+    ],
+    "asOf": "2026-11-08",
+    "contested": false,
+    "provisional": true
+  },
+  "lastReviewed": "2026-11-08",
+  "changelog": [
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Pierwsza ocena (zestaw danych v0.3.0)",
+        "en": "Initial rating (dataset v0.3.0)"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "change": {
+        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
+        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
+      }
+    }
+  ]
+}
