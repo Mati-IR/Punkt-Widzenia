@@ -38,7 +38,7 @@ const jsonLd = {
 ---
 <Base title={`${d.name} — orientacja, własność, wiarygodność`} description={desc}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
-  <p class="meta"><a href="/">← Wszystkie media</a></p>
+  <p class="meta"><a href="/media/">← Wszystkie media</a></p>
   <h1>{d.name}</h1>
   <ul class="tags" aria-label="Cechy">
     <li class:list={['tag', { indep: d.segment === 'independent' }]}>{segmentLabel[d.segment]}</li>

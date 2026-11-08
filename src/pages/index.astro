@@ -1,137 +1,74 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import OutletCard from '../components/OutletCard.astro';
-import { CLASSIC, POLISH, OWNERSHIP, SEGMENT } from '../lib/dataset';
-import { isDraft } from '../lib/data';
-import { classicLabel, polishLabel, ownershipLabel, segmentLabel } from '../lib/labels';
+import BiasBar from '../components/BiasBar.astro';
+import EventRow from '../components/EventRow.astro';
+import { getEvents, blindspotLabel, fmtDate } from '../lib/events';
 
-const outlets = (await getCollection('outlets')).sort((a, b) => a.data.name.localeCompare(b.data.name, 'pl'));
-const counts = {
-  mainstream: outlets.filter((o) => o.data.segment === 'mainstream').length,
-  independent: outlets.filter((o) => o.data.segment === 'independent').length,
-};
-const cell = (c: string, p: string) =>
-  outlets.filter((o) => o.data.leaning.classic.value === c && o.data.leaning.polish.value === p);
+const events = await getEvents();
+const [hero, ...rest] = events;
+const totalArticles = events.reduce((n, e) => n + e.articleCount, 0);
+const outletsUsed = new Set(events.flatMap((e) => e.coverage.map((c) => c.outlet.id))).size;
+const blindspots = events.filter((e) => e.blindspot);
+const latest = [...events].sort((a, b) => b.lastSeen.localeCompare(a.lastSeen));
+const briefing = latest.slice(0, 5);
+const main = rest.slice(0, 8);
+const more = rest.slice(8);
 ---
-<Base title="Punkt Widzenia" description="Mapa polskich mediów: gdzie stoją politycznie, kto je posiada i na ile są wiarygodne. Każda ocena ze źródłami.">
-  <h1>Mapa polskich mediów</h1>
-  <p class="lead">
-    {outlets.length} redakcji ({counts.mainstream} z głównego nurtu, {counts.independent} niezależnych) na dwóch osiach:
-    klasycznej (lewica–prawica) i polskiej (rząd–opozycja), z informacją o właścicielu i wiarygodności.
-    Każda ocena ma podane źródła — <a href="/metodologia/">zobacz, jak oceniamy</a>.
-  </p>
-  {isDraft && (
-    <p class="notice" role="note">
-      <strong>Wersja wstępna danych:</strong> część ocen jest sporna lub wstępna (oznaczone na kartach) i zostanie uzupełniona w kolejnej wersji.
-    </p>
-  )}
+<Base title="Punkt Widzenia" description="Najważniejsze wydarzenia w Polsce i to, jak opisują je media z lewa, z centrum i z prawa. Porównaj nagłówki, zobacz rozkład źródeł i ślepe plamki.">
+  <div class="home">
+    <aside class="col-left" aria-labelledby="brief-h">
+      <h2 id="brief-h" class="col-h">Przegląd dnia</h2>
+      <div class="brief brief-card">
+        <p class="brief-stats">{events.length} wydarzeń · {totalArticles} artykułów · {outletsUsed} redakcji</p>
+        <h3><a href={`/wydarzenie/${briefing[0].id}/`}>{briefing[0].title}</a></h3>
+        <p class="muted">{briefing[0].summary[0]}</p>
+        <p class="brief-more">
+          + {briefing.slice(1).map((e, i) => (
+            <>
+              <a href={`/wydarzenie/${e.id}/`}>{e.title.split(/[.:]/)[0]}</a>{i < briefing.length - 2 ? '; ' : '.'}
+            </>
+          ))}
+        </p>
+      </div>
+      <h2 class="col-h">Ostatnio aktualizowane</h2>
+      {latest.slice(5, 9).map((e) => <EventRow event={e} compact />)}
+    </aside>
 
-  <h2 id="mapa">Mapa: dwie osie</h2>
-  <div class="map" role="region" aria-labelledby="mapa" tabindex="0">
-    <table>
-      <caption>Wiersze: oś rząd–opozycja. Kolumny: oś lewica–prawica.</caption>
-      <thead>
-        <tr>
-          <td></td>
-          {CLASSIC.map((c) => <th scope="col"><span class="lean"><span class:list={['dot', c]} aria-hidden="true"></span>{classicLabel[c]}</span></th>)}
-        </tr>
-      </thead>
-      <tbody>
-        {POLISH.map((p) => (
-          <tr>
-            <th scope="row">{polishLabel[p]}</th>
-            {CLASSIC.map((c) => (
-              <td>{cell(c, p).map((o) => <a href={`/media/${o.id}/`}>{o.data.name}</a>)}</td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <section class="col-main" aria-label="Najważniejsze wydarzenia">
+      <a class="hero" href={`/wydarzenie/${hero.id}/`}>
+        <span class="hero-kicker">{hero.location} · {fmtDate(hero.date)} · {hero.sourceCount} źródeł</span>
+        <span class="hero-title">{hero.title}</span>
+        <BiasBar pct={hero.pct} />
+      </a>
+      {main.map((e) => <EventRow event={e} />)}
+      {more.length > 0 && (
+        <>
+          <h2 class="col-h">Więcej wydarzeń</h2>
+          {more.map((e) => <EventRow event={e} />)}
+        </>
+      )}
+    </section>
+
+    <aside class="col-right" aria-labelledby="bs-h">
+      <h2 id="bs-h" class="bs-title"><span aria-hidden="true">◐</span> Ślepe plamki</h2>
+      <p class="muted small">
+        Wydarzenia opisywane głównie przez jedną stronę sceny politycznej. <a href="/slepe-plamki/">Czym jest ślepa plamka?</a>
+      </p>
+      {blindspots.length === 0 && <p class="muted">Brak ślepych plamek w tym zestawie.</p>}
+      {blindspots.slice(0, 4).map((e) => (
+        <a class:list={['bs-card', e.blindspot]} href={`/wydarzenie/${e.id}/`}>
+          <span class="bs-tag">{blindspotLabel[e.blindspot!]}</span> <span class="muted small">{e.sourceCount} źródeł</span>
+          <span class="bs-card-title">{e.title}</span>
+          <BiasBar pct={e.pct} />
+        </a>
+      ))}
+      <a class="btn-outline" href="/slepe-plamki/">Wszystkie ślepe plamki</a>
+
+      <h2 class="col-h">Kto pisze o czym</h2>
+      <p class="muted small">
+        Każde wydarzenie pokazuje, które z {30} monitorowanych redakcji je opisały, jak rozkładają się po osi lewica–prawica i rząd–opozycja oraz kto milczy.
+        Oceny redakcji: <a href="/media/">katalog mediów</a> i <a href="/metodologia/">metodologia</a>.
+      </p>
+    </aside>
   </div>
-
-  <h2 id="katalog">Katalog mediów</h2>
-  <form id="filters" class="filters" aria-label="Filtry katalogu" hidden>
-    <div>
-      <label for="f-q">Szukaj</label>
-      <input id="f-q" name="q" type="search" placeholder="Nazwa redakcji" autocomplete="off" />
-    </div>
-    <div>
-      <label for="f-classic">Lewica–prawica</label>
-      <select id="f-classic" name="classic">
-        <option value="">Wszystkie</option>
-        {CLASSIC.map((v) => <option value={v}>{classicLabel[v]}</option>)}
-      </select>
-    </div>
-    <div>
-      <label for="f-polish">Rząd–opozycja</label>
-      <select id="f-polish" name="polish">
-        <option value="">Wszystkie</option>
-        {POLISH.map((v) => <option value={v}>{polishLabel[v]}</option>)}
-      </select>
-    </div>
-    <div>
-      <label for="f-ownership">Własność</label>
-      <select id="f-ownership" name="ownership">
-        <option value="">Wszystkie</option>
-        {OWNERSHIP.map((v) => <option value={v}>{ownershipLabel[v]}</option>)}
-      </select>
-    </div>
-    <div>
-      <label for="f-segment">Typ</label>
-      <select id="f-segment" name="segment">
-        <option value="">Wszystkie</option>
-        {SEGMENT.map((v) => <option value={v}>{segmentLabel[v]}</option>)}
-      </select>
-    </div>
-    <div class="actions">
-      <button type="reset" class="secondary">Wyczyść filtry</button>
-    </div>
-  </form>
-  <p id="count" class="count" aria-live="polite">Pokazano {outlets.length} z {outlets.length}.</p>
-  <ul class="grid" id="list">
-    {outlets.map((o) => <OutletCard outlet={o} />)}
-  </ul>
-  <p id="empty" hidden>Brak redakcji spełniających kryteria. <button type="button" class="secondary" id="clear">Wyczyść filtry</button></p>
 </Base>
-
-<script>
-  // Progressive enhancement: without JS the full list is shown and the filter form stays hidden.
-  const form = document.getElementById('filters') as HTMLFormElement;
-  const items = Array.from(document.querySelectorAll<HTMLElement>('[data-outlet]'));
-  const count = document.getElementById('count')!;
-  const empty = document.getElementById('empty')!;
-  const keys = ['classic', 'polish', 'ownership', 'segment'] as const;
-
-  function apply() {
-    const fd = new FormData(form);
-    const q = String(fd.get('q') || '').trim().toLowerCase();
-    let shown = 0;
-    for (const el of items) {
-      const ok =
-        (!q || (el.dataset.name || '').includes(q)) &&
-        keys.every((k) => !fd.get(k) || (el.dataset[k] || '').split(' ').includes(String(fd.get(k))));
-      el.hidden = !ok;
-      if (ok) shown++;
-    }
-    count.textContent = `Pokazano ${shown} z ${items.length}.`;
-    empty.hidden = shown > 0;
-    const params = new URLSearchParams();
-    for (const [k, v] of fd) if (v) params.set(k, String(v));
-    const qs = params.toString();
-    history.replaceState(null, '', qs ? `?${qs}#katalog` : location.pathname);
-  }
-
-  // Restore filters from the URL so filtered views are shareable.
-  const initial = new URLSearchParams(location.search);
-  for (const [k, v] of initial) {
-    const field = form.elements.namedItem(k) as HTMLInputElement | HTMLSelectElement | null;
-    if (field) field.value = v;
-  }
-  form.hidden = false;
-  form.addEventListener('input', apply);
-  form.addEventListener('submit', (e) => e.preventDefault());
-  form.addEventListener('reset', () => setTimeout(apply));
-  document.getElementById('clear')!.addEventListener('click', () => form.reset());
-  if ([...initial.keys()].length) apply();
-</script>

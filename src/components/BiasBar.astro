@@ -1,0 +1,20 @@
+---
+// Left / Centre / Right share bar, like Ground News. `size="mini"` = thin bar without labels.
+import type { Side } from '../lib/events';
+interface Props {
+  pct: Record<Side, number>;
+  size?: 'mini' | 'full';
+}
+const { pct, size = 'full' } = Astro.props;
+const label = `Rozkład źródeł: lewica ${pct.left}%, centrum ${pct.center}%, prawica ${pct.right}%`;
+const short = { left: 'L', center: 'C', right: 'P' } as const;
+---
+<div class:list={['bias', size]} role="img" aria-label={label}>
+  {(['left', 'center', 'right'] as const).map((s) =>
+    pct[s] > 0 && (
+      <span class={`seg ${s}`} style={`flex-grow:${pct[s]}`}>
+        {size === 'full' && <span>{pct[s] >= 18 ? `${s === 'left' ? 'Lewica' : s === 'center' ? 'Centrum' : 'Prawica'} ${pct[s]}%` : `${short[s]} ${pct[s]}%`}</span>}
+      </span>
+    ),
+  )}
+</div>

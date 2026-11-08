@@ -1,0 +1,182 @@
+---
+import Base from '../../layouts/Base.astro';
+import BiasBar from '../../components/BiasBar.astro';
+import EventRow from '../../components/EventRow.astro';
+import { ownershipLabel, classicLabel } from '../../lib/labels';
+import {
+  getEvents, sideLabel, campLabel, blindspotLabel, fmtDate, fmtDateTime, initials,
+  type NewsEvent, type Side,
+} from '../../lib/events';
+
+export async function getStaticPaths() {
+  const events = await getEvents();
+  return events.map((event) => ({ params: { id: event.id }, props: { event, all: events } }));
+}
+interface Props {
+  event: NewsEvent;
+  all: NewsEvent[];
+}
+const { event: e, all } = Astro.props;
+const SIDES: Side[] = ['left', 'center', 'right'];
+const bySide = (s: Side) => e.coverage.filter((c) => c.side === s);
+const related = all.filter((x) => x.id !== e.id && x.tags.some((t) => e.tags.includes(t))).slice(0, 4);
+const ownTotal = e.ownership.reduce((n, [, v]) => n + v, 0);
+---
+<Base title={e.title} description={e.summary[0]}>
+  <div class="story">
+    <article class="story-main">
+      <p class="story-meta">
+        {fmtDate(e.date)} · {e.location} · ostatni artykuł {fmtDateTime(e.lastSeen)}
+      </p>
+      <h1>{e.title}</h1>
+      <p class="chips">{e.tags.map((t) => <span class="chip">{t}</span>)}</p>
+
+      <div class="tabs" role="group" aria-label="Perspektywa">
+        <input type="radio" name="view" id="v-facts" checked />
+        <label for="v-facts">Fakty</label>
+        {SIDES.map((s) => (
+          <>
+            <input type="radio" name="view" id={`v-${s}`} />
+            <label for={`v-${s}`}>{sideLabel[s]}</label>
+          </>
+        ))}
+        <div class="tab-panel p-facts">
+          <ul class="summary">{e.summary.map((b) => <li>{b}</li>)}</ul>
+        </div>
+        {SIDES.map((s) => (
+          <div class={`tab-panel p-${s}`}>
+            <p class="frame-h"><span class={`dot-side ${s}`}></span>Jak pisze {sideLabel[s].toLowerCase()} ({e.sides[s]} źródeł)</p>
+            <p>{e.framing[s]}</p>
+            {bySide(s).length > 0 && (
+              <ul class="frame-heads">
+                {bySide(s).slice(0, 6).map((c) => (
+                  <li><a href={c.articles[0].url} rel="noopener" target="_blank">„{c.articles[0].title}”</a> <span class="muted">— {c.outlet.data.name}</span></li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+      <p class="muted small ai-note">
+        Podsumowanie i porównanie przygotowała redakcja Punktu Widzenia na podstawie nagłówków i leadów. <a href="/zglos-poprawke/">Coś się nie zgadza? Zgłoś poprawkę.</a>
+      </p>
+
+      <h2 id="porownanie">Porównanie nagłówków</h2>
+      <div class="compare">
+        {SIDES.map((s) => (
+          <section class={`cmp-col ${s}`} aria-labelledby={`cmp-${s}`}>
+            <h3 id={`cmp-${s}`}>{sideLabel[s]} <span>{e.sides[s]}</span></h3>
+            {bySide(s).length === 0 && <p class="muted small">Żadna z monitorowanych redakcji tej strony nie opisała wydarzenia.</p>}
+            {bySide(s).map((c) => (
+              <a class="cmp-item" href={c.articles[0].url} rel="noopener" target="_blank">
+                <span class="cmp-outlet">{c.outlet.data.name}</span>
+                <span class="cmp-title">{c.articles[0].title}</span>
+              </a>
+            ))}
+          </section>
+        ))}
+      </div>
+
+      <h2 id="artykuly">{e.articleCount} artykułów z {e.sourceCount} redakcji</h2>
+      <div class="filter">
+        <input type="radio" name="af" id="af-all" checked /><label for="af-all">Wszystkie</label>
+        {SIDES.map((s) => (<><input type="radio" name="af" id={`af-${s}`} /><label for={`af-${s}`}>{sideLabel[s]} ({e.sides[s]})</label></>))}
+        <ol class="art-list">
+          {e.coverage.map((c) => (
+            <li class={`art ${c.side}`}>
+              <div class="art-head">
+                <span class={`logo ${c.side}`} aria-hidden="true">{initials(c.outlet.data.name)}</span>
+                <a class="art-outlet" href={`/media/${c.outlet.id}/`}>{c.outlet.data.name}</a>
+                <span class={`lean-badge ${c.side}`}>{classicLabel[c.outlet.data.leaning.classic.value]}</span>
+                <span class="lean-badge camp">{campLabel[c.camp]}</span>
+              </div>
+              <ul>
+                {c.articles.slice(0, 3).map((a) => (
+                  <li><a href={a.url} rel="noopener" target="_blank">{a.title}</a> <time class="muted small" datetime={a.publishedAt}>{fmtDateTime(a.publishedAt)}</time></li>
+                ))}
+              </ul>
+              {c.articles.length > 3 && (
+                <details>
+                  <summary>+ {c.articles.length - 3} więcej z {c.outlet.data.name}</summary>
+                  <ul>
+                    {c.articles.slice(3).map((a) => (
+                      <li><a href={a.url} rel="noopener" target="_blank">{a.title}</a> <time class="muted small" datetime={a.publishedAt}>{fmtDateTime(a.publishedAt)}</time></li>
+                    ))}
+                  </ul>
+                </details>
+              )}
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      {related.length > 0 && (
+        <>
+          <h2>Powiązane wydarzenia</h2>
+          {related.map((r) => <EventRow event={r} />)}
+        </>
+      )}
+    </article>
+
+    <aside class="story-side" aria-label="Dane o pokryciu">
+      <section class="panel">
+        <h2>Szczegóły pokrycia</h2>
+        <dl class="kv">
+          <dt>Źródła łącznie</dt><dd>{e.sourceCount}</dd>
+          <dt>Artykuły</dt><dd>{e.articleCount}</dd>
+          <dt>Lewica</dt><dd>{e.sides.left}</dd>
+          <dt>Centrum</dt><dd>{e.sides.center}</dd>
+          <dt>Prawica</dt><dd>{e.sides.right}</dd>
+          <dt>Pierwszy artykuł</dt><dd>{fmtDateTime(e.firstSeen)}</dd>
+          <dt>Ostatni artykuł</dt><dd>{fmtDateTime(e.lastSeen)}</dd>
+        </dl>
+        {e.blindspot && <p class="bs-badge big">{blindspotLabel[e.blindspot]}</p>}
+      </section>
+
+      <section class="panel">
+        <h2>Rozkład lewica–prawica</h2>
+        <BiasBar pct={e.pct} />
+        <div class="logo-cols">
+          {SIDES.map((s) => (
+            <div class={`logo-col ${s}`}>
+              {bySide(s).map((c) => (
+                <a class={`logo ${s}`} href={`/media/${c.outlet.id}/`} title={c.outlet.data.name}>{initials(c.outlet.data.name)}</a>
+              ))}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Oś rząd–opozycja</h2>
+        <div class="camp-bar" role="img" aria-label={`Prorządowe ${e.campPct.gov}%, niezależne ${e.campPct.mixed}%, proopozycyjne ${e.campPct.opp}%`}>
+          {(['gov', 'mixed', 'opp'] as const).map((k) => e.campPct[k] > 0 && <span class={k} style={`flex-grow:${e.campPct[k]}`}>{e.campPct[k]}%</span>)}
+        </div>
+        <ul class="legend">
+          {(['gov', 'mixed', 'opp'] as const).map((k) => <li><span class={`sw ${k}`}></span>{campLabel[k]}: {e.camps[k]}</li>)}
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Własność redakcji</h2>
+        <ul class="own">
+          {e.ownership.map(([k, v]) => (
+            <li>
+              <span>{ownershipLabel[k as keyof typeof ownershipLabel]}</span>
+              <span class="own-bar"><span style={`width:${Math.round((v / ownTotal) * 100)}%`}></span></span>
+              <span>{v}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Kto nie pisze ({e.missing.length})</h2>
+        <p class="muted small">Monitorowane redakcje, w których nie znaleźliśmy artykułu o tym wydarzeniu.</p>
+        <p class="missing">
+          {e.missing.map((o) => <a href={`/media/${o.id}/`}>{o.data.name}</a>)}
+        </p>
+      </section>
+    </aside>
+  </div>
+</Base>
