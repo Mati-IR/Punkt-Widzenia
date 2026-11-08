@@ -1,0 +1,42 @@
+# Fetches headlines from every outlet in data/feeds.json every 30 minutes and commits
+# them to data/articles/ + the per-source report to data/ingest/health.json. See docs/INGEST.md.
+# Commits carry [skip ci], so they trigger neither CI nor a Cloudflare Pages build.
+name: Ingest headlines
+
+on:
+  schedule:
+    - cron: '7,37 * * * *' # every 30 min, off the hour (GitHub delays jobs queued at :00)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch headlines # no npm install: the script has no dependencies
+        run: node scripts/ingest/ingest.mjs
+      - name: Commit new headlines
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/articles data/ingest
+          if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+          git commit -q -m "data: headlines $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          for i in 1 2 3; do
+            git pull -q --rebase origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep 5
+          done
+          echo "Push failed after 3 attempts"; exit 1
