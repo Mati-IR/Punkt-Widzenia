@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/news.css';
 
 interface Props {
   title: string;
@@ -7,19 +8,21 @@ interface Props {
 }
 const {
   title,
-  description = 'Punkt Widzenia — mapa polskich mediów: orientacja polityczna, własność i wiarygodność najważniejszych redakcji, z podanymi źródłami.',
+  description = 'Punkt Widzenia — najważniejsze wydarzenia w Polsce i to, jak opisują je media z lewa, z centrum i z prawa.',
 } = Astro.props;
 const siteName = 'Punkt Widzenia';
 const fullTitle = title === siteName ? title : `${title} · ${siteName}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const nav = [
-  { href: '/', label: 'Media' },
+  { href: '/', label: 'Wydarzenia' },
+  { href: '/slepe-plamki/', label: 'Ślepe plamki' },
+  { href: '/media/', label: 'Media' },
   { href: '/metodologia/', label: 'Metodologia' },
-  { href: '/zglos-poprawke/', label: 'Zgłoś poprawkę' },
 ];
 const isCurrent = (href: string) =>
-  href === '/' ? path === '/' || path.startsWith('/media') : path.startsWith(href.replace(/\/$/, ''));
+  href === '/' ? path === '/' || path.startsWith('/wydarzenie') : path.startsWith(href.replace(/\/$/, ''));
+const today = new Date().toLocaleDateString('pl-PL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Warsaw' });
 ---
 <!doctype html>
 <html lang="pl">
@@ -42,6 +45,9 @@ const isCurrent = (href: string) =>
   </head>
   <body>
     <a class="skip" href="#main">Przejdź do treści</a>
+    <div class="topbar">
+      <div class="wrap"><span>Zobacz każdą stronę każdego wydarzenia</span><span>{today} · Edycja: Polska</span></div>
+    </div>
     <header class="site">
       <div class="wrap">
         <a class="brand" href="/">Punkt <span>Widzenia</span></a>
@@ -58,8 +64,8 @@ const isCurrent = (href: string) =>
     <footer class="site">
       <div class="wrap">
         <p>
-          Punkt Widzenia — niezależna mapa polskich mediów. Każda ocena ma podane źródła.
-          <a href="/metodologia/">Jak oceniamy</a> · <a href="/zglos-poprawke/">Zgłoś poprawkę</a>
+          Punkt Widzenia — zobacz każdą stronę każdego wydarzenia. Oceny redakcji mają podane źródła.{" "}
+          <a href="/media/">Katalog mediów</a> · <a href="/metodologia/">Jak oceniamy</a> · <a href="/zglos-poprawke/">Zgłoś poprawkę</a>
         </p>
       </div>
     </footer>

@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import EventRow from '../components/EventRow.astro';
+import { getEvents, BLINDSPOT, blindspotLabel, type Side } from '../lib/events';
+
+const events = await getEvents();
+const groups = (['right', 'left'] as Side[]).map((s) => ({ side: s, list: events.filter((e) => e.blindspot === s) }));
+// Near-blindspots: lopsided but under the threshold, worth a look.
+const lopsided = events
+  .filter((e) => !e.blindspot && Math.abs(e.pct.left - e.pct.right) >= 25)
+  .sort((a, b) => Math.abs(b.pct.left - b.pct.right) - Math.abs(a.pct.left - a.pct.right));
+---
+<Base title="Ślepe plamki" description="Wydarzenia, o których pisze głównie jedna strona sceny politycznej.">
+  <h1>Ślepe plamki</h1>
+  <p class="lead">
+    Ślepa plamka to wydarzenie, które jedna strona opisuje, a druga prawie pomija. Oznaczamy je, gdy udział źródeł z jednej strony
+    wynosi najwyżej {BLINDSPOT.MAX_SHARE}%, a z drugiej co najmniej {BLINDSPOT.MIN_OTHER}%.
+  </p>
+  <p class="notice" role="note">
+    Liczymy tylko artykuły, które znaleźliśmy w 30 monitorowanych redakcjach. Brak artykułu oznacza, że nie trafiliśmy na niego w kanałach RSS ani w wyszukiwaniu, a nie zawsze, że go nie było.
+  </p>
+  {groups.map((g) => (
+    <section>
+      <h2>{blindspotLabel[g.side]} ({g.list.length})</h2>
+      {g.list.length === 0 ? <p class="muted">Brak.</p> : g.list.map((e) => <EventRow event={e} />)}
+    </section>
+  ))}
+  {lopsided.length > 0 && (
+    <section>
+      <h2>Wyraźnie nierówne pokrycie</h2>
+      <p class="muted">Poniżej progu ślepej plamki, ale jedna strona pisze dużo więcej niż druga.</p>
+      {lopsided.map((e) => <EventRow event={e} />)}
+    </section>
+  )}
+</Base>

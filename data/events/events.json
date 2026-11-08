@@ -1,0 +1,858 @@
+[
+  {
+    "id": "zamach-krakow",
+    "title": "Zamach na Rynku Głównym w Krakowie: sześć ofiar, sprawca zabił też rodzinę",
+    "date": "2026-11-07",
+    "location": "Kraków, Ostrowiec Świętokrzyski",
+    "tags": [
+      "Kraków",
+      "Bezpieczeństwo",
+      "Terroryzm",
+      "Policja"
+    ],
+    "summary": [
+      "W sobotę 7 listopada 24-letni Michał O. otworzył ogień z broni długiej na Rynku Głównym w Krakowie. Zginęło sześć osób (cztery kobiety i dwóch mężczyzn, w tym obywatelka Austrii i malarka z Chodzieży), kilkanaście zostało rannych, wśród nich dorożkarze.",
+      "Dwóch policjantów, mimo ran, obezwładniło sprawcę – według policji pościg trwał 2 minuty i 3 sekundy. Obaj zostali wybudzeni ze śpiączki; stan jednego pozostaje ciężki. Rannym pomagali m.in. dwaj chirurdzy jedzący obiad w pobliskiej restauracji.",
+      "W domu sprawcy w Ostrowcu Świętokrzyskim znaleziono ciała jego rodziców i siostry. Prokuratura prowadzi jedno śledztwo w sprawie obu czynów i kwalifikuje atak jako czyn o charakterze terrorystycznym.",
+      "Prezydent Karol Nawrocki ogłosił żałobę narodową 8–9 listopada. Po raz pierwszy od 1939 r. nie zagrano hejnału mariackiego. Kondolencje przekazali m.in. Zełenski, Macron, papież Leon XIV i Donald Trump.",
+      "Zbiórka dla rannych policjantów zebrała w kilkanaście godzin kilka milionów złotych; prezydent zapowiedział ich odznaczenie."
+    ],
+    "framing": {
+      "left": "Media centrolewicowe (OKO.press, Polityka, Gazeta Wyborcza, Gazeta.pl) szybko podjęły wątek motywacji sprawcy – OKO.press już w sobotę pisało, że był „zafascynowany ideologiami skrajnie prawicowymi”, a Polityka nazwała atak zderzeniem z „terroryzmem wewnętrznym”. Mocno akcentują sprawność policji („reakcja była szybka i zgodna z procedurą”), rosyjską dezinformację wokół zamachu oraz krytykę prawicowych mediów, które – jak pisze Wyborcza – „szukają politycznego złota”.",
+      "center": "Portale i stacje centrowe (Fakt, Interia, Polsat News, RMF FM, Radio ZET, TVP Info, Kanał Zero) prowadzą relacje minuta po minucie: liczba ofiar, stan rannych, wybudzenie policjantów ze śpiączki, historie świadków, chirurgów i dorożkarzy, zbiórki i krwiodawstwo. Akcent pada na bohaterstwo i żałobę, a nie na spór polityczny. Kanał Zero promuje zbiórkę Krzysztofa Stanowskiego (ponad 5 mln zł).",
+      "right": "Media prawicowe (wPolityce, Telewizja Republika, Najwyższy Czas!) również relacjonują heroizm policjantów i lekarzy, ale szybko przenoszą ciężar na odpowiedzialność rządu: „Heroizm dwóch policjantów z Krakowa nie zwalnia rządu z odpowiedzialności” (wPolityce), „Kaczyński zapowiada wyjaśnienie braku policji w Krakowie” (Republika). Wątek skrajnie prawicowych poglądów sprawcy jest tu kwestionowany lub pomijany."
+    },
+    "match": {
+      "include": "Krak|zamach|strzelanin|Michał O|Michała O|Oksińsk|Ostrow|hejnał|Rynek Główny|Rynku Główn|wybudzon|chirurd|dorożkar|kard\\. Ryś|Rysia|żałob|Chodzie|Austriacz|bohater|oddawa\\w* krwi|krwiodaw|Zasada 4U|Zygmunt|terroryst|kondolenc|Słyszysz strzały|ranny|rannych|ranni|policjant",
+      "exclude": "Tatr|Jastrzęb|Lotto|Czechowic|pociąg|szerszen|Hayden|Rolnik szuka|Żebrowsk|Kamienica|Adamska|Najman|Michalik|Papszun|SKM|Lisy|nożem|Niepodległości|Japoni",
+      "from": "2026-11-07T14:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": []
+  },
+  {
+    "id": "spor-o-motywy-zamachowca",
+    "title": "Spór o motywy zamachowca. Kierwiński mówi o skrajnej prawicy, opozycja żąda dymisji",
+    "date": "2026-11-08",
+    "location": "Warszawa",
+    "tags": [
+      "Kraków",
+      "MSWiA",
+      "PiS",
+      "Polityka"
+    ],
+    "summary": [
+      "Szef MSWiA Marcin Kierwiński po zamachu w Krakowie mówił o radykalnych poglądach sprawcy; minister sprawiedliwości Waldemar Żurek stwierdził, że śledczy „mają dowody”, które rzucają głębsze światło na motywy.",
+      "Prokuratura zaznaczyła, że przy sprawcy nie znaleziono dokumentu wyjaśniającego jego motywy. Kierwiński tłumaczył później, że chodziło o „pierwsze hipotezy”.",
+      "Opozycja (PiS) zażądała dymisji ministra; Maciej Wąsik nazwał jego zachowanie „karygodnym”. Jarosław Kaczyński zapowiedział wyjaśnianie „braku policji” w Krakowie."
+    ],
+    "framing": {
+      "left": "OKO.press i Gazeta Wyborcza traktują skrajnie prawicowe fascynacje sprawcy jako ustalony trop i bronią policji przed zarzutami („Kłamstwa, że policja zawiodła, budzą we mnie skrajne emocje” – ekspert w Wyborczej). Spór przedstawiany jest jako próba upolitycznienia tragedii przez opozycję. Onet i WP relacjonują wyjaśnienia ministra („Dlatego takie, a nie inne stwierdzenie”) i żądanie dymisji.",
+      "center": "Polsat News, RMF FM i TVP Info relacjonują obie strony: słowa ministrów („Znaleziono przy nim pewne symbole”, „Mamy pewne dowody”), oburzenie opozycji („To jest obrzydliwe”) i późniejsze wyjaśnienia („Pierwsze hipotezy”). Akcent na to, czego jeszcze nie wiadomo.",
+      "right": "Prawica stawia ministra w centrum: „Kierwiński się zamotał! Najpierw oskarżenia, teraz takie słowa”, „Bezwstydnie kłamał!” (wPolityce), Wąsik: „wręcz zbrodnia stanu” (Republika). Narracja: rząd przerzuca odpowiedzialność za zawodzące państwo na prawicę. Centroprawicowa Rzeczpospolita jest powściągliwa: „Radykalne poglądy i skrajna ideologia? Kierwiński wyjaśnia słowa o zamachowcu”."
+    },
+    "match": {
+      "include": "Kierwi|Wąsik|braku policji|nie zwalnia rządu|motyw|pewne symbole|pewne dowody|mamy dowody|ideologiami skrajnie|policja zawiodła|słowach ministra",
+      "from": "2026-11-07T14:00:00Z",
+      "to": "2026-11-09T00:00:00Z",
+      "exclude": "obcokrajowiec"
+    },
+    "extra": []
+  },
+  {
+    "id": "republika-krrit-zamach",
+    "title": "Burza wokół relacji TV Republika z Krakowa. Rada Polskich Mediów i członek KRRiT reagują",
+    "date": "2026-11-08",
+    "location": "Warszawa",
+    "tags": [
+      "Media",
+      "TV Republika",
+      "KRRiT",
+      "Kraków"
+    ],
+    "summary": [
+      "Rada Polskich Mediów skrytykowała słowa Tomasza Sakiewicza po zamachu w Krakowie: „Tragedia nie może być paliwem dla politycznego sporu”.",
+      "Członek KRRiT prof. Tadeusz Kowalski wezwał regulatora do działania, mówiąc o „rażącym naruszeniu ustawy medialnej”. Ministra kultury zapowiedziała, że „muszą być wyciągnięte konsekwencje”.",
+      "Republika odpowiada, że to „atak lewicowych dziennikarzy”, a wPolityce pisze o „rządzie kontra telewizja”."
+    ],
+    "framing": {
+      "left": "Wyborcza („Po zamachu w Krakowie. Hieny szukają politycznego złota”, skarga na Republikę) i Polityka („Policjanci walczą o życie, propagandyści o zasięgi”) przedstawiają relacje Republiki jako dezinformację wymagającą reakcji regulatora. Onet, Gazeta.pl i OKO.press szeroko cytują Radę Polskich Mediów i członka KRRiT.",
+      "center": "TVP Info, Fakt i Kanał Zero relacjonują stanowisko Rady Polskich Mediów i KRRiT; w TVP Info pada mocne „Obrzydliwe i haniebne działania. Republika musi ponieść konsekwencje”. Kanał Zero cytuje Radę Polskich Mediów („Wykorzystywanie tragedii”).",
+      "right": "Republika i wPolityce przedstawiają sprawę jako atak na wolne media: „Rachoń reaguje na atak lewicowych dziennikarzy”, „Rząd kontra telewizja. Karnowski: Będziemy wspierać zagrożonych”. Najwyższy Czas! cytuje Krzysztofa Stanowskiego, który krytykuje i Sakiewicza, i Kierwińskiego."
+    },
+    "match": {
+      "include": "Sakiewicz|Republika musi|Republiki|Telewizja Republika|TV Republika|KRRiT|Rachoń|Hieny|propagandyści|Rad[ay] (Polskich )?Mediów|Karnowski|Rząd konta",
+      "from": "2026-11-07T14:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": []
+  },
+  {
+    "id": "marsz-niepodleglosci-2026",
+    "title": "Marsz Niepodległości po zamachu. Tusk: „Nikt nie zamierza zakazać”",
+    "date": "2026-11-08",
+    "location": "Warszawa",
+    "tags": [
+      "11 listopada",
+      "Marsz Niepodległości",
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "Po zamachu w Krakowie pojawiły się doniesienia o możliwym zakazie Marszu Niepodległości. Premier Donald Tusk nazwał je „zwykłą dezinformacją” i zapewnił, że nikt nie zamierza zakazywać marszu, apelując o odpowiedzialność.",
+      "Organizatorzy zapowiedzieli, że marsz przejdzie. MSWiA komentowało kwestie bezpieczeństwa; w Krakowie odwołano Bieg Niepodległości, a obchody 11 listopada mają być zmodyfikowane.",
+      "Wcześniej OKO.press pisało, że na czele marszu ma iść prezydent Nawrocki, a wśród haseł pojawia się polexit."
+    ],
+    "framing": {
+      "left": "OKO.press skupia się na politycznym charakterze marszu – haśle polexitu i obecności prezydenta na jego czele.",
+      "center": "Większość mediów centrowych (Polsat News, RMF FM, Interia, Fakt, TVP Info, Radio ZET) relacjonuje deklarację premiera i stanowisko organizatorów, bez oceny samego marszu.",
+      "right": "wPolityce i Najwyższy Czas! akcentują stanowisko organizatorów („Nie możemy dopuścić”) i reakcję Konfederacji; tytuł „Marsz Niepodległości będzie odwołany?! Tusk jednoznacznie…” buduje napięcie wokół rzekomego zakazu. Centroprawicowa Rzeczpospolita cytuje premiera: „Spekulacje to dezinformacja”."
+    },
+    "match": {
+      "include": "Marsz\\w* Niepodległości",
+      "from": "2026-11-05T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": []
+  },
+  {
+    "id": "sledztwo-wejscie-prezydenta-do-tk",
+    "title": "Śledztwo po nocnym wejściu prezydenta do TK. Żurek: „metoda z kibolskich ustawek”",
+    "date": "2026-11-03",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny",
+      "Prezydent",
+      "Prokuratura"
+    ],
+    "summary": [
+      "W nocy z 30 na 31 października prezydent Karol Nawrocki wszedł do siedziby Trybunału Konstytucyjnego, mimo prób powstrzymania go; doszło do przepychanek.",
+      "Prokuratura wszczęła z urzędu śledztwo w sprawie „czynnej napaści” na sędziów TK; nie podaje nazwisk. Minister Żurek przyznał, że prezydenta chroni immunitet, i ocenił, że Nawrocki „zastosował brutalną siłę, jak z ustawek”.",
+      "Kancelaria Prezydenta złożyła własne zawiadomienia o naruszeniu nietykalności głowy państwa. Do prokuratury wpłynęło łącznie 13 zawiadomień."
+    ],
+    "framing": {
+      "left": "OKO.press: „Państwo pięści, nie prawa? Prezydent dał przyzwolenie na przemoc”, „Prokuratura zajmuje się wtargnięciem do TK”; TVN24 cytuje Tuska („nikt nie ma prawa wkraczać przemocą”). Narracja: prezydent złamał prawo siłą.",
+      "center": "Polsat News relacjonuje słowa ministra Żurka („metoda z kibolskich ustawek”) i śledztwo, oddając też stanowisko Kancelarii Prezydenta.",
+      "right": "Republika pisze o „odwetowym śledztwie” uderzającym w prezydenta, Najwyższy Czas! – o próbie budowania narracji o „napaści”, a wPolityce o „planie puczu” i o tym, że „Tusk zhańbił policję”. Centroprawicowa Rzeczpospolita wyłamuje się: publikuje prof. Matczaka, który mówi o „niedopuszczalnym wtargnięciu”."
+    },
+    "match": {
+      "include": "wtargnię|ustawek|Państwo pięści|brutaln\\w* sił|Plan puczu|zhańbił policję|Przejmowanie Trybunału|Zamach stanu\\?|napaś",
+      "from": "2026-11-02T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Prof. Matczak o nocnej wizycie Nawrockiego w TK: Do sypialni też może wejść, bo jest prezydentem?",
+        "url": "https://www.rp.pl/sady-i-trybunaly/art45428781-prof-marcin-matczak-o-nocnej-wizycie-karola-nawrockiego-w-tk-to-niedopuszczalne-wtargniecie",
+        "publishedAt": "2026-11-01T12:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Nocna wizyta Nawrockiego w TK. Teraz Kancelaria Prezydenta grozi prokuraturą",
+        "url": "https://www.rp.pl/sady-i-trybunaly/art45428881-nocne-starcie-w-trybunale-konstytucyjnym-ludzie-nawrockiego-ida-do-prokuratury",
+        "publishedAt": "2026-11-01T12:00:00Z"
+      },
+      {
+        "outletId": "tvn24",
+        "title": "Donald Tusk krytykuje Karola Nawrockiego za wejście do Trybunału Konstytucyjnego. \"Nie ma prawa\"",
+        "url": "https://tvn24.pl/polska/donald-tusk-krytykuje-karola-nawrockiego-za-wejscie-do-trybunalu-konstytucyjnego-nie-ma-prawa-st9319929",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      },
+      {
+        "outletId": "polsat-news",
+        "title": "Waldemar Żurek: Karol Nawrocki \"zastosował metodę z kibolskich ustawek\"",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-05/zastosowal-metode-z-kibolskich-ustawek-zurek-uderzyl-w-nawrockiego-chodzi-o-tk/",
+        "publishedAt": "2026-11-05T12:00:00Z"
+      },
+      {
+        "outletId": "wirtualna-polska",
+        "title": "Padły nazwiska ludzi Nawrockiego. Żurek o śledztwie ws. napaści w TK",
+        "url": "https://wiadomosci.wp.pl/padly-nazwiska-ludzi-nawrockiego-zurek-o-sledztwie-ws-napasci-w-tk-7347325793102304a",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      },
+      {
+        "outletId": "telewizja-republika",
+        "title": "Skandaliczne działania prokuratury: odwetowe śledztwo uderza w Prezydenta RP po ataku pod TK",
+        "url": "https://tvrepublika.pl/Polityka/Skandaliczne-dzialania-prokuratury-odwetowe-sledztwo-uderza-w-Prezydenta-RP-po-ataku-pod-TK/225118",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      },
+      {
+        "outletId": "najwyzszy-czas",
+        "title": "Celem jest prezydent Nawrocki? Prokuratura Tuska bada „czynną napaść” w Trybunale Konstytucyjnym",
+        "url": "https://nczas.info/2026/11/03/sledztwo-czynnej-napasci-na-sedziow-tk-nawrocki/",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "swieczkowski-immunitet-areszt",
+    "title": "Prokuratura chce uchylenia immunitetu i aresztu prezesa TK Bogdana Święczkowskiego",
+    "date": "2026-11-03",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny",
+      "Prokuratura",
+      "Praworządność"
+    ],
+    "summary": [
+      "Prokuratura skierowała do Trybunału Konstytucyjnego łącznie sześć wniosków o uchylenie immunitetu prezesowi TK Bogdanowi Święczkowskiemu – ostatni 3 listopada. Zarzuty dotyczą m.in. zakupu systemu Hermes i Pegasusa (z czasów, gdy był prokuratorem krajowym), blokowania sędziów wybranych przez obecny Sejm i naruszenia nietykalności sędziego.",
+      "Według mediów jeden z wniosków obejmuje zgodę na zatrzymanie i tymczasowe aresztowanie.",
+      "Święczkowski jest zawieszony i nie uznaje zawieszenia. Sąd Najwyższy uznał, że nie może oceniać jego zawieszenia. Sędzia Anna Korwin-Piotrowska zwołała na 17 listopada Zgromadzenie Ogólne w sprawie wniosków."
+    ],
+    "framing": {
+      "left": "OKO.press i Gazeta Wyborcza relacjonują sprawę jako rozliczanie nadużyć: „Zarzuty dla Święczkowskiego: za Pegasusa i Hermesa”, „Porażka Święczkowskiego”, „Przegrana Święczkowskiego” – kolejne kroki prezesa TK opisywane są jako przegrane. TVN24 podaje doniesienia o wniosku o areszt.",
+      "center": "Fakt i Newsweek relacjonują kolejne kroki i ich konsekwencje – Fakt pyta, czy Święczkowski może stracić emeryturę sędziowską.",
+      "right": "wPolityce i Do Rzeczy piszą o „ataku prokuratury na prezesa TK” i działaniach politycznie motywowanych: „Żurek chce aresztować Święczkowskiego! To już nie tylko groźby”, „Myślą, że wygrają?”. Centroprawicowa Rzeczpospolita relacjonuje wnioski, ale oddaje głos krytykom: „Zarzuty dla prezesa i wiceprezesa TK wątpliwe. Eksperci wskazują na błędy Waldemara Żurka”."
+    },
+    "match": {
+      "include": "Święczkowsk|Korwin-Piotrowsk|Sochańsk|Zgromadzeni\\w* (Ogólne|TK|sędziów TK)",
+      "from": "2026-11-02T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Wniosek o areszt dla prezesa TK. Prokuratura chce zgody na zatrzymanie Święczkowskiego",
+        "url": "https://www.rp.pl/sady-i-trybunaly/art45454361-bogdan-swieczkowski-moze-zostac-zatrzymany-prokuratura-skierowala-wniosek-do-tk",
+        "publishedAt": "2026-11-06T12:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Zarzuty dla prezesa i wiceprezesa TK wątpliwe. Eksperci wskazują na błędy Waldemara Żurka",
+        "url": "https://www.rp.pl/sady-i-trybunaly/art45444701-zarzuty-dla-swieczkowskiego-i-sochanskiego-bezpodstawne-eksperci-maja-watpliwosci",
+        "publishedAt": "2026-11-04T12:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Bogdan Święczkowski może trafić do aresztu. Prokuratura złożyła wniosek do TK",
+        "url": "https://dorzeczy.pl/opinie/967683/areszt-dla-prezesa-tk-prokuratura-wykonala-ruch.html",
+        "publishedAt": "2026-11-06T12:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Sześć wniosków o uchylenie immunitetu prezesowi TK. Żurek mówi o \"przestępczej samowoli\"",
+        "url": "https://dorzeczy.pl/opinie/966441/zurek-uderza-w-swieczkowskiego-szesc-wnioskow-o-uchylenie-immunitetu.html",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      },
+      {
+        "outletId": "tvn24",
+        "title": "Media: prokuratura zawnioskowała o zgodę na zatrzymanie i areszt dla Święczkowskiego",
+        "url": "https://tvn24.pl/polska/bogdan-swieczkowski-trybunal-konstytucyjny-media-prokuratura-zawnioskowala-o-zgode-na-zatrzymanie-i-areszt-dla-swieczkowskiego-st9325559",
+        "publishedAt": "2026-11-06T12:00:00Z"
+      },
+      {
+        "outletId": "wpolityce",
+        "title": "Żurek chce aresztować Święczkowskiego! To już nie tylko groźby",
+        "url": "https://wpolityce.pl/polityka/zurek-chce-aresztowac-swieczkowskiego-to-juz-nie-tylko-grozby,294127",
+        "publishedAt": "2026-11-06T12:00:00Z"
+      },
+      {
+        "outletId": "wpolityce",
+        "title": "Myślą, że wygrają? Kolejny atak prokuratury na prezesa TK!",
+        "url": "https://wpolityce.pl/polityka/mysla-ze-wygraja-kolejny-atak-prokuratury-na-prezesa-tk,291650",
+        "publishedAt": "2026-11-04T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "psl-reset-konstytucyjny",
+    "title": "PSL proponuje „reset konstytucyjny” Trybunału. KO i Lewica sceptyczne",
+    "date": "2026-11-05",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny",
+      "PSL",
+      "Konstytucja"
+    ],
+    "summary": [
+      "Wicepremier Władysław Kosiniak-Kamysz przedstawił projekt zmiany konstytucji: wygaszenie kadencji obecnych sędziów TK i jednorazowy wybór nowego, 15-osobowego składu przez Zgromadzenie Narodowe większością 3/5, z kandydatami zgłaszanymi za zgodą prezydenta.",
+      "Projekt wymaga podpisów co najmniej 92 posłów. KO zapowiedziała, że go nie podpisze; marszałek Czarzasty jest sceptyczny („nie rozmawia się z tymi, którzy konstytucję łamią”). Polska 2050 i Konfederacja chcą rozmawiać.",
+      "Kosiniak-Kamysz rozmawiał o projekcie m.in. z Mateuszem Morawieckim i Sławomirem Mentzenem. Pałac Prezydencki analizuje propozycję; 18 organizacji pozarządowych zaapelowało o reset."
+    ],
+    "framing": {
+      "left": "OKO.press podkreśla wątpliwości prawne i to, że w wersji PSL „to Nawrocki ma decydować, kto zostanie sędzią TK”; Polityka: „Reset konstytucyjny? Zawracanie głowy”. WP i TVN24 piszą, że „główni gracze” nie są jeszcze gotowi.",
+      "center": "Polsat News, RMF FM i Fakt opisują szczegóły projektu i reakcje. Klub Jagielloński od dawna popiera reset i wskazuje na rosnące poparcie dla tego pomysłu.",
+      "right": "Prawica nie przyjmuje propozycji entuzjastycznie: wPolityce publikuje opinię sędzi Pawełczyk-Woickiej („Umowa z pistoletem przy głowie”). Centroprawicowa Rzeczpospolita opisuje liczenie głosów („Kosiniak-Kamysz i Mentzen przy jednym stole”)."
+    },
+    "match": {
+      "include": "reset|odnowy",
+      "from": "2026-11-04T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "tvn24",
+        "title": "Projekt PSL o \"resecie konstytucyjnym\" w sprawie Trybunału. Komentarz z Pałacu Prezydenckiego",
+        "url": "https://tvn24.pl/polska/projekt-psl-o-resecie-konstytucyjnym-w-sprawie-trybunalu-komentarz-z-palacu-prezydenckiego-st9325352",
+        "publishedAt": "2026-11-06T12:00:00Z"
+      },
+      {
+        "outletId": "wirtualna-polska",
+        "title": "Kosiniak-Kamysz gotowy na reset w TK. Główni gracze jeszcze nie",
+        "url": "https://wiadomosci.wp.pl/kosiniak-kamysz-gotowy-na-reset-w-tk-glowni-gracze-jeszcze-nie-7347779566316000a",
+        "publishedAt": "2026-11-05T12:00:00Z"
+      },
+      {
+        "outletId": "rmf-fm",
+        "title": "Kosiniak-Kamysz zapowiada fundamentalne zmiany. Reset na stole",
+        "url": "https://www.rmf24.pl/fakty/polityka/news-kosiniak-kamysz-zapowiada-fundamentalne-zmiany-reset-na-stol,nIdn,1024886",
+        "publishedAt": "2026-11-05T12:00:00Z"
+      },
+      {
+        "outletId": "polsat-news",
+        "title": "PSL chce nadzwyczajnego odnowienia składu TK. Kosiniak-Kamysz ogłasza",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-05/psl-chce-nadzwyczajnego-odnowienia-skladu-tk-kosiniak-kamysz-oglasza/",
+        "publishedAt": "2026-11-05T12:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Reset TK. Kosiniak-Kamysz i Mentzen przy jednym stole. PSL liczy szable ws. Trybunału",
+        "url": "https://rp.pl/polityka/art45453441-liczenie-szabel-w-sejmie-wladyslaw-kosiniak-kamysz-buduje-koalicje-dla-resetu-tk",
+        "publishedAt": "2026-11-06T12:00:00Z"
+      },
+      {
+        "outletId": "wpolityce",
+        "title": "Pawełczyk-Woicka bez ogródek: Umowa z pistoletem przy głowie",
+        "url": "https://wpolityce.pl/polityka/pawelczyk-woicka-o-psl-umowa-z-pistoletem-przy-glowie,295016",
+        "publishedAt": "2026-11-07T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "rbn-trybunal-braun",
+    "title": "RBN u prezydenta zdominowana przez spór o TK. Nawrocki: „Premier popełnił zbrodnię na ustroju”",
+    "date": "2026-11-03",
+    "location": "Warszawa",
+    "tags": [
+      "RBN",
+      "Prezydent",
+      "Trybunał Konstytucyjny",
+      "Konfederacja Korony Polskiej"
+    ],
+    "summary": [
+      "3 listopada odbyło się posiedzenie Rady Bezpieczeństwa Narodowego. Oficjalnie miało dotyczyć obecności wojsk USA w Polsce, ale prezydent Nawrocki w jawnej części skupił się na sporze o Trybunał, obarczając premiera odpowiedzialnością.",
+      "Kontrowersje wzbudziło zaproszenie przedstawiciela ugrupowania Grzegorza Brauna; Sikorski i Czarzasty apelowali, by tego nie robić. Tusk mimo to wziął udział.",
+      "Premier nie dostał analogicznej możliwości wystąpienia przed kamerami. Po posiedzeniu mówił o „rozładowywaniu napięcia” i chciał rozmowy w cztery oczy z prezydentem."
+    ],
+    "framing": {
+      "left": "Polityka: „Korona Brauna na RBN. Gdy Putin testuje Polskę na granicy, Nawrocki igra z ogniem”. OKO.press akcentuje, że Tusk przyszedł „mimo obecności Brauna”, a Nawrocki zrobił z RBN scenę sporu o TK.",
+      "center": "Polsat News opisuje przebieg posiedzenia, eksponując atak prezydenta na premiera („Karol Nawrocki uderza w Donalda Tuska ws. TK”). Klub Jagielloński analizuje, jak Tusk zmienił kurs w sprawie TK.",
+      "right": "Do Rzeczy i Najwyższy Czas! eksponują ostre słowa prezydenta („Premier popełnił zbrodnię na ustroju Polski”, „Nawrocki do Tuska: Pan odpowiada za TK”) i to, że premier był „bez głosu przed kamerami”. Centroprawicowa Rzeczpospolita opisuje kulisy z obu stron („Tusk „odwinął się” Nawrockiemu, prezydent wbijał szpile”)."
+    },
+    "match": {
+      "include": "RBN|Rad\\w* Bezpieczeństwa Narodowego",
+      "from": "2026-11-02T00:00:00Z",
+      "to": "2026-11-07T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "do-rzeczy",
+        "title": "Nawrocki podczas posiedzenia RBN: Premier popełnił zbrodnię na ustroju Polski",
+        "url": "https://dorzeczy.pl/kraj/966399/nawrocki-podczas-posiedzenia-rbn-premier-popelnil-zbrodnie-na-ustroju-polski.html",
+        "publishedAt": "2026-11-03T16:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Premier Tusk bez głosu przed kamerami na posiedzeniu RBN",
+        "url": "https://dorzeczy.pl/kraj/966426/premier-tusk-bez-glosu-przed-kamerami-na-posiedzeniu-rbn.html",
+        "publishedAt": "2026-11-03T17:00:00Z"
+      },
+      {
+        "outletId": "najwyzszy-czas",
+        "title": "Posiedzenie RBN. Nawrocki do Tuska: Pan odpowiada za TK",
+        "url": "https://nczas.info/2026/11/03/posiedzenie-rbn-nawrocki-w-twarz-tuskowi/",
+        "publishedAt": "2026-11-03T17:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Kulisy posiedzenia RBN. Tusk \"odwinął się\" Nawrockiemu, prezydent wbijał szpile",
+        "url": "https://www.rp.pl/polityka/art45443801-kulisy-posiedzenia-rbn-tusk-mial-zareagowac-na-slowa-nawrockiego",
+        "publishedAt": "2026-11-04T08:00:00Z"
+      },
+      {
+        "outletId": "polsat-news",
+        "title": "Posiedzenie RBN. Karol Nawrocki uderza w Donalda Tuska ws. TK",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-03/karol-nawrocki-otworzyl-posiedzenie-rbn-padly-slowa-o-tk-prezydent-uderzyl-w-premiera/",
+        "publishedAt": "2026-11-03T15:30:00Z"
+      },
+      {
+        "outletId": "telewizja-republika",
+        "title": "Tusk będzie obecny na posiedzeniu RBN",
+        "url": "https://tvrepublika.pl/Polska/Tusk-bedzie-obecny-na-posiedzeniu-RBN/225082",
+        "publishedAt": "2026-11-03T10:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "granica-z-rosja-grom",
+    "title": "„Niepokojący ruch” na granicy z Rosją. Służby w gotowości, GROM na północy",
+    "date": "2026-11-03",
+    "location": "Warmia i Mazury, Podlasie",
+    "tags": [
+      "Rosja",
+      "Granica",
+      "Bezpieczeństwo",
+      "Wojsko"
+    ],
+    "summary": [
+      "Premier Tusk poinformował, że tuż po północy Straż Graniczna zauważyła „osobników z latarkami” przy granicy z Rosją (obwód królewiecki). Uruchomiono operację z udziałem SG, służb specjalnych i kontrterrorystów.",
+      "Straż Graniczna doprecyzowała, że osoby były po stronie rosyjskiej i nie próbowały przekroczyć granicy. Tusk wiązał sprawę z ostrzeżeniami NATO przed sabotażem w pierwszej połowie listopada.",
+      "Media podały, że przy północnej granicy rozmieszczono operatorów GROM; rosyjscy komentatorzy twierdzą, że Polska przygotowuje prowokację."
+    ],
+    "framing": {
+      "left": "OKO.press traktuje zagrożenie poważnie („Rozkaz Kremla: nasilić sabotaże w Europie. Policja w gotowości, GROM na granicy”); TVN24 podkreśla słowa Tuska o udaremnionej prowokacji.",
+      "center": "Polsat News i RMF FM cytują premiera i Straż Graniczną; Fakt pyta ekspertów (gen. Roman Polko) o obecność GROM-u.",
+      "right": "Prawica jest sceptyczna wobec komunikatu rządu: Najwyższy Czas! – „Straż Graniczna studzi emocje. Zasłona dymna dla awantury o TK?”, wPolityce – „W co gra Tusk? Rozkaz dla żołnierzy Grom”. Do Rzeczy relacjonuje rosyjską narrację o „polskiej operacji”. Centroprawicowa Rzeczpospolita pyta neutralnie: „Prowokacja na granicy?”."
+    },
+    "match": {
+      "include": "granic\\w* z Rosją|GROM|Rozkaz Kremla",
+      "from": "2026-11-03T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z",
+      "exclude": "Krak"
+    },
+    "extra": [
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Prowokacja na granicy? Tusk: zmobilizowano siły i środki",
+        "url": "https://www.rp.pl/polityka/art45437461-osobnicy-z-latarkami-tusk-o-niepokojacym-zdarzeniu-na-granicy-z-rosja",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      },
+      {
+        "outletId": "polsat-news",
+        "title": "Ruch na granicy Polski z Rosją. Tusk: Tuż po północy otrzymałem informację",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-03/niepokojacy-ruch-na-granicy-tusk-sytuacja-wymagala-pelnej-mobilizacji/",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      },
+      {
+        "outletId": "tvn24",
+        "title": "Tusk: udało się zapobiec próbom prowokacji na granicy polsko-rosyjskiej",
+        "url": "https://tvn24.pl/polska/tusk-udalo-sie-zapobiec-probom-prowokacji-na-granicy-polsko-rosyjskiej-st9319864",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      },
+      {
+        "outletId": "rmf-fm",
+        "title": "Premier dostał meldunek o ruchach przy naszej granicy z Rosją. „Osobnicy z latarkami”",
+        "url": "https://www.rmf24.pl/fakty/polska/news-premier-dostal-meldunek-o-ruchach-przy-naszej-granicy-z-rosj,nIdn,1024572",
+        "publishedAt": "2026-11-03T12:00:00Z"
+      },
+      {
+        "outletId": "najwyzszy-czas",
+        "title": "Tusk alarmuje, że Ruscy z latarkami chodzą nocą przy granicy. Straż Graniczna studzi emocje. Zasłona dymna dla awantury o TK?",
+        "url": "https://nczas.info/2026/11/03/osobnicy-z-latarkami-granica-tusk-tk/",
+        "publishedAt": "2026-11-03T15:00:00Z"
+      },
+      {
+        "outletId": "wpolityce",
+        "title": "W co gra Tusk? Rozkaz dla żołnierzy Grom",
+        "url": "https://wpolityce.pl/polityka/-w-co-gra-tusk-rozkaz-dla-zolnierzy-grom,290851",
+        "publishedAt": "2026-11-04T12:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Rosjanie mówią o polskiej operacji przeciwko Rosji. Wskazują na GROM",
+        "url": "https://dorzeczy.pl/opinie/966990/rosjanie-mowia-o-polskiej-operacji-przeciwko-rosji-wskazuja-na-grom.html",
+        "publishedAt": "2026-11-05T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "alarmy-bombowe-samoloty",
+    "title": "Seria fałszywych alarmów bombowych w samolotach. Modlin zamknięty, służby badają ślad rosyjski",
+    "date": "2026-11-03",
+    "location": "Modlin, Warszawa, Europa",
+    "tags": [
+      "Lotnictwo",
+      "Bezpieczeństwo",
+      "Rosja",
+      "Dezinformacja"
+    ],
+    "summary": [
+      "3 listopada samolot lecący z Londynu na Lotnisko Chopina (181 osób) awaryjnie wylądował w Modlinie po alarmie bombowym; lotnisko zamknięto na kilka godzin. Tego samego dnia sprawdzano samolot na Okęciu.",
+      "W kolejnych dniach alarmy dotyczyły co najmniej 15 samolotów w Europie – m.in. w Bułgarii, Włoszech i Hiszpanii; lot Wizz Air z Mediolanu do Warszawy lądował w Wiedniu. Wszystkie okazały się fałszywe.",
+      "Wywiady europejskie badają udział Rosji w serii zgłoszeń."
+    ],
+    "framing": {
+      "left": "OKO.press, Polityka i Wyborcza wpisują alarmy w szerszą wojnę hybrydową Rosji („Rosja maczała w tym palce?”, „Wywiady badają udział Rosji”). TVN24 i WP opisują skalę zjawiska w Europie.",
+      "center": "Polsat News i RMF FM relacjonują przebieg incydentów i utrudnienia dla pasażerów, ostrożnie wobec atrybucji.",
+      "right": "Prawica relacjonuje głównie fakty (Do Rzeczy: „Alarm bombowy na lotnisku w Modlinie. Służby zakończyły akcję”, Najwyższy Czas!: „Seria fałszywych alarmów”, Rzeczpospolita: „Alarm na dwóch warszawskich lotniskach”), bez akcentu na wątek rosyjski."
+    },
+    "match": {
+      "include": "alarm\\w* bombow|Modlin",
+      "from": "2026-11-03T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "polsat-news",
+        "title": "Lotnisko Warszawa-Modlin zamknięte po nieplanowanym lądowaniu. Alarm bombowy",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-03/zamknieto-lotnisko-w-warszawie-informacja-o-ladunku-wybuchowym-w-samolocie/",
+        "publishedAt": "2026-11-03T11:00:00Z"
+      },
+      {
+        "outletId": "polsat-news",
+        "title": "Seria alarmów bombowych w samolotach. Kolejne incydenty",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-03/seria-alarmow-bombowych-w-samolotach-na-kolejnych-lotniskach-ladowaly-maszyny/",
+        "publishedAt": "2026-11-03T15:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Alarm na dwóch warszawskich lotniskach. Podejrzenie niebezpiecznych ładunków w samolotach",
+        "url": "https://www.rp.pl/transport/art45436691-dwa-alarmy-niemal-jednoczesnie-lotnisko-w-modlinie-zamkniete-sluzby-dzialaja-na-okeciu",
+        "publishedAt": "2026-11-03T11:30:00Z"
+      },
+      {
+        "outletId": "wirtualna-polska",
+        "title": "Alarm bombowy na lotniskach Warszawy. Modlin zamknięty do odwołania",
+        "url": "https://tech.wp.pl/alarm-bombowy-na-lotniskach-warszawy-modlin-zamkniety-do-odwolania,7347014173829568a",
+        "publishedAt": "2026-11-03T11:30:00Z"
+      },
+      {
+        "outletId": "rmf-fm",
+        "title": "Seria alarmów bombowych na pokładach europejskich samolotów. Lot do Warszawy przekierowany do Wiednia",
+        "url": "https://www.rmf24.pl/fakty/swiat/news-seria-alarmow-bombowych-na-pokladach-europejskich-samolotow-,nIdn,1024905",
+        "publishedAt": "2026-11-05T10:00:00Z"
+      },
+      {
+        "outletId": "tvn24",
+        "title": "Nawet kilkanaście alarmów bombowych w Europie. Zgłoszenia dotyczą samolotów",
+        "url": "https://tvn24.pl/biznes/ze-swiata/seria-alarmow-bombowych-w-europie-zgloszenia-dotycza-samolotow-st9323766",
+        "publishedAt": "2026-11-05T10:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Alarm bombowy na lotnisku w Modlinie. Służby zakończyły akcję",
+        "url": "https://dorzeczy.pl/opinie/966372/alarm-bombowy-na-lotnisku-w-modlinie-akcja-zakonczona.html",
+        "publishedAt": "2026-11-03T15:00:00Z"
+      },
+      {
+        "outletId": "najwyzszy-czas",
+        "title": "Seria fałszywych alarmów bombowych na pokładach samolotów",
+        "url": "https://nczas.info/2026/11/05/seria-falszywych-alarmow-bombowych-na-pokladach-samolotow/",
+        "publishedAt": "2026-11-05T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "sp-perspektywa-ratingu",
+    "title": "S&P obniża perspektywę ratingu Polski do negatywnej",
+    "date": "2026-11-06",
+    "location": "Warszawa",
+    "tags": [
+      "Gospodarka",
+      "Finanse publiczne",
+      "Rating"
+    ],
+    "summary": [
+      "Agencja S&P utrzymała rating Polski w walucie obcej na poziomie A-, ale obniżyła perspektywę ze stabilnej do negatywnej – pierwszy taki ruch tej agencji od dekady. Ocena w walucie krajowej spadła z A do A-.",
+      "S&P wskazuje na deficyt rzędu 7,1% PKB w 2027 r. oraz polityczny pat, w tym weta prezydenta blokujące plany rządu.",
+      "Minister finansów Andrzej Domański obwinia weta prezydenta; opozycja – rząd. Fitch ma już negatywną perspektywę, Moody's obniżył rating do A3 we wrześniu."
+    ],
+    "framing": {
+      "left": "OKO.press informuje rzeczowo: „Kolejna agencja obniża rating dla Polski. „Perspektywa: negatywna””, bez rozstrzygania o winie.",
+      "center": "Polsat News wyjaśnia decyzję S&P i jej uzasadnienie, z uwzględnieniem argumentu o wetach prezydenta.",
+      "right": "Prawica jednoznacznie obwinia rząd: „Potężny cios w rząd Tuska!”, „Obniżony rating S&P. Co oznacza rachunek wystawiony przez Tuska?” (wPolityce), „Tusk i Domański symbolem destabilizacji!” (Do Rzeczy). Radio Maryja: „Polska zapłaci za polityczny chaos?”. Centroprawicowa Rzeczpospolita jest bardziej analityczna („to może nie być koniec” – ekonomista KIG)."
+    },
+    "match": {
+      "include": "rating",
+      "from": "2026-11-06T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "polsat-news",
+        "title": "S&P zdecydowała w sprawie ratingu Polski. Perspektywa negatywna",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-06/agencja-sp-zdecydowala-w-sprawie-ratingu-polski-perspektywa-obnizona-do-negatywnej/",
+        "publishedAt": "2026-11-06T22:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "S&P tnie perspektywę ratingu Polski. Soroczyński, KIG: to może nie być koniec",
+        "url": "https://www.rp.pl/dane-gospodarcze/art45458311-s-p-tnie-perspektywe-ratingu-polski-soroczynski-kig-to-moze-nie-byc-koniec",
+        "publishedAt": "2026-11-07T08:00:00Z"
+      },
+      {
+        "outletId": "najwyzszy-czas",
+        "title": "S&P obniża perspektywę Polski i rating złotego. Co to oznacza dla Polaków?",
+        "url": "https://nczas.info/2026/11/07/perspektywa-ratingu-polski-sp-obnizka-skutki/",
+        "publishedAt": "2026-11-07T10:00:00Z"
+      },
+      {
+        "outletId": "wpolityce",
+        "title": "Obniżony rating S&P. Co oznacza rachunek wystawiony przez Tuska?",
+        "url": "https://wpolityce.pl/gospodarka/obnizony-rating-sp-co-oznacza-rachunek-wystawiony-przez-tuska,295014",
+        "publishedAt": "2026-11-07T12:00:00Z"
+      },
+      {
+        "outletId": "wpolityce",
+        "title": "Potężny cios w rząd Tuska! Domański znalazł winnego. Zaskoczenie?",
+        "url": "https://wpolityce.pl/gospodarka/potezny-cios-w-rzad-tuska-domanski-znalazl-winnego-zaskoczenie,294884",
+        "publishedAt": "2026-11-07T09:00:00Z"
+      },
+      {
+        "outletId": "telewizja-republika",
+        "title": "Agencja S&P zmienia ocenę Polski. Coraz większe obawy",
+        "url": "https://tvrepublika.pl/Ekonomia/Agencja-SP-zmienia-ocene-Polski-Coraz-wieksze-obawy/225351",
+        "publishedAt": "2026-11-07T09:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Rating Polski. \"Tusk i Domański symbolem destabilizacji!\"",
+        "url": "https://dorzeczy.pl/ekonomia/968367/rating-polski-tusk-i-domanski-symbolem-destabilizacji.html",
+        "publishedAt": "2026-11-07T12:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Fatalny rating Polski. \"W nagrodę awans Domańskiego na wicepremiera\"",
+        "url": "https://dorzeczy.pl/opinie/968409/fatalny-rating-polski-w-nagrode-awans-domanskiego.html",
+        "publishedAt": "2026-11-07T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "cba-elektrownia-ostroleka",
+    "title": "CBA zatrzymało 25 osób w sprawie elektrowni Ostrołęka. Szkoda ponad miliard złotych",
+    "date": "2026-11-04",
+    "location": "11 województw",
+    "tags": [
+      "CBA",
+      "Energetyka",
+      "Korupcja",
+      "PiS"
+    ],
+    "summary": [
+      "4 listopada CBA na polecenie Prokuratury Regionalnej w Białymstoku zatrzymało 25 osób – członków zarządów i rad nadzorczych Elektrowni Ostrołęka, Energi i Enei – w 30 miejscach w 11 województwach.",
+      "Śledztwo dotyczy lat 2018–2019 i działania na szkodę spółek; szkodę szacuje się na ponad 1 mld zł. Wszyscy usłyszeli zarzuty, nikt nie przyznał się do winy; zastosowano dozory i poręczenia od 30 do 500 tys. zł.",
+      "Wśród zatrzymanych media wymieniają prezesa Westinghouse Polska; minister energii zapewnia, że nie wpłynie to na program jądrowy. CBA odwiedziło też byłego ministra energii Krzysztofa Tchórzewskiego."
+    ],
+    "framing": {
+      "left": "OKO.press: „Dawna afera PiS uderzy w polski atom?” – sprawa jako rozliczenie rządów PiS i ryzyko dla programu jądrowego. TVN24 oddaje głos koordynatorowi służb Tomaszowi Siemoniakowi, WP podkreśla „ponad miliard złotych strat”.",
+      "center": "RMF FM i Polsat News opisują skalę akcji („Gigantyczna akcja CBA”), szkodę i wizytę CBA u byłego ministra.",
+      "right": "Centroprawicowa Rzeczpospolita opisuje sprawę najszerzej, w tym historię nieukończonej elektrowni („porażka polskiej energetyki”). Do Rzeczy relacjonuje krótko („CBA u polityków PiS”); w mediach wyraźnie prawicowych temat był marginalny."
+    },
+    "match": {
+      "include": "Ostrołęk",
+      "from": "2026-11-03T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "tvn24",
+        "title": "Akcja CBA. Zatrzymania w sprawie elektrowni Ostrołęka. Tomasz Siemoniak w TVN24 o szczegółach",
+        "url": "https://tvn24.pl/polska/akcja-cba-zatrzymania-w-sprawie-elektrowni-ostroleka-st9321281",
+        "publishedAt": "2026-11-04T09:00:00Z"
+      },
+      {
+        "outletId": "rmf-fm",
+        "title": "Gigantyczna akcja CBA. 25 osób zatrzymanych ws. elektrowni Ostrołęka",
+        "url": "https://www.rmf24.pl/fakty/polska/news-gigantyczna-akcja-cba-25-osob-zatrzymanych-ws-elektrowni-ost,nIdn,1024695",
+        "publishedAt": "2026-11-04T09:00:00Z"
+      },
+      {
+        "outletId": "rmf-fm",
+        "title": "CBA zapukało do niego o 6 rano. Były minister potwierdza",
+        "url": "https://www.rmf24.pl/fakty/polska/news-cba-zapukalo-do-niego-o-6-rano-byly-minister-potwierdza,nIdn,1024774",
+        "publishedAt": "2026-11-04T13:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "CBA zatrzymało 25 osób w związku z nadużyciami w elektrowni Ostrołęka",
+        "url": "https://www.rp.pl/polityka/art45441991-machina-ruszyla-akcja-cba-ws-elektrowni-ostroleka-zatrzymano-25-osob",
+        "publishedAt": "2026-11-04T09:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Elektrownia, której nie ukończono. 25 osób z zarzutami, nikt nie przyznaje się do winy",
+        "url": "https://energia.rp.pl/elektroenergetyka/art45455761-miala-byc-ostatnia-elektrownia-weglowa-w-polsce-teraz-25-osob-ma-zarzuty",
+        "publishedAt": "2026-11-06T09:00:00Z"
+      },
+      {
+        "outletId": "polsat-news",
+        "title": "Tomasz Siemoniak: CBA zatrzymało 25 osób. Sprawa elektrowni Ostrołęka",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-04/sprawa-elektrowni-ostroleka-wielka-akcja-cba-zatrzymano-dziesiatki-osob/",
+        "publishedAt": "2026-11-04T09:00:00Z"
+      },
+      {
+        "outletId": "wirtualna-polska",
+        "title": "Ponad miliard złotych strat przy budowie elektrowni. CBA zatrzymało 25 osób",
+        "url": "https://informacje.wp.pl/wiadomosci/ponad-miliard-zlotych-strat-przy-budowie-elektrowni-cba-zatrzymalo-25-osob-w-tym-bylych-menedzerow-wielkich-spolek-7348114041289184a",
+        "publishedAt": "2026-11-04T12:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "CBA u polityków PiS. Śledztwo w sprawie Elektrowni Ostrołęka",
+        "url": "https://dorzeczy.pl/ekonomia/966789/cba-u-politykow-pis-sledztwo-w-sprawie-elektrowni-ostroleka.html",
+        "publishedAt": "2026-11-04T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "posel-krol-areszt",
+    "title": "Poseł KO Wojciech Król aresztowany na sali sądowej",
+    "date": "2026-11-05",
+    "location": "Katowice",
+    "tags": [
+      "KO",
+      "Korupcja",
+      "Sądy",
+      "Prokuratura Europejska"
+    ],
+    "summary": [
+      "Sąd Okręgowy w Katowicach uwzględnił zażalenie prokuratury i aresztował posła KO Wojciecha Króla; poseł został zatrzymany przez policję na sali rozpraw.",
+      "Król ma cztery zarzuty w śledztwie Prokuratury Europejskiej dotyczącym modernizacji infrastruktury tramwajowej w Metropolii GZM, m.in. przyjęcia łapówki, opłacenia wycieczki do Tajlandii i udostępnienia luksusowego auta. Nie przyznaje się do winy.",
+      "Wcześniej sąd rejonowy odmówił aresztu. Król jest zawieszony w prawach członka klubu KO."
+    ],
+    "framing": {
+      "left": "OKO.press informuje krótko i rzeczowo: „Poseł KO aresztowany. Ciążą na nim zarzuty korupcyjne”; WP pisze o „zwrocie w sprawie polityka KO”.",
+      "center": "Polsat News i RMF FM relacjonują decyzję sądu i treść zarzutów.",
+      "right": "Do Rzeczy i Najwyższy Czas! nadają sprawie szerszy wymiar: „Ważny poseł KO aresztowany. „Przeciera szlaki dla kolejnych””, „Nagły zwrot w sprawie posła KO”. Rzeczpospolita relacjonuje rzeczowo."
+    },
+    "match": {
+      "include": "Poseł KO aresztowany|Wojciech\\w* Król",
+      "from": "2026-11-04T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "polsat-news",
+        "title": "Wojciech Król aresztowany na sali sądowej. Sąd zdecydował",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-05/posel-wojciech-krol-aresztowany-na-sali-sadowej-sad-zdecydowal/",
+        "publishedAt": "2026-11-05T15:00:00Z"
+      },
+      {
+        "outletId": "rmf-fm",
+        "title": "Poseł KO aresztowany na sali sądowej",
+        "url": "https://www.rmf24.pl/fakty/polska/news-posel-ko-aresztowany-na-sali-sadowej,nIdn,1024988",
+        "publishedAt": "2026-11-05T15:00:00Z"
+      },
+      {
+        "outletId": "wirtualna-polska",
+        "title": "Zwrot w sprawie polityka KO. Sąd zdecydował o areszcie",
+        "url": "https://wiadomosci.wp.pl/zwrot-w-sprawie-polityka-ko-sad-zdecydowal-o-areszcie-7347768566581728a",
+        "publishedAt": "2026-11-05T15:00:00Z"
+      },
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Poseł KO Wojciech Król w areszcie. Zapadła decyzja",
+        "url": "https://www.rp.pl/polityka/art45451481-posel-wojciech-krol-aresztowany-jest-decyzja-sadu",
+        "publishedAt": "2026-11-05T15:30:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Nagły zwrot w sprawie posła KO. Został zatrzymany podczas posiedzenia sądu",
+        "url": "https://dorzeczy.pl/kraj/967383/nagly-zwrot-w-sprawie-posla-ko-zostal-zatrzymany-podczas-posiedzenia-sadu.html",
+        "publishedAt": "2026-11-05T15:00:00Z"
+      },
+      {
+        "outletId": "do-rzeczy",
+        "title": "Ważny poseł KO aresztowany. \"Przeciera szlaki dla kolejnych\"",
+        "url": "https://dorzeczy.pl/opinie/968112/krol-z-ko-aresztowany-przeciera-szlaki-dla-kolejnych.html",
+        "publishedAt": "2026-11-07T10:00:00Z"
+      },
+      {
+        "outletId": "najwyzszy-czas",
+        "title": "Wojciech Król aresztowany. Sąd zmienił decyzję w sprawie posła KO",
+        "url": "https://nczas.info/2026/11/05/zwrot-w-sprawie-polityka-koalicji-obywatelskiej-sad-nakazal-jego-aresztowanie/",
+        "publishedAt": "2026-11-05T17:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "senat-ustawy-aborcyjne",
+    "title": "Senat przyjął dwie ustawy łagodzące prawo aborcyjne. Decyzja należy do prezydenta",
+    "date": "2026-11-06",
+    "location": "Warszawa",
+    "tags": [
+      "Aborcja",
+      "Senat",
+      "Prezydent",
+      "Prawa kobiet"
+    ],
+    "summary": [
+      "Senat bez poprawek przyjął nowelizację Kodeksu karnego znoszącą karalność pomocy w przerwaniu ciąży oraz zmianę ustawy o planowaniu rodziny przywracającą możliwość przerwania ciąży w przypadku ciężkiej wady płodu.",
+      "Ustawy przewidują też 72 godziny na wykonanie zabiegu i prawo do pomocy psychologicznej poza kolejnością. Sejm uchwalił je 20 października (217:213 i 233:203).",
+      "Ustawy trafiły do prezydenta Nawrockiego; Konfederacja i część PiS wzywają do weta."
+    ],
+    "framing": {
+      "left": "OKO.press i TVN24 relacjonują głosowanie i dalszą ścieżkę – decyzję prezydenta. OKO.press równolegle publikuje głosy, że „półśrodki to za mało” i państwo powinno zapewnić dostęp do wszystkich metod aborcji.",
+      "center": "W monitorowanych mediach centrowych nie znaleźliśmy relacji z głosowania w Senacie.",
+      "right": "Jedynie centroprawicowa Rzeczpospolita rzeczowo opisała głosowanie. W mediach wyraźnie prawicowych nie znaleźliśmy relacji z Senatu; wcześniej (przy głosowaniu w Sejmie) Do Rzeczy eksponowało wezwania Konfederacji do weta („Hańba dla posłów”)."
+    },
+    "match": {
+      "include": "ustaw\\w* (o|ws\\.?) aborcj|ustaw\\w* aborcyjn",
+      "from": "2026-11-05T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Przepisy ws. aborcji. Senat poparł zmiany",
+        "url": "https://www.rp.pl/polityka/art45455871-dwie-zmiany-ws-aborcji-senat-poparl-projekty",
+        "publishedAt": "2026-11-06T12:30:00Z"
+      },
+      {
+        "outletId": "tvn24",
+        "title": "Senat poparł, teraz zdecyduje prezydent. Chodzi o złagodzenie przepisów aborcyjnych",
+        "url": "https://tvn24.pl/zdrowie/zmiany-w-prawie-aborcyjnym-senatorowie-za-ustawy-trafily-do-prezydenta-st9326674",
+        "publishedAt": "2026-11-06T13:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "pakt-migracyjny-zwolnienie-2027",
+    "title": "KE proponuje zwolnienie Polski z przyjmowania migrantów w 2027 r.",
+    "date": "2026-11-06",
+    "location": "Bruksela",
+    "tags": [
+      "Migracja",
+      "UE",
+      "Pakt migracyjny"
+    ],
+    "summary": [
+      "Komisja Europejska zaproponowała, by Polska od 1 stycznia do 31 grudnia 2027 r. była zwolniona z obowiązku relokacji migrantów w ramach paktu o migracji i azylu. Podobne zwolnienia mają dostać m.in. Czechy, Bułgaria, Estonia, Chorwacja i Austria.",
+      "Komisarz Magnus Brunner uzasadnił to przyjęciem Ukraińców i presją migracyjną na granicy z Białorusią. Ostateczną decyzję podejmie Rada UE większością kwalifikowaną.",
+      "Polska była już zwolniona na 2026 r. Rząd przedstawia to jako sukces; PiS i Konfederacja domagają się wypowiedzenia paktu."
+    ],
+    "framing": {
+      "left": "Gazeta Wyborcza, OKO.press, TVN24 i WP relacjonują propozycję KE jako dobrą informację dla Polski, bez rozbudowanego komentarza.",
+      "center": "Polsat News i RMF FM opisują szczegóły i kolejne kroki (Rada UE), podkreślając, że zwolnienie jest czasowe i co roku oceniane na nowo.",
+      "right": "Centroprawicowa Rzeczpospolita pisze wprost: „Polska zwolniona”. W mediach wyraźnie prawicowych nie znaleźliśmy relacji z propozycji z 6 listopada; wcześniejsze teksty Do Rzeczy podkreślały, że o „zobowiązaniach Polski zdecyduje Bruksela”, oraz postulat wypowiedzenia paktu."
+    },
+    "match": {
+      "include": "pakt\\w* migracyjn|przyjmowania migrantów",
+      "from": "2026-11-05T00:00:00Z",
+      "to": "2026-11-09T00:00:00Z"
+    },
+    "extra": [
+      {
+        "outletId": "rzeczpospolita",
+        "title": "Polska zwolniona. Jest decyzja KE ws. paktu migracyjnego",
+        "url": "https://www.rp.pl/polityka/art45455681-ke-proponuje-zwolnienie-polski-na-rok-z-przyjmowania-migrantow",
+        "publishedAt": "2026-11-06T11:00:00Z"
+      },
+      {
+        "outletId": "polsat-news",
+        "title": "Nowa propozycja KE w sprawie Polski. Chodzi o pakt migracyjny",
+        "url": "https://www.polsatnews.pl/wiadomosc/2026-11-06/nowa-propozycja-ke-w-sprawie-polski-chodzi-o-pakt-migracyjny/",
+        "publishedAt": "2026-11-06T11:00:00Z"
+      },
+      {
+        "outletId": "tvn24",
+        "title": "Obowiązek przyjmowania migrantów. Komisja Europejska proponuje zwolnienie dla Polski na kolejny rok",
+        "url": "https://tvn24.pl/biznes/ze-swiata/obowiazek-przyjmowania-migrantow-komisja-europejska-proponuje-zwolnienie-dla-polski-na-kolejny-rok-st9325757",
+        "publishedAt": "2026-11-06T11:00:00Z"
+      },
+      {
+        "outletId": "rmf-fm",
+        "title": "Polska ma być zwolniona w 2027 r. z obowiązku przyjmowania migrantów. Jest propozycja KE",
+        "url": "https://www.rmf24.pl/fakty/polska/news-polska-ma-byc-zwolniona-w-2027-r-z-obowiazku-przyjmowania-mi,nIdn,1025120",
+        "publishedAt": "2026-11-06T11:00:00Z"
+      },
+      {
+        "outletId": "wirtualna-polska",
+        "title": "Pakt migracyjny. Jest propozycja KE w sprawie Polski",
+        "url": "https://wiadomosci.wp.pl/pakt-migracyjny-jest-propozycja-ke-w-sprawie-polski-7348066909309376a",
+        "publishedAt": "2026-11-06T11:30:00Z"
+      }
+    ]
+  }
+]
