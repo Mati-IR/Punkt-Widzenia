@@ -14,9 +14,10 @@
     "summary": [
       "W sobotę 7 listopada 24-letni Michał O. otworzył ogień z broni długiej na Rynku Głównym w Krakowie. Zginęło sześć osób (cztery kobiety i dwóch mężczyzn, w tym obywatelka Austrii i malarka z Chodzieży), kilkanaście zostało rannych, wśród nich dorożkarze.",
       "Dwóch policjantów, mimo ran, obezwładniło sprawcę – według policji pościg trwał 2 minuty i 3 sekundy. Obaj zostali wybudzeni ze śpiączki; stan jednego pozostaje ciężki. Rannym pomagali m.in. dwaj chirurdzy jedzący obiad w pobliskiej restauracji.",
-      "W domu sprawcy w Ostrowcu Świętokrzyskim znaleziono ciała jego rodziców i siostry. Prokuratura prowadzi jedno śledztwo w sprawie obu czynów i kwalifikuje atak jako czyn o charakterze terrorystycznym.",
+      "W domu sprawcy w Ostrowcu Świętokrzyskim znaleziono ciała jego rodziców i siostry. Michał O. zmarł w szpitalu w nocy z 8 na 9 listopada; prokuratura podała, że jego śmierć nie wstrzymuje śledztwa, prowadzonego jako sprawa przestępstwa o charakterze terrorystycznym.",
       "Prezydent Karol Nawrocki ogłosił żałobę narodową 8–9 listopada. Po raz pierwszy od 1939 r. nie zagrano hejnału mariackiego. Kondolencje przekazali m.in. Zełenski, Macron, papież Leon XIV i Donald Trump.",
-      "Zbiórka dla rannych policjantów zebrała w kilkanaście godzin kilka milionów złotych; prezydent zapowiedział ich odznaczenie."
+      "Zbiórka dla rannych policjantów zebrała w kilkanaście godzin kilka milionów złotych; prezydent zapowiedział ich odznaczenie.",
+      "Według prokuratury sprawca miał m.in. dwa karabiny AR-15 i dwa pistolety, a na Rynku mogło paść nawet kilkaset strzałów. Centralne Biuro Zwalczania Cyberprzestępczości zatrzymało kilka osób, które według policji mogły być naśladowcami zamachowca."
     ],
     "framing": {
       "left": "Media centrolewicowe (OKO.press, Polityka, Gazeta Wyborcza, Gazeta.pl) szybko podjęły wątek motywacji sprawcy – OKO.press już w sobotę pisało, że był „zafascynowany ideologiami skrajnie prawicowymi”, a Polityka nazwała atak zderzeniem z „terroryzmem wewnętrznym”. Mocno akcentują sprawność policji („reakcja była szybka i zgodna z procedurą”), rosyjską dezinformację wokół zamachu oraz krytykę prawicowych mediów, które – jak pisze Wyborcza – „szukają politycznego złota”.",
@@ -27,10 +28,10 @@
       "include": "Krak|zamach|strzelanin|Michał O|Michała O|Oksińsk|Ostrow|hejnał|Rynek Główny|Rynku Główn|wybudzon|chirurd|dorożkar|kard\\. Ryś|Rysia|żałob|Chodzie|Austriacz|bohater|oddawa\\w* krwi|krwiodaw|Zasada 4U|Zygmunt|terroryst|kondolenc|Słyszysz strzały|ranny|rannych|ranni|policjant",
       "exclude": "Tatr|Jastrzęb|Lotto|Czechowic|pociąg|szerszen|Hayden|Rolnik szuka|Żebrowsk|Kamienica|Adamska|Najman|Michalik|Papszun|SKM|Lisy|nożem|Niepodległości|Japoni",
       "from": "2026-11-07T14:00:00Z",
-      "to": "2026-11-09T00:00:00Z"
+      "to": "2026-11-10T12:00:00Z"
     },
     "extra": [],
-    "updatedAt": "2026-11-09T14:05:55Z"
+    "updatedAt": "2026-11-09T14:43:55Z"
   },
   {
     "id": "spor-o-motywy-zamachowca",
@@ -46,7 +47,9 @@
     "summary": [
       "Szef MSWiA Marcin Kierwiński po zamachu w Krakowie mówił o radykalnych poglądach sprawcy; minister sprawiedliwości Waldemar Żurek stwierdził, że śledczy „mają dowody”, które rzucają głębsze światło na motywy.",
       "Prokuratura zaznaczyła, że przy sprawcy nie znaleziono dokumentu wyjaśniającego jego motywy. Kierwiński tłumaczył później, że chodziło o „pierwsze hipotezy”.",
-      "Opozycja (PiS) zażądała dymisji ministra; Maciej Wąsik nazwał jego zachowanie „karygodnym”. Jarosław Kaczyński zapowiedział wyjaśnianie „braku policji” w Krakowie."
+      "Opozycja (PiS) zażądała dymisji ministra; Maciej Wąsik nazwał jego zachowanie „karygodnym”. Jarosław Kaczyński zapowiedział wyjaśnianie „braku policji” w Krakowie.",
+      "9 listopada MSWiA podało, że na odzieży sprawcy było „wiele emblematów, naszywek” związanych z różnymi motywami; w jego pokoju znaleziono żółtą flagę z wężem (flagę Gadsdena). Prokuratura uważa, że za wcześnie, by przesądzać o motywach; Żurek mówi, że nie wykluczono także wątku rosyjskiego.",
+      "MSWiA zapowiedziało zawiadomienie prokuratury w sprawie fałszywego zdjęcia ministra Kierwińskiego z zamachowcem, które krążyło w sieci."
     ],
     "framing": {
       "left": "OKO.press i Gazeta Wyborcza traktują skrajnie prawicowe fascynacje sprawcy jako ustalony trop i bronią policji przed zarzutami („Kłamstwa, że policja zawiodła, budzą we mnie skrajne emocje” – ekspert w Wyborczej). Spór przedstawiany jest jako próba upolitycznienia tragedii przez opozycję. Onet i WP relacjonują wyjaśnienia ministra („Dlatego takie, a nie inne stwierdzenie”) i żądanie dymisji.",
@@ -54,17 +57,17 @@
       "right": "Prawica stawia ministra w centrum: „Kierwiński się zamotał! Najpierw oskarżenia, teraz takie słowa”, „Bezwstydnie kłamał!” (wPolityce), Wąsik: „wręcz zbrodnia stanu” (Republika). Narracja: rząd przerzuca odpowiedzialność za zawodzące państwo na prawicę. Centroprawicowa Rzeczpospolita jest powściągliwa: „Radykalne poglądy i skrajna ideologia? Kierwiński wyjaśnia słowa o zamachowcu”."
     },
     "match": {
-      "include": "Kierwi|Wąsik|braku policji|nie zwalnia rządu|motyw|pewne symbole|pewne dowody|mamy dowody|ideologiami skrajnie|policja zawiodła|słowach ministra",
+      "include": "Kierwi|Wąsik|braku policji|nie zwalnia rządu|motyw|pewne symbole|pewne dowody|mamy dowody|ideologiami skrajnie|policja zawiodła|słowach ministra|emblemat|naszyw|Gadsd|Gadsen|flag\\w* z wężem|Ultralewicow|fotomontaż|Minister i zamachowiec|rosyjski trop|trop rosyjski|wątku rosyjskiego",
       "from": "2026-11-07T14:00:00Z",
-      "to": "2026-11-09T00:00:00Z",
+      "to": "2026-11-10T12:00:00Z",
       "exclude": "obcokrajowiec"
     },
     "extra": [],
-    "updatedAt": "2026-11-08T22:10:11Z"
+    "updatedAt": "2026-11-09T14:43:55Z"
   },
   {
     "id": "republika-krrit-zamach",
-    "title": "Burza wokół relacji TV Republika z Krakowa. Rada Polskich Mediów i członek KRRiT reagują",
+    "title": "Burza wokół relacji TV Republika z Krakowa. KRRiT żąda wyjaśnień",
     "date": "2026-11-08",
     "location": "Warszawa",
     "tags": [
@@ -76,7 +79,8 @@
     "summary": [
       "Rada Polskich Mediów skrytykowała słowa Tomasza Sakiewicza po zamachu w Krakowie: „Tragedia nie może być paliwem dla politycznego sporu”.",
       "Członek KRRiT prof. Tadeusz Kowalski wezwał regulatora do działania, mówiąc o „rażącym naruszeniu ustawy medialnej”. Ministra kultury zapowiedziała, że „muszą być wyciągnięte konsekwencje”.",
-      "Republika odpowiada, że to „atak lewicowych dziennikarzy”, a wPolityce pisze o „rządzie kontra telewizja”."
+      "Republika odpowiada, że to „atak lewicowych dziennikarzy”, a wPolityce pisze o „rządzie kontra telewizja”.",
+      "9 listopada KRRiT wszczęła działania wyjaśniające i zażądała od Republiki wyjaśnień. Sakiewicz w oświadczeniu napisał, że „chcą wyłączyć stację”. Jarosław Kaczyński bronił go („Dziennikarze mają prawo pytać”), a rzeczniczka MSWiA nazwała jego wpis „bzdurami”."
     ],
     "framing": {
       "left": "Wyborcza („Po zamachu w Krakowie. Hieny szukają politycznego złota”, skarga na Republikę) i Polityka („Policjanci walczą o życie, propagandyści o zasięgi”) przedstawiają relacje Republiki jako dezinformację wymagającą reakcji regulatora. Onet, Gazeta.pl i OKO.press szeroko cytują Radę Polskich Mediów i członka KRRiT.",
@@ -84,12 +88,13 @@
       "right": "Republika i wPolityce przedstawiają sprawę jako atak na wolne media: „Rachoń reaguje na atak lewicowych dziennikarzy”, „Rząd kontra telewizja. Karnowski: Będziemy wspierać zagrożonych”. Najwyższy Czas! cytuje Krzysztofa Stanowskiego, który krytykuje i Sakiewicza, i Kierwińskiego."
     },
     "match": {
-      "include": "Sakiewicz|Republika musi|Republiki|Telewizja Republika|TV Republika|KRRiT|Rachoń|Hieny|propagandyści|Rad[ay] (Polskich )?Mediów|Karnowski|Rząd konta",
+      "include": "Sakiewicz|Republika musi|Republiki|Telewizja Republika|TV Republika|KRRiT|Rachoń|Hieny|propagandyści|Rad[ay] (Polskich )?Mediów|Karnowski|Rząd konta|Towarzystw\\w* Dziennikarsk|przestała być nadawcą",
       "from": "2026-11-07T14:00:00Z",
-      "to": "2026-11-09T00:00:00Z"
+      "to": "2026-11-10T12:00:00Z",
+      "exclude": "Leona XIV|Argentyn"
     },
     "extra": [],
-    "updatedAt": "2026-11-08T22:10:11Z"
+    "updatedAt": "2026-11-09T14:43:55Z"
   },
   {
     "id": "marsz-niepodleglosci-2026",
@@ -104,7 +109,8 @@
     "summary": [
       "Po zamachu w Krakowie pojawiły się doniesienia o możliwym zakazie Marszu Niepodległości. Premier Donald Tusk nazwał je „zwykłą dezinformacją” i zapewnił, że nikt nie zamierza zakazywać marszu, apelując o odpowiedzialność.",
       "Organizatorzy zapowiedzieli, że marsz przejdzie. MSWiA komentowało kwestie bezpieczeństwa; w Krakowie odwołano Bieg Niepodległości, a obchody 11 listopada mają być zmodyfikowane.",
-      "Wcześniej OKO.press pisało, że na czele marszu ma iść prezydent Nawrocki, a wśród haseł pojawia się polexit."
+      "Wcześniej OKO.press pisało, że na czele marszu ma iść prezydent Nawrocki, a wśród haseł pojawia się polexit.",
+      "9 listopada organizatorzy opublikowali trasę; marsz ma przejść ulicami Warszawy 11 listopada zgodnie z planem. Stolica i inne miasta zapowiadają dodatkowe środki bezpieczeństwa."
     ],
     "framing": {
       "left": "OKO.press skupia się na politycznym charakterze marszu – haśle polexitu i obecności prezydenta na jego czele.",
@@ -114,10 +120,10 @@
     "match": {
       "include": "Marsz\\w* Niepodległości",
       "from": "2026-11-05T00:00:00Z",
-      "to": "2026-11-09T00:00:00Z"
+      "to": "2026-11-12T00:00:00Z"
     },
     "extra": [],
-    "updatedAt": "2026-11-08T22:10:11Z"
+    "updatedAt": "2026-11-09T14:43:55Z"
   },
   {
     "id": "sledztwo-wejscie-prezydenta-do-tk",
@@ -870,5 +876,142 @@
       }
     ],
     "updatedAt": "2026-11-08T22:10:11Z"
+  },
+  {
+    "id": "chemik-pociag-czestochowa",
+    "title": "Pociąg IC „Chemik” zatrzymany pod Częstochową z uszkodzoną szybą. Policja sprawdza, co się stało",
+    "date": "2026-11-08",
+    "location": "okolice Częstochowy",
+    "tags": [
+      "Kolej",
+      "Policja",
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "Pociąg PKP Intercity „Chemik” relacji Katowice – Płock został zatrzymany pod Częstochową późnym wieczorem 8 listopada po incydencie, w którym uszkodzona została szyba wagonu.",
+      "Telewizja Republika i Najwyższy Czas! pisały o podejrzeniu ostrzelania składu; według Super Expressu policja bada ślady po pocisku.",
+      "Radio Maryja podało, że pociąg zatrzymano z powodu awarii. Przyczyna incydentu nie została oficjalnie potwierdzona."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska pisze ostrożnie o „incydencie w pociągu Intercity”, bez wskazywania przyczyny.",
+      "center": "RMF FM, Interia, Polsat News i Super Express relacjonują zatrzymanie składu i działania policji („Uszkodzona szyba, na miejscu policja”, „Tajemnicza dziura w szybie wagonu”); Super Express pisze o „śladach po pocisku”.",
+      "right": "Telewizja Republika i Najwyższy Czas! stawiają pytanie o ostrzał („Podejrzenie ostrzelania pociągu IC «Chemik»”, „Ostrzelano pociąg PKP Intercity?”), a Radio Maryja mówi o awarii."
+    },
+    "match": {
+      "include": "Chemik|ostrzel\\w* pociąg|Incydent (w|na trasie) pociągu|dziura w szybie",
+      "from": "2026-11-08T18:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-09T14:50:00Z",
+    "updatedAt": "2026-11-09T14:50:00Z"
+  },
+  {
+    "id": "uczniowie-przed-tk-kontrola-men",
+    "title": "Uczniowie szkoły mundurowej skandowali wulgarne hasła przed TK. MEN zarządziło kontrolę",
+    "date": "2026-11-09",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny",
+      "Edukacja",
+      "Protesty"
+    ],
+    "summary": [
+      "Według Faktu uczniowie szkoły mundurowej uczestniczący w proteście przed Trybunałem Konstytucyjnym skandowali wulgarne hasło wymierzone w premiera Donalda Tuska.",
+      "Ministerstwo Edukacji Narodowej zarządziło pilną kontrolę. TVP Info cytuje relację, że nauczycielki nie reagowały."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "Fakt ujawnia sprawę („Skandowali: j***ć Tuska”), Interia, Polsat News i TVP Info relacjonują reakcję MEN („Trwa pilna kontrola”, „Nauczycielki nie reagowały”).",
+      "right": "Telewizja Republika przedstawia kontrolę jako nacisk na młodzież: „MEN chce zastraszyć młodych patriotów spod TK!”."
+    },
+    "match": {
+      "include": "uczni\\w*.*TK|Licealiści|szkoły mundurowej|młodych patriotów|MEN reaguje na doniesienia",
+      "from": "2026-11-09T00:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-09T14:50:00Z",
+    "updatedAt": "2026-11-09T14:50:00Z"
+  },
+  {
+    "id": "miasteczko-przed-tk-pis",
+    "title": "PiS: protest przed Trybunałem Konstytucyjnym trwa mimo żałoby",
+    "date": "2026-11-09",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny",
+      "PiS",
+      "Protesty"
+    ],
+    "summary": [
+      "Jarosław Kaczyński apelował o odwołanie protestów w czasie żałoby po zamachu w Krakowie, jednak ludzie wrócili przed siedzibę TK.",
+      "Rzecznik PiS wyjaśnił słowa prezesa, mówiąc, że „miasteczko” przed Trybunałem „musi trwać”."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "Fakt zestawia apel prezesa z powrotem protestujących („PiS tłumaczy słowa prezesa”), RMF FM pisze: „Żałoba żałobą, «miasteczko pod TK musi trwać»”.",
+      "right": "Centroprawicowa Rzeczpospolita relacjonuje stanowisko partii: „Rzecznik PiS stawia sprawę jasno ws. miasteczka przed TK. «Musi trwać»”."
+    },
+    "match": {
+      "include": "miasteczk\\w* (przed|pod) TK|wrócili pod TK",
+      "from": "2026-11-09T06:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-09T14:50:00Z",
+    "updatedAt": "2026-11-09T14:50:00Z"
+  },
+  {
+    "id": "zakaz-broni-warszawa-11-listopada",
+    "title": "Czasowy zakaz noszenia broni w Warszawie na 11 listopada",
+    "date": "2026-11-09",
+    "location": "Warszawa",
+    "tags": [
+      "11 listopada",
+      "Bezpieczeństwo",
+      "Policja",
+      "Broń"
+    ],
+    "summary": [
+      "Policja wprowadziła czasowy zakaz noszenia broni w Warszawie obowiązujący w Święto Niepodległości 11 listopada; według WP ograniczenia wprowadza MSWiA.",
+      "Decyzja zapada dwa dni przed Marszem Niepodległości i po zamachu w Krakowie; Super Express pisze, że zakaz nie wynika z zamachu."
+    ],
+    "framing": {
+      "left": "Onet i Wirtualna Polska podają komunikat policji i MSWiA („Policja wprowadza czasowy zakaz noszenia broni w Warszawie”).",
+      "center": "Radio ZET, Interia, Polsat News, Fakt i TVP Info relacjonują decyzję informacyjnie; TVP Info pisze o „surowych obostrzeniach” i „całkowitym zakazie broni”, Super Express zaznacza: „Nie chodzi o zamach w Krakowie”.",
+      "right": "Brak publikacji redakcji prawicowych o samym zakazie w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "zakaz\\w* (noszenia )?broni|zakaz dla Warszawy|zakaz będzie obowiązywał 11 listopada",
+      "from": "2026-11-09T00:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-09T14:50:00Z",
+    "updatedAt": "2026-11-09T14:50:00Z"
+  },
+  {
+    "id": "otwock-kenijka-handel-ludzmi",
+    "title": "Obywatelka Kenii więziona w mieszkaniu w Otwocku. 40-latek z zarzutami",
+    "date": "2026-11-09",
+    "location": "Otwock",
+    "tags": [
+      "Przestępczość",
+      "Handel ludźmi",
+      "Policja"
+    ],
+    "summary": [
+      "Policjanci usłyszeli wołanie o pomoc i uwolnili obywatelkę Kenii przetrzymywaną w mieszkaniu w Otwocku.",
+      "40-letni mężczyzna usłyszał zarzuty; według WP dotyczą one handlu ludźmi."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska: „Zarzuty o handel ludźmi w Otwocku. Policja uwolniła obywatelkę Kenii”.",
+      "center": "RMF FM, Polsat News, TVP Info i Super Express relacjonują akcję policji („Kenijka przetrzymywana w mieszkaniu. W tle handel ludźmi”, „Krzyk zza zamkniętych drzwi!”).",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Otwock|Kenii|Kenijk",
+      "from": "2026-11-09T00:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-09T14:50:00Z",
+    "updatedAt": "2026-11-09T14:50:00Z"
   }
 ]
