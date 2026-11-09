@@ -151,16 +151,21 @@ async function build(): Promise<NewsEvent[]> {
 export const TOP_HOURS = 48;
 
 /**
- * Front-page order: events with a headline in the last TOP_HOURS, by number of sources;
- * then everything older, newest first. The home page shows the first 9; the rest load on scroll.
+ * Front-page order (founder, PUN-38): the hero is the event with most sources among those
+ * with a headline in the last TOP_HOURS; everything after it is most recently updated first
+ * (time the routine last added/updated the event, then latest headline). The home page shows
+ * the hero + 8; the rest load on scroll.
  */
 function rank(events: NewsEvent[]): NewsEvent[] {
   const newest = events.reduce((m, e) => (e.lastSeen > m ? e.lastSeen : m), '');
   const since = newest ? new Date(Date.parse(newest) - TOP_HOURS * 3600e3).toISOString() : '';
   const byRecent = (a: NewsEvent, b: NewsEvent) => b.lastSeen.localeCompare(a.lastSeen);
-  const top = events.filter((e) => e.lastSeen >= since).sort((a, b) => b.sourceCount - a.sourceCount || byRecent(a, b));
-  const older = events.filter((e) => e.lastSeen < since).sort(byRecent);
-  return [...top, ...older];
+  const touched = (e: NewsEvent) => e.updatedAt ?? e.addedAt ?? e.lastSeen;
+  const byUpdated = (a: NewsEvent, b: NewsEvent) => touched(b).localeCompare(touched(a)) || byRecent(a, b);
+  const hero = [...events]
+    .filter((e) => e.lastSeen >= since)
+    .sort((a, b) => b.sourceCount - a.sourceCount || byRecent(a, b))[0];
+  return hero ? [hero, ...events.filter((e) => e !== hero).sort(byUpdated)] : [...events].sort(byUpdated);
 }
 
 /** Infinite scroll on the home page: hero + FIRST_PAGE events in the HTML, then batches of PAGE_SIZE. */
