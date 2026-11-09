@@ -1,0 +1,10 @@
+// Cloudflare Worker that serves the built static site (dist/). No server code.
+// Used by Workers Builds (deploy command: npx wrangler deploy) and by the ingest Action.
+{
+  "name": "punkt-widzenia",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

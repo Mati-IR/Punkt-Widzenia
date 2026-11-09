@@ -34,3 +34,23 @@ npm run dev            # http://localhost:4321 (live reload while editing data)
 # or, to see exactly what will be published:
 npm run build && npm run preview   # http://localhost:4321
 ```
+
+## Cloudflare Worker + automatic redeploy after ingest
+
+If the site was set up in the Workers flow (not Pages), `wrangler.jsonc` describes the Worker:
+it serves `dist/` as static files, with no server code. Workers Builds settings:
+build command `npm run build`, deploy command `npx wrangler deploy`, variables `NODE_VERSION=22`
+and `SITE_URL=https://punkt-widzenia.<subdomain>.workers.dev`.
+
+Ingest commits carry `[skip ci]`, so Cloudflare doesn't rebuild for them. Instead the ingest Action
+(`.github/workflows/ingest.yml`, job `deploy`) rebuilds and deploys the Worker itself whenever a run
+on `main` finds new headlines. It needs, in GitHub → Settings → Secrets and variables → Actions:
+
+| Name | Kind | Value |
+|---|---|---|
+| `CLOUDFLARE_API_TOKEN` | Secret | Cloudflare → My Profile → API Tokens → Create Token → template **Edit Cloudflare Workers** |
+| `CLOUDFLARE_ACCOUNT_ID` | Secret | Cloudflare dashboard → Workers & Pages → Account ID (right-hand side) |
+| `SITE_URL` | Variable | The same `SITE_URL` as in Workers Builds |
+
+Without the secrets the deploy job is skipped and ingest works as before. Deploys from the Action
+don't count against Workers Builds' monthly build quota.
