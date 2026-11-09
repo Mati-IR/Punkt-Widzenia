@@ -7,9 +7,9 @@ Every 2 hours (and once right after any change to the pipeline is merged to `mai
 | Path | Who edits it | What it is |
 |---|---|---|
 | `data/feeds.json` | people | Source registry: one entry per outlet in `data/outlets/` (`type`: `rss` / `sitemap` / `scrape`, `urls`, notes, date last verified). CI fails if an outlet has no entry. |
-| `data/articles/YYYY-MM-DD.json` | the Action | Headlines, one file per publication day (Warsaw time), one record per line. Files older than 30 days are deleted. |
+| `data/articles/YYYY-MM-DD.json` | the Action | Headlines, one file per publication day (Warsaw time), one record per line. Files older than 365 days are deleted. |
 | `data/ingest/health.json` | the Action | Per-source report: status, error, items in source, new this run, articles in last 24 h, `lastSuccess`, `lastNewArticle`. |
-| `data/ingest/seen.json` | the Action | URLs looked at and rejected (too old / no title), so they are not re-fetched. Pruned after 30 days. |
+| `data/ingest/seen.json` | the Action | URLs looked at and rejected (too old / no title), so they are not re-fetched. Pruned after 365 days. |
 | `scripts/ingest/` | people | The fetcher (`ingest.mjs`) and parsers (`lib.mjs`). |
 
 The same health table is shown on each Action run's summary page (Actions → Ingest headlines → a run).

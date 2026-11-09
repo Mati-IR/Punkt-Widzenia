@@ -4,7 +4,7 @@ import BiasBar from '../../components/BiasBar.astro';
 import EventRow from '../../components/EventRow.astro';
 import { ownershipLabel, classicLabel } from '../../lib/labels';
 import {
-  getEvents, sideLabel, campLabel, blindspotLabel, fmtDate, fmtDateTime, initials,
+  getEvents, AI_LABEL, sideLabel, campLabel, blindspotLabel, fmtDate, fmtDateTime, initials,
   type NewsEvent, type Side,
 } from '../../lib/events';
 
@@ -58,7 +58,7 @@ const ownTotal = e.ownership.reduce((n, [, v]) => n + v, 0);
         ))}
       </div>
       <p class="muted small ai-note">
-        Podsumowanie i porównanie przygotowała redakcja Punktu Widzenia na podstawie nagłówków i leadów. <a href="/zglos-poprawke/">Coś się nie zgadza? Zgłoś poprawkę.</a>
+        <strong>{AI_LABEL}.</strong> Podsumowanie i porównanie powstały automatycznie na podstawie nagłówków i leadów monitorowanych redakcji{e.addedAt && <> ({fmtDateTime(e.addedAt)})</>}. Mogą zawierać błędy. <a href="/zglos-poprawke/">Coś się nie zgadza? Zgłoś poprawkę.</a>
       </p>
 
       <h2 id="porownanie">Porównanie nagłówków</h2>

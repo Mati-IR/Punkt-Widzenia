@@ -1,20 +1,11 @@
 ---
-// One event in a list: tag line, title, mini bias bar and source count.
-import BiasBar from './BiasBar.astro';
-import { dominant, sideLabel, blindspotLabel, type NewsEvent } from '../lib/events';
+// One event in a list: tag line, title, mini bias bar, source count and the AI label.
+// Markup comes from eventRowHtml() so rows loaded by infinite scroll (/feed/N.json) look the same.
+import { eventRowHtml, type NewsEvent } from '../lib/events';
 interface Props {
   event: NewsEvent;
   compact?: boolean;
 }
-const { event: e, compact = false } = Astro.props;
-const d = dominant(e);
+const { event, compact = false } = Astro.props;
 ---
-<article class:list={['ev-row', { compact }]}>
-  {!compact && <p class="kicker">{e.tags.slice(0, 2).join(' · ')}</p>}
-  <h3><a href={`/wydarzenie/${e.id}/`}>{e.title}</a></h3>
-  <div class="ev-meta">
-    <BiasBar pct={e.pct} size="mini" />
-    <span>{e.pct[d]}% {sideLabel[d]} · {e.sourceCount} źródeł · {e.articleCount} art.</span>
-    {e.blindspot && <span class="bs-badge">{blindspotLabel[e.blindspot]}</span>}
-  </div>
-</article>
+<Fragment set:html={eventRowHtml(event, compact)} />
