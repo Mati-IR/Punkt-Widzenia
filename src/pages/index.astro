@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import BiasBar from '../components/BiasBar.astro';
 import EventRow from '../components/EventRow.astro';
-import { getEvents, blindspotLabel, fmtDate, FIRST_PAGE, TOP_HOURS, feedPageCount, feedUrl, aiLabel } from '../lib/events';
+import { getEvents, blindspotLabel, fmtDate, FIRST_PAGE, TOP_HOURS, feedPageCount, feedUrl } from '../lib/events';
 
 const events = await getEvents();
 const [hero, ...rest] = events;
@@ -35,7 +35,7 @@ const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
         </p>
       </div>
       <h2 class="col-h">Ostatnio aktualizowane</h2>
-      {latest.slice(5, 9).map((e) => <EventRow event={e} compact />)}
+      {latest.slice(5, 9).map((e) => <EventRow event={e} compact aiLabel={false} />)}
     </aside>
 
     <section class="col-main" aria-label="Najważniejsze wydarzenia">
@@ -43,10 +43,9 @@ const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
         <span class="hero-kicker">{hero.location} · {fmtDate(hero.date)} · {hero.sourceCount} źródeł</span>
         <span class="hero-title">{hero.title}</span>
         <BiasBar pct={hero.pct} />
-        <span class="ai-label">{aiLabel(hero)}</span>
       </a>
       <div id="feed">
-        {main.map((e) => <EventRow event={e} />)}
+        {main.map((e) => <EventRow event={e} aiLabel={false} />)}
       </div>
       {nextFeed && (
         <div class="feed-more" id="feed-more" data-next={nextFeed}>

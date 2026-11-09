@@ -187,8 +187,9 @@ export const biasBarMiniHtml = (pct: Record<Side, number>) =>
   (['left', 'center', 'right'] as const).filter((s) => pct[s] > 0).map((s) => `<span class="seg ${s}" style="flex-grow:${pct[s]}"></span>`).join('') +
   `</div>`;
 
-/** One event in a list. Used by <EventRow> and by the feed JSON, so server and scroll-loaded rows look the same. */
-export function eventRowHtml(e: NewsEvent, compact = false): string {
+/** One event in a list. Used by <EventRow> and by the feed JSON, so server and scroll-loaded rows look the same.
+ *  The homepage hides the AI label (founder, PUN-38); the event page still carries it. */
+export function eventRowHtml(e: NewsEvent, compact = false, showAiLabel = true): string {
   const d = dominant(e);
   return (
     `<article class="ev-row${compact ? ' compact' : ''}" data-id="${esc(e.id)}">` +
@@ -198,7 +199,7 @@ export function eventRowHtml(e: NewsEvent, compact = false): string {
     `<span>${e.pct[d]}% ${sideLabel[d]} · ${e.sourceCount} źródeł · ${e.articleCount} art.</span>` +
     (e.blindspot ? `<span class="bs-badge">${blindspotLabel[e.blindspot]}</span>` : '') +
     `</div>` +
-    `<p class="ai-label">${esc(aiLabel(e))}</p>` +
+    (showAiLabel ? `<p class="ai-label">${esc(aiLabel(e))}</p>` : '') +
     `</article>`
   );
 }

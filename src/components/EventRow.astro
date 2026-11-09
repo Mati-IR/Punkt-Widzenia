@@ -1,11 +1,13 @@
 ---
-// One event in a list: tag line, title, mini bias bar, source count and the AI label.
+// One event in a list: tag line, title, mini bias bar, source count and (except on the homepage) the AI label.
 // Markup comes from eventRowHtml() so rows loaded by infinite scroll (/feed/N.json) look the same.
 import { eventRowHtml, type NewsEvent } from '../lib/events';
 interface Props {
   event: NewsEvent;
   compact?: boolean;
+  /** Homepage passes false: no AI label there. */
+  aiLabel?: boolean;
 }
-const { event, compact = false } = Astro.props;
+const { event, compact = false, aiLabel = true } = Astro.props;
 ---
-<Fragment set:html={eventRowHtml(event, compact)} />
+<Fragment set:html={eventRowHtml(event, compact, aiLabel)} />
