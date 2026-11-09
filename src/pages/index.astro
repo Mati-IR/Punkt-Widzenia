@@ -2,24 +2,28 @@
 import Base from '../layouts/Base.astro';
 import BiasBar from '../components/BiasBar.astro';
 import EventRow from '../components/EventRow.astro';
-import { getEvents, blindspotLabel, fmtDate } from '../lib/events';
+import { getEvents, blindspotLabel, fmtDate, FIRST_PAGE, TOP_HOURS, feedPageCount, feedUrl, AI_LABEL } from '../lib/events';
 
 const events = await getEvents();
 const [hero, ...rest] = events;
-const totalArticles = events.reduce((n, e) => n + e.articleCount, 0);
-const outletsUsed = new Set(events.flatMap((e) => e.coverage.map((c) => c.outlet.id))).size;
-const blindspots = events.filter((e) => e.blindspot);
+// "Przegląd dnia" counts only recent events: the full list goes back 365 days.
+const newest = events.reduce((m, e) => (e.lastSeen > m ? e.lastSeen : m), '');
+const since = new Date(Date.parse(newest) - TOP_HOURS * 3600e3).toISOString();
+const recent = events.filter((e) => e.lastSeen >= since);
+const totalArticles = recent.reduce((n, e) => n + e.articleCount, 0);
+const outletsUsed = new Set(recent.flatMap((e) => e.coverage.map((c) => c.outlet.id))).size;
+const blindspots = events.filter((e) => e.blindspot); // already newest-first after the top block
 const latest = [...events].sort((a, b) => b.lastSeen.localeCompare(a.lastSeen));
 const briefing = latest.slice(0, 5);
-const main = rest.slice(0, 8);
-const more = rest.slice(8);
+const main = rest.slice(0, FIRST_PAGE);
+const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
 ---
 <Base title="Punkt Widzenia" description="Najważniejsze wydarzenia w Polsce i to, jak opisują je media z lewa, z centrum i z prawa. Porównaj nagłówki, zobacz rozkład źródeł i ślepe plamki.">
   <div class="home">
     <aside class="col-left" aria-labelledby="brief-h">
       <h2 id="brief-h" class="col-h">Przegląd dnia</h2>
       <div class="brief brief-card">
-        <p class="brief-stats">{events.length} wydarzeń · {totalArticles} artykułów · {outletsUsed} redakcji</p>
+        <p class="brief-stats">{recent.length} wydarzeń · {totalArticles} artykułów · {outletsUsed} redakcji · ostatnie {TOP_HOURS} godz.</p>
         <h3><a href={`/wydarzenie/${briefing[0].id}/`}>{briefing[0].title}</a></h3>
         <p class="muted">{briefing[0].summary[0]}</p>
         <p class="brief-more">
@@ -39,13 +43,16 @@ const more = rest.slice(8);
         <span class="hero-kicker">{hero.location} · {fmtDate(hero.date)} · {hero.sourceCount} źródeł</span>
         <span class="hero-title">{hero.title}</span>
         <BiasBar pct={hero.pct} />
+        <span class="ai-label">{AI_LABEL}</span>
       </a>
-      {main.map((e) => <EventRow event={e} />)}
-      {more.length > 0 && (
-        <>
-          <h2 class="col-h">Więcej wydarzeń</h2>
-          {more.map((e) => <EventRow event={e} />)}
-        </>
+      <div id="feed">
+        {main.map((e) => <EventRow event={e} />)}
+      </div>
+      {nextFeed && (
+        <div class="feed-more" id="feed-more" data-next={nextFeed}>
+          <button type="button" class="btn-outline" id="feed-btn">Pokaż więcej wydarzeń</button>
+          <p class="muted small" id="feed-status" role="status" aria-live="polite"></p>
+        </div>
       )}
     </section>
 
@@ -72,3 +79,43 @@ const more = rest.slice(8);
     </aside>
   </div>
 </Base>
+
+<script>
+  // Infinite scroll: loads the next 8 events from a static /feed/N.json when the "more" button
+  // comes into view (or is clicked). No backend; without JS the button simply does nothing.
+  const box = document.getElementById('feed-more');
+  const feed = document.getElementById('feed');
+  const btn = document.getElementById('feed-btn') as HTMLButtonElement | null;
+  const status = document.getElementById('feed-status');
+  if (box && feed && btn && status) {
+    let next: string | null = box.dataset.next ?? null;
+    let busy = false;
+    const load = async () => {
+      if (busy || !next) return;
+      busy = true;
+      btn.disabled = true;
+      status.textContent = 'Ładowanie…';
+      try {
+        const res = await fetch(next);
+        if (!res.ok) throw new Error(String(res.status));
+        const page: { events: { id: string; html: string }[]; next: string | null } = await res.json();
+        // Skip rows already shown (the site may have been rebuilt between pages).
+        const have = new Set([...feed.querySelectorAll<HTMLElement>('[data-id]')].map((el) => el.dataset.id));
+        feed.insertAdjacentHTML('beforeend', page.events.filter((e) => !have.has(e.id)).map((e) => e.html).join(''));
+        next = page.next;
+        status.textContent = next ? '' : 'To już wszystkie wydarzenia z ostatnich 12 miesięcy.';
+        if (!next) { btn.hidden = true; io?.disconnect(); }
+      } catch {
+        status.textContent = 'Nie udało się wczytać kolejnych wydarzeń. Spróbuj ponownie.';
+      } finally {
+        busy = false;
+        btn.disabled = false;
+      }
+    };
+    btn.addEventListener('click', load);
+    const io = 'IntersectionObserver' in window
+      ? new IntersectionObserver((entries) => entries.some((e) => e.isIntersecting) && load(), { rootMargin: '600px 0px' })
+      : null;
+    io?.observe(box);
+  }
+</script>

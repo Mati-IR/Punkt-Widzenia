@@ -23,7 +23,7 @@ const INGEST_DIR = path.join(ROOT, 'data/ingest');
 const HEALTH = path.join(INGEST_DIR, 'health.json');
 const SEEN = path.join(INGEST_DIR, 'seen.json');
 
-const RETENTION_DAYS = 30;     // day files older than this are deleted
+const RETENTION_DAYS = 365;    // day files older than this are deleted (founder decision 2026-11-09)
 const MAX_AGE_DAYS = 7;        // newly found items published earlier than this are skipped
 const MAX_PAGE_FETCHES = 40;   // per sitemap/scrape source per run (new article pages; sized for a 2-h cadence)
 const PAGE_CONCURRENCY = 3;    // per source

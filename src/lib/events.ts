@@ -1,10 +1,11 @@
 // Events ("wydarzenia") are the main entry point of the site, like stories on Ground News.
-// An event is curated in data/events/events.json (title, neutral summary, framing comparison,
-// matching rule). Articles come from the ingestion pipeline (data/articles/*.json) and are
-// attached to an event by its title regex + time window, plus hand-picked `extra` links.
-import { readdirSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
+// Events live in data/events/events.json (title, neutral summary, framing comparison, matching
+// rule); the AI events routine adds new ones every 2 h (docs/EVENTS.md). Articles come from the
+// ingestion pipeline (data/articles/*.json) and are attached to an event by its title regex +
+// time window, plus hand-picked `extra` links. Matching lives in scripts/events/lib.mjs so the
+// routine's scripts see exactly what the site shows.
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { EVENTS_FILE, readJson, loadArticles, matchArticles, retained, validateEvents } from '../../scripts/events/lib.mjs';
 
 export type Side = 'left' | 'center' | 'right';
 export type Camp = 'gov' | 'mixed' | 'opp';
@@ -23,8 +24,12 @@ interface RawEvent {
   tags: string[];
   summary: string[];
   framing: Record<Side, string>;
-  match: { include: string; exclude?: string; from: string; to: string };
-  extra: Article[];
+  match: { include: string; exclude?: string; from: string; to?: string };
+  extra?: Article[];
+  /** When the AI routine added the event (ISO). */
+  addedAt?: string;
+  /** Catch-all event for the biggest story: claims headlines after the specific events. */
+  broad?: boolean;
 }
 type Outlet = CollectionEntry<'outlets'>;
 
@@ -34,7 +39,7 @@ export interface Coverage {
   camp: Camp;
   articles: Article[];
 }
-export interface NewsEvent extends Omit<RawEvent, 'match' | 'extra'> {
+export interface NewsEvent extends Omit<RawEvent, 'match' | 'extra' | 'broad'> {
   coverage: Coverage[];
   articleCount: number;
   sourceCount: number;
@@ -68,16 +73,6 @@ export const blindspotLabel: Record<Side, string> = {
   right: 'Pomijane przez prawicę',
 };
 
-/** Multi-topic digests ("5 ważnych tematów na dziś") are not about one event. */
-const DIGEST = /\d+ (ważnych )?temat|Kumulacja wydarzeń/i;
-
-function loadArticles(): Article[] {
-  const dir = 'data/articles';
-  return readdirSync(dir)
-    .filter((f) => f.endsWith('.json'))
-    .flatMap((f) => JSON.parse(readFileSync(join(dir, f), 'utf8')) as Article[]);
-}
-
 const pct = <K extends string>(counts: Record<K, number>, total: number) =>
   Object.fromEntries(Object.entries(counts).map(([k, v]) => [k, total ? Math.round(((v as number) / total) * 100) : 0])) as Record<K, number>;
 
@@ -85,31 +80,13 @@ let cache: Promise<NewsEvent[]> | undefined;
 export const getEvents = () => (cache ??= build());
 
 async function build(): Promise<NewsEvent[]> {
-  const raw: RawEvent[] = JSON.parse(readFileSync('data/events/events.json', 'utf8'));
+  const all = readJson(EVENTS_FILE);
+  const problems = validateEvents(all);
+  if (problems.length) throw new Error(`${EVENTS_FILE} is invalid:\n- ${problems.join('\n- ')}`);
+  const raw: RawEvent[] = retained(all);
   const outlets = await getCollection('outlets');
   const byId = new Map(outlets.map((o) => [o.id, o]));
-  const articles = loadArticles();
-  const used = new Set<string>();
-
-  // Specific events claim articles first; a broad "catch-all" event (the biggest story) goes last.
-  const catchAll = (e: RawEvent) => e.id === 'zamach-krakow';
-  const order = [...raw.filter((e) => !catchAll(e)), ...raw.filter(catchAll)];
-  const matched = new Map<string, Article[]>();
-  for (const e of order) {
-    const inc = new RegExp(e.match.include, 'i');
-    const exc = e.match.exclude ? new RegExp(e.match.exclude, 'i') : null;
-    const hits = articles.filter(
-      (a) =>
-        !used.has(a.url) &&
-        a.publishedAt >= e.match.from &&
-        a.publishedAt < e.match.to &&
-        inc.test(a.title) &&
-        !exc?.test(a.title) &&
-        !DIGEST.test(a.title),
-    );
-    hits.forEach((a) => used.add(a.url));
-    matched.set(e.id, [...hits, ...e.extra]);
-  }
+  const matched: Map<string, Article[]> = matchArticles(raw, loadArticles());
 
   const events = raw.map((e): NewsEvent => {
     const seen = new Set<string>();
@@ -147,7 +124,7 @@ async function build(): Promise<NewsEvent[]> {
     else if (p.right <= BLINDSPOT.MAX_SHARE && p.left >= BLINDSPOT.MIN_OTHER) blindspot = 'right';
 
     const covered = new Set(coverage.map((c) => c.outlet.id));
-    const { match: _m, extra: _x, ...rest } = e;
+    const { match: _m, extra: _x, broad: _b, ...rest } = e;
     return {
       ...rest,
       coverage,
@@ -165,8 +142,58 @@ async function build(): Promise<NewsEvent[]> {
     };
   });
 
-  // Rank like a front page: number of sources first, then recency.
-  return events.sort((a, b) => b.sourceCount - a.sourceCount || b.date.localeCompare(a.date));
+  return rank(events);
+}
+
+/** Events active in the last TOP_HOURS (before the newest headline) lead the front page. */
+export const TOP_HOURS = 48;
+
+/**
+ * Front-page order: events with a headline in the last TOP_HOURS, by number of sources;
+ * then everything older, newest first. The home page shows the first 9; the rest load on scroll.
+ */
+function rank(events: NewsEvent[]): NewsEvent[] {
+  const newest = events.reduce((m, e) => (e.lastSeen > m ? e.lastSeen : m), '');
+  const since = newest ? new Date(Date.parse(newest) - TOP_HOURS * 3600e3).toISOString() : '';
+  const byRecent = (a: NewsEvent, b: NewsEvent) => b.lastSeen.localeCompare(a.lastSeen);
+  const top = events.filter((e) => e.lastSeen >= since).sort((a, b) => b.sourceCount - a.sourceCount || byRecent(a, b));
+  const older = events.filter((e) => e.lastSeen < since).sort(byRecent);
+  return [...top, ...older];
+}
+
+/** Infinite scroll on the home page: hero + FIRST_PAGE events in the HTML, then batches of PAGE_SIZE. */
+export const FIRST_PAGE = 8;
+export const PAGE_SIZE = 8;
+export const feedUrl = (n: number) => `/feed/${n}.json`;
+/** Events for feed page n (1-based), i.e. after the hero and the first page. */
+export const feedPage = (events: NewsEvent[], n: number) =>
+  events.slice(1 + FIRST_PAGE + (n - 1) * PAGE_SIZE, 1 + FIRST_PAGE + n * PAGE_SIZE);
+export const feedPageCount = (events: NewsEvent[]) => Math.ceil(Math.max(0, events.length - 1 - FIRST_PAGE) / PAGE_SIZE);
+
+export const AI_LABEL = 'Podsumowane przez sztuczną inteligencję';
+
+const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&${({ '&': 'amp', '<': 'lt', '>': 'gt', '"': 'quot', "'": '#39' } as Record<string, string>)[c]};`);
+
+/** Thin L/C/P bar. Same markup as <BiasBar size="mini">. */
+export const biasBarMiniHtml = (pct: Record<Side, number>) =>
+  `<div class="bias mini" role="img" aria-label="${esc(`Rozkład źródeł: lewica ${pct.left}%, centrum ${pct.center}%, prawica ${pct.right}%`)}">` +
+  (['left', 'center', 'right'] as const).filter((s) => pct[s] > 0).map((s) => `<span class="seg ${s}" style="flex-grow:${pct[s]}"></span>`).join('') +
+  `</div>`;
+
+/** One event in a list. Used by <EventRow> and by the feed JSON, so server and scroll-loaded rows look the same. */
+export function eventRowHtml(e: NewsEvent, compact = false): string {
+  const d = dominant(e);
+  return (
+    `<article class="ev-row${compact ? ' compact' : ''}" data-id="${esc(e.id)}">` +
+    (compact ? '' : `<p class="kicker">${esc(e.tags.slice(0, 2).join(' · '))}</p>`) +
+    `<h3><a href="/wydarzenie/${esc(e.id)}/">${esc(e.title)}</a></h3>` +
+    `<div class="ev-meta">${biasBarMiniHtml(e.pct)}` +
+    `<span>${e.pct[d]}% ${sideLabel[d]} · ${e.sourceCount} źródeł · ${e.articleCount} art.</span>` +
+    (e.blindspot ? `<span class="bs-badge">${blindspotLabel[e.blindspot]}</span>` : '') +
+    `</div>` +
+    `<p class="ai-label">${AI_LABEL}</p>` +
+    `</article>`
+  );
 }
 
 export const dominant = (e: NewsEvent): Side =>

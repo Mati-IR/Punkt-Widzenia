@@ -96,6 +96,12 @@ header.site { background: var(--paper); }
 .frame-heads { font-size: .95rem; }
 .frame-heads li { margin-bottom: .3rem; }
 .ai-note { border-top: 1px solid var(--line); padding-top: .6rem; }
+.ai-label { margin: .45rem 0 0; font-size: .72rem; color: var(--muted); letter-spacing: .01em; }
+.ai-label::before { content: "✦ "; }
+.hero .ai-label { display: block; color: inherit; opacity: .8; }
+.feed-more { padding: 1.2rem 0; text-align: center; }
+.feed-more .btn-outline { width: 100%; background: none; color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; margin: 0 0 .5rem; }
+.feed-more .btn-outline[hidden] { display: none; }
 
 .compare { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 @media (max-width: 700px) { .compare { grid-template-columns: 1fr; } }

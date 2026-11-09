@@ -26,4 +26,5 @@ jobs:
           cache: npm
       - run: npm ci
       - run: node scripts/ingest/ingest.mjs --check # every outlet has a valid entry in data/feeds.json
+      - run: node scripts/events/check.mjs # data/events/events.json is valid (the build checks it too)
       - run: npm run build # astro check + astro build; fails on any invalid outlet record
