@@ -1,6 +1,6 @@
 # Headline ingestion
 
-Every 30 minutes a GitHub Action (`.github/workflows/ingest.yml`) fetches the latest headlines from all 30 outlets and commits them to the repo. No paid services, no dependencies.
+Every 2 hours (and once right after any change to the pipeline is merged to `main`) a GitHub Action (`.github/workflows/ingest.yml`) fetches the latest headlines from all 30 outlets and commits them to the repo. No paid services, no dependencies.
 
 ## Files
 
@@ -31,7 +31,7 @@ Sitemap and scrape sources open at most 20 new article pages per run, newest fir
 ## Politeness
 
 - The fetcher identifies itself as `PunktWidzeniaBot` and **obeys robots.txt**. A source that robots.txt disallows is reported as `blocked`, not fetched.
-- Low volume: one request per feed per 30 min, plus up to 20 article pages per sitemap/scrape source.
+- Low volume: one request per feed every 2 h, plus up to 40 article pages per sitemap/scrape source.
 - Items published more than 7 days before they are found are skipped.
 
 ## Running it locally
