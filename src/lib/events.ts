@@ -28,6 +28,8 @@ interface RawEvent {
   extra?: Article[];
   /** When the AI routine added the event (ISO). */
   addedAt?: string;
+  /** Last change to the visible text (title, summary, framing…). Set by scripts/events/stamp.mjs, never by the build. */
+  updatedAt?: string;
   /** Catch-all event for the biggest story: claims headlines after the specific events. */
   broad?: boolean;
 }
@@ -171,6 +173,11 @@ export const feedPage = (events: NewsEvent[], n: number) =>
 export const feedPageCount = (events: NewsEvent[]) => Math.ceil(Math.max(0, events.length - 1 - FIRST_PAGE) / PAGE_SIZE);
 
 export const AI_LABEL = 'Podsumowane przez sztuczną inteligencję';
+/** "✦ Podsumowane przez sztuczną inteligencję · zaktualizowano 9 lis, 15:05". Time comes from the data, not the build. */
+export const aiLabel = (e: { updatedAt?: string; addedAt?: string }) => {
+  const t = e.updatedAt ?? e.addedAt;
+  return t ? `${AI_LABEL} · zaktualizowano ${fmtDateTime(t)}` : AI_LABEL;
+};
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&${({ '&': 'amp', '<': 'lt', '>': 'gt', '"': 'quot', "'": '#39' } as Record<string, string>)[c]};`);
 
@@ -191,7 +198,7 @@ export function eventRowHtml(e: NewsEvent, compact = false): string {
     `<span>${e.pct[d]}% ${sideLabel[d]} · ${e.sourceCount} źródeł · ${e.articleCount} art.</span>` +
     (e.blindspot ? `<span class="bs-badge">${blindspotLabel[e.blindspot]}</span>` : '') +
     `</div>` +
-    `<p class="ai-label">${AI_LABEL}</p>` +
+    `<p class="ai-label">${esc(aiLabel(e))}</p>` +
     `</article>`
   );
 }

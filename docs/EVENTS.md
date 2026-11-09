@@ -27,7 +27,8 @@ Every 2 hours a Paperclip routine ("AI events routine") opens a task for an agen
   "framing": { "left": "…", "center": "…", "right": "…" },
   "match": { "include": "rating", "exclude": "optional regex", "from": "2026-11-06T00:00:00Z", "to": "optional, default from + 72 h" },
   "extra": [],
-  "addedAt": "2026-11-09T14:05:00Z"
+  "addedAt": "2026-11-09T14:05:00Z",
+  "updatedAt": "2026-11-09T14:05:00Z"
 }
 ```
 
@@ -35,6 +36,7 @@ Every 2 hours a Paperclip routine ("AI events routine") opens a task for an agen
 - `match.include` / `exclude`: case-insensitive regex on the headline **title**. A headline goes to one event only; events with `"broad": true` (a catch-all for the biggest story) claim last.
 - `match.from` / `to`: ISO UTC. Without `to` the window is 72 h after `from`. To keep an ongoing story collecting headlines, move `to` forward.
 - `extra`: optional hand-picked links `{outletId, title, url, publishedAt}`.
+- `updatedAt`: when the visible text (title, date, location, tags, summary, framing) last changed. Shown next to the AI label as „zaktualizowano 9 lis, 15:05”. Never set it by hand: `node scripts/events/stamp.mjs` sets it only on events whose text differs from the last commit. The build never changes it, and new headlines being attached do not count as an update.
 
 ## Home page order and infinite scroll
 
@@ -62,15 +64,16 @@ Keep each run short. Budget: one pass, no web browsing; work only from the headl
    - `match`: a regex that catches this story's headlines and not others; `from` ≈ first headline time minus a few hours; leave out `to` unless needed. `addedAt`: now (UTC). `date`: the day the event happened (YYYY-MM-DD).
    - Do not change outlet data, ratings or methodology.
 5. **Check:** `node scripts/events/check.mjs` must print `OK`; for each new event run `node scripts/events/check.mjs --show <id>` and fix the regex if it caught unrelated headlines or missed obvious ones. Each new event must match ≥ 3 outlets.
-6. **Move the cursor:** `node scripts/events/headlines.mjs --mark`.
-7. **Publish** (no `[skip ci]`: the push must trigger the build):
+6. **Stamp updates:** `node scripts/events/stamp.mjs` (sets `updatedAt` on new and edited events only).
+7. **Move the cursor:** `node scripts/events/headlines.mjs --mark`.
+8. **Publish** (no `[skip ci]`: the push must trigger the build):
    ```sh
    git add data/events
    git commit -m "events: +N new, M updated (AI routine)"
    git push origin HEAD:main || { git pull --rebase origin main && git push origin HEAD:main; }
    ```
    If nothing changed except the cursor, still commit and push it with `[skip ci]` in the message.
-8. Close the routine task with one line: new event ids and updated ids, or "no new events".
+9. Close the routine task with one line: new event ids and updated ids, or "no new events".
 
 ## Corrections
 

@@ -29,7 +29,8 @@
       "from": "2026-11-07T14:00:00Z",
       "to": "2026-11-09T00:00:00Z"
     },
-    "extra": []
+    "extra": [],
+    "updatedAt": "2026-11-09T14:05:55Z"
   },
   {
     "id": "spor-o-motywy-zamachowca",
@@ -58,7 +59,8 @@
       "to": "2026-11-09T00:00:00Z",
       "exclude": "obcokrajowiec"
     },
-    "extra": []
+    "extra": [],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "republika-krrit-zamach",
@@ -86,7 +88,8 @@
       "from": "2026-11-07T14:00:00Z",
       "to": "2026-11-09T00:00:00Z"
     },
-    "extra": []
+    "extra": [],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "marsz-niepodleglosci-2026",
@@ -113,7 +116,8 @@
       "from": "2026-11-05T00:00:00Z",
       "to": "2026-11-09T00:00:00Z"
     },
-    "extra": []
+    "extra": [],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "sledztwo-wejscie-prezydenta-do-tk",
@@ -183,7 +187,8 @@
         "url": "https://nczas.info/2026/11/03/sledztwo-czynnej-napasci-na-sedziow-tk-nawrocki/",
         "publishedAt": "2026-11-03T12:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "swieczkowski-immunitet-areszt",
@@ -253,7 +258,8 @@
         "url": "https://wpolityce.pl/polityka/mysla-ze-wygraja-kolejny-atak-prokuratury-na-prezesa-tk,291650",
         "publishedAt": "2026-11-04T12:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "psl-reset-konstytucyjny",
@@ -317,7 +323,8 @@
         "url": "https://wpolityce.pl/polityka/pawelczyk-woicka-o-psl-umowa-z-pistoletem-przy-glowie,295016",
         "publishedAt": "2026-11-07T12:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "rbn-trybunal-braun",
@@ -382,7 +389,8 @@
         "url": "https://tvrepublika.pl/Polska/Tusk-bedzie-obecny-na-posiedzeniu-RBN/225082",
         "publishedAt": "2026-11-03T10:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "granica-z-rosja-grom",
@@ -454,7 +462,8 @@
         "url": "https://dorzeczy.pl/opinie/966990/rosjanie-mowia-o-polskiej-operacji-przeciwko-rosji-wskazuja-na-grom.html",
         "publishedAt": "2026-11-05T12:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "alarmy-bombowe-samoloty",
@@ -531,7 +540,8 @@
         "url": "https://nczas.info/2026/11/05/seria-falszywych-alarmow-bombowych-na-pokladach-samolotow/",
         "publishedAt": "2026-11-05T12:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "sp-perspektywa-ratingu",
@@ -607,7 +617,8 @@
         "url": "https://dorzeczy.pl/opinie/968409/fatalny-rating-polski-w-nagrode-awans-domanskiego.html",
         "publishedAt": "2026-11-07T14:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "cba-elektrownia-ostroleka",
@@ -684,7 +695,8 @@
         "url": "https://dorzeczy.pl/ekonomia/966789/cba-u-politykow-pis-sledztwo-w-sprawie-elektrowni-ostroleka.html",
         "publishedAt": "2026-11-04T12:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "posel-krol-areszt",
@@ -755,7 +767,8 @@
         "url": "https://nczas.info/2026/11/05/zwrot-w-sprawie-polityka-koalicji-obywatelskiej-sad-nakazal-jego-aresztowanie/",
         "publishedAt": "2026-11-05T17:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "senat-ustawy-aborcyjne",
@@ -796,7 +809,8 @@
         "url": "https://tvn24.pl/zdrowie/zmiany-w-prawie-aborcyjnym-senatorowie-za-ustawy-trafily-do-prezydenta-st9326674",
         "publishedAt": "2026-11-06T13:00:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   },
   {
     "id": "pakt-migracyjny-zwolnienie-2027",
@@ -854,6 +868,7 @@
         "url": "https://wiadomosci.wp.pl/pakt-migracyjny-jest-propozycja-ke-w-sprawie-polski-7348066909309376a",
         "publishedAt": "2026-11-06T11:30:00Z"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-08T22:10:11Z"
   }
 ]

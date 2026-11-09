@@ -58,7 +58,7 @@ const ownTotal = e.ownership.reduce((n, [, v]) => n + v, 0);
         ))}
       </div>
       <p class="muted small ai-note">
-        <strong>{AI_LABEL}.</strong> Podsumowanie i porównanie powstały automatycznie na podstawie nagłówków i leadów monitorowanych redakcji{e.addedAt && <> ({fmtDateTime(e.addedAt)})</>}. Mogą zawierać błędy. <a href="/zglos-poprawke/">Coś się nie zgadza? Zgłoś poprawkę.</a>
+        <strong>{AI_LABEL}.</strong> Podsumowanie i porównanie powstały automatycznie na podstawie nagłówków i leadów monitorowanych redakcji{(e.updatedAt ?? e.addedAt) && <> (ostatnia aktualizacja: {fmtDateTime((e.updatedAt ?? e.addedAt)!)})</>}. Mogą zawierać błędy. <a href="/zglos-poprawke/">Coś się nie zgadza? Zgłoś poprawkę.</a>
       </p>
 
       <h2 id="porownanie">Porównanie nagłówków</h2>

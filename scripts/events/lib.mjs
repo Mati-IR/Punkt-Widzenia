@@ -35,6 +35,10 @@ export const retained = (events, now = Date.now()) => {
   return events.filter((e) => e.date >= cutoff);
 };
 
+/** What readers see of an event. A change here (and only here) moves its `updatedAt` (stamp.mjs). */
+export const visibleContent = (e) =>
+  JSON.stringify([e.title, e.date, e.location, e.tags, e.summary, e.framing]);
+
 /** Returns a list of problems (empty = valid). */
 export function validateEvents(events) {
   const errs = [];
@@ -69,6 +73,7 @@ export function validateEvents(events) {
     if (e.extra !== undefined && (!Array.isArray(e.extra) || !e.extra.every((a) => str(a?.outletId) && str(a?.title) && str(a?.url) && ISO.test(a?.publishedAt ?? ''))))
       bad('"extra" must be a list of {outletId, title, url, publishedAt}');
     if (e.addedAt !== undefined && !ISO.test(e.addedAt)) bad('"addedAt" must be an ISO UTC time');
+    if (e.updatedAt !== undefined && !ISO.test(e.updatedAt)) bad('"updatedAt" must be an ISO UTC time');
     if (e.broad !== undefined && typeof e.broad !== 'boolean') bad('"broad" must be true or false');
   });
   return errs;

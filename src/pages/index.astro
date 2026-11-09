@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import BiasBar from '../components/BiasBar.astro';
 import EventRow from '../components/EventRow.astro';
-import { getEvents, blindspotLabel, fmtDate, FIRST_PAGE, TOP_HOURS, feedPageCount, feedUrl, AI_LABEL } from '../lib/events';
+import { getEvents, blindspotLabel, fmtDate, FIRST_PAGE, TOP_HOURS, feedPageCount, feedUrl, aiLabel } from '../lib/events';
 
 const events = await getEvents();
 const [hero, ...rest] = events;
@@ -43,7 +43,7 @@ const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
         <span class="hero-kicker">{hero.location} · {fmtDate(hero.date)} · {hero.sourceCount} źródeł</span>
         <span class="hero-title">{hero.title}</span>
         <BiasBar pct={hero.pct} />
-        <span class="ai-label">{AI_LABEL}</span>
+        <span class="ai-label">{aiLabel(hero)}</span>
       </a>
       <div id="feed">
         {main.map((e) => <EventRow event={e} />)}
