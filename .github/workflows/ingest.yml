@@ -1,11 +1,15 @@
-# Fetches headlines from every outlet in data/feeds.json every 30 minutes and commits
+# Fetches headlines from every outlet in data/feeds.json and commits
 # them to data/articles/ + the per-source report to data/ingest/health.json. See docs/INGEST.md.
 # Commits carry [skip ci], so they trigger neither CI nor a Cloudflare Pages build.
 name: Ingest headlines
 
+# Manual for now (founder decision, 2026-11-09): GitHub's scheduler ran the 30-min cron only
+# ~2 times in 10 h, and some outlets refuse GitHub's servers (HTTP 403). Run it from your own
+# machine with `npm run ingest` (see docs/INGEST.md), or with "Run workflow" on the Actions tab.
+# To bring the timer back, re-add:
+#   schedule:
+#     - cron: '7,37 * * * *'
 on:
-  schedule:
-    - cron: '7,37 * * * *' # every 30 min, off the hour (GitHub delays jobs queued at :00)
   workflow_dispatch:
 
 permissions:
