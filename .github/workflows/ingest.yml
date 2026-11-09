@@ -1,4 +1,4 @@
-# Fetches headlines from every outlet in data/feeds.json every 30 minutes and commits
+# Fetches headlines from every outlet in data/feeds.json every 2 hours and commits
 # them to data/articles/ + the per-source report to data/ingest/health.json. See docs/INGEST.md.
 # Commits carry [skip ci], so they trigger neither CI nor a Cloudflare build. Instead, when a run
 # finds new headlines, the `deploy` job rebuilds the site and deploys it to the Cloudflare Worker
@@ -8,7 +8,13 @@ name: Ingest headlines
 
 on:
   schedule:
-    - cron: '7,37 * * * *' # every 30 min, off the hour (GitHub delays jobs queued at :00)
+    - cron: '7 */2 * * *' # every 2 h, off the hour (GitHub delays jobs queued at :00)
+  push: # run once right after a change to the pipeline lands on main (e.g. merging this PR)
+    branches: [main]
+    paths:
+      - .github/workflows/ingest.yml
+      - scripts/ingest/**
+      - data/feeds.json
   workflow_dispatch:
 
 permissions:

@@ -25,7 +25,7 @@ const SEEN = path.join(INGEST_DIR, 'seen.json');
 
 const RETENTION_DAYS = 30;     // day files older than this are deleted
 const MAX_AGE_DAYS = 7;        // newly found items published earlier than this are skipped
-const MAX_PAGE_FETCHES = 20;   // per sitemap/scrape source per run (new article pages)
+const MAX_PAGE_FETCHES = 40;   // per sitemap/scrape source per run (new article pages; sized for a 2-h cadence)
 const PAGE_CONCURRENCY = 3;    // per source
 const MAX_CANDIDATES = 100;    // newest sitemap/listing entries looked at per run
 const FETCH_TIMEOUT_MS = 15_000;
@@ -39,7 +39,7 @@ const onlyArg = args.find((a) => a.startsWith('--only'));
 const ONLY = onlyArg ? (onlyArg.includes('=') ? onlyArg.split('=')[1] : args[args.indexOf(onlyArg) + 1]).split(',') : null;
 
 const START = Date.now();
-const DEADLINE = START + Number(process.env.INGEST_BUDGET_MS || 50_000);
+const DEADLINE = START + Number(process.env.INGEST_BUDGET_MS || 90_000);
 const NOW_ISO = new Date(START).toISOString();
 
 const readJson = (p, fallback) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return fallback; } };
@@ -130,7 +130,7 @@ async function pool(items, n, fn) {
 /** Fill title/lead/published from article pages for up to MAX_PAGE_FETCHES unseen candidates. */
 async function enrich(cands, known, seen, stats) {
   stats.items = cands.length;
-  // Only the newest MAX_CANDIDATES entries are considered: at a 30-min cadence that is plenty,
+  // Only the newest MAX_CANDIDATES entries are considered: at a 2-h cadence that is plenty,
   // and it stops us walking back through months of undated sitemap entries.
   const fresh = cands.slice(0, MAX_CANDIDATES).filter((c) => !known.has(urlKey(c.url)) && !seen.has(urlKey(c.url)));
   const todo = fresh.slice(0, MAX_PAGE_FETCHES);
