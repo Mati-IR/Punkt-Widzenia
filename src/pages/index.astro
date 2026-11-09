@@ -12,7 +12,7 @@ const since = new Date(Date.parse(newest) - TOP_HOURS * 3600e3).toISOString();
 const recent = events.filter((e) => e.lastSeen >= since);
 const totalArticles = recent.reduce((n, e) => n + e.articleCount, 0);
 const outletsUsed = new Set(recent.flatMap((e) => e.coverage.map((c) => c.outlet.id))).size;
-const blindspots = events.filter((e) => e.blindspot); // already newest-first after the top block
+const blindspots = events.filter((e) => e.blindspot); // hero first, then most recently updated
 const latest = [...events].sort((a, b) => b.lastSeen.localeCompare(a.lastSeen));
 const briefing = latest.slice(0, 5);
 const main = rest.slice(0, FIRST_PAGE);
