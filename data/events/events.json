@@ -16,7 +16,7 @@
       "Dwóch policjantów, mimo ran, obezwładniło sprawcę – według policji pościg trwał 2 minuty i 3 sekundy. Obaj zostali wybudzeni ze śpiączki; stan jednego pozostaje ciężki. Rannym pomagali m.in. dwaj chirurdzy jedzący obiad w pobliskiej restauracji.",
       "W domu sprawcy w Ostrowcu Świętokrzyskim znaleziono ciała jego rodziców i siostry. Michał O. zmarł w szpitalu w nocy z 8 na 9 listopada; prokuratura podała, że jego śmierć nie wstrzymuje śledztwa, prowadzonego jako sprawa przestępstwa o charakterze terrorystycznym.",
       "Prezydent Karol Nawrocki ogłosił żałobę narodową 8–9 listopada. Po raz pierwszy od 1939 r. nie zagrano hejnału mariackiego. Kondolencje przekazali m.in. Zełenski, Macron, papież Leon XIV i Donald Trump.",
-      "Zbiórka dla rannych policjantów zebrała w kilkanaście godzin kilka milionów złotych; prezydent zapowiedział ich odznaczenie.",
+      "Zbiórka dla rannych policjantów zebrała w kilkanaście godzin kilka milionów złotych; prezydent zapowiedział ich odznaczenie. 10 listopada zakończono sekcje zwłok sprawcy i ofiar; według prokuratury i ministra Żurka śledczy badają m.in. rodzaj użytej amunicji i „dodatkowy materiał biologiczny”. Policja powołała specjalną grupę do zbadania zamachu i zabójstwa w Ostrowcu. Ranny policjant Artur Morański przechodzi kolejne zabiegi. Zbiórki dla ofiar i policjantów zebrały według Rzeczpospolitej niemal 10 mln zł.",
       "Według prokuratury sprawca miał m.in. dwa karabiny AR-15 i dwa pistolety, a na Rynku mogło paść nawet kilkaset strzałów. Centralne Biuro Zwalczania Cyberprzestępczości zatrzymało kilka osób, które według policji mogły być naśladowcami zamachowca."
     ],
     "framing": {
@@ -25,13 +25,13 @@
       "right": "Media prawicowe (wPolityce, Telewizja Republika, Najwyższy Czas!) również relacjonują heroizm policjantów i lekarzy, ale szybko przenoszą ciężar na odpowiedzialność rządu: „Heroizm dwóch policjantów z Krakowa nie zwalnia rządu z odpowiedzialności” (wPolityce), „Kaczyński zapowiada wyjaśnienie braku policji w Krakowie” (Republika). Wątek skrajnie prawicowych poglądów sprawcy jest tu kwestionowany lub pomijany."
     },
     "match": {
-      "include": "Krak|zamach|strzelanin|Michał O|Michała O|Oksińsk|Ostrow|hejnał|Rynek Główny|Rynku Główn|wybudzon|chirurd|dorożkar|kard\\. Ryś|Rysia|żałob|Chodzie|Austriacz|bohater|oddawa\\w* krwi|krwiodaw|Zasada 4U|Zygmunt|terroryst|kondolenc|Słyszysz strzały|ranny|rannych|ranni|policjant|Marsz\\w* Ciszy|Kulik|Norwesk\\w* małżeńst",
-      "exclude": "Tatr|Jastrzęb|Lotto|Czechowic|pociąg|szerszen|Hayden|Rolnik szuka|Żebrowsk|Kamienica|Adamska|Najman|Michalik|Papszun|SKM|Lisy|nożem|Niepodległości|Japoni",
+      "include": "Krak|zamach|strzelanin|Michał O|Michała O|Oksińsk|Ostrow|hejnał|Rynek Główny|Rynku Główn|wybudzon|chirurd|dorożkar|kard\\. Ryś|Rysia|żałob|Chodzie|Austriacz|bohater|oddawa\\w* krwi|krwiodaw|Zasada 4U|Zygmunt|terroryst|kondolenc|Słyszysz strzały|ranny|rannych|ranni|policjant|Marsz\\w* Ciszy|Kulik|Norwesk\\w* małżeńst|sekcj\\w* zwłok|Morańsk|specjaln\\w* grup|Specgrup|Breivik",
+      "exclude": "Tatr|Jastrzęb|Lotto|Czechowic|pociąg|szerszen|Hayden|Rolnik szuka|Żebrowsk|Kamienica|Adamska|Najman|Michalik|Papszun|SKM|Lisy|nożem|Niepodległości|Japoni|Hiszpan|plecak|interweniując|Dwie ofiary strzelaniny|KUL|Pejd|wykładowczyn|karambol|Bułgari",
       "from": "2026-11-07T14:00:00Z",
-      "to": "2026-11-10T12:00:00Z"
+      "to": "2026-11-12T12:00:00Z"
     },
     "extra": [],
-    "updatedAt": "2026-11-10T15:53:43Z"
+    "updatedAt": "2026-11-10T16:43:24Z"
   },
   {
     "id": "spor-o-motywy-zamachowca",
@@ -49,7 +49,8 @@
       "Prokuratura zaznaczyła, że przy sprawcy nie znaleziono dokumentu wyjaśniającego jego motywy. Kierwiński tłumaczył później, że chodziło o „pierwsze hipotezy”.",
       "Opozycja (PiS) zażądała dymisji ministra; Maciej Wąsik nazwał jego zachowanie „karygodnym”. Jarosław Kaczyński zapowiedział wyjaśnianie „braku policji” w Krakowie.",
       "9 listopada MSWiA podało, że na odzieży sprawcy było „wiele emblematów, naszywek” związanych z różnymi motywami; w jego pokoju znaleziono żółtą flagę z wężem (flagę Gadsdena). Prokuratura uważa, że za wcześnie, by przesądzać o motywach; Żurek mówi, że nie wykluczono także wątku rosyjskiego.",
-      "MSWiA zapowiedziało zawiadomienie prokuratury w sprawie fałszywego zdjęcia ministra Kierwińskiego z zamachowcem, które krążyło w sieci."
+      "MSWiA zapowiedziało zawiadomienie prokuratury w sprawie fałszywego zdjęcia ministra Kierwińskiego z zamachowcem, które krążyło w sieci.",
+      "10 listopada premier Donald Tusk powiedział, że Kierwiński wypowiadał się „w porozumieniu” z nim. Minister Żurek potwierdził, że śledczy badają m.in. wątek prawicowego ekstremizmu („dwie główne hipotezy”)."
     ],
     "framing": {
       "left": "OKO.press i Gazeta Wyborcza traktują skrajnie prawicowe fascynacje sprawcy jako ustalony trop i bronią policji przed zarzutami („Kłamstwa, że policja zawiodła, budzą we mnie skrajne emocje” – ekspert w Wyborczej). Spór przedstawiany jest jako próba upolitycznienia tragedii przez opozycję. Onet i WP relacjonują wyjaśnienia ministra („Dlatego takie, a nie inne stwierdzenie”) i żądanie dymisji.",
@@ -57,13 +58,13 @@
       "right": "Prawica stawia ministra w centrum: „Kierwiński się zamotał! Najpierw oskarżenia, teraz takie słowa”, „Bezwstydnie kłamał!” (wPolityce), Wąsik: „wręcz zbrodnia stanu” (Republika). Narracja: rząd przerzuca odpowiedzialność za zawodzące państwo na prawicę. Centroprawicowa Rzeczpospolita jest powściągliwa: „Radykalne poglądy i skrajna ideologia? Kierwiński wyjaśnia słowa o zamachowcu”."
     },
     "match": {
-      "include": "Kierwi|Wąsik|braku policji|nie zwalnia rządu|motyw|pewne symbole|pewne dowody|mamy dowody|ideologiami skrajnie|policja zawiodła|słowach ministra|emblemat|naszyw|Gadsd|Gadsen|flag\\w* z wężem|Ultralewicow|fotomontaż|Minister i zamachowiec|rosyjski trop|trop rosyjski|wątku rosyjskiego",
+      "include": "Kierwi|Wąsik|braku policji|nie zwalnia rządu|motyw|pewne symbole|pewne dowody|mamy dowody|ideologiami skrajnie|policja zawiodła|słowach ministra|emblemat|naszyw|Gadsd|Gadsen|flag\\w* z wężem|Ultralewicow|fotomontaż|Minister i zamachowiec|rosyjski trop|trop rosyjski|wątku rosyjskiego|prawicow\\w* (ekstremizm|fascynacj)|dwie główne hipotezy",
       "from": "2026-11-07T14:00:00Z",
-      "to": "2026-11-10T12:00:00Z",
+      "to": "2026-11-12T12:00:00Z",
       "exclude": "obcokrajowiec"
     },
     "extra": [],
-    "updatedAt": "2026-11-09T14:43:55Z"
+    "updatedAt": "2026-11-10T16:43:24Z"
   },
   {
     "id": "republika-krrit-zamach",
@@ -80,7 +81,8 @@
       "Rada Polskich Mediów skrytykowała słowa Tomasza Sakiewicza po zamachu w Krakowie: „Tragedia nie może być paliwem dla politycznego sporu”.",
       "Członek KRRiT prof. Tadeusz Kowalski wezwał regulatora do działania, mówiąc o „rażącym naruszeniu ustawy medialnej”. Ministra kultury zapowiedziała, że „muszą być wyciągnięte konsekwencje”.",
       "Republika odpowiada, że to „atak lewicowych dziennikarzy”, a wPolityce pisze o „rządzie kontra telewizja”.",
-      "9 listopada KRRiT wszczęła działania wyjaśniające i zażądała od Republiki wyjaśnień. Sakiewicz w oświadczeniu napisał, że „chcą wyłączyć stację”. Jarosław Kaczyński bronił go („Dziennikarze mają prawo pytać”), a rzeczniczka MSWiA nazwała jego wpis „bzdurami”."
+      "9 listopada KRRiT wszczęła działania wyjaśniające i zażądała od Republiki wyjaśnień. Sakiewicz w oświadczeniu napisał, że „chcą wyłączyć stację”. Jarosław Kaczyński bronił go („Dziennikarze mają prawo pytać”), a rzeczniczka MSWiA nazwała jego wpis „bzdurami”.",
+      "10 listopada marszałek Sejmu Włodzimierz Czarzasty złożył do KRRiT wniosek o ukaranie Telewizji Republika („Wszyscy wiedzą, za co”). Premier Tusk o relacji Sakiewicza: „Spuśćmy na to zasłonę milczenia”."
     ],
     "framing": {
       "left": "Wyborcza („Po zamachu w Krakowie. Hieny szukają politycznego złota”, skarga na Republikę) i Polityka („Policjanci walczą o życie, propagandyści o zasięgi”) przedstawiają relacje Republiki jako dezinformację wymagającą reakcji regulatora. Onet, Gazeta.pl i OKO.press szeroko cytują Radę Polskich Mediów i członka KRRiT.",
@@ -88,13 +90,13 @@
       "right": "Republika i wPolityce przedstawiają sprawę jako atak na wolne media: „Rachoń reaguje na atak lewicowych dziennikarzy”, „Rząd kontra telewizja. Karnowski: Będziemy wspierać zagrożonych”. Najwyższy Czas! cytuje Krzysztofa Stanowskiego, który krytykuje i Sakiewicza, i Kierwińskiego."
     },
     "match": {
-      "include": "Sakiewicz|Republika musi|Republiki|Telewizja Republika|TV Republika|KRRiT|Rachoń|Hieny|propagandyści|Rad[ay] (Polskich )?Mediów|Karnowski|Rząd konta|Towarzystw\\w* Dziennikarsk|przestała być nadawcą",
+      "include": "Sakiewicz|Republika musi|Republiki|Telewizja Republika|TV Republika|KRRiT|Rachoń|Hieny|propagandyści|Rad[ay] (Polskich )?Mediów|Karnowski|Rząd konta|Towarzystw\\w* Dziennikarsk|przestała być nadawcą|Czarzasty (skierował|chce|domaga|uderza|reaguje)",
       "from": "2026-11-07T14:00:00Z",
-      "to": "2026-11-10T12:00:00Z",
+      "to": "2026-11-12T12:00:00Z",
       "exclude": "Leona XIV|Argentyn"
     },
     "extra": [],
-    "updatedAt": "2026-11-09T14:43:55Z"
+    "updatedAt": "2026-11-10T16:43:24Z"
   },
   {
     "id": "marsz-niepodleglosci-2026",
@@ -1088,8 +1090,9 @@
       "right": "Telewizja Republika pisze o rozmowach „ws. stałej bazy”; Radio Maryja przytacza eksperta: „To komedia i zabawa kosztem opinii publicznej”."
     },
     "match": {
-      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)",
-      "from": "2026-11-09T16:00:00Z"
+      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty",
+      "from": "2026-11-09T16:00:00Z",
+      "to": "2026-11-12T16:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-10T15:55:00Z",
@@ -1123,5 +1126,168 @@
     "extra": [],
     "addedAt": "2026-11-10T15:55:00Z",
     "updatedAt": "2026-11-10T15:55:00Z"
+  },
+  {
+    "id": "zarzuty-wladyslaw-teofil-bartoszewski",
+    "title": "Wiceszef MSZ Władysław Teofil Bartoszewski z zarzutami prokuratury",
+    "date": "2026-11-10",
+    "location": "Warszawa",
+    "tags": [
+      "Prokuratura",
+      "MSZ",
+      "PSL"
+    ],
+    "summary": [
+      "10 listopada prokuratura przedstawiła zarzuty wiceministrowi spraw zagranicznych Władysławowi Teofilowi Bartoszewskiemu (PSL).",
+      "Według mediów sprawa dotyczy przywłaszczenia milionów złotych; w tle pojawiają się trzy mieszkania, udziały w spółce i darowizny.",
+      "Rzecznik rządu zapowiedział decyzję w sprawie wiceministra; Bartoszewski wydał oświadczenie."
+    ],
+    "framing": {
+      "left": "OKO.press: „Miał przywłaszczyć sobie miliony. Wiceszef MSZ usłyszał zarzuty”; Gazeta.pl wylicza „Trzy mieszkania, udziały w spółce i darowizny”.",
+      "center": "Polsat News, Interia, Fakt, TVP Info, Radio ZET i RMF FM relacjonują komunikat prokuratury; TVP Info: „Premier czeka z decyzją”, Kanał Zero: „W tle wielkie sumy i trzy mieszkania”.",
+      "right": "wPolityce: „Wiceminister Tuska usłyszał zarzuty! Chodzi o miliony”; Najwyższy Czas!: „Decyzji ws. wiceministra uśmiechniętej koalicji nie będzie”; Republika: „Bartoszewski z poważnymi zarzutami prokuratorskimi”."
+    },
+    "match": {
+      "include": "Bartoszewsk|Wiceszef MSZ|wiceministra? z PSL|Wiceminister Tuska usłyszał|ws\\. wiceministra",
+      "from": "2026-11-10T04:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T16:50:00Z",
+    "updatedAt": "2026-11-10T16:50:00Z"
+  },
+  {
+    "id": "abw-zatrzymanie-ukraincow-szpiegostwo",
+    "title": "ABW zatrzymała dwóch obywateli Ukrainy podejrzanych o działanie na rzecz rosyjskiego wywiadu",
+    "date": "2026-11-10",
+    "location": "Mińsk Mazowiecki",
+    "tags": [
+      "Bezpieczeństwo",
+      "ABW",
+      "Rosja"
+    ],
+    "summary": [
+      "Agencja Bezpieczeństwa Wewnętrznego zatrzymała dwóch obywateli Ukrainy; Interia pisze o akcji w Mińsku Mazowieckim.",
+      "Według prokuratury chodzi o udział w działalności rosyjskiego wywiadu; mieli m.in. rozpoznawać obiekty i robić zdjęcia. TVP Info podaje, że podejrzewani są też o podpalanie pojazdów."
+    ],
+    "framing": {
+      "left": "Gazeta Wyborcza: „Prokuratura o udziale w działalności rosyjskiego wywiadu”; Gazeta.pl: „Są podejrzani o dywersję na rzecz Rosji”.",
+      "center": "Polsat News („Rozpoznawali i robili zdjęcia”), Interia, Fakt i TVP Info („Szpiegowali dla Rosji, podpalali pojazdy”) relacjonują komunikat służb.",
+      "right": "wPolityce: „Zdradzali ojczyznę za narkotyki? ABW zatrzymała Ukraińców”."
+    },
+    "match": {
+      "include": "ABW zatrzymał|Ukraińców podejrzanych o szpieg|Ukraińcy w rękach służb|Dwaj (obywatele Ukrainy|Ukraińcy) zatrzymani|Szpiegowali dla Rosji",
+      "from": "2026-11-10T04:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T16:50:00Z",
+    "updatedAt": "2026-11-10T16:50:00Z"
+  },
+  {
+    "id": "tk-publikacja-orzeczenia-zmiana-regulaminu",
+    "title": "Rząd opublikuje orzeczenie TK, Zgromadzenie Ogólne zmienia regulamin Trybunału",
+    "date": "2026-11-10",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny",
+      "Rząd",
+      "Praworządność"
+    ],
+    "summary": [
+      "Premier Donald Tusk ogłosił, że kancelaria premiera opublikuje decyzję Trybunału Konstytucyjnego – według OKO.press pierwszą od trzech lat. Mówił o „symbolicznym końcu wojny o Trybunał” i „początku nowej ery”.",
+      "Na Zgromadzeniu Ogólnym sędziów TK, zwołanym przez sędzię Annę Korwin-Piotrowską, przyjęto uchwałę zmieniającą regulamin Trybunału.",
+      "Zawieszony prezes TK Bogdan Święczkowski ponownie pojawił się pod Trybunałem i domagał się wpuszczenia do budynku. Według Gazety Wyborczej Tusk odrzucił „ultimatum” prezydenta Nawrockiego w sprawie rozmów o TK."
+    ],
+    "framing": {
+      "left": "Gazeta.pl: „Trybunał Konstytucyjny zaczął pracę. Tusk: Z czystym sumieniem”; OKO.press: „Trybunał Konstytucyjny działa”; Wyborcza: „Tusk odrzucił ultimatum Nawrockiego”.",
+      "center": "Polsat News, Interia, RMF FM, Radio ZET i TVP Info cytują premiera („Początek nowej ery”, „Symboliczny koniec wojny o Trybunał”) i relacjonują uchwałę Zgromadzenia Ogólnego.",
+      "right": "wPolityce: „Tusk do reszty niszczy TK! Właśnie ogłosił decyzję”, „Co się dzieje z uzurpatorką w TK?!”; Republika: „Tusk kpi z TK?”. Rzeczpospolita neutralnie: „Kluczowa decyzja w TK, uchwalono zmiany w regulaminie”."
+    },
+    "match": {
+      "include": "nowej ery|nowa era|wojny o Trybunał|Trybunał Konstytucyjny (zaczął|działa|przyjął)|wyrok Trybunału Konstytucyjnego|regulamin\\w* (TK|Trybunału)|Zmiany w Trybunale|Święczkowsk|uzurpatork|Tusk (kpi z|do reszty niszczy) TK|ultimatum Nawrockiego|Mularczyk ostro|Prezes TK wezwał|Dwie strony krok w tył ws\\. TK",
+      "from": "2026-11-09T18:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T16:50:00Z",
+    "updatedAt": "2026-11-10T16:50:00Z"
+  },
+  {
+    "id": "nawrocki-nominacje-generalskie-11-listopada",
+    "title": "Prezydent Nawrocki mianował dziesięciu generałów",
+    "date": "2026-11-10",
+    "location": "Warszawa",
+    "tags": [
+      "Wojsko",
+      "Prezydent"
+    ],
+    "summary": [
+      "Prezydent Karol Nawrocki mianował dziesięciu oficerów na stopnie generalskie; jeden z nich otrzymał trzeci stopień generalski.",
+      "BBN wydało komunikat po decyzji prezydenta. Sławomir Cenckiewicz skrytykował jeden z awansów."
+    ],
+    "framing": {
+      "left": "Gazeta.pl: „Nawrocki mianuje nowych generałów. Jeden z oficerów otrzymał trzeci stopień generalski”.",
+      "center": "Radio ZET („Jest komunikat BBN”), Fakt („Mamy nowych generałów”) i Interia („Awanse w polskim wojsku”) relacjonują nominacje.",
+      "right": "wPolityce: „Cenckiewicz oburzony tym awansem w wojsku! Ujawnił powód”."
+    },
+    "match": {
+      "include": "generałów|stopień generalski|awans\\w* w (polskim )?wojsku",
+      "from": "2026-11-10T04:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T16:50:00Z",
+    "updatedAt": "2026-11-10T16:50:00Z"
+  },
+  {
+    "id": "slawa-upa-napisy-na-pomnikach",
+    "title": "Napisy „Sława UPA” na pomnikach w kilku miastach. Policja szuka sprawców",
+    "date": "2026-11-10",
+    "location": "Warszawa, Poznań, Gdynia",
+    "tags": [
+      "Bezpieczeństwo",
+      "Dezinformacja",
+      "Ukraina"
+    ],
+    "summary": [
+      "Na pomnikach w Warszawie, Poznaniu i Gdyni pojawiły się namalowane napisy „Sława UPA”; policja szuka sprawców.",
+      "Według Onetu i Rzeczpospolitej serię napisów poprzedziło ogłoszenie w sieci oferujące za takie zlecenie 500 dolarów."
+    ],
+    "framing": {
+      "left": "Onet: „»Sława UPA« za 500 dolarów. Dziennikarz odkrył podejrzane zlecenia w Polsce”.",
+      "center": "Brak publikacji redakcji centrowych w monitorowanych źródłach.",
+      "right": "wPolityce: „Skandal! Namalowali na pomnikach hasło »SŁAWA UPA«”; Najwyższy Czas!: „Policja szuka sprawców”; Rzeczpospolita: „Serię napisów na pomnikach poprzedziło ogłoszenie”."
+    },
+    "match": {
+      "include": "Sława UPA|SŁAWA UPA",
+      "from": "2026-11-10T04:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T16:50:00Z",
+    "updatedAt": "2026-11-10T16:50:00Z"
+  },
+  {
+    "id": "kul-zwolnienie-wykladowczyni-komentarz-zamach",
+    "title": "KUL zwolnił wykładowczynię za wpis po zabójstwie rodziny zamachowca",
+    "date": "2026-11-10",
+    "location": "Lublin",
+    "tags": [
+      "Szkolnictwo wyższe",
+      "Internet",
+      "Kraków"
+    ],
+    "summary": [
+      "Katolicki Uniwersytet Lubelski zwolnił dr Katarzynę Pejdę po jej komentarzu w internecie dotyczącym śmierci rodziny sprawcy zamachu, zamordowanej w Ostrowcu Świętokrzyskim.",
+      "Według mediów wykładowczyni napisała m.in. „trzy głosy na konfę mniej”. Polsat News cytuje ocenę, że jej zachowanie było „w jaskrawej sprzeczności”."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "RMF FM („W sposób niedopuszczalny komentowała śmierć”), TVP Info, Polsat News, Radio ZET, Fakt i Kanał Zero relacjonują decyzję uczelni.",
+      "right": "Najwyższy Czas!: „Cieszyła się, że Michał Oksiński zamordował rodzinę, bo »trzy głosy na konfę mniej«”; wPolityce: „Została wyrzucona z KUL! W tle obrzydliwy wpis”; Radio Maryja i Republika podobnie."
+    },
+    "match": {
+      "include": "Pejd|z KUL|na KUL|Rektor KUL|wykładowc\\S* KUL|w Ostrowcu i Krakowie\\. Straciła pracę",
+      "from": "2026-11-10T04:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T16:50:00Z",
+    "updatedAt": "2026-11-10T16:50:00Z"
   }
 ]
