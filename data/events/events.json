@@ -25,13 +25,13 @@
       "right": "Media prawicowe (wPolityce, Telewizja Republika, Najwyższy Czas!) również relacjonują heroizm policjantów i lekarzy, ale szybko przenoszą ciężar na odpowiedzialność rządu: „Heroizm dwóch policjantów z Krakowa nie zwalnia rządu z odpowiedzialności” (wPolityce), „Kaczyński zapowiada wyjaśnienie braku policji w Krakowie” (Republika). Wątek skrajnie prawicowych poglądów sprawcy jest tu kwestionowany lub pomijany."
     },
     "match": {
-      "include": "Krak|zamach|strzelanin|Michał O|Michała O|Oksińsk|Ostrow|hejnał|Rynek Główny|Rynku Główn|wybudzon|chirurd|dorożkar|kard\\. Ryś|Rysia|żałob|Chodzie|Austriacz|bohater|oddawa\\w* krwi|krwiodaw|Zasada 4U|Zygmunt|terroryst|kondolenc|Słyszysz strzały|ranny|rannych|ranni|policjant",
+      "include": "Krak|zamach|strzelanin|Michał O|Michała O|Oksińsk|Ostrow|hejnał|Rynek Główny|Rynku Główn|wybudzon|chirurd|dorożkar|kard\\. Ryś|Rysia|żałob|Chodzie|Austriacz|bohater|oddawa\\w* krwi|krwiodaw|Zasada 4U|Zygmunt|terroryst|kondolenc|Słyszysz strzały|ranny|rannych|ranni|policjant|Marsz\\w* Ciszy|Kulik|Norwesk\\w* małżeńst",
       "exclude": "Tatr|Jastrzęb|Lotto|Czechowic|pociąg|szerszen|Hayden|Rolnik szuka|Żebrowsk|Kamienica|Adamska|Najman|Michalik|Papszun|SKM|Lisy|nożem|Niepodległości|Japoni",
       "from": "2026-11-07T14:00:00Z",
       "to": "2026-11-10T12:00:00Z"
     },
     "extra": [],
-    "updatedAt": "2026-11-09T14:43:55Z"
+    "updatedAt": "2026-11-10T15:53:43Z"
   },
   {
     "id": "spor-o-motywy-zamachowca",
@@ -1013,5 +1013,115 @@
     "extra": [],
     "addedAt": "2026-11-09T14:50:00Z",
     "updatedAt": "2026-11-09T14:50:00Z"
+  },
+  {
+    "id": "wizytacja-apostolska-diecezja-bielsko-zywiecka",
+    "title": "Papież Leon XIV zarządził wizytację apostolską w diecezji bielsko-żywieckiej",
+    "date": "2026-11-09",
+    "location": "Diecezja bielsko-żywiecka",
+    "tags": [
+      "Kościół",
+      "Watykan"
+    ],
+    "summary": [
+      "Papież Leon XIV zarządził wizytację apostolską w diecezji bielsko-żywieckiej.",
+      "W tle jest konflikt w parafii w Grojcu i sprawa księdza usuniętego z parafii; RMF FM pisze o „wojnie parafii z biskupem”."
+    ],
+    "framing": {
+      "left": "Onet i Wirtualna Polska relacjonują decyzję informacyjnie („Papież Leon XIV podjął ważną decyzję”, „Papież zarządził kontrolę”).",
+      "center": "RMF FM akcentuje konflikt („Wojna parafii z biskupem”), Interia pisze o „sprawie księdza z Grojca”.",
+      "right": "Rzeczpospolita podaje informację wprost („Konflikt w Grojcu. Papież Leon XIV zarządził wizytację apostolską”)."
+    },
+    "match": {
+      "include": "wizytacj\\w*|Grojc|Grojec|polską diecezję|polskiej diecezji",
+      "from": "2026-11-09T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T15:55:00Z",
+    "updatedAt": "2026-11-10T15:55:00Z"
+  },
+  {
+    "id": "alert-rcb-podlasie-lubelszczyzna-9-listopada",
+    "title": "Alert RCB dla Podlasia i Lubelszczyzny podczas rosyjskiego ataku na Ukrainę",
+    "date": "2026-11-09",
+    "location": "Podlasie, Lubelszczyzna",
+    "tags": [
+      "Bezpieczeństwo",
+      "Ukraina",
+      "Rosja"
+    ],
+    "summary": [
+      "W związku z rosyjskim atakiem na Ukrainę Rządowe Centrum Bezpieczeństwa wysłało alert dla mieszkańców województw podlaskiego i lubelskiego.",
+      "Późnym wieczorem 9 listopada alert odwołano; według RMF FM „zagrożenie minęło”."
+    ],
+    "framing": {
+      "left": "TVN24, Onet i Wirtualna Polska podają komunikat o alercie i jego odwołaniu.",
+      "center": "Polsat News, Fakt, Interia, RMF FM i TVP Info relacjonują informacyjnie; Fakt cytuje komunikat „Oczekuj dalszych komunikatów”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Alert\\w* RCB|komunikat RCB",
+      "from": "2026-11-09T18:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T15:55:00Z",
+    "updatedAt": "2026-11-10T15:55:00Z"
+  },
+  {
+    "id": "kosiniak-kamysz-waszyngton-baza-usa",
+    "title": "Kosiniak-Kamysz w Waszyngtonie. Rozmowy z Hegsethem o stałej obecności wojsk USA",
+    "date": "2026-11-10",
+    "location": "Waszyngton",
+    "tags": [
+      "Obronność",
+      "USA",
+      "MON"
+    ],
+    "summary": [
+      "Wicepremier i szef MON Władysław Kosiniak-Kamysz poleciał do USA; ma się spotkać z sekretarzem Pete’em Hegsethem.",
+      "Według Polsat News i Radia Maryja tematem jest stała obecność wojsk USA w Polsce i systemy Patriot.",
+      "Kosiniak-Kamysz zapowiedział, że jeśli uda się wszystko dopiąć, zostanie podpisane „ważne porozumienie”."
+    ],
+    "framing": {
+      "left": "TVN24 cytuje zapowiedź ministra o porozumieniu; Gazeta Wyborcza zauważa, że Hegseth „ma na głowie impeachment”.",
+      "center": "Polsat News podaje cele wizyty („Stała baza wojsk USA i systemy Patriot”).",
+      "right": "Telewizja Republika pisze o rozmowach „ws. stałej bazy”; Radio Maryja przytacza eksperta: „To komedia i zabawa kosztem opinii publicznej”."
+    },
+    "match": {
+      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)",
+      "from": "2026-11-09T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T15:55:00Z",
+    "updatedAt": "2026-11-10T15:55:00Z"
+  },
+  {
+    "id": "debata-dostep-do-broni-po-zamachu",
+    "title": "Po zamachu w Krakowie debata o dostępie do broni. MSWiA przeanalizuje przepisy",
+    "date": "2026-11-09",
+    "location": "Polska",
+    "tags": [
+      "Broń",
+      "Bezpieczeństwo",
+      "Prawo"
+    ],
+    "summary": [
+      "Po zamachu w Krakowie politycy, eksperci i media dyskutują o zasadach wydawania pozwoleń na broń; według TVN24 MSWiA przeanalizuje przepisy.",
+      "Kanał Zero przypomina raport NIK o „poważnych lukach w systemie kontroli” pozwoleń; OKO.press pisze o ponad milionie sztuk broni w rękach cywilów.",
+      "Radio ZET, powołując się na media, podaje, że sprawca miał cztery sztuki broni i pozwolenie."
+    ],
+    "framing": {
+      "left": "OKO.press: „Polak się zbroi”; Wirtualna Polska cytuje Giełzaka: „Nikt nie powinien mieć w domu arsenału”; TVN24 o analizie przepisów przez MSWiA.",
+      "center": "Kanał Zero o raporcie NIK, Fakt cytuje prawnika („Dostęp do broni w Polsce jest zbyt łatwy”), RMF FM pyta o możliwą liberalizację dostępu i szkolenia.",
+      "right": "wPolityce pyta: „KO zaostrzy przepisy o broni palnej? Zaskakujące słowa Żurka!”."
+    },
+    "match": {
+      "include": "dostęp\\w* do broni|o broni palnej|pozwoleni\\w* na broń|przeanalizuje przepisy|broni w rękach|arsenału",
+      "exclude": "zakaz",
+      "from": "2026-11-09T12:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-10T15:55:00Z",
+    "updatedAt": "2026-11-10T15:55:00Z"
   }
 ]
