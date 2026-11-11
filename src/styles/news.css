@@ -160,3 +160,5 @@ header.site { background: var(--paper); }
 .story > *, .home > * { min-width: 0; }
 .story h1, .hero-title, .ev-row h3, .cmp-title, .art li { overflow-wrap: anywhere; }
 @media (max-width: 520px) { .tabs > label { padding: .4rem .8rem; } .kv { font-size: .95rem; } }
+.ev-created { white-space: nowrap; }
+.brief-created { margin: .6rem 0 0; }

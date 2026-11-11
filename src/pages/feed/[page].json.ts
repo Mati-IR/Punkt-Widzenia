@@ -13,7 +13,7 @@ export const GET: APIRoute = async ({ props }) => {
   const { n, pages } = props as { n: number; pages: number };
   const events = feedPage(await getEvents(), n);
   const body = {
-    events: events.map((e) => ({ id: e.id, html: eventRowHtml(e, false, false) })),
+    events: events.map((e) => ({ id: e.id, html: eventRowHtml(e, false, false, true) })),
     next: n < pages ? feedUrl(n + 1) : null,
   };
   return new Response(JSON.stringify(body), { headers: { 'Content-Type': 'application/json; charset=utf-8' } });

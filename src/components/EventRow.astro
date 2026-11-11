@@ -7,7 +7,9 @@ interface Props {
   compact?: boolean;
   /** Homepage passes false: no AI label there. */
   aiLabel?: boolean;
+  /** Homepage passes true: shows when the event was created (PUN-71). */
+  created?: boolean;
 }
-const { event, compact = false, aiLabel = true } = Astro.props;
+const { event, compact = false, aiLabel = true, created = false } = Astro.props;
 ---
-<Fragment set:html={eventRowHtml(event, compact, aiLabel)} />
+<Fragment set:html={eventRowHtml(event, compact, aiLabel, created)} />
