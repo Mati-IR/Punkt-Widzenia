@@ -40,6 +40,11 @@ export const visibleContent = (e) =>
   JSON.stringify([e.title, e.date, e.location, e.tags, e.summary, e.framing]);
 
 /** Returns a list of problems (empty = valid). */
+// Extremist labels ("skrajna prawica", "far-left", "faszyści"…) are claims, not facts. They may appear in
+// "framing" when attributed to an outlet or person, but not in "title" or "summary" unless the event carries
+// "labelEvidence": a note naming the solid evidence (court ruling, official designation, self-identification).
+export const EXTREMIST_LABEL = /(skrajn\p{L}*|ultra-?|radykaln\p{L}*)\s*-?\s*(prawic\p{L}*|lewic\p{L}*)|\b(far|extreme)[- ](right|left)|faszy\p{L}*|neo-?nazi\p{L}*|ekstremi\p{L}*/iu;
+
 export function validateEvents(events) {
   const errs = [];
   if (!Array.isArray(events)) return ['events.json must be an array'];
@@ -74,6 +79,11 @@ export function validateEvents(events) {
       bad('"extra" must be a list of {outletId, title, url, publishedAt}');
     if (e.addedAt !== undefined && !ISO.test(e.addedAt)) bad('"addedAt" must be an ISO UTC time');
     if (e.updatedAt !== undefined && !ISO.test(e.updatedAt)) bad('"updatedAt" must be an ISO UTC time');
+    if (e.labelEvidence !== undefined && !str(e.labelEvidence)) bad('"labelEvidence" must be a non-empty note (or left out)');
+    if (!str(e.labelEvidence)) {
+      const hit = [e.title, ...(Array.isArray(e.summary) ? e.summary : [])].find((t) => typeof t === 'string' && EXTREMIST_LABEL.test(t));
+      if (hit) bad(`extremist label "${hit.match(EXTREMIST_LABEL)[0]}" in title/summary – move it to "framing" with attribution, or add "labelEvidence" citing solid proof`);
+    }
     if (e.broad !== undefined && typeof e.broad !== 'boolean') bad('"broad" must be true or false');
   });
   return errs;
