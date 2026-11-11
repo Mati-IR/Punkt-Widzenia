@@ -193,7 +193,7 @@
       "right": "Prawica stawia ministra w centrum: „Kierwiński się zamotał! Najpierw oskarżenia, teraz takie słowa”, „Bezwstydnie kłamał!” (wPolityce), Wąsik: „wręcz zbrodnia stanu” (Republika). Narracja: rząd przerzuca odpowiedzialność za zawodzące państwo na prawicę. Centroprawicowa Rzeczpospolita jest powściągliwa: „Radykalne poglądy i skrajna ideologia? Kierwiński wyjaśnia słowa o zamachowcu”."
     },
     "match": {
-      "include": "Kierwi|Wąsik|braku policji|nie zwalnia rządu|motyw|pewne symbole|pewne dowody|mamy dowody|ideologiami skrajnie|policja zawiodła|słowach ministra|emblemat|naszyw|Gadsd|Gadsen|flag\\w* z wężem|Ultralewicow|fotomontaż|Minister i zamachowiec|rosyjski trop|trop rosyjski|wątku rosyjskiego|prawicow\\w* (ekstremizm|fascynacj)|dwie główne hipotezy",
+      "include": "Kierwi|Wąsik|braku policji|nie zwalnia rządu|motyw|pewne symbole|pewne dowody|mamy dowody|ideologiami skrajnie|policja zawiodła|słowach ministra|emblemat|naszyw|Gadsd|Gadsen|flag\\w* z wężem|Ultralewicow|fotomontaż|Minister i zamachowiec|rosyjski trop|trop rosyjski|wątku rosyjskiego|prawicow\\w* (ekstremizm|fascynacj)|dwie główne hipotezy|związkami ze skrajną prawicą",
       "from": "2026-11-07T14:00:00Z",
       "to": "2026-11-12T12:00:00Z",
       "exclude": "obcokrajowiec"
@@ -255,7 +255,7 @@
       "right": "wPolityce i Najwyższy Czas! akcentują stanowisko organizatorów („Nie możemy dopuścić”) i reakcję Konfederacji; tytuł „Marsz Niepodległości będzie odwołany?! Tusk jednoznacznie…” buduje napięcie wokół rzekomego zakazu. Centroprawicowa Rzeczpospolita cytuje premiera: „Spekulacje to dezinformacja”."
     },
     "match": {
-      "include": "Marsz\\w* Niepodległości",
+      "include": "Marsz\\w* Niepodległości|Trzaskowski apeluje przed 11 listopada",
       "from": "2026-11-05T00:00:00Z",
       "to": "2026-11-12T00:00:00Z"
     },
@@ -1254,7 +1254,7 @@
       "right": "wPolityce pyta: „KO zaostrzy przepisy o broni palnej? Zaskakujące słowa Żurka!”."
     },
     "match": {
-      "include": "dostęp\\w* do broni|o broni palnej|pozwoleni\\w* na broń|przeanalizuje przepisy|broni w rękach|arsenału",
+      "include": "dostęp\\w* do broni|o broni palnej|pozwoleni\\w* na broń|przeanalizuje przepisy|broni w rękach|arsenału|przepisów o broni",
       "exclude": "zakaz",
       "from": "2026-11-09T12:00:00Z"
     },
@@ -1425,5 +1425,32 @@
     "extra": [],
     "addedAt": "2026-11-10T16:50:00Z",
     "updatedAt": "2026-11-10T16:50:00Z"
+  },
+  {
+    "id": "obchody-swieta-niepodleglosci-2026",
+    "title": "Obchody Narodowego Święta Niepodległości, skromniejsze po zamachu w Krakowie",
+    "date": "2026-11-11",
+    "location": "Polska",
+    "tags": [
+      "Święto Niepodległości",
+      "Kraków"
+    ],
+    "summary": [
+      "11 listopada w całym kraju odbywają się przemarsze, koncerty, pikniki i biegi uliczne. Według Wirtualnej Polski uroczystości są skromniejsze niż zwykle, także w pogrążonym w żałobie Krakowie.",
+      "W Warszawie zaplanowano m.in. koncert „Wspólna Niepodległa” i 36. Bieg Niepodległości; ulice w centrum będą zamknięte dla ruchu (TV Republika).",
+      "Według sondażu opisanego przez Onet poparcie dla 11 listopada jako najważniejszego święta wzrosło przez 12 lat o 28,5 pkt proc."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska („Obchody w całej Polsce”) i Onet („Najważniejsze święto w kraju. Polacy zapytani o 11 listopada”) piszą o programie obchodów i sondażu.",
+      "center": "Kanał Zero: „Niepodległościowy polonez w cieniu tragedii. Czy potrafimy jeszcze iść razem?”.",
+      "right": "TV Republika informuje o zamknięciu ulic w centrum Warszawy w związku ze świętem."
+    },
+    "match": {
+      "include": "Obchody w całej Polsce|Niepodległościowy polonez|Polacy zapytani o 11 listopada|zamknięte dla ruchu będą ulice w centrum",
+      "from": "2026-11-11T00:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-11T06:40:52Z",
+    "updatedAt": "2026-11-11T06:40:52Z"
   }
 ]
