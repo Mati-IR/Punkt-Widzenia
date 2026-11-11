@@ -1,0 +1,57 @@
+---
+// Analytics loader + cookie consent banner, driven by `analytics` in src/lib/site.ts.
+// - no analytics configured (default): renders nothing; the site sets no cookies.
+// - cookieless analytics (needsConsent: false): loads the script directly.
+// - anything else: shows a banner with equal "Odrzucam" / "Akceptuję" buttons and loads
+//   nothing until the visitor accepts. The choice is kept in localStorage ("pw-consent").
+import { analytics } from '../lib/site';
+const on = analytics.src !== '';
+const ask = on && analytics.needsConsent;
+---
+{on && !ask && <script is:inline defer src={analytics.src} {...analytics.attrs}></script>}
+{ask && (
+  <div id="consent" class="consent" role="region" aria-label="Zgoda na pliki cookies" hidden
+    data-src={analytics.src} data-attrs={JSON.stringify(analytics.attrs)}>
+    <p>
+      Chcemy liczyć odwiedziny strony narzędziem {analytics.name}, które zapisuje pliki cookies na Twoim urządzeniu.
+      Bez Twojej zgody nic takiego nie uruchomimy, a strona działa tak samo.{' '}
+      <a href="/polityka-prywatnosci/#cookies">Szczegóły</a>
+    </p>
+    <div class="consent-actions">
+      <button type="button" class="consent-btn" data-consent="no">Odrzucam</button>
+      <button type="button" class="consent-btn" data-consent="yes">Akceptuję</button>
+    </div>
+  </div>
+  <script is:inline>
+    (() => {
+      const KEY = 'pw-consent';
+      const box = document.getElementById('consent');
+      if (!box) return;
+      const load = () => {
+        const s = document.createElement('script');
+        s.src = box.dataset.src;
+        s.defer = true;
+        for (const [k, v] of Object.entries(JSON.parse(box.dataset.attrs || '{}'))) s.setAttribute(k, v);
+        document.head.appendChild(s);
+      };
+      let v = null;
+      try { v = localStorage.getItem(KEY); } catch {}
+      if (v === 'yes') load(); else if (v !== 'no') box.hidden = false;
+      box.addEventListener('click', (e) => {
+        const b = e.target.closest('[data-consent]');
+        if (!b) return;
+        const val = b.dataset.consent;
+        try { localStorage.setItem(KEY, val); } catch {}
+        box.hidden = true;
+        if (val === 'yes' && v !== 'yes') load();
+        if (val === 'no' && v === 'yes') location.reload(); // withdrawal: reload without the script
+        v = val;
+      });
+      document.querySelectorAll('[data-consent-open]').forEach((a) => a.addEventListener('click', (e) => {
+        e.preventDefault();
+        box.hidden = false;
+        box.querySelector('button')?.focus();
+      }));
+    })();
+  </script>
+)}

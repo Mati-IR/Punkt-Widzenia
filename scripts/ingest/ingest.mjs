@@ -29,6 +29,7 @@ const MAX_PAGE_FETCHES = 40;   // per sitemap/scrape source per run (new article
 const PAGE_CONCURRENCY = 3;    // per source
 const MAX_CANDIDATES = 100;    // newest sitemap/listing entries looked at per run
 const FETCH_TIMEOUT_MS = 15_000;
+const HOST_GAP_MS = 500;       // politeness: at least this long between two requests to the same host (PUN-64)
 const TARGET_OUTLETS = 27;
 const DAY = 86_400_000;
 
@@ -56,6 +57,7 @@ function loadRegistry() {
     if (!outletIds.includes(id)) problems.push(`${id}: registry entry has no data/outlets/${id}.json`);
     if (!['rss', 'sitemap', 'scrape'].includes(c.type)) problems.push(`${id}: type must be rss | sitemap | scrape`);
     if (!Array.isArray(c.urls) || !c.urls.length || c.urls.some((u) => !/^https:\/\//.test(u))) problems.push(`${id}: urls must be a non-empty list of https URLs`);
+    if (c.paused !== undefined && (typeof c.paused !== 'string' || !c.paused.trim())) problems.push(`${id}: paused must be a non-empty reason string`);
     if (c.type === 'scrape') {
       try { new RegExp(c.linkPattern); } catch { problems.push(`${id}: scrape sources need a valid linkPattern`); }
       if (!c.linkPattern) problems.push(`${id}: scrape sources need a linkPattern`);
@@ -91,6 +93,15 @@ function decodeBody(buf, contentType) {
 }
 
 // Plain headers on purpose: one WAF (wPolityce) refuses some q-weighted Accept + Accept-Language combinations.
+// Per-host throttle: requests to one host start at least HOST_GAP_MS apart, whatever the concurrency.
+const hostNext = new Map();
+async function hostSlot(origin) {
+  const now = Date.now();
+  const at = Math.max(now, hostNext.get(origin) ?? 0);
+  hostNext.set(origin, at + HOST_GAP_MS);
+  if (at > now) await new Promise((res) => setTimeout(res, at - now));
+}
+
 async function get(url) {
   const left = DEADLINE - Date.now();
   if (left < 2_000) throw new SkipError('deadline', 'run time budget used up');
@@ -100,6 +111,7 @@ async function get(url) {
   let r;
   // Up to three plain retries on transient refusals (wPolityce's Cloudflare refuses the first request or two from a new client, then serves the same URL).
   for (let attempt = 0; attempt < 4; attempt++) {
+    await hostSlot(new URL(url).origin);
     try {
       r = await fetch(url, {
         headers: { 'user-agent': UA, accept: '*/*' },
@@ -242,6 +254,8 @@ async function main() {
     let recs = [];
     let status = 'ok';
     let error = null;
+    // `paused` (a reason string) stops fetching an outlet, e.g. after a publisher's opt-out (docs/TAKEDOWN.md).
+    if (cfg.paused) return { id, cfg, recs, status: 'paused', error: String(cfg.paused), stats };
     try {
       recs = cfg.type === 'rss' ? await runRss(cfg, stats) : cfg.type === 'sitemap' ? await runSitemap(cfg, ctx, stats) : await runScrape(cfg, ctx, stats);
       if (!stats.items) status = 'empty';

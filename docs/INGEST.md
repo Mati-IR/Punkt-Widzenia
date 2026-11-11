@@ -18,7 +18,7 @@ The same health table is shown on each Action run's summary page (Actions → In
 
 ## What we store (and what we don't)
 
-Each record holds only: `outletId`, `title`, `lead` (≤ 300 characters, from the feed or the page's meta description), `url` (canonical), `publishedAt`, `fetchedAt`. **No article text** is stored. For sitemap and scrape sources the fetcher opens each new article page only to read its `<head>` metadata (title, description, publish time, canonical link).
+Each record holds only: `outletId`, `title`, `lead` (≤ 200 characters, from the feed or the page's meta description), `url` (canonical), `publishedAt`, `fetchedAt`. **No article text** is stored. For sitemap and scrape sources the fetcher opens each new article page only to read its `<head>` metadata (title, description, publish time, canonical link).
 
 ## Source types
 
@@ -31,7 +31,9 @@ Sitemap and scrape sources open at most 20 new article pages per run, newest fir
 ## Politeness
 
 - The fetcher identifies itself as `PunktWidzeniaBot` and **obeys robots.txt**. A source that robots.txt disallows is reported as `blocked`, not fetched.
-- Low volume: one request per feed every 2 h, plus up to 40 article pages per sitemap/scrape source.
+- Low volume: one request per feed every 2 h, plus up to 40 article pages per sitemap/scrape source. Requests to one host start at least 0.5 s apart (`HOST_GAP_MS`).
+- Prefer an official RSS feed; use `sitemap` or `scrape` only when an outlet has no working feed. Before adding a source, check its robots.txt and terms of use.
+- The site shows only the headline and a link to the original. Leads are kept short and used only as input for event summaries; no images are stored or shown.
 - Items published more than 7 days before they are found are skipped.
 
 ## Running it locally

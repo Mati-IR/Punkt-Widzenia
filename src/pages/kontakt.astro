@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import Fill from '../components/Fill.astro';
+import { operator, TAKEDOWN_SLA_HOURS } from '../lib/site';
+---
+<Base title="Kontakt i dane usługodawcy" description="Kto prowadzi serwis Punkt Widzenia i jak się z nami skontaktować.">
+  <div class="prose legal">
+    <h1>Kontakt i dane usługodawcy</h1>
+    <p class="lead">Serwis Punkt Widzenia prowadzi:</p>
+
+    <dl class="kv">
+      <dt>Usługodawca</dt><dd><Fill value={operator.name} /></dd>
+      <dt>Adres</dt><dd><Fill value={operator.address} /></dd>
+      <dt>E-mail</dt><dd>{operator.email ? <a href={`mailto:${operator.email}`}>{operator.email}</a> : <Fill value="" />}</dd>
+      {operator.taxId && <><dt>NIP / REGON</dt><dd>{operator.taxId}</dd></>}
+    </dl>
+
+    <h2>W jakiej sprawie?</h2>
+    <ul>
+      <li><strong>Błąd w ocenie redakcji, jej właścicielu lub opisie</strong> — <a href="/zglos-poprawke/">zgłoś poprawkę</a>.</li>
+      <li><strong>Naruszenie praw, prośba o usunięcie treści, sprzeciw wydawcy</strong> — <a href="/zglos-naruszenie/">zgłoś naruszenie</a>. Odpowiadamy w ciągu {TAKEDOWN_SLA_HOURS} godzin.</li>
+      <li><strong>Twoje dane osobowe</strong> — zob. <a href="/polityka-prywatnosci/">Politykę prywatności</a>.</li>
+      <li><strong>Inne sprawy</strong> — napisz na adres e-mail podany wyżej.</li>
+    </ul>
+
+    <h2>Dla wydawców</h2>
+    <p>
+      Nagłówki pobiera nasz program <code>PunktWidzeniaBot</code>. Korzysta przede wszystkim z oficjalnych kanałów RSS,
+      przestrzega pliku robots.txt i rzadko odpytuje serwery (raz na 2 godziny, z odstępami między zapytaniami).
+      Na stronie pokazujemy tylko tytuł artykułu, nazwę redakcji i link do oryginału — bez treści artykułów i bez zdjęć.
+      Jeśli nie chcesz, żebyśmy pobierali Twoje nagłówki, zablokuj <code>PunktWidzeniaBot</code> w robots.txt
+      albo <a href="/zglos-naruszenie/">napisz do nas</a>.
+    </p>
+  </div>
+</Base>
