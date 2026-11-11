@@ -73,7 +73,7 @@
       "right": "Rzeczpospolita: „Kaczyński ostrzega przed przelewem krwi”; wPolityce: „To nam grozi? Prezes Kaczyński ostrzega!”."
     },
     "match": {
-      "include": "Kaczyński (ostrzega|z wieczornym|nawołuje|: Musimy)|Prezes Kaczyński ostrzega|Druga strona jest do wszystkiego",
+      "include": "Kaczyński (ostrzega|z wieczornym|nawołuje|: Musimy)|Prezes Kaczyński ostrzega|Druga strona jest do wszystkiego|przelewie krwi",
       "from": "2026-11-10T16:00:00Z"
     },
     "extra": [],
@@ -100,7 +100,7 @@
       "right": "Rzeczpospolita: „Gawkowski: Wykryto i zatrzymano cyberatak na system ePUAP”."
     },
     "match": {
-      "include": "ePUAP",
+      "include": "ePUAP|Państwow\\w* system\\w* (został wyłączony|ofiarą hakerów)",
       "from": "2026-11-10T16:00:00Z"
     },
     "extra": [],
@@ -1452,5 +1452,142 @@
     "extra": [],
     "addedAt": "2026-11-11T06:40:52Z",
     "updatedAt": "2026-11-11T06:40:52Z"
+  },
+  {
+    "location": "Rosja (obwód królewiecki)",
+    "extra": [],
+    "addedAt": "2026-11-11T17:48:43Z",
+    "updatedAt": "2026-11-11T17:48:43Z",
+    "id": "fsb-zatrzymanie-polakow-krolewiec",
+    "title": "FSB twierdzi, że zatrzymała w obwodzie królewieckim dwóch Polaków podejrzanych o szpiegostwo",
+    "date": "2026-11-11",
+    "tags": [
+      "Rosja",
+      "służby specjalne",
+      "dezinformacja"
+    ],
+    "summary": [
+      "Według rosyjskiej FSB (za agencją Reutera) zatrzymano dwóch obywateli Polski, którzy mieli zbierać informacje o obiektach wojskowych w obwodzie królewieckim.",
+      "Rzecznik ministra koordynatora służb specjalnych Jacek Dobrzyński nazwał komunikat „kolejną prowokacją i dezinformacją” i zaapelował o niepowielanie „wrogiej narracji”.",
+      "Rzecznik MSZ zalecił „daleko idącą ostrożność” wobec doniesień z Rosji."
+    ],
+    "framing": {
+      "left": "Gazeta.pl („Rzecznik MSZ: Sugerowałbym daleko idącą ostrożność”), OKO.press i Wyborcza podkreślają, że to twierdzenia FSB, z cudzysłowem przy „polskich szpiegach”.",
+      "center": "RMF FM: „Rosja twierdzi, że rozbiła polską siatkę szpiegowską. Polska: To prowokacja”; Fakt: „Szokujące doniesienia z Rosji. Polacy w rękach FSB”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "FSB|polską siatkę szpiegowską|polskich szpiegów|Polacy zatrzymani w obwodzie|Warszawa reaguje na doniesienia z Rosji|Kolejna rosyjska prowokacja",
+      "from": "2026-11-11T00:00:00Z"
+    }
+  },
+  {
+    "location": "Szczecin",
+    "extra": [],
+    "addedAt": "2026-11-11T17:48:43Z",
+    "updatedAt": "2026-11-11T17:48:43Z",
+    "id": "tusk-zaprasza-nawrockiego-sopot",
+    "title": "Tusk zaprasza prezydenta Nawrockiego z rodziną do swojego domu w Sopocie",
+    "date": "2026-11-11",
+    "tags": [
+      "Donald Tusk",
+      "Karol Nawrocki",
+      "Święto Niepodległości"
+    ],
+    "summary": [
+      "Podczas obchodów w Szczecinie, przy chrzcie promu „Bursztyn Unity”, premier Donald Tusk zaprosił prezydenta Karola Nawrockiego z małżonką i dziećmi do swojego domu w Sopocie.",
+      "„Podzielmy się opłatkiem przed Wigilią, porozmawiajmy” – powiedział premier, dodając, że „Polska jest warta naszej rozmowy”.",
+      "Po południu Tusk skrytykował na X przemówienie prezydenta (zob. osobne wydarzenie)."
+    ],
+    "framing": {
+      "left": "Onet, Gazeta.pl, Wyborcza i OKO.press cytują zaproszenie („Podzielmy się opłatkiem”).",
+      "center": "Interia: „Niespodziewane słowa. Tusk zaprasza Nawrockiego do swojego domu”; Radio ZET: „Tusk zaskoczył”.",
+      "right": "Rzeczpospolita: „Polska warta jest tej rozmowy”. TV Republika: „Tusk znowu przypisał sobie nie swoje zasługi” (bez wzmianki o zaproszeniu w tytule)."
+    },
+    "match": {
+      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył",
+      "from": "2026-11-11T08:00:00Z"
+    }
+  },
+  {
+    "location": "Warszawa",
+    "extra": [],
+    "addedAt": "2026-11-11T17:48:43Z",
+    "updatedAt": "2026-11-11T17:48:43Z",
+    "id": "nawrocki-przemowienie-11-listopada-tk",
+    "title": "Nawrocki w przemówieniu 11 listopada o „pogrzebanym prestiżu” TK; Tusk: „Szkoda”",
+    "date": "2026-11-11",
+    "tags": [
+      "Karol Nawrocki",
+      "Trybunał Konstytucyjny",
+      "Święto Niepodległości"
+    ],
+    "summary": [
+      "Na placu Piłsudskiego prezydent Karol Nawrocki powiedział, że „w ostatnich tygodniach zupełnie pogrzebano prestiż Trybunału Konstytucyjnego” i że TK powinien być „wolny od kordonów policji, ale wolny także od polityków”.",
+      "Prezydent mówił też o elitach oglądających się na „obce stolice” i poprosił ministra finansów Andrzeja Domańskiego o „lepszą pracę dla Rzeczypospolitej”.",
+      "Premier Donald Tusk napisał na X: „Chociaż w tym jednym dniu mógł próbować Polaków nie dzielić, a łączyć. Szkoda”. Szef MON Kosiniak-Kamysz bronił Domańskiego."
+    ],
+    "framing": {
+      "left": "WP: „Burza po przemówieniu Nawrockiego”, „Nawrocki wbił szpilę Domańskiemu”; TVN24 i Gazeta.pl cytują słowa o TK.",
+      "center": "Kanał Zero: „Nawrocki uderza w rząd”; Polsat News: „Naród zasługuje na wolny Trybunał”; Interia: „Tusk wbija szpilę Nawrockiemu”.",
+      "right": "Rzeczpospolita: „Dobre przemówienie… z dwiema fałszywymi nutami”; Najwyższy Czas: „Mocne przemówienie prezydenta Polski”; Radio Maryja relacjonuje przemówienie i wpis Tuska."
+    },
+    "match": {
+      "include": "prestiż\\w* (TK|Trybunału)|wolny Trybunał|Stać nas na to|TK musi być wolny|uzdrowieniu.{0,3} Trybunału|odbudować Trybunał|Nawrocki mówił o Trybunale|Prezydent wzywa w sprawie Trybunału|Nawrocki uderz\\w* w rząd|Domański straszny|^Domański$|szpilę Nawrockiemu|wbił szpilę Domańskiemu|\"Szkoda\"|wystąpienie Nawrockiego|Najmocniejsze momenty wystąpienia Nawrockiego|przemówieni\\w* (Karola )?Nawrockiego|obcych stolicach|Potrzebujemy silnego państwa|^Obchody Narodowego Święta Niepodległości$",
+      "from": "2026-11-11T08:00:00Z"
+    }
+  },
+  {
+    "location": "Warszawa",
+    "extra": [],
+    "addedAt": "2026-11-11T17:48:43Z",
+    "updatedAt": "2026-11-11T17:48:43Z",
+    "id": "kosiniak-kamysz-wygwizdany-11-listopada",
+    "title": "Kosiniak-Kamysz wygwizdany podczas obchodów na placu Piłsudskiego",
+    "date": "2026-11-11",
+    "tags": [
+      "Władysław Kosiniak-Kamysz",
+      "Święto Niepodległości"
+    ],
+    "summary": [
+      "Wystąpieniu wicepremiera i szefa MON Władysława Kosiniaka-Kamysza na centralnych obchodach w Warszawie towarzyszyły gwizdy i okrzyki części zgromadzonych.",
+      "Minister odpowiedział: „Polskę buduje się pracą, a nie krzykiem” i że „rytualny krzyk” nie budzi w nim lęku, ale jego echo „budzi radość naszych wrogów na Kremlu”."
+    ],
+    "framing": {
+      "left": "WP: „Kosiniak-Kamysz wygwizdany”; Onet: „Rytualny krzyk”; Gazeta.pl: „Radość na Kremlu”.",
+      "center": "Polsat News: „Szef MON: Pokój wam”; Interia: „Krzyk i buczenie przed przemówieniem”.",
+      "right": "TV Republika: „Kosiniak-Kamysz niemiłosiernie wygwizdany”."
+    },
+    "match": {
+      "include": "wygwizd|Gwizd\\w*|buczenie|rytualn\\w* krzyk",
+      "from": "2026-11-11T08:00:00Z"
+    }
+  },
+  {
+    "location": "Warszawa",
+    "extra": [],
+    "addedAt": "2026-11-11T17:48:43Z",
+    "updatedAt": "2026-11-11T17:48:43Z",
+    "id": "nawrocki-odznaczenia-11-listopada",
+    "title": "Prezydent wręczył odznaczenia państwowe, Ordery Orła Białego dla Wiesława Kęcika i prof. Mirosława Ząbka",
+    "date": "2026-11-11",
+    "tags": [
+      "Karol Nawrocki",
+      "odznaczenia",
+      "Święto Niepodległości"
+    ],
+    "summary": [
+      "W Pałacu Prezydenckim prezydent Karol Nawrocki odznaczył Orderem Orła Białego działacza opozycji w PRL Wiesława Kęcika i neurochirurga prof. Mirosława Ząbka.",
+      "Wśród innych wyróżnionych byli m.in. wiceprezes IPN Krzysztof Szwagrzyk (Krzyż Wielki Orderu Odrodzenia Polski) oraz muzycy Grzegorz i Patrycja Markowscy."
+    ],
+    "framing": {
+      "left": "Onet: „Prezydent Karol Nawrocki wręczył odznaczenia państwowe nowym osobom”.",
+      "center": "Radio ZET, Interia, RMF FM, TVP Info i Fakt wymieniają odznaczonych („opozycjonista, lekarz i aktorka”).",
+      "right": "TV Republika eksponuje odznaczenie prof. Szwagrzyka; Radio Maryja relacjonuje uroczystość."
+    },
+    "match": {
+      "include": "odznacz\\w*|Order\\w* Orła Białego|Markowscy wyróżnieni",
+      "from": "2026-11-11T06:00:00Z"
+    }
   }
 ]
