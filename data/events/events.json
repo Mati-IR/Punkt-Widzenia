@@ -1,5 +1,140 @@
 [
   {
+    "id": "sn-uchylil-zawieszenie-swieczkowskiego",
+    "title": "SN uchylił zarządzenia zawieszające prezesa TK Święczkowskiego i jego zastępcę Sochańskiego",
+    "date": "2026-11-10",
+    "location": "Warszawa",
+    "tags": [
+      "Sąd Najwyższy",
+      "Trybunał Konstytucyjny",
+      "Praworządność"
+    ],
+    "summary": [
+      "Sąd Najwyższy uchylił zarządzenia zawieszające prezesa TK Bogdana Święczkowskiego i jego zastępcę Sochańskiego; Rzeczpospolita poznała uzasadnienie.",
+      "Sędzia TK Anna Korwin-Piotrowska oceniła, że decyzja SN nie ma wpływu na Trybunał. Sędzia Laskowski skrytykował ją, mówiąc, że „SN nie ma do tego prawa” (Rzeczpospolita).",
+      "Minister sprawiedliwości Waldemar Żurek uznał działania SN za nieskuteczne: „Czekam, aż orzekną, że Ziemia jest płaska” (TVP Info)."
+    ],
+    "framing": {
+      "left": "OKO.press: „Ustawka i bezprawie w SN. Neo-sędziowie uchylili zawieszenie”; Gazeta.pl i Wyborcza eksponują słowa Korwin-Piotrowskiej („Bez wpływu”).",
+      "center": "RMF FM, Interia i Radio ZET: „Zwrot akcji”, „Nagły zwrot”; Polsat News: „Zmiana reguł gry w sporze o TK?”; TVP Info cytuje Żurka: „Działania SN nieskuteczne”.",
+      "right": "wPolityce: „Sensacyjny zwrot ws. TK! Sąd Najwyższy wsparł prezesa Święczkowskiego”, „Sądowe zwycięstwo prawdziwego TK!”; Republika: „SN o legalnych władzach TK”; Rzeczpospolita relacjonuje uzasadnienie i krytykę decyzji."
+    },
+    "match": {
+      "include": "Sąd\\w* Najwyższ\\w*|\\bSN\\b|Ziemia jest płaska",
+      "from": "2026-11-10T14:30:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-11T00:45:00Z",
+    "updatedAt": "2026-11-11T00:45:00Z"
+  },
+  {
+    "id": "orlen-wypowiada-umowe-lng-qatarenergy",
+    "title": "Orlen wypowiedział umowę z QatarEnergy na dostawy LNG",
+    "date": "2026-11-10",
+    "location": "Polska",
+    "tags": [
+      "Energetyka",
+      "Orlen"
+    ],
+    "summary": [
+      "Orlen wypowiedział umowę z katarską QatarEnergy na dostawy skroplonego gazu (LNG); spółka wydała komunikat.",
+      "Według Rzeczpospolitej chodzi o jedną z dwóch umów Orlenu z QatarEnergy."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "RMF FM, TVP Info i Polsat News informują o wypowiedzeniu umowy („Jest komunikat spółki”).",
+      "right": "Rzeczpospolita: „Gaz przestał płynąć. Orlen rozwiązał jedną z dwóch umów na dostawę LNG z QatarEnergy”."
+    },
+    "match": {
+      "include": "QatarEnergy|gaz z Kataru|LNG z Kataru",
+      "from": "2026-11-10T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-11T00:45:00Z",
+    "updatedAt": "2026-11-11T00:45:00Z"
+  },
+  {
+    "id": "kaczynski-apel-wybory-przelew-krwi",
+    "title": "Kaczyński wzywa do „przypilnowania” wyborów i ostrzega przed „przelewem krwi”",
+    "date": "2026-11-10",
+    "location": "Polska",
+    "tags": [
+      "PiS",
+      "Wybory"
+    ],
+    "summary": [
+      "Prezes PiS Jarosław Kaczyński w wieczornym wystąpieniu mówił: „Musimy do tych wyborów doprowadzić. Musimy ich przypilnować” (RMF FM).",
+      "Według Rzeczpospolitej i Gazety.pl ostrzegał przed „przelewem krwi” i mówił, że „druga strona jest do wszystkiego zdolna”.",
+      "Onet pisze, że jako przykład walki o kraj wskazał Ukraińców."
+    ],
+    "framing": {
+      "left": "Onet: „Kaczyński nawołuje do walki o Polskę. Za przykład stawia Ukraińców”; Gazeta.pl i Wyborcza cytują: „Druga strona jest do wszystkiego zdolna”.",
+      "center": "RMF FM: „Musimy ich przypilnować”; Fakt: „Kaczyński z wieczornym apelem. »To będzie wielka okazja«”.",
+      "right": "Rzeczpospolita: „Kaczyński ostrzega przed przelewem krwi”; wPolityce: „To nam grozi? Prezes Kaczyński ostrzega!”."
+    },
+    "match": {
+      "include": "Kaczyński (ostrzega|z wieczornym|nawołuje|: Musimy)|Prezes Kaczyński ostrzega|Druga strona jest do wszystkiego",
+      "from": "2026-11-10T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-11T00:45:00Z",
+    "updatedAt": "2026-11-11T00:45:00Z"
+  },
+  {
+    "id": "cyberatak-epuap",
+    "title": "Cyberatak na system ePUAP. Gawkowski: atak wykryty i zatrzymany",
+    "date": "2026-11-10",
+    "location": "Polska",
+    "tags": [
+      "Cyberbezpieczeństwo",
+      "Rząd"
+    ],
+    "summary": [
+      "Wicepremier i minister cyfryzacji Krzysztof Gawkowski potwierdził cyberatak na państwowy system ePUAP.",
+      "Według ministra atak został „wykryty i zatrzymany”, a zespoły podjęły natychmiastowe działania.",
+      "Polsat News podaje, że do działań włączyły się służby specjalne."
+    ],
+    "framing": {
+      "left": "Onet: „Minister Gawkowski potwierdza atak i uspokaja”; Gazeta.pl: „Zespoły podjęły natychmiastowe działania”.",
+      "center": "RMF FM i Kanał Zero: „Wykryty i zatrzymany”; TVP Info: „Atak udaremniony”; Polsat News: „Do akcji wkraczają służby specjalne”; Interia: „Pilny komunikat wicepremiera”.",
+      "right": "Rzeczpospolita: „Gawkowski: Wykryto i zatrzymano cyberatak na system ePUAP”."
+    },
+    "match": {
+      "include": "ePUAP",
+      "from": "2026-11-10T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-11T00:45:00Z",
+    "updatedAt": "2026-11-11T00:45:00Z"
+  },
+  {
+    "id": "prokuratura-sledztwo-kolodziejczak",
+    "title": "Prokuratura wszczęła śledztwo w sprawie posła Michała Kołodziejczaka",
+    "date": "2026-11-10",
+    "location": "Polska",
+    "tags": [
+      "Prokuratura",
+      "Sejm"
+    ],
+    "summary": [
+      "Prokuratura wszczęła śledztwo w sprawie posła Michała Kołodziejczaka.",
+      "Według Kanału Zero postępowanie wszczęto po jego ustaleniach dziennikarskich.",
+      "Gazeta Wyborcza i Gazeta.pl piszą o „problemie z zeznaniami” w tej sprawie."
+    ],
+    "framing": {
+      "left": "Gazeta.pl: „Afera w sprawie Kołodziejczaka… Pojawił się problem”; Wyborcza: „Jest jednak problem z zeznaniami”; WP: „Prokuratura bada poważne zarzuty”.",
+      "center": "RMF FM, Radio ZET i Interia informują o śledztwie; TVP Info: „Grozi mu wieloletnia odsiadka”; Kanał Zero: „Prokuratura wszczyna śledztwo po ustaleniach Kanału Zero”.",
+      "right": "Rzeczpospolita i Radio Maryja informacyjnie: „Prokuratura wszczęła śledztwo w sprawie posła Michała Kołodziejczaka”."
+    },
+    "match": {
+      "include": "Kołodziejczak",
+      "from": "2026-11-10T14:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-11T00:45:00Z",
+    "updatedAt": "2026-11-11T00:45:00Z"
+  },
+  {
     "id": "zamach-krakow",
     "broad": true,
     "title": "Zamach na Rynku Głównym w Krakowie: sześć ofiar, sprawca zabił też rodzinę",
@@ -1071,7 +1206,7 @@
   },
   {
     "id": "kosiniak-kamysz-waszyngton-baza-usa",
-    "title": "Kosiniak-Kamysz w Waszyngtonie. Rozmowy z Hegsethem o stałej obecności wojsk USA",
+    "title": "Kosiniak-Kamysz po rozmowach z Hegsethem: „zielone światło” dla stałej bazy USA, decyzja w grudniu",
     "date": "2026-11-10",
     "location": "Waszyngton",
     "tags": [
@@ -1080,23 +1215,23 @@
       "MON"
     ],
     "summary": [
-      "Wicepremier i szef MON Władysław Kosiniak-Kamysz poleciał do USA; ma się spotkać z sekretarzem Pete’em Hegsethem.",
-      "Według Polsat News i Radia Maryja tematem jest stała obecność wojsk USA w Polsce i systemy Patriot.",
-      "Kosiniak-Kamysz zapowiedział, że jeśli uda się wszystko dopiąć, zostanie podpisane „ważne porozumienie”."
+      "Wicepremier i szef MON Władysław Kosiniak-Kamysz spotkał się w Waszyngtonie z sekretarzem Pete’em Hegsethem; rozmawiano o stałej obecności wojsk USA w Polsce.",
+      "Po spotkaniu minister powiedział, że jest „zielone światło” z Pentagonu dla stałej bazy wojsk USA, a ostateczna decyzja ma zapaść w grudniu.",
+      "Według Radia ZET Hegseth nazwał Polskę „wzorem do naśladowania dla innych sojuszników”."
     ],
     "framing": {
-      "left": "TVN24 cytuje zapowiedź ministra o porozumieniu; Gazeta Wyborcza zauważa, że Hegseth „ma na głowie impeachment”.",
-      "center": "Polsat News podaje cele wizyty („Stała baza wojsk USA i systemy Patriot”).",
-      "right": "Telewizja Republika pisze o rozmowach „ws. stałej bazy”; Radio Maryja przytacza eksperta: „To komedia i zabawa kosztem opinii publicznej”."
+      "left": "Gazeta.pl i Wyborcza: „Jest zielone światło… Ostateczna decyzja w grudniu”; Onet: „Tylko Niemcy mają taką umowę”; Polityka: „Hegseth mówi niewiele… nad Pentagonem czarne chmury”.",
+      "center": "Polsat News: „Kosiniak-Kamysz mówi o przełomie”; TVP Info, Interia, Kanał Zero i Radio ZET cytują „zielone światło”.",
+      "right": "Rzeczpospolita: „Jest zielone światło z Pentagonu”; wPolityce: „Jasny sygnał z USA! »Polska wzorem«”; Republika pisała wcześniej o rozmowach „ws. stałej bazy”."
     },
     "match": {
-      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty",
+      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA",
       "from": "2026-11-09T16:00:00Z",
       "to": "2026-11-12T16:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-10T15:55:00Z",
-    "updatedAt": "2026-11-10T15:55:00Z"
+    "updatedAt": "2026-11-11T00:42:37Z"
   },
   {
     "id": "debata-dostep-do-broni-po-zamachu",
@@ -1195,7 +1330,8 @@
     "summary": [
       "Premier Donald Tusk ogłosił, że kancelaria premiera opublikuje decyzję Trybunału Konstytucyjnego – według OKO.press pierwszą od trzech lat. Mówił o „symbolicznym końcu wojny o Trybunał” i „początku nowej ery”.",
       "Na Zgromadzeniu Ogólnym sędziów TK, zwołanym przez sędzię Annę Korwin-Piotrowską, przyjęto uchwałę zmieniającą regulamin Trybunału.",
-      "Zawieszony prezes TK Bogdan Święczkowski ponownie pojawił się pod Trybunałem i domagał się wpuszczenia do budynku. Według Gazety Wyborczej Tusk odrzucił „ultimatum” prezydenta Nawrockiego w sprawie rozmów o TK."
+      "Zawieszony prezes TK Bogdan Święczkowski ponownie pojawił się pod Trybunałem i domagał się wpuszczenia do budynku. Według Gazety Wyborczej Tusk odrzucił „ultimatum” prezydenta Nawrockiego w sprawie rozmów o TK.",
+      "Wieczorem 10 listopada uchwała TK ukazała się w Monitorze Polskim (TVP Info)."
     ],
     "framing": {
       "left": "Gazeta.pl: „Trybunał Konstytucyjny zaczął pracę. Tusk: Z czystym sumieniem”; OKO.press: „Trybunał Konstytucyjny działa”; Wyborcza: „Tusk odrzucił ultimatum Nawrockiego”.",
@@ -1203,12 +1339,12 @@
       "right": "wPolityce: „Tusk do reszty niszczy TK! Właśnie ogłosił decyzję”, „Co się dzieje z uzurpatorką w TK?!”; Republika: „Tusk kpi z TK?”. Rzeczpospolita neutralnie: „Kluczowa decyzja w TK, uchwalono zmiany w regulaminie”."
     },
     "match": {
-      "include": "nowej ery|nowa era|wojny o Trybunał|Trybunał Konstytucyjny (zaczął|działa|przyjął)|wyrok Trybunału Konstytucyjnego|regulamin\\w* (TK|Trybunału)|Zmiany w Trybunale|Święczkowsk|uzurpatork|Tusk (kpi z|do reszty niszczy) TK|ultimatum Nawrockiego|Mularczyk ostro|Prezes TK wezwał|Dwie strony krok w tył ws\\. TK",
+      "include": "nowej ery|nowa era|wojny o Trybunał|Trybunał Konstytucyjny (zaczął|działa|przyjął)|wyrok Trybunału Konstytucyjnego|regulamin\\w* (TK|Trybunału)|Zmiany w Trybunale|Święczkowsk|uzurpatork|Tusk (kpi z|do reszty niszczy) TK|ultimatum Nawrockiego|Mularczyk ostro|Prezes TK wezwał|Dwie strony krok w tył ws\\. TK|Uchwała TK już w Monitorze",
       "from": "2026-11-09T18:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-10T16:50:00Z",
-    "updatedAt": "2026-11-10T16:50:00Z"
+    "updatedAt": "2026-11-11T00:42:37Z"
   },
   {
     "id": "nawrocki-nominacje-generalskie-11-listopada",
