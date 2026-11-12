@@ -161,7 +161,7 @@
     },
     "match": {
       "include": "Krak|zamach|strzelanin|Michał O|Michała O|Oksińsk|Ostrow|hejnał|Rynek Główny|Rynku Główn|wybudzon|chirurd|dorożkar|kard\\. Ryś|Rysia|żałob|Chodzie|Austriacz|bohater|oddawa\\w* krwi|krwiodaw|Zasada 4U|Zygmunt|terroryst|kondolenc|Słyszysz strzały|ranny|rannych|ranni|policjant|Marsz\\w* Ciszy|Kulik|Norwesk\\w* małżeńst|sekcj\\w* zwłok|Morańsk|specjaln\\w* grup|Specgrup|Breivik",
-      "exclude": "Tatr|Jastrzęb|Lotto|Czechowic|pociąg|szerszen|Hayden|Rolnik szuka|Żebrowsk|Kamienica|Adamska|Najman|Michalik|Papszun|SKM|Lisy|nożem|Niepodległości|Japoni|Hiszpan|plecak|interweniując|Dwie ofiary strzelaniny|KUL|Pejd|wykładowczyn|karambol|Bułgari",
+      "exclude": "Tatr|Jastrzęb|Lotto|Czechowic|pociąg|szerszen|Hayden|Rolnik szuka|Żebrowsk|Kamienica|Adamska|Najman|Michalik|Papszun|SKM|Lisy|nożem|Niepodległości|Japoni|Hiszpan|plecak|interweniując|Dwie ofiary strzelaniny|\\bKUL\\b|Pejd|wykładowczyn|karambol|Bułgari|Nowy Jork|Nowym Jorku|Brooklyn|Racą w policjantkę",
       "from": "2026-11-07T14:00:00Z",
       "to": "2026-11-12T12:00:00Z"
     },
@@ -247,20 +247,21 @@
       "Po zamachu w Krakowie pojawiły się doniesienia o możliwym zakazie Marszu Niepodległości. Premier Donald Tusk nazwał je „zwykłą dezinformacją” i zapewnił, że nikt nie zamierza zakazywać marszu, apelując o odpowiedzialność.",
       "Organizatorzy zapowiedzieli, że marsz przejdzie. MSWiA komentowało kwestie bezpieczeństwa; w Krakowie odwołano Bieg Niepodległości, a obchody 11 listopada mają być zmodyfikowane.",
       "Wcześniej OKO.press pisało, że na czele marszu ma iść prezydent Nawrocki, a wśród haseł pojawia się polexit.",
-      "9 listopada organizatorzy opublikowali trasę; marsz ma przejść ulicami Warszawy 11 listopada zgodnie z planem. Stolica i inne miasta zapowiadają dodatkowe środki bezpieczeństwa."
+      "9 listopada organizatorzy opublikowali trasę; marsz ma przejść ulicami Warszawy 11 listopada zgodnie z planem. Stolica i inne miasta zapowiadają dodatkowe środki bezpieczeństwa.",
+      "11 listopada marsz przeszedł ulicami Warszawy. Według stołecznej policji podczas obchodów w stolicy zatrzymano 59 osób; media odnotowały odpalanie rac. Prezydent Warszawy Rafał Trzaskowski ocenił przebieg marszu, wskazując „jeden wyjątek” (Interia)."
     ],
     "framing": {
-      "left": "OKO.press skupia się na politycznym charakterze marszu – haśle polexitu i obecności prezydenta na jego czele.",
-      "center": "Większość mediów centrowych (Polsat News, RMF FM, Interia, Fakt, TVP Info, Radio ZET) relacjonuje deklarację premiera i stanowisko organizatorów, bez oceny samego marszu.",
-      "right": "wPolityce i Najwyższy Czas! akcentują stanowisko organizatorów („Nie możemy dopuścić”) i reakcję Konfederacji; tytuł „Marsz Niepodległości będzie odwołany?! Tusk jednoznacznie…” buduje napięcie wokół rzekomego zakazu. Centroprawicowa Rzeczpospolita cytuje premiera: „Spekulacje to dezinformacja”."
+      "left": "OKO.press skupia się na politycznym charakterze marszu – haśle polexitu i obecności prezydenta na jego czele. Polityka: „race odpalone, ciosy wymienione. Z pozytywów: mogło być gorzej”; Onet o fałszywych zdjęciach z marszu udostępnianych przez polityków PiS i Konfederacji.",
+      "center": "Większość mediów centrowych (Polsat News, RMF FM, Interia, Fakt, TVP Info, Radio ZET) relacjonuje deklarację premiera i stanowisko organizatorów, bez oceny samego marszu. Po marszu: TVP Info, Fakt, Radio ZET i Polsat News podają policyjny bilans zatrzymań; Interia pisze o incydencie z flagą i racą oraz o oburzeniu po określeniu „marsz skrajnej prawicy” przez światową agencję.",
+      "right": "wPolityce i Najwyższy Czas! akcentują stanowisko organizatorów („Nie możemy dopuścić”) i reakcję Konfederacji; tytuł „Marsz Niepodległości będzie odwołany?! Tusk jednoznacznie…” buduje napięcie wokół rzekomego zakazu. Centroprawicowa Rzeczpospolita cytuje premiera: „Spekulacje to dezinformacja”. Po marszu wPolityce relacjonuje go entuzjastycznie („Polaków nie da się stłumić!”) i krytykuje liczenie uczestników przez ratusz („Farsa!”)."
     },
     "match": {
-      "include": "Marsz\\w* Niepodległości|Trzaskowski apeluje przed 11 listopada",
+      "include": "Marsz\\w* Niepodległości|Trzaskowski apeluje przed 11 listopada|marsz(u|em|ie|e)?\\b|Zatrzyman\\w* (i race )?podczas (obchodów|marszu)|Zatrzymano (prawie 60|59) osób",
       "from": "2026-11-05T00:00:00Z",
-      "to": "2026-11-12T00:00:00Z"
+      "to": "2026-11-12T12:00:00Z"
     },
     "extra": [],
-    "updatedAt": "2026-11-09T14:43:55Z"
+    "updatedAt": "2026-11-12T07:17:34Z"
   },
   {
     "id": "sledztwo-wejscie-prezydenta-do-tk",
@@ -1365,7 +1366,7 @@
       "right": "wPolityce: „Cenckiewicz oburzony tym awansem w wojsku! Ujawnił powód”."
     },
     "match": {
-      "include": "generałów|stopień generalski|awans\\w* w (polskim )?wojsku",
+      "include": "generałów|stopień generalski|awans\\w* w (polskim )?wojsku|gwiazdki generalskie",
       "from": "2026-11-10T04:00:00Z"
     },
     "extra": [],
@@ -1446,7 +1447,7 @@
       "right": "TV Republika informuje o zamknięciu ulic w centrum Warszawy w związku ze świętem."
     },
     "match": {
-      "include": "Obchody w całej Polsce|Niepodległościowy polonez|Polacy zapytani o 11 listopada|zamknięte dla ruchu będą ulice w centrum",
+      "include": "Obchody w całej Polsce|Niepodległościowy polonez|Polacy zapytani o 11 listopada|zamknięte dla ruchu będą ulice w centrum|płyną życzenia|składa Polsce życzenia|złożyli życzenia Polsce|odbyły się (centralne )?obchody|obchody Narodowego Święta Niepodległości przebiegły",
       "from": "2026-11-11T00:00:00Z"
     },
     "extra": [],
@@ -1485,7 +1486,7 @@
     "location": "Szczecin",
     "extra": [],
     "addedAt": "2026-11-11T17:48:43Z",
-    "updatedAt": "2026-11-11T17:48:43Z",
+    "updatedAt": "2026-11-12T07:17:34Z",
     "id": "tusk-zaprasza-nawrockiego-sopot",
     "title": "Tusk zaprasza prezydenta Nawrockiego z rodziną do swojego domu w Sopocie",
     "date": "2026-11-11",
@@ -1497,15 +1498,16 @@
     "summary": [
       "Podczas obchodów w Szczecinie, przy chrzcie promu „Bursztyn Unity”, premier Donald Tusk zaprosił prezydenta Karola Nawrockiego z małżonką i dziećmi do swojego domu w Sopocie.",
       "„Podzielmy się opłatkiem przed Wigilią, porozmawiajmy” – powiedział premier, dodając, że „Polska jest warta naszej rozmowy”.",
-      "Po południu Tusk skrytykował na X przemówienie prezydenta (zob. osobne wydarzenie)."
+      "Po południu Tusk skrytykował na X przemówienie prezydenta (zob. osobne wydarzenie).",
+      "Szef Kancelarii Prezydenta Paweł Szefernaker odpowiedział premierowi: „Wystarczyło zostać w Warszawie”, zarzucając mu unikanie wspólnego gestu z prezydentem podczas centralnych obchodów."
     ],
     "framing": {
-      "left": "Onet, Gazeta.pl, Wyborcza i OKO.press cytują zaproszenie („Podzielmy się opłatkiem”).",
-      "center": "Interia: „Niespodziewane słowa. Tusk zaprasza Nawrockiego do swojego domu”; Radio ZET: „Tusk zaskoczył”.",
-      "right": "Rzeczpospolita: „Polska warta jest tej rozmowy”. TV Republika: „Tusk znowu przypisał sobie nie swoje zasługi” (bez wzmianki o zaproszeniu w tytule)."
+      "left": "Onet, Gazeta.pl, Wyborcza i OKO.press cytują zaproszenie („Podzielmy się opłatkiem”). Wyborcza: „Tusk do Nawrockiego, Nawrocki do Tuska. Czyli opłatek bardzo polityczny”.",
+      "center": "Interia: „Niespodziewane słowa. Tusk zaprasza Nawrockiego do swojego domu”; Radio ZET: „Tusk zaskoczył”. Odpowiedź Pałacu cytują RMF FM, Radio ZET i Kanał Zero: „Wystarczyło zostać w Warszawie”.",
+      "right": "Rzeczpospolita: „Polska warta jest tej rozmowy”. TV Republika: „Tusk znowu przypisał sobie nie swoje zasługi” (bez wzmianki o zaproszeniu w tytule). Później TV Republika: „Szefernaker zarzuca Tuskowi unikanie wspólnego gestu z prezydentem”; wPolityce: „Najpierw zaproszenie, a potem zjadliwy wpis”."
     },
     "match": {
-      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył",
+      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Najpierw zaproszenie",
       "from": "2026-11-11T08:00:00Z"
     }
   },
@@ -1513,7 +1515,7 @@
     "location": "Warszawa",
     "extra": [],
     "addedAt": "2026-11-11T17:48:43Z",
-    "updatedAt": "2026-11-11T17:48:43Z",
+    "updatedAt": "2026-11-12T07:17:34Z",
     "id": "nawrocki-przemowienie-11-listopada-tk",
     "title": "Nawrocki w przemówieniu 11 listopada o „pogrzebanym prestiżu” TK; Tusk: „Szkoda”",
     "date": "2026-11-11",
@@ -1525,7 +1527,8 @@
     "summary": [
       "Na placu Piłsudskiego prezydent Karol Nawrocki powiedział, że „w ostatnich tygodniach zupełnie pogrzebano prestiż Trybunału Konstytucyjnego” i że TK powinien być „wolny od kordonów policji, ale wolny także od polityków”.",
       "Prezydent mówił też o elitach oglądających się na „obce stolice” i poprosił ministra finansów Andrzeja Domańskiego o „lepszą pracę dla Rzeczypospolitej”.",
-      "Premier Donald Tusk napisał na X: „Chociaż w tym jednym dniu mógł próbować Polaków nie dzielić, a łączyć. Szkoda”. Szef MON Kosiniak-Kamysz bronił Domańskiego."
+      "Premier Donald Tusk napisał na X: „Chociaż w tym jednym dniu mógł próbować Polaków nie dzielić, a łączyć. Szkoda”. Szef MON Kosiniak-Kamysz bronił Domańskiego.",
+      "Były prezydent Aleksander Kwaśniewski ocenił słowa Nawrockiego jako „małostkowe” i stwierdził, że „niszczy urząd prezydenta” (TVP Info, WP)."
     ],
     "framing": {
       "left": "WP: „Burza po przemówieniu Nawrockiego”, „Nawrocki wbił szpilę Domańskiemu”; TVN24 i Gazeta.pl cytują słowa o TK.",
@@ -1533,7 +1536,7 @@
       "right": "Rzeczpospolita: „Dobre przemówienie… z dwiema fałszywymi nutami”; Najwyższy Czas: „Mocne przemówienie prezydenta Polski”; Radio Maryja relacjonuje przemówienie i wpis Tuska."
     },
     "match": {
-      "include": "prestiż\\w* (TK|Trybunału)|wolny Trybunał|Stać nas na to|TK musi być wolny|uzdrowieniu.{0,3} Trybunału|odbudować Trybunał|Nawrocki mówił o Trybunale|Prezydent wzywa w sprawie Trybunału|Nawrocki uderz\\w* w rząd|Domański straszny|^Domański$|szpilę Nawrockiemu|wbił szpilę Domańskiemu|\"Szkoda\"|wystąpienie Nawrockiego|Najmocniejsze momenty wystąpienia Nawrockiego|przemówieni\\w* (Karola )?Nawrockiego|obcych stolicach|Potrzebujemy silnego państwa|^Obchody Narodowego Święta Niepodległości$",
+      "include": "prestiż\\w* (TK|Trybunału)|wolny Trybunał|Stać nas na to|TK musi być wolny|uzdrowieniu.{0,3} Trybunału|odbudować Trybunał|Nawrocki mówił o Trybunale|Prezydent wzywa w sprawie Trybunału|Nawrocki uderz\\w* w rząd|Domański straszny|^Domański$|szpilę Nawrockiemu|wbił szpilę Domańskiemu|\"Szkoda\"|wystąpienie Nawrockiego|Najmocniejsze momenty wystąpienia Nawrockiego|przemówieni\\w* (Karola )?Nawrockiego|obcych stolicach|Potrzebujemy silnego państwa|^Obchody Narodowego Święta Niepodległości$|Kwaśniewski (o słowach Nawrockiego|nie ma złudzeń|krytykuje Nawrockiego)|Nawrocki wybrał|przemówienie rozwścieczyło|wystąpienie prezydenta|Prezydent punktuje Domańskiego|krytyki Karola Nawrockiego|Tusk odpowiedział Nawrockiemu|starcie Tuska z Nawrockim|przypomniał o fundamentach",
       "from": "2026-11-11T08:00:00Z"
     }
   },
@@ -1589,5 +1592,33 @@
       "include": "odznacz\\w*|Order\\w* Orła Białego|Markowscy wyróżnieni",
       "from": "2026-11-11T06:00:00Z"
     }
+  },
+  {
+    "id": "kaczynski-jedna-lista-prawicy",
+    "title": "Kaczyński zapowiada starania o jedną wspólną listę prawicy w wyborach do Sejmu",
+    "date": "2026-11-11",
+    "location": "Warszawa",
+    "tags": [
+      "PiS",
+      "Konfederacja",
+      "Wybory"
+    ],
+    "summary": [
+      "Prezes PiS Jarosław Kaczyński zapowiedział 11 listopada działania na rzecz jednej listy prawicy w wyborach do Sejmu: „Będziemy działali, by była jedna lista” (Rzeczpospolita).",
+      "Według Gazety.pl mówił, że „trzeba przekonywać polityków trzech Konfederacji”.",
+      "TV Republika określa zapowiedź jako „wielki sojusz prawicy”."
+    ],
+    "framing": {
+      "left": "Gazeta.pl: „Kaczyński chce jednej listy prawicy w wyborach” z cytatem o przekonywaniu „trzech Konfederacji”.",
+      "center": "Brak publikacji redakcji centrowych w monitorowanych źródłach.",
+      "right": "Rzeczpospolita: „Kaczyński: będziemy działali, by była jedna lista do Sejmu”; TV Republika: „Kaczyński zapowiada wielki sojusz prawicy”; wPolityce: „Przełomowa zapowiedź prezesa PiS”."
+    },
+    "match": {
+      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS",
+      "from": "2026-11-11T10:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T07:16:31Z",
+    "updatedAt": "2026-11-12T07:16:31Z"
   }
 ]
