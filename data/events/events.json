@@ -1486,7 +1486,7 @@
     "location": "Szczecin",
     "extra": [],
     "addedAt": "2026-11-11T17:48:43Z",
-    "updatedAt": "2026-11-12T08:42:19Z",
+    "updatedAt": "2026-11-12T18:43:00Z",
     "id": "tusk-zaprasza-nawrockiego-sopot",
     "title": "Tusk zaprasza prezydenta Nawrockiego z rodziną do swojego domu w Sopocie",
     "date": "2026-11-11",
@@ -1500,7 +1500,8 @@
       "„Podzielmy się opłatkiem przed Wigilią, porozmawiajmy” – powiedział premier, dodając, że „Polska jest warta naszej rozmowy”.",
       "Po południu Tusk skrytykował na X przemówienie prezydenta (zob. osobne wydarzenie).",
       "Szef Kancelarii Prezydenta Paweł Szefernaker odpowiedział premierowi: „Wystarczyło zostać w Warszawie”, zarzucając mu unikanie wspólnego gestu z prezydentem podczas centralnych obchodów.",
-      "12 listopada rzecznik prezydenta Rafał Leśkiewicz powiedział w WP, że „do spotkania powinno dojść, tylko powinny być spełnione dwa warunki brzegowe”."
+      "12 listopada rzecznik prezydenta Rafał Leśkiewicz powiedział w WP, że „do spotkania powinno dojść, tylko powinny być spełnione dwa warunki brzegowe”.",
+      "Tego samego dnia premier ponowił zaproszenie: „Nie lękaj się, nic nie zrobię” (TVP Info); poseł Konfederacji Michał Wawer doradzał w RMF FM prezydentowi, by poszedł na spotkanie."
     ],
     "framing": {
       "left": "Onet, Gazeta.pl, Wyborcza i OKO.press cytują zaproszenie („Podzielmy się opłatkiem”). Wyborcza: „Tusk do Nawrockiego, Nawrocki do Tuska. Czyli opłatek bardzo polityczny”. WP 12 listopada: „Pałac odpowiada Tuskowi. Nawrocki stawia twardy warunek ws. spotkania”; TVN24: „Premier Tusk wyciąga rękę do rozmowy, prezydent Nawrocki ostrzega”.",
@@ -1508,7 +1509,7 @@
       "right": "Rzeczpospolita: „Polska warta jest tej rozmowy”. TV Republika: „Tusk znowu przypisał sobie nie swoje zasługi” (bez wzmianki o zaproszeniu w tytule). Później TV Republika: „Szefernaker zarzuca Tuskowi unikanie wspólnego gestu z prezydentem”; wPolityce: „Najpierw zaproszenie, a potem zjadliwy wpis”."
     },
     "match": {
-      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Najpierw zaproszenie|Pałac odpowiada Tuskowi|Tusk wyciąga rękę|Nie siada się do stołu|podzielić się opłatkiem|Cwany ruch Tuska|Tusk zaprasza\\. Morawiecki",
+      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Najpierw zaproszenie|Pałac odpowiada Tuskowi|Tusk wyciąga rękę|Nie siada się do stołu|podzielić się opłatkiem|Cwany ruch Tuska|Tusk zaprasza\\. Morawiecki|Polityka miłości Tuska|przy karpiu|opłatku z Nawrockim|ponawia zaproszenie|spotkani[ea] z Tuskiem|TUSK ZAPRASZA",
       "from": "2026-11-11T08:00:00Z",
       "to": "2026-11-15T08:00:00Z"
     }
@@ -1609,7 +1610,9 @@
       "Prezes PiS Jarosław Kaczyński zapowiedział 11 listopada działania na rzecz jednej listy prawicy w wyborach do Sejmu: „Będziemy działali, by była jedna lista” (Rzeczpospolita).",
       "Według Gazety.pl mówił, że „trzeba przekonywać polityków trzech Konfederacji”.",
       "TV Republika określa zapowiedź jako „wielki sojusz prawicy”.",
-      "Zapowiedź krytykują politycy koalicji: przewodnicząca klubu Lewicy Anna Maria Żukowska mówiła w Polsat News o „granicy rozsądku i kompromisu”, a wiceszef Kancelarii Premiera z PSL – że Kaczyński „nawet z Belzebubem” podpisze pakt, „żeby tylko dorwać się do władzy” (Onet)."
+      "Zapowiedź krytykują politycy koalicji: przewodnicząca klubu Lewicy Anna Maria Żukowska mówiła w Polsat News o „granicy rozsądku i kompromisu”, a wiceszef Kancelarii Premiera z PSL – że Kaczyński „nawet z Belzebubem” podpisze pakt, „żeby tylko dorwać się do władzy” (Onet).",
+      "12 listopada premier Donald Tusk skomentował zapowiedź: „Przewiduję przemoc domową w tym małżeństwie” (Rzeczpospolita) i „Dobrze, że już nie ukrywa” (Onet).",
+      "Według WP w pomysł nie wierzą nawet politycy PiS; Gazeta Wyborcza przytacza ocenę, że to „gierka pod publikę”."
     ],
     "framing": {
       "left": "Gazeta.pl: „Kaczyński chce jednej listy prawicy w wyborach” z cytatem o przekonywaniu „trzech Konfederacji”. Onet w analizie: „Jarosław Kaczyński stawia na Grzegorza Brauna”; cytuje też polityka PSL: „Nawet z Belzebubem pakt podpisze”.",
@@ -1617,13 +1620,13 @@
       "right": "Rzeczpospolita: „Kaczyński: będziemy działali, by była jedna lista do Sejmu”; TV Republika: „Kaczyński zapowiada wielki sojusz prawicy”; wPolityce: „Przełomowa zapowiedź prezesa PiS”."
     },
     "match": {
-      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem",
+      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy",
       "from": "2026-11-11T10:00:00Z",
       "to": "2026-11-15T10:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-12T07:16:31Z",
-    "updatedAt": "2026-11-12T08:42:19Z"
+    "updatedAt": "2026-11-12T18:43:00Z"
   },
   {
     "id": "lekarka-rzeszow-307-zarzutow",
@@ -1771,33 +1774,36 @@
   },
   {
     "id": "policja-w-tv-republika-sledztwo-sakiewicz",
-    "title": "Policja w siedzibie TV Republika na polecenie prokuratury; osobne śledztwo ws. wypowiedzi Sakiewicza po zamachu",
+    "title": "Policja żąda materiałów od TV Republika i wPolsce24; śledztwo ws. wypowiedzi Sakiewicza po zamachu",
     "date": "2026-11-12",
     "location": "Warszawa",
     "tags": [
       "TV Republika",
       "Media",
       "Prokuratura",
-      "Policja"
+      "Policja",
+      "wPolsce24"
     ],
     "summary": [
       "W czwartek do siedziby Telewizji Republika weszli funkcjonariusze Centralnego Biura Zwalczania Cyberprzestępczości, żądając wydania części materiałów (Onet, Gazeta.pl); według Polsat News działali na polecenie Prokuratury Okręgowej w Szczecinie.",
       "Według TV Republika stacja odmówiła wydania materiałów; prokuratura chce m.in. nagrania programu z 16 października i dokumentacji stacji.",
       "Osobno Prokuratura Okręgowa w Krakowie wszczęła śledztwo w sprawie wypowiedzi na antenie TV Republika po zamachu w Krakowie (Polsat News, Radio ZET); według OKO.press chodzi o wypowiedzi prezesa stacji Tomasza Sakiewicza z Rynku Głównego 7 listopada.",
-      "Jarosław Kaczyński skomentował wizytę policji: „Boją się prawdy! Boją się wolnych mediów!” (TV Republika, Onet)."
+      "Jarosław Kaczyński skomentował wizytę policji: „Boją się prawdy! Boją się wolnych mediów!” (TV Republika, Onet).",
+      "Prokuratura odpiera zarzuty stacji dotyczące sprzętu i tajemnicy dziennikarskiej (Gazeta.pl); według TV Republika chce m.in. logów emisyjnych i grafików pracy. Waldemar Żurek: „Wolność słowa nie oznacza, że można bezmyślnie mówić wszystko” (Gazeta Wyborcza).",
+      "Policja zażądała też nagrań od telewizji wPolsce24; stacja odmówiła wydania nagrań spod TK (WP, Radio ZET, RMF FM). Kaczyński nazwał działania służb „szturmem na media” (WP, Interia)."
     ],
     "framing": {
-      "left": "Onet: „Policja w siedzibie Telewizji Republika. Żąda wydania dokumentów”; OKO.press: „Jest śledztwo w sprawie transmisji Republiki z zamachu w Krakowie”.",
-      "center": "Polsat News i Interia: „Żądali wydania dokumentów”; Fakt: „Dziennikarze wbiegli za funkcjonariuszami do metra”; Radio ZET: „Kłopoty Telewizji Republika”.",
-      "right": "TV Republika: „Akcja wymierzona w Republikę?”, „Represje za mówienie prawdy?”; Rzeczpospolita: „Policja chce dokumentów od Telewizji Republika. Stacja protestuje”."
+      "left": "Onet: „Policja w siedzibie Telewizji Republika. Żąda wydania dokumentów”; OKO.press: „Jest śledztwo w sprawie transmisji Republiki z zamachu w Krakowie”. WP: „»Wolność to nie immunitet«. Ostre słowa ministra o TV Republice”.",
+      "center": "Polsat News i Interia: „Żądali wydania dokumentów”; Fakt: „Dziennikarze wbiegli za funkcjonariuszami do metra”; Radio ZET: „Kłopoty Telewizji Republika”. RMF FM: „»Zamach na wolność słowa« czy »granice dobrego smaku«?”; Kanał Zero: „Co przykrywa kolejna »operacja reżimu Tuska« w Republice?”.",
+      "right": "TV Republika: „Akcja wymierzona w Republikę?”, „Represje za mówienie prawdy?”; Rzeczpospolita: „Policja chce dokumentów od Telewizji Republika. Stacja protestuje”. wPolityce: „Policja żąda nagrań od wPolsce24!”; TV Republika: „Prawnicy wspierają Republikę po wizycie policji”."
     },
     "match": {
-      "include": "Telewizji Republika|(w|na|całą) Republikę|Republiki z zamachu|Sakiewicz",
+      "include": "Telewizji Republika|(w|na|całą) Republikę|Republiki z zamachu|Sakiewicz|TV Republik|Republice|Republiki|Republikę|wPolsce24|szturm na media|kolejnej (prawicowej stacji|telewizji)|logów emisyjnych|Wolność to nie immunitet|Żurek zabrał głos",
       "from": "2026-11-12T09:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-12T12:42:35Z",
-    "updatedAt": "2026-11-12T12:42:35Z"
+    "updatedAt": "2026-11-12T18:43:00Z"
   },
   {
     "id": "smierc-wojciecha-klimasa-postrzal",
@@ -1851,5 +1857,196 @@
     "extra": [],
     "addedAt": "2026-11-12T12:42:35Z",
     "updatedAt": "2026-11-12T12:42:35Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-12T18:42:38Z",
+    "id": "strzaly-do-policjantow-krakow-12-listopada",
+    "title": "Mężczyzna oddał strzały z broni hukowej w kierunku policjantów w Krakowie, został zatrzymany",
+    "date": "2026-11-12",
+    "location": "Kraków",
+    "tags": [
+      "Bezpieczeństwo",
+      "Policja"
+    ],
+    "summary": [
+      "12 listopada po południu mężczyzna oddał strzały z broni hukowej w kierunku policjantów w Krakowie (TVN24, Gazeta.pl, Radio ZET); według Kanału Zero interwencja miała miejsce przy ul. Wielickiej.",
+      "Według TVP Info padły dwa strzały; Super Express podaje, że funkcjonariusze odpowiedzieli ogniem, RMF FM – że padły strzały ostrzegawcze.",
+      "Mężczyzna został zatrzymany (Rzeczpospolita, Onet, Interia, Radio Maryja)."
+    ],
+    "framing": {
+      "left": "TVN24 i Gazeta.pl: „Strzały z broni hukowej w kierunku policjantów”; WP: „Strzały w Krakowie. Napastnik jest już w rękach służb”.",
+      "center": "Polsat News: „Strzały w Krakowie w kierunku policjantów. Trwa akcja służb”; Fakt: „Dramatyczne doniesienia z Krakowa”; Super Express: „funkcjonariusze odpowiedzieli ogniem”.",
+      "right": "wPolityce: „W Krakowie znów padły strzały! Błyskawiczna akcja policji”; TV Republika: „Ponownie strzały do policjantów w Krakowie. Sprawca zatrzymany”."
+    },
+    "match": {
+      "include": "broni hukowej|Strzały w Krakowie|strzały (do|w kierunku) (krakowskich )?policjantów|Strzelał do policjantów w Krakowie|W Krakowie znów padły strzały|Akcja (policji|służb) w Krakowie|mężczyzna strzelał do policjantów|Padły strzały, policja zatrzymała",
+      "from": "2026-11-12T12:00:00Z"
+    },
+    "updatedAt": "2026-11-12T18:42:38Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-12T18:42:38Z",
+    "id": "sad-belgia-pazp-pfizer",
+    "title": "Sąd w Belgii uchylił zajęcie środków PAŻP w sporze Polski z Pfizerem",
+    "date": "2026-11-12",
+    "location": "Bruksela",
+    "tags": [
+      "Zdrowie",
+      "Sądy",
+      "Finanse publiczne"
+    ],
+    "summary": [
+      "Sąd w Brukseli wydał 12 listopada decyzję w sprawie środków Polskiej Agencji Żeglugi Powietrznej zajętych w sporze z koncernem Pfizer o szczepionki (Polsat News, TVN24, RMF FM).",
+      "Według Radia Maryja sąd uchylił decyzję o zajęciu środków PAŻP na rzecz Pfizera; Rzeczpospolita pisze, że sąd zablokował możliwość sięgnięcia po te pieniądze.",
+      "Ministerstwo Zdrowia ogłosiło wyrok jako korzystny dla Polski (Interia)."
+    ],
+    "framing": {
+      "left": "Onet: „Spór Polski z Pfizerem. Jest decyzja sądu w Brukseli”; TVN24: „Sąd w Belgii zdecydował w sprawie środków PAŻP”.",
+      "center": "TVP Info: „PAŻP wygrywa w Belgii”; RMF FM: „Korzystna dla PAŻP decyzja sądu w Belgii”; Polsat News: „Pfizer zablokował aktywa PAŻP. Jest decyzja sądu w Brukseli”.",
+      "right": "wPolityce: „PAŻP kontra Pfizer. Belgijski sąd wydał ważny wyrok!”; Rzeczpospolita: „Polska kontra Pfizer”; Najwyższy Czas: „…w sprawie nikomu niepotrzebnych covidowych szczepionek”."
+    },
+    "match": {
+      "include": "PAŻP|Pfizer",
+      "from": "2026-11-12T12:00:00Z"
+    },
+    "updatedAt": "2026-11-12T18:42:38Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-12T18:42:38Z",
+    "id": "nawrocki-zaprasza-partie-rozmowy-tk",
+    "title": "Prezydent Nawrocki zaprasza ugrupowania na poniedziałkowe rozmowy o sytuacji w Trybunale Konstytucyjnym",
+    "date": "2026-11-12",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny",
+      "Prezydent"
+    ],
+    "summary": [
+      "Według rzecznika prezydenta Karol Nawrocki zaprasza na poniedziałek przedstawicieli środowisk politycznych na spotkanie w sprawie „uzdrowienia sytuacji” w Trybunale Konstytucyjnym; rozmowy ma prowadzić minister Zbigniew Bogucki (Radio Maryja).",
+      "Zaproszenia trafiły do klubów parlamentarnych (TVN24); według Gazety.pl dotyczą wszystkich ugrupowań.",
+      "Onet pisze, że „nie wszyscy się zjawią”."
+    ],
+    "framing": {
+      "left": "Gazeta.pl: „Nawrocki zaprasza wszystkie ugrupowania na rozmowy o »uzdrowieniu sytuacji« w TK”; Onet: „Nie wszyscy się zjawią”.",
+      "center": "Polsat News: „Wszystkie siły przy jednym stole”; RMF FM: „Zaproszenie goni zaproszenie”; Kanał Zero: „Minister chce rozmawiać o TK”.",
+      "right": "wPolityce: „Pilna inicjatywa prezydenta!”; TV Republika: „Prezydent chce rozmów z politykami ws. uzdrowienia sytuacji wokół TK”."
+    },
+    "match": {
+      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)",
+      "from": "2026-11-12T12:00:00Z"
+    },
+    "updatedAt": "2026-11-12T18:42:38Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-12T18:42:38Z",
+    "id": "zapomoga-ranni-policjanci-krakow",
+    "title": "Ranni w zamachu w Krakowie policjanci dostaną po 100 tys. zł zapomogi",
+    "date": "2026-11-12",
+    "location": "Kraków",
+    "tags": [
+      "Zamach w Krakowie",
+      "Policja",
+      "MSWiA"
+    ],
+    "summary": [
+      "Policjanci ranni w zamachu w Krakowie otrzymają po 100 tys. zł zapomogi – poinformowała rzeczniczka MSWiA (RMF FM, Rzeczpospolita, Gazeta.pl).",
+      "TVN24 cytuje ministra o dwóch policjantach z Krakowa: „są już legendą, awans jest oczywistością”.",
+      "Fakt pisze o pytaniu, czy policjanci zapłacą podatek od zbiórki na ich rzecz."
+    ],
+    "framing": {
+      "left": "Gazeta.pl: „Ranni policjanci dostaną po 100 tys. zł zapomogi”; Onet: „Ranni policjanci otrzymali środki finansowe”.",
+      "center": "Radio ZET: „Nagroda pieniężna dla bohaterskich funkcjonariuszy z Krakowa”; Fakt: „Ranni policjanci zapłacą podatek od zrzutki?”.",
+      "right": "Rzeczpospolita: „Ranni policjanci z Krakowa dostaną po 100 tys. zł”."
+    },
+    "match": {
+      "include": "zapomog|100 tys\\. zł|Nagroda pieniężna dla bohaterskich|Ranni policjanci|dwóch policjantach z Krakowa|podatek od zrzutki",
+      "from": "2026-11-12T12:00:00Z"
+    },
+    "updatedAt": "2026-11-12T18:42:38Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-12T18:42:38Z",
+    "id": "falszywe-zbiorki-po-zamachu-krakow",
+    "title": "Policja ostrzega przed fałszywymi zbiórkami po zamachu w Krakowie",
+    "date": "2026-11-12",
+    "location": "Kraków",
+    "tags": [
+      "Zamach w Krakowie",
+      "Policja"
+    ],
+    "summary": [
+      "Policja i Kraków ostrzegają przed fałszywymi zbiórkami pieniędzy wykorzystującymi tragedię w Krakowie (Polsat News, TVN24, Radio Maryja).",
+      "Według Polsat News przed wpłatą „należy dokładnie sprawdzić” zbiórkę; Fakt cytuje policję: „docierają do nas informacje”."
+    ],
+    "framing": {
+      "left": "TVN24: „Oszuści wykorzystują tragedię w Krakowie. Policja ostrzega przed fałszywymi zbiórkami”.",
+      "center": "Radio ZET: „Żerują na nieszczęściu”; Fakt: „Nikczemnie wykorzystują tragedię w Krakowie”; RMF FM: „Uwaga na fałszywe zbiórki”.",
+      "right": "Radio Maryja: „Kraków: policja ostrzega przed fałszywymi zbiórkami po sobotniej strzelaninie”."
+    },
+    "match": {
+      "include": "fałszyw\\w* zbiór\\w*|Nikczemnie wykorzystują tragedię|Oszuści wykorzystują tragedię",
+      "from": "2026-11-12T12:00:00Z"
+    },
+    "updatedAt": "2026-11-12T18:42:38Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-12T18:42:38Z",
+    "id": "zarzuty-za-pochwalanie-zamachu-i-grozby",
+    "title": "Zatrzymania i zarzuty za wpisy pochwalające zamach w Krakowie i groźby jego powtórzenia",
+    "date": "2026-11-12",
+    "location": "Polska",
+    "tags": [
+      "Zamach w Krakowie",
+      "Policja",
+      "Prokuratura"
+    ],
+    "summary": [
+      "Zatrzymano 11 osób w związku z wpisami chwalącymi sprawcę zamachu w Krakowie (Rzeczpospolita, TVN24).",
+      "68-latek z Elbląga, który w urzędzie miasta groził, że „zrobi to samo, co w Krakowie”, usłyszał zarzuty (WP, Fakt, Rzeczpospolita).",
+      "Według Onetu zarzut usłyszał też poznański influencer, który pochwalał zamach i groził kolejnymi; WP informuje o zatrzymaniu 34-latka, który groził powtórką z Krakowa."
+    ],
+    "framing": {
+      "left": "Onet: „Pochwalali zbrodnię w Krakowie. Teraz czekają na nich surowe konsekwencje”; WP: „Groził powtórką z Krakowa”.",
+      "center": "Super Express: „Awanturnik doigrał się za grożenie urzędnikom”; Fakt: „Awantura w urzędzie miasta”.",
+      "right": "Rzeczpospolita: „11 osób zatrzymanych za wpisy chwalące sprawcę zamachu w Krakowie” i „»Zrobię to, co w Krakowie«. Zarzuty dla mężczyzny grożącego zamachem”."
+    },
+    "match": {
+      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa",
+      "from": "2026-11-12T12:00:00Z"
+    },
+    "updatedAt": "2026-11-12T18:42:38Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-12T18:42:38Z",
+    "id": "sad-drezno-kontrole-graniczne-bezprawne",
+    "title": "Sąd w Dreźnie: niemieckie kontrole na granicy z Polską naruszały prawo",
+    "date": "2026-11-12",
+    "location": "Drezno",
+    "tags": [
+      "Niemcy",
+      "Granica",
+      "Sądy"
+    ],
+    "summary": [
+      "Sąd w Dreźnie orzekł, że niemieckie kontrole na granicy z Polską łamały prawo (Rzeczpospolita, TVP Info).",
+      "Według WP sprawę przeciwko Niemcom wygrał Polak."
+    ],
+    "framing": {
+      "left": "WP: „Kontrole niezgodne z prawem. Polak wygrał sprawę z Niemcami”.",
+      "center": "TVP Info: „Sąd: Niemieckie kontrole na granicach z Polską bezprawne”.",
+      "right": "Rzeczpospolita: „Sąd w Dreźnie: niemieckie kontrole na granicy z Polską łamały prawo”."
+    },
+    "match": {
+      "include": "Kontrole niezgodne z prawem|kontrole na granic\\w* z Polską",
+      "from": "2026-11-12T12:00:00Z"
+    },
+    "updatedAt": "2026-11-12T18:42:38Z"
   }
 ]
