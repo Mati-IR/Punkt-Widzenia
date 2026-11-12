@@ -39,7 +39,9 @@
   },
   "ownership": {
     "category": "polish-private",
-    "secondaryTags": [],
+    "secondaryTags": [
+      "reader-funded"
+    ],
     "chain": [
       {
         "level": "publisher",
@@ -60,9 +62,9 @@
       "subscriptions",
       "advertising"
     ],
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-12",
   "changelog": [
     {
       "date": "2026-11-08",
@@ -76,6 +78,13 @@
       "change": {
         "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
         "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "change": {
+        "pl": "Kategoria dodatkowa: finansowane przez odbiorców. Pozycja „sprzedaż prasy” w sprawozdaniu finansowym dała w 2025 r. 8,57 mln zł, czyli 70,9% przychodów wydawcy (próg 25%, metodologia 1.2). Źródło: sprawozdanie finansowe Do Rzeczy S.A. za 2025 r. (raport roczny, NewConnect).",
+        "en": "Secondary category: audience-funded. The \"press sales\" line of the financial statements brought PLN 8.57m in 2025, 70.9% of the publisher's revenue (25% threshold, methodology 1.2). Source: Do Rzeczy S.A. 2025 financial statements (NewConnect annual report)."
       }
     }
   ]
