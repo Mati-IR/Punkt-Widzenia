@@ -11,6 +11,13 @@ body { background: var(--paper); }
 
 .topbar { background: #222; color: #ddd; font-size: .8rem; }
 .topbar .wrap { display: flex; justify-content: space-between; gap: 1rem; padding-block: .45rem; flex-wrap: wrap; }
+.topbar .updated { white-space: nowrap; }
+.topbar .lbl-short { display: none; }
+@media (max-width: 560px) { .topbar-tag { display: none; } }
+@media (max-width: 400px) {
+  .topbar .edition, .topbar .lbl-full { display: none; }
+  .topbar .lbl-short { display: inline; }
+}
 
 header.site { background: var(--paper); }
 .brand { font-size: 1.45rem; letter-spacing: -.03em; }

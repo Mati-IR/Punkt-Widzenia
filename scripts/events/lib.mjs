@@ -54,6 +54,37 @@ export function lastUpdated(events, articles) {
   return max > -Infinity ? new Date(max).toISOString() : null;
 }
 
+const MONTHS_SHORT = ['sty', 'lut', 'mar', 'kwi', 'maj', 'cze', 'lip', 'sie', 'wrz', 'paź', 'lis', 'gru'];
+
+/** Calendar fields of an instant in Polish time (Europe/Warsaw), whatever the build machine's zone. */
+function warsawParts(date) {
+  const parts = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Warsaw', year: 'numeric', month: 'numeric', day: 'numeric',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  }).formatToParts(date);
+  const get = (t) => Number(parts.find((p) => p.type === t).value);
+  return { y: get('year'), m: get('month'), d: get('day'), hh: get('hour'), mm: get('minute') };
+}
+
+/**
+ * Header "last updated" marker (PUN-87 spec): 24h Polish time; `date` ("12 lis") only when the
+ * update was not on the same Polish calendar day as `now` (the build). `datetime` is the UTC instant.
+ */
+export function updatedStamp(iso, now = new Date()) {
+  const at = new Date(iso);
+  const p = warsawParts(at);
+  const n = warsawParts(now);
+  const time = `${String(p.hh).padStart(2, '0')}:${String(p.mm).padStart(2, '0')}`;
+  const sameDay = p.y === n.y && p.m === n.m && p.d === n.d;
+  const long = at.toLocaleDateString('pl-PL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Warsaw' });
+  return {
+    datetime: at.toISOString(),
+    date: sameDay ? null : `${p.d} ${MONTHS_SHORT[p.m - 1]}`,
+    time,
+    title: `Ostatnia aktualizacja danych: ${long}, ${time} (czas polski)`,
+  };
+}
+
 /** Returns a list of problems (empty = valid). */
 // Extremist labels are claims, not facts – on BOTH sides, treated identically:
 //   right: "skrajna prawica", "far-right", "faszyści", "naziści", "prawak"…

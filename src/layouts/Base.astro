@@ -3,6 +3,8 @@ import '../styles/global.css';
 import '../styles/news.css';
 import Consent from '../components/Consent.astro';
 import { analytics } from '../lib/site';
+import { getLastUpdated } from '../lib/events';
+import { updatedStamp } from '../../scripts/events/lib.mjs';
 
 interface Props {
   title: string;
@@ -24,7 +26,8 @@ const nav = [
 ];
 const isCurrent = (href: string) =>
   href === '/' ? path === '/' || path.startsWith('/wydarzenie') : path.startsWith(href.replace(/\/$/, ''));
-const today = new Date().toLocaleDateString('pl-PL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Warsaw' });
+// When the data last changed (PUN-88), not the build time; build time only if there is no data at all.
+const updated = updatedStamp(getLastUpdated() ?? new Date().toISOString());
 ---
 <!doctype html>
 <html lang="pl">
@@ -48,7 +51,9 @@ const today = new Date().toLocaleDateString('pl-PL', { weekday: 'long', day: 'nu
   <body>
     <a class="skip" href="#main">Przejdź do treści</a>
     <div class="topbar">
-      <div class="wrap"><span>Zobacz każdą stronę każdego wydarzenia</span><span>{today} · Edycja: Polska</span></div>
+      <div class="wrap"><span class="topbar-tag">Zobacz każdą stronę każdego wydarzenia</span><span class="updated"><time datetime={updated.datetime} title={updated.title}>{updated.date
+          ? <><span class="lbl-full">Zaktualizowano</span><span class="lbl-short">Zakt.</span> {updated.date}, {updated.time}</>
+          : <>Zaktualizowano {updated.time}</>}</time><span class="edition"> · Edycja: Polska</span></span></div>
     </div>
     <header class="site">
       <div class="wrap">
