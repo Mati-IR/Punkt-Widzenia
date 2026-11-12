@@ -1,0 +1,46 @@
+# Merges `main` into `dev` after anything lands on `main` (headlines, events, releases), so `dev`
+# always has the latest data (PUN-91). Runs on pushes to main and is called by ingest.yml (merges made
+# with the Actions token do not fire push events). Pushing to `dev` works because GitHub Actions is a
+# bypass actor in the `dev` ruleset. On a merge conflict it fails and leaves `dev` untouched: the
+# Chief of staff then resolves it through a normal PR.
+name: Sync main into dev
+
+on:
+  push:
+    branches: [main]
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-dev
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Merge main into dev
+        run: |
+          if ! git ls-remote --exit-code --heads origin dev >/dev/null; then echo "No dev branch yet."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3; do
+            git fetch -q origin main dev
+            git checkout -q -B dev origin/dev
+            if git merge-base --is-ancestor origin/main dev; then echo "dev already has main."; exit 0; fi
+            if ! git merge -q --no-edit -m "sync: main into dev [skip ci]" origin/main; then
+              git merge --abort
+              echo "::error::main does not merge cleanly into dev. Resolve it with a PR into dev."; exit 1
+            fi
+            git push -q origin dev && exit 0
+            sleep 5
+          done
+          echo "::error::Push to dev failed after 3 attempts"; exit 1

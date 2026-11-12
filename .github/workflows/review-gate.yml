@@ -2,7 +2,10 @@
 # A PR into `dev` passes when it has BOTH `approved-legal` (Legal analyst) and `approved-cos`
 # (Chief of staff) labels, OR the `approved-founder` label. A PR into `main` (a production
 # release, normally dev -> main) passes only with `approved-founder`.
-# All agents push as the same GitHub account, so this is a process control: labels are added only
+# Exception (founder decision, PUN-91): an AI events routine PR into `main` from a branch
+# `events/...` that changes only files under data/events/ passes without labels; CI must still pass.
+# (Headline PRs are merged by ingest.yml itself and never wait for this check.)
+# All agents push as the same GitHub account, so labels are a process control: they are added only
 # after a review recorded on the Paperclip issue. See docs/CONTRIBUTING.md.
 name: Review gate
 
@@ -12,6 +15,7 @@ on:
     branches: [dev, main]
 
 permissions:
+  contents: read
   pull-requests: read
 
 jobs:
@@ -21,13 +25,25 @@ jobs:
     steps:
       - name: Check approval labels
         env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
           BASE: ${{ github.base_ref }}
+          HEAD: ${{ github.head_ref }}
           LABELS: ${{ toJSON(github.event.pull_request.labels.*.name) }}
         run: |
           has() { echo "$LABELS" | grep -q "\"$1\""; }
-          echo "Base: $BASE, labels: $LABELS"
+          echo "Base: $BASE, head: $HEAD, labels: $LABELS"
           if has approved-founder; then echo "Approved by the founder."; exit 0; fi
           if [ "$BASE" = "main" ]; then
+            case "$HEAD" in events/*)
+              files=$(gh api --paginate "repos/$REPO/pulls/$PR/files" --jq '.[].filename')
+              echo "Files:"; echo "$files"
+              if [ -n "$files" ] && ! echo "$files" | grep -q -v '^data/events/'; then
+                echo "Events routine PR touching only data/events/: no review needed."; exit 0
+              fi
+              echo "::error::An events/ branch may change only data/events/."; exit 1 ;;
+            esac
             echo "::error::PRs into main (production releases) need the approved-founder label."; exit 1
           fi
           if has approved-legal && has approved-cos; then echo "Approved by Legal analyst and Chief of staff."; exit 0; fi
