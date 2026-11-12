@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-12T18:17:24.655Z",
-  "runSeconds": 34,
+  "generatedAt": "2026-11-12T20:17:22.238Z",
+  "runSeconds": 24,
   "sourcesOk": 27,
   "outletsWithArticles24h": 25,
   "outletsTotal": 30,
@@ -35,11 +35,11 @@
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
-      "itemsInSource": 163,
-      "newArticles": 11,
+      "itemsInSource": 162,
+      "newArticles": 6,
       "articles24h": 101,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "frontstory": {
       "type": "rss",
@@ -48,7 +48,7 @@
       "itemsInSource": 10,
       "newArticles": 0,
       "articles24h": 0,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
       "lastNewArticle": "2026-11-08T21:43:52.805Z"
     },
     "gazeta-pl": {
@@ -56,10 +56,10 @@
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 30,
-      "newArticles": 6,
-      "articles24h": 34,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "newArticles": 5,
+      "articles24h": 37,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "gazeta-wyborcza": {
       "type": "rss",
@@ -67,29 +67,29 @@
       "httpStatus": 200,
       "itemsInSource": 50,
       "newArticles": 2,
-      "articles24h": 29,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "articles24h": 28,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "interia": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 50,
-      "newArticles": 5,
-      "articles24h": 55,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "newArticles": 6,
+      "articles24h": 53,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "kanal-zero": {
       "type": "sitemap",
       "status": "ok",
       "httpStatus": 200,
-      "itemsInSource": 123,
-      "newArticles": 5,
+      "itemsInSource": 128,
+      "newArticles": 6,
       "articles24h": 48,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "klub-jagiellonski": {
       "type": "rss",
@@ -98,7 +98,7 @@
       "itemsInSource": 100,
       "newArticles": 0,
       "articles24h": 3,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
       "lastNewArticle": "2026-11-12T16:17:23.522Z"
     },
     "krytyka-polityczna": {
@@ -108,7 +108,7 @@
       "itemsInSource": 10,
       "newArticles": 0,
       "articles24h": 3,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
       "lastNewArticle": "2026-11-12T16:17:23.522Z"
     },
     "kultura-liberalna": {
@@ -118,7 +118,7 @@
       "itemsInSource": 15,
       "newArticles": 0,
       "articles24h": 1,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
       "lastNewArticle": "2026-11-12T11:00:30.362Z"
     },
     "najwyzszy-czas": {
@@ -127,59 +127,59 @@
       "httpStatus": 200,
       "itemsInSource": 10,
       "newArticles": 3,
-      "articles24h": 40,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "articles24h": 39,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "newsweek-polska": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 30,
-      "newArticles": 1,
-      "articles24h": 15,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
+      "newArticles": 0,
+      "articles24h": 13,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
       "lastNewArticle": "2026-11-12T18:17:24.655Z"
     },
     "oko-press": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
-      "itemsInSource": 132,
-      "newArticles": 3,
-      "articles24h": 17,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "itemsInSource": 133,
+      "newArticles": 1,
+      "articles24h": 16,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "onet": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 20,
-      "newArticles": 13,
-      "articles24h": 113,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "newArticles": 9,
+      "articles24h": 115,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "polityka": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 50,
-      "newArticles": 0,
-      "articles24h": 3,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T16:17:23.522Z"
+      "newArticles": 1,
+      "articles24h": 4,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "polsat-news": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 50,
-      "newArticles": 3,
-      "articles24h": 52,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "newArticles": 6,
+      "articles24h": 54,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "polskie-radio": {
       "type": "sitemap",
@@ -198,7 +198,7 @@
       "itemsInSource": 10,
       "newArticles": 0,
       "articles24h": 0,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
       "lastNewArticle": "2026-11-10T07:06:57.288Z"
     },
     "radio-maryja": {
@@ -206,10 +206,10 @@
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 12,
-      "newArticles": 8,
-      "articles24h": 62,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "newArticles": 9,
+      "articles24h": 63,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "radio-wnet": {
       "type": "scrape",
@@ -226,71 +226,71 @@
       "type": "scrape",
       "status": "ok",
       "httpStatus": 200,
-      "itemsInSource": 67,
-      "newArticles": 6,
-      "articles24h": 65,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "itemsInSource": 66,
+      "newArticles": 3,
+      "articles24h": 63,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "rmf-fm": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 50,
-      "newArticles": 15,
-      "articles24h": 106,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "newArticles": 9,
+      "articles24h": 110,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "rzeczpospolita": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 20,
-      "newArticles": 13,
-      "articles24h": 123,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "newArticles": 11,
+      "articles24h": 131,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "super-express": {
       "type": "sitemap",
       "status": "ok",
       "httpStatus": 200,
-      "itemsInSource": 4801,
-      "newArticles": 6,
-      "articles24h": 121,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "itemsInSource": 4805,
+      "newArticles": 4,
+      "articles24h": 122,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "telewizja-republika": {
       "type": "scrape",
       "status": "ok",
       "httpStatus": 200,
-      "itemsInSource": 66,
-      "newArticles": 6,
-      "articles24h": 72,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "itemsInSource": 64,
+      "newArticles": 7,
+      "articles24h": 71,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "tvn24": {
       "type": "scrape",
       "status": "ok",
       "httpStatus": 200,
-      "itemsInSource": 19,
+      "itemsInSource": 18,
       "newArticles": 9,
-      "articles24h": 104,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "articles24h": 113,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "tvp-info": {
       "type": "rss",
       "status": "ok",
       "httpStatus": 200,
       "itemsInSource": 30,
-      "newArticles": 9,
-      "articles24h": 78,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "newArticles": 6,
+      "articles24h": 74,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "tygodnik-powszechny": {
       "type": "rss",
@@ -299,7 +299,7 @@
       "itemsInSource": 50,
       "newArticles": 0,
       "articles24h": 5,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
       "lastNewArticle": "2026-11-12T16:17:23.522Z"
     },
     "wirtualna-polska": {
@@ -308,19 +308,19 @@
       "httpStatus": 200,
       "itemsInSource": 15,
       "newArticles": 14,
-      "articles24h": 120,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "articles24h": 123,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     },
     "wpolityce": {
       "type": "sitemap",
       "status": "ok",
       "httpStatus": 200,
-      "itemsInSource": 574,
-      "newArticles": 24,
-      "articles24h": 70,
-      "lastSuccess": "2026-11-12T18:17:24.655Z",
-      "lastNewArticle": "2026-11-12T18:17:24.655Z"
+      "itemsInSource": 576,
+      "newArticles": 6,
+      "articles24h": 71,
+      "lastSuccess": "2026-11-12T20:17:22.238Z",
+      "lastNewArticle": "2026-11-12T20:17:22.238Z"
     }
   }
 }
