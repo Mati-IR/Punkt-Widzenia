@@ -620,5 +620,32 @@
     "url": "https://antyweb.pl/najpopularniejsze-stacje-radiowe-fm-2026",
     "accessed": "2026-11-08",
     "type": "press"
+  },
+  {
+    "id": "krs-tygodnik-powszechny-2026",
+    "title": "KRS – odpis aktualny: Tygodnik Powszechny sp. z o.o. (KRS 0000045152), wspólnicy: Fundacja Tygodnika Powszechnego 2732 udziały, Fortitudo Fundacja Rodzinna 2000, Fundacja Centrum Kopernika 600 (z 5332)",
+    "publisher": "Ministerstwo Sprawiedliwości – Krajowy Rejestr Sądowy",
+    "url": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000045152?rejestr=P&format=json",
+    "date": "2026-07-17",
+    "accessed": "2026-11-12",
+    "type": "register"
+  },
+  {
+    "id": "opp-kj-2025",
+    "title": "Sprawozdanie z działalności OPP za 2025 r. – Klub Jagielloński (KRS 0000128315); przychody ogółem 1 883 919,60 zł, w tym ze środków budżetu państwa 542 126,00 zł (28,8%)",
+    "publisher": "NIW-CRSO – baza sprawozdań OPP",
+    "url": "https://sprawozdaniaopp.niw.gov.pl/Search/Print/38339?reporttypeId=37",
+    "date": "2026-05-20",
+    "accessed": "2026-11-12",
+    "type": "register"
+  },
+  {
+    "id": "opp-fundacja-reporterow-2025",
+    "title": "Sprawozdanie finansowe za 2025 r. – informacja dodatkowa, Fundacja Reporterów (KRS 0000367130); granty na projekty 2 302 537,49 zł = 82,8% przychodów, w tym środki europejskie 135 495,59 zł",
+    "publisher": "NIW-CRSO – baza sprawozdań OPP",
+    "url": "https://sprawozdaniaopp.niw.gov.pl/Search/Print/73557?reporttypeId=35",
+    "date": "2026-06-18",
+    "accessed": "2026-11-12",
+    "type": "register"
   }
 ]

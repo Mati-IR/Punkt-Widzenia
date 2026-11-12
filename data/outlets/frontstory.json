@@ -37,7 +37,9 @@
   },
   "ownership": {
     "category": "reader-funded",
-    "secondaryTags": [],
+    "secondaryTags": [
+      "foreign"
+    ],
     "chain": [
       {
         "level": "publisher",
@@ -50,9 +52,9 @@
       "grants",
       "donations"
     ],
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-12",
   "changelog": [
     {
       "date": "2026-11-08",
@@ -66,6 +68,13 @@
       "change": {
         "pl": "Wersja 0.4.0: publikacja.",
         "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "change": {
+        "pl": "Kategoria dodatkowa: zagraniczne. W 2025 r. granty stanowiły 82,8% przychodów fundacji; środki publiczne (fundusze UE) tylko 4,9%. Wydawca podaje, że utrzymuje się z grantów zdobywanych w konkursach międzynarodowych i nie dostaje dotacji państwowych (próg 25%, metodologia 1.2). Źródła: sprawozdanie finansowe za 2025 r. (baza NIW-CRSO), strona „O nas”.",
+        "en": "Secondary category: foreign. In 2025, grants were 82.8% of the foundation's revenue (EU public funds only 4.9%); the publisher states it is funded by grants won in international competitions. Sources: 2025 financial statement (NIW-CRSO), About page."
       }
     }
   ]
