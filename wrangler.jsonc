@@ -1,12 +1,18 @@
-// Cloudflare Worker that serves the built static site (dist/). No server code.
+// Cloudflare Worker that serves the built static site (dist/) and, every 2 h, starts the
+// "Ingest headlines" GitHub Action (worker/index.js; GitHub's own cron skips most runs).
 // Used by Workers Builds (deploy command: npx wrangler deploy) and by the ingest Action.
 // The empty `previews` block lets `npx wrangler preview` (non-production branch builds) run too.
 {
   "name": "punkt-widzenia",
+  "main": "worker/index.js",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
+  },
+  "triggers": {
+    "crons": ["17 */2 * * *"]
   },
   "previews": {}
 }

@@ -8,7 +8,8 @@ name: Ingest headlines
 
 on:
   schedule:
-    - cron: '7 */2 * * *' # every 2 h, off the hour (GitHub delays jobs queued at :00)
+    - cron: '7 */2 * * *' # fallback only: GitHub skips most of these. The punkt-widzenia Worker
+                          # starts this workflow every 2 h via workflow_dispatch (docs/DEPLOY.md).
   push: # run once right after a change to the pipeline lands on main (e.g. merging this PR)
     branches: [main]
     paths:

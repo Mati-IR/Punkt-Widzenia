@@ -58,3 +58,27 @@ on `main` finds new headlines. It needs, in GitHub → Settings → Secrets and 
 
 Without the secrets the deploy job is skipped and ingest works as before. Deploys from the Action
 don't count against Workers Builds' monthly build quota.
+
+## 2-hourly headline refresh (Worker cron)
+
+GitHub's free-tier cron skips most scheduled runs, so the same `punkt-widzenia` Worker also has a
+Cron Trigger (`17 */2 * * *`, in `wrangler.jsonc`). Every 2 h it calls GitHub's API to start the
+"Ingest headlines" Action (`worker/index.js`). Free plan, uses 1 of the 5 free cron triggers.
+The Action's own GitHub schedule stays as a fallback; overlapping runs queue, never collide.
+
+One-time setup (founder, ~3 min):
+
+1. GitHub → Settings (your profile) → Developer settings → Personal access tokens →
+   **Fine-grained tokens** → Generate new token. Repository access: **Only select repositories →
+   Punkt-Widzenia**. Permissions → Repository → **Actions: Read and write**. Pick a long expiry.
+2. Save it on the Worker (paste the token when asked):
+   ```sh
+   npx wrangler secret put GH_DISPATCH_TOKEN
+   ```
+   or Cloudflare dashboard → Workers & Pages → `punkt-widzenia` → Settings → Variables and Secrets →
+   Add → type *Secret*, name `GH_DISPATCH_TOKEN`.
+
+Secrets survive later `wrangler deploy`s. Without the secret the cron just logs a warning and does
+nothing. To check it: Cloudflare → `punkt-widzenia` → Settings → Trigger events shows the cron;
+GitHub → Actions → "Ingest headlines" shows runs with the event `workflow_dispatch` every 2 h.
+When the token expires, the cron invocations show as errors in Cloudflare; repeat step 1–2.
