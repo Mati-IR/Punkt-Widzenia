@@ -2,7 +2,7 @@
 
 Punkt Widzenia opisuje 30 najważniejszych polskich mediów informacyjnych: 20 głównego nurtu i 10 niezależnych. Dla każdego podajemy dwie osie sympatii politycznych i strukturę własności. Każda ocena ma datę, krótkie uzasadnienie i listę źródeł.
 
-Wersja metodologii: 1.1 (listopad 2026).
+Wersja metodologii: 1.2 (listopad 2026).
 
 ## Zasady ogólne
 
@@ -55,7 +55,7 @@ Oś polityczna zależy od tego, kto rządzi, dlatego zawsze podajemy datę oceny
 
 ## Własność
 
-Każde medium ma jedną **główną kategorię** – według ostatecznego właściciela kontrolującego (ponad 50% udziałów lub faktyczna kontrola) – i opcjonalne kategorie dodatkowe:
+Każde medium ma jedną **główną kategorię** – według ostatecznego właściciela kontrolującego (ponad 50% udziałów lub faktyczna kontrola) – i, jeśli spełnia kryteria opisane niżej, **kategorie dodatkowe**. Kategorie są następujące:
 
 - **państwowe / publiczne:** Skarb Państwa, media publiczne (TVP, Polskie Radio), spółki państwowe;
 - **polskie prywatne:** ostateczny właściciel to polska osoba lub firma prywatna;
@@ -65,6 +65,30 @@ Każde medium ma jedną **główną kategorię** – według ostatecznego właś
 - **finansowane przez odbiorców:** większość przychodów pochodzi od czytelników, słuchaczy i darczyńców (prenumeraty, Patronite, darowizny, YouTube), bez kontrolującego właściciela korporacyjnego.
 
 Dla każdego medium pokazujemy łańcuch własności: marka → wydawca → właściciel → właściciel ostateczny. Źródłem jest KRS, rejestr spółek, sprawozdanie roczne lub strona wydawcy.
+
+### Kategorie dodatkowe (finansowanie mieszane)
+
+Gdy medium ma wpływowego udziałowca albo ważne źródło przychodów z innej kategorii niż główna, pokazujemy też tę kategorię. Dodajemy kategorię dodatkową, gdy spełniony jest **co najmniej jeden** z dwóch warunków:
+
+1. **Udział w kapitale lub głosach – co najmniej 25%.** Podmiot danej kategorii (np. zagraniczny inwestor, Skarb Państwa, instytucja kościelna) ma co najmniej 25% kapitału lub głosów na zgromadzeniu wspólników albo walnym zgromadzeniu na **dowolnym poziomie łańcucha własności** (w wydawcy lub w spółce nadrzędnej), także gdy nie ma nad nim kontroli. Udziały pośrednie mnożymy przez siebie wzdłuż łańcucha. Udziały podmiotów tej samej kategorii sumujemy. Próg 25% odpowiada progowi „rzeczywistego beneficjenta” z ustawy o przeciwdziałaniu praniu pieniędzy i finansowaniu terroryzmu.
+2. **Przychody – co najmniej 25% rocznych przychodów wydawcy z jednego źródła** danej kategorii: reklamy i dotacje spółek Skarbu Państwa i instytucji publicznych (państwowe / publiczne), granty i wpłaty zagranicznych instytucji lub koncernów (zagraniczne), finansowanie przez partię lub jej fundacje (partyjne), wpłaty instytucji kościelnych (kościelne), wpłaty czytelników, słuchaczy i darczyńców (finansowane przez odbiorców). Liczymy ostatni zamknięty rok obrotowy.
+
+Zasady stosowania:
+
+- **Kategoria dodatkowa różni się od głównej.** Medium nie dostaje jej, gdy już jest główną. Nie dodajemy też kategorii „polskie prywatne” jako dodatkowej do mediów kontrolowanych przez zagranicznego lub państwowego właściciela, chyba że polski prywatny udziałowiec spełnia próg 25%.
+- **Wymagane źródła.** Udziały: odpis z KRS wydawcy i spółek nadrzędnych, sprawozdanie zarządu lub rejestr beneficjentów rzeczywistych (CRBR), a w razie braku – oficjalna informacja wydawcy. Przychody: sprawozdanie finansowe lub roczne wydawcy (KRS, Rejestr Dokumentów Finansowych), a dla reklam państwowych także raporty NIK, instytucji publicznych albo dane o wydatkach spółek Skarbu Państwa. Dla każdej kategorii dodatkowej potrzebne jest co najmniej jedno takie źródło pierwotne. Samo doniesienie prasowe nie wystarcza.
+- **Brak danych nie oznacza braku kategorii.** Jeśli nie da się ustalić udziałów lub przychodów, nie przypisujemy kategorii dodatkowej i zapisujemy to w uzasadnieniu oceny. Kategoria ustalona na podstawie dokumentu, który ma ponad rok, jest sprawdzana przy każdym przeglądzie półrocznym.
+- **Własność bez kontroli.** Jeśli nikt nie ma ponad 50% ani faktycznej kontroli, kategorią główną jest kategoria największego udziałowca, a medium oznaczamy jako „sporne”, gdy dwie kategorie mają udziały różniące się o mniej niż 5 punktów procentowych.
+- **Dlaczego 25%.** Jest to próg, od którego udziałowiec ma zwykle pozycję blokującą ważne decyzje (np. zmiany statutu), a prawo traktuje go jako istotny. Próg niższy dawałby kategorie dodatkowe niemal każdemu medium z wieloma drobnymi udziałowcami, a wyższy ukrywałby wpływ dużych mniejszościowych inwestorów i darczyńców.
+
+### Filtr „Własność” w katalogu
+
+W katalogu można wybrać jedną lub kilka kategorii własności. Pokazujemy wtedy media, które mają **wszystkie** wybrane kategorie (logika „i”), przy czym każda z nich może być główna albo dodatkowa. Przykład: wybór „polskie prywatne” i „zagraniczne” pokazuje media o polskim właścicielu głównym i zagranicznym udziałowcu (albo odwrotnie). Wybór jednej kategorii pokazuje wszystkie media, które mają ją jako główną lub dodatkową.
+
+### Historia zmian metodologii (własność)
+
+- **1.2 (listopad 2026):** dodano kryteria kategorii dodatkowych (próg 25% udziałów lub przychodów), zasady wymaganych źródeł i opis filtra wielokrotnego wyboru. Zmiana nie zmienia ocen osi politycznych ani kategorii głównych.
+- **1.1 (listopad 2026):** poprzednia wersja, w której kategorie dodatkowe były przewidziane, ale bez kryteriów.
 
 ## Media główne i niezależne
 
@@ -90,7 +114,7 @@ Punkt Widzenia maps 30 major Polish news outlets (20 mainstream, 10 independent)
 
 - **Classic axis (left–right):** the average of an economic and a socio-cultural score (−2 to +2), rounded to one of five values. A result that falls exactly between two values is marked as contested.
 - **Polish axis (government–opposition):** based on coverage tone in a standard 4-week content sample, guest balance, structural links (party ownership or funding, state or party advertising) and audience profile. "Aligned" requires one-sided tone in at least 2/3 of sampled items plus a structural or audience indicator. "Government" means the current coalition (KO, PSL, Polska 2050, Lewica).
-- **Ownership:** one primary category based on the ultimate controlling owner (state/public, Polish private, foreign, church-linked, party-linked, reader-funded), plus the full chain from brand to ultimate owner.
+- **Ownership:** a primary category based on the ultimate controlling owner (state/public, Polish private, foreign, church-linked, party-linked, reader-funded), plus the full chain from brand to ultimate owner. Secondary categories are added when a party of another category holds at least 25% of capital or votes at any level of the ownership chain, or when at least 25% of the publisher's annual revenue comes from one source of that category (state advertising and grants, foreign grants, party, church, audience donations). Each secondary category needs a primary document (company register, financial statement, beneficial-owner register); if the data are unavailable, no secondary category is assigned. The catalogue's ownership filter accepts several categories and shows outlets that have all of them (AND logic), whether primary or secondary.
 - **Independent** means not owned by the state or a large media group, with most revenue coming from readers, listeners, donors or creator platforms.
 
 Borderline ratings are marked as contested and published only after review. Ratings are reviewed every six months.
