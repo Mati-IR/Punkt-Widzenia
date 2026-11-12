@@ -1508,7 +1508,7 @@
       "right": "Rzeczpospolita: „Polska warta jest tej rozmowy”. TV Republika: „Tusk znowu przypisał sobie nie swoje zasługi” (bez wzmianki o zaproszeniu w tytule). Później TV Republika: „Szefernaker zarzuca Tuskowi unikanie wspólnego gestu z prezydentem”; wPolityce: „Najpierw zaproszenie, a potem zjadliwy wpis”."
     },
     "match": {
-      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Najpierw zaproszenie|Pałac odpowiada Tuskowi|Tusk wyciąga rękę",
+      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Najpierw zaproszenie|Pałac odpowiada Tuskowi|Tusk wyciąga rękę|Nie siada się do stołu|podzielić się opłatkiem|Cwany ruch Tuska|Tusk zaprasza\\. Morawiecki",
       "from": "2026-11-11T08:00:00Z",
       "to": "2026-11-15T08:00:00Z"
     }
@@ -1617,7 +1617,7 @@
       "right": "Rzeczpospolita: „Kaczyński: będziemy działali, by była jedna lista do Sejmu”; TV Republika: „Kaczyński zapowiada wielki sojusz prawicy”; wPolityce: „Przełomowa zapowiedź prezesa PiS”."
     },
     "match": {
-      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego",
+      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem",
       "from": "2026-11-11T10:00:00Z",
       "to": "2026-11-15T10:00:00Z"
     },
@@ -1647,7 +1647,7 @@
       "right": "Rzeczpospolita: „Lekarka z Rzeszowa z 307 zarzutami. Trafiła do aresztu, grożą jej lata więzienia”."
     },
     "match": {
-      "include": "Ponad 300 zarzutów dla lekarki|307 zarzut|Kilkaset zarzutów korupcyjnych|Lekarka z Rzeszowa",
+      "include": "Ponad 300 zarzutów dla lekarki|307 zarzut|Kilkaset zarzutów korupcyjnych|Lekarka z Rzeszowa|lekarkę z Rzeszowa|lekarki z Rzeszowa|Lekarka usłyszała zarzuty|Rzeszowska lekarka",
       "from": "2026-11-12T04:00:00Z"
     },
     "extra": [],
@@ -1676,7 +1676,7 @@
       "right": "Rzeczpospolita (Artur Bartkiewicz): o rządach po 2027 r. „mogą zdecydować PSL i Razem”; wPolityce: „Tak wyglądałby Sejm! Obliczono mandaty”; Najwyższy Czas: „KO nie ma szans na stworzenie rządu. Tragiczny wynik PiS i mocna pozycja obu Konfederacji”."
     },
     "match": {
-      "include": "układw* sił|Obliczono mandaty|Pyrrusowe zwycięstwo partii Tuska|PiS z najgorszym wynikiem|Historyczny dołek PiS|Czołowe partie tracą poparcie|(Kryzys w Trybunale Konstytucyjnym|Zajścia przed Trybunałem Konstytucyjnym) a poparcie|Kryzys wokół TK namieszał|KO nie ma szans na stworzenie rządu|kto będzie rządził po 2027",
+      "include": "układw* sił|Obliczono mandaty|Pyrrusowe zwycięstwo partii Tuska|PiS z najgorszym wynikiem|Historyczny dołek PiS|Czołowe partie tracą poparcie|(Kryzys w Trybunale Konstytucyjnym|Zajścia przed Trybunałem Konstytucyjnym) a poparcie|Kryzys wokół TK namieszał|KO nie ma szans na stworzenie rządu|kto będzie rządził po 2027|Tusk reaguje na sondaż|Tusk komentuje nowy sondaż|najnowszy sondaż partyjny\\. Tusk|Nowy sondaż partyjny, formacja premiera|poparcie dla partii po awanturze wokół TK|Tusk może wygrać wybory",
       "from": "2026-11-12T00:00:00Z"
     },
     "extra": [],
@@ -1708,5 +1708,148 @@
     "extra": [],
     "addedAt": "2026-11-12T08:42:04Z",
     "updatedAt": "2026-11-12T08:42:04Z"
+  },
+  {
+    "id": "tsue-oddalil-skargi-polski-fit-for-55",
+    "title": "TSUE oddalił wszystkie siedem skarg Polski na unijny pakiet klimatyczny „Fit for 55”",
+    "date": "2026-11-12",
+    "location": "Luksemburg",
+    "tags": [
+      "UE",
+      "Energetyka",
+      "Rząd"
+    ],
+    "summary": [
+      "Trybunał Sprawiedliwości UE oddalił w czwartek siedem skarg Polski na akty z pakietu „Gotowi na 55” (Fit for 55), którego celem jest neutralność klimatyczna UE do 2050 r. (TVN24, Polsat News, Radio Maryja).",
+      "Według Kanału Zero Polska argumentowała, że przepisy wymagały jednomyślności państw członkowskich.",
+      "OKO.press przypomina, że skargi składał jeszcze rząd Mateusza Morawieckiego.",
+      "Fakt pisze, że sprawa dotyczy m.in. samochodów, energii i ogrzewania."
+    ],
+    "framing": {
+      "left": "TVN24: „TSUE oddalił siedem skarg wniesionych przez Polskę”; OKO.press: „TSUE odrzuca polską skargę na Fit for 55. Składał ją jeszcze Morawiecki”.",
+      "center": "RMF FM: „Polska przegrywa w TSUE”; TVP Info i Polsat News: „Polska przegrała/przegrywa przed TSUE”; Kanał Zero: „TSUE oddalił wszystkie skargi Polski”.",
+      "right": "wPolityce: „Znowu go ograli! TSUE odrzucił polskie skargi na Zielony Ład”; Radio Maryja: „TSUE oddalił siedem skarg Polski na unijny pakiet klimatyczny”."
+    },
+    "match": {
+      "include": "TSUE|Fit for 55|Gotowi na 55",
+      "exclude": "uchodźc|Ukrain",
+      "from": "2026-11-12T06:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T12:42:35Z",
+    "updatedAt": "2026-11-12T12:42:35Z"
+  },
+  {
+    "id": "akt-oskarzenia-dywersja-na-kolei",
+    "title": "Akt oskarżenia wobec obywatela Ukrainy w sprawie dywersji na torach w Mice i Gołębiu",
+    "date": "2026-11-12",
+    "location": "Warszawa",
+    "tags": [
+      "Prokuratura",
+      "Kolej",
+      "Rosja",
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "Do Sądu Okręgowego w Warszawie trafił akt oskarżenia przeciwko obywatelowi Ukrainy Wołodymyrowi B. (Onet, TVN24, Rzeczpospolita).",
+      "Według śledczych miał współpracować z rosyjskim wywiadem i pomagać w przygotowaniu aktów dywersji na torach w listopadzie 2025 r. w miejscowościach Mika i Gołąb (Onet, Radio Maryja).",
+      "Według prokuratury chodziło o eksplozję pod pociągiem towarowym i metalowe konstrukcje, które mogły doprowadzić do wykolejenia (Super Express).",
+      "Według Gazety.pl oskarżonemu grozi dożywocie."
+    ],
+    "framing": {
+      "left": "Onet i TVN24: „Dywersja na kolei/torach. Jest akt oskarżenia”; Gazeta.pl: „Na zlecenie rosyjskich służb pomagał w przygotowaniu sabotaży na kolei. Grozi mu dożywocie”.",
+      "center": "Super Express: „Rosyjska dywersja na polskiej kolei. Jest akt oskarżenia”; TVP Info: „Wybuch na torach i próba wykolejenia pociągów”; RMF FM: „Poważne zarzuty dla Ukraińca”.",
+      "right": "Rzeczpospolita: „Rosyjski wywiad miał stać za dywersją na polskiej kolei”; wPolityce: „Rosyjski ślad w sabotażach na kolei”; Najwyższy Czas: „akt oskarżenia wobec Ukraińca podejrzewanego o sabotaż kolei”."
+    },
+    "match": {
+      "include": "dywers|sabota\\S* (na )?kolei|sabotaż kolei|Wybuch na torach",
+      "from": "2026-11-12T06:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T12:42:35Z",
+    "updatedAt": "2026-11-12T12:42:35Z"
+  },
+  {
+    "id": "policja-w-tv-republika-sledztwo-sakiewicz",
+    "title": "Policja w siedzibie TV Republika na polecenie prokuratury; osobne śledztwo ws. wypowiedzi Sakiewicza po zamachu",
+    "date": "2026-11-12",
+    "location": "Warszawa",
+    "tags": [
+      "TV Republika",
+      "Media",
+      "Prokuratura",
+      "Policja"
+    ],
+    "summary": [
+      "W czwartek do siedziby Telewizji Republika weszli funkcjonariusze Centralnego Biura Zwalczania Cyberprzestępczości, żądając wydania części materiałów (Onet, Gazeta.pl); według Polsat News działali na polecenie Prokuratury Okręgowej w Szczecinie.",
+      "Według TV Republika stacja odmówiła wydania materiałów; prokuratura chce m.in. nagrania programu z 16 października i dokumentacji stacji.",
+      "Osobno Prokuratura Okręgowa w Krakowie wszczęła śledztwo w sprawie wypowiedzi na antenie TV Republika po zamachu w Krakowie (Polsat News, Radio ZET); według OKO.press chodzi o wypowiedzi prezesa stacji Tomasza Sakiewicza z Rynku Głównego 7 listopada.",
+      "Jarosław Kaczyński skomentował wizytę policji: „Boją się prawdy! Boją się wolnych mediów!” (TV Republika, Onet)."
+    ],
+    "framing": {
+      "left": "Onet: „Policja w siedzibie Telewizji Republika. Żąda wydania dokumentów”; OKO.press: „Jest śledztwo w sprawie transmisji Republiki z zamachu w Krakowie”.",
+      "center": "Polsat News i Interia: „Żądali wydania dokumentów”; Fakt: „Dziennikarze wbiegli za funkcjonariuszami do metra”; Radio ZET: „Kłopoty Telewizji Republika”.",
+      "right": "TV Republika: „Akcja wymierzona w Republikę?”, „Represje za mówienie prawdy?”; Rzeczpospolita: „Policja chce dokumentów od Telewizji Republika. Stacja protestuje”."
+    },
+    "match": {
+      "include": "Telewizji Republika|(w|na|całą) Republikę|Republiki z zamachu|Sakiewicz",
+      "from": "2026-11-12T09:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T12:42:35Z",
+    "updatedAt": "2026-11-12T12:42:35Z"
+  },
+  {
+    "id": "smierc-wojciecha-klimasa-postrzal",
+    "title": "Przedsiębiorca Wojciech Klimas zmarł po postrzale pod Częstochową. Prokuratura prowadzi śledztwo",
+    "date": "2026-11-11",
+    "location": "Kuźnica Lechowska",
+    "tags": [
+      "Prokuratura",
+      "Przestępczość"
+    ],
+    "summary": [
+      "66-letni przedsiębiorca Wojciech Klimas, założyciel firmy Klimas Wkręt-met, został postrzelony 11 listopada w Kuźnicy Lechowskiej pod Częstochową; mimo reanimacji zmarł (Najwyższy Czas).",
+      "Rzeczpospolita, powołując się na „Życie Częstochowskie”, podaje, że miał ranę postrzałową głowy; sprawą zajmuje się prokuratura (Rzeczpospolita, Onet).",
+      "Według WP kilka dni wcześniej przekazał kierowanie firmą dzieciom."
+    ],
+    "framing": {
+      "left": "WP: „Śmierć polskiego milionera”; Onet: „Śmiercią milionera spod Częstochowy zajmuje się prokuratura”.",
+      "center": "Radio ZET: „Tragedia pod Częstochową. Twórca znanej polskiej marki śmiertelnie postrzelony”.",
+      "right": "Rzeczpospolita: „Tragiczna śmierć milionera”; Najwyższy Czas: „Potentat produkcyjny postrzelony w Święto Niepodległości”."
+    },
+    "match": {
+      "include": "Klimas|Twórca znanej polskiej marki",
+      "from": "2026-11-11T12:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T12:42:35Z",
+    "updatedAt": "2026-11-12T12:42:35Z"
+  },
+  {
+    "id": "szpital-krasnystaw-zbiorka-warzyw",
+    "title": "Szpital w Krasnymstawie prosi mieszkańców o warzywa dla pacjentów",
+    "date": "2026-11-12",
+    "location": "Krasnystaw",
+    "tags": [
+      "Ochrona zdrowia"
+    ],
+    "summary": [
+      "Na prośbę dyrektora szpitala w Krasnymstawie mieszkańcy gminy Izbica zbierają ziemniaki, marchew, cebulę, pietruszkę i buraki na posiłki dla pacjentów (TVN24, Radio ZET).",
+      "Według Faktu długi szpitala liczy się w milionach.",
+      "Radio ZET podaje, że najlepiej opłacany lekarz szpitala zarabia 1,2 mln zł."
+    ],
+    "framing": {
+      "left": "TVN24: „Szpital prosi o ziemniaki, marchew i buraki. Nietypowy apel dyrektora”.",
+      "center": "Fakt: „Długi liczy już w milionach”; Radio ZET: „Proszą o warzywa dla szpitala, a tyle płacą lekarzom”.",
+      "right": "Najwyższy Czas: „Szpital w Krasnystawie prosi o ziemniaki i cebulę, a lekarz bierze ponad milion złotych rocznie”."
+    },
+    "match": {
+      "include": "Krasnyst|Krasnymstaw|warzywa dla szpitala|Szpital prosi (o ziemniaki|mieszkańców o ziemniaki)",
+      "from": "2026-11-12T06:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T12:42:35Z",
+    "updatedAt": "2026-11-12T12:42:35Z"
   }
 ]
