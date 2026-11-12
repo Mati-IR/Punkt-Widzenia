@@ -1486,7 +1486,7 @@
     "location": "Szczecin",
     "extra": [],
     "addedAt": "2026-11-11T17:48:43Z",
-    "updatedAt": "2026-11-12T07:17:34Z",
+    "updatedAt": "2026-11-12T08:42:19Z",
     "id": "tusk-zaprasza-nawrockiego-sopot",
     "title": "Tusk zaprasza prezydenta Nawrockiego z rodziną do swojego domu w Sopocie",
     "date": "2026-11-11",
@@ -1499,16 +1499,18 @@
       "Podczas obchodów w Szczecinie, przy chrzcie promu „Bursztyn Unity”, premier Donald Tusk zaprosił prezydenta Karola Nawrockiego z małżonką i dziećmi do swojego domu w Sopocie.",
       "„Podzielmy się opłatkiem przed Wigilią, porozmawiajmy” – powiedział premier, dodając, że „Polska jest warta naszej rozmowy”.",
       "Po południu Tusk skrytykował na X przemówienie prezydenta (zob. osobne wydarzenie).",
-      "Szef Kancelarii Prezydenta Paweł Szefernaker odpowiedział premierowi: „Wystarczyło zostać w Warszawie”, zarzucając mu unikanie wspólnego gestu z prezydentem podczas centralnych obchodów."
+      "Szef Kancelarii Prezydenta Paweł Szefernaker odpowiedział premierowi: „Wystarczyło zostać w Warszawie”, zarzucając mu unikanie wspólnego gestu z prezydentem podczas centralnych obchodów.",
+      "12 listopada rzecznik prezydenta Rafał Leśkiewicz powiedział w WP, że „do spotkania powinno dojść, tylko powinny być spełnione dwa warunki brzegowe”."
     ],
     "framing": {
-      "left": "Onet, Gazeta.pl, Wyborcza i OKO.press cytują zaproszenie („Podzielmy się opłatkiem”). Wyborcza: „Tusk do Nawrockiego, Nawrocki do Tuska. Czyli opłatek bardzo polityczny”.",
+      "left": "Onet, Gazeta.pl, Wyborcza i OKO.press cytują zaproszenie („Podzielmy się opłatkiem”). Wyborcza: „Tusk do Nawrockiego, Nawrocki do Tuska. Czyli opłatek bardzo polityczny”. WP 12 listopada: „Pałac odpowiada Tuskowi. Nawrocki stawia twardy warunek ws. spotkania”; TVN24: „Premier Tusk wyciąga rękę do rozmowy, prezydent Nawrocki ostrzega”.",
       "center": "Interia: „Niespodziewane słowa. Tusk zaprasza Nawrockiego do swojego domu”; Radio ZET: „Tusk zaskoczył”. Odpowiedź Pałacu cytują RMF FM, Radio ZET i Kanał Zero: „Wystarczyło zostać w Warszawie”.",
       "right": "Rzeczpospolita: „Polska warta jest tej rozmowy”. TV Republika: „Tusk znowu przypisał sobie nie swoje zasługi” (bez wzmianki o zaproszeniu w tytule). Później TV Republika: „Szefernaker zarzuca Tuskowi unikanie wspólnego gestu z prezydentem”; wPolityce: „Najpierw zaproszenie, a potem zjadliwy wpis”."
     },
     "match": {
-      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Najpierw zaproszenie",
-      "from": "2026-11-11T08:00:00Z"
+      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Najpierw zaproszenie|Pałac odpowiada Tuskowi|Tusk wyciąga rękę",
+      "from": "2026-11-11T08:00:00Z",
+      "to": "2026-11-15T08:00:00Z"
     }
   },
   {
@@ -1606,19 +1608,105 @@
     "summary": [
       "Prezes PiS Jarosław Kaczyński zapowiedział 11 listopada działania na rzecz jednej listy prawicy w wyborach do Sejmu: „Będziemy działali, by była jedna lista” (Rzeczpospolita).",
       "Według Gazety.pl mówił, że „trzeba przekonywać polityków trzech Konfederacji”.",
-      "TV Republika określa zapowiedź jako „wielki sojusz prawicy”."
+      "TV Republika określa zapowiedź jako „wielki sojusz prawicy”.",
+      "Zapowiedź krytykują politycy koalicji: przewodnicząca klubu Lewicy Anna Maria Żukowska mówiła w Polsat News o „granicy rozsądku i kompromisu”, a wiceszef Kancelarii Premiera z PSL – że Kaczyński „nawet z Belzebubem” podpisze pakt, „żeby tylko dorwać się do władzy” (Onet)."
     ],
     "framing": {
-      "left": "Gazeta.pl: „Kaczyński chce jednej listy prawicy w wyborach” z cytatem o przekonywaniu „trzech Konfederacji”.",
-      "center": "Brak publikacji redakcji centrowych w monitorowanych źródłach.",
+      "left": "Gazeta.pl: „Kaczyński chce jednej listy prawicy w wyborach” z cytatem o przekonywaniu „trzech Konfederacji”. Onet w analizie: „Jarosław Kaczyński stawia na Grzegorza Brauna”; cytuje też polityka PSL: „Nawet z Belzebubem pakt podpisze”.",
+      "center": "Polsat News: „Prawica do wyborów na wspólnej liście? »Nawet Kaczyński powinien się zastanowić«” (wypowiedź Anny Marii Żukowskiej).",
       "right": "Rzeczpospolita: „Kaczyński: będziemy działali, by była jedna lista do Sejmu”; TV Republika: „Kaczyński zapowiada wielki sojusz prawicy”; wPolityce: „Przełomowa zapowiedź prezesa PiS”."
     },
     "match": {
-      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS",
-      "from": "2026-11-11T10:00:00Z"
+      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego",
+      "from": "2026-11-11T10:00:00Z",
+      "to": "2026-11-15T10:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-12T07:16:31Z",
-    "updatedAt": "2026-11-12T07:16:31Z"
+    "updatedAt": "2026-11-12T08:42:19Z"
+  },
+  {
+    "id": "lekarka-rzeszow-307-zarzutow",
+    "title": "Lekarka z Rzeszowa z 307 zarzutami korupcyjnymi, sąd aresztował ją na trzy miesiące",
+    "date": "2026-11-12",
+    "location": "Rzeszów",
+    "tags": [
+      "Korupcja",
+      "Ochrona zdrowia",
+      "Prokuratura"
+    ],
+    "summary": [
+      "Policjanci z Komendy Wojewódzkiej Policji w Rzeszowie zatrzymali 64-letnią lekarkę, kierowniczkę oddziału szpitalnego i biegłą sądową (Radio ZET, Kanał Zero).",
+      "Usłyszała 307 zarzutów przyjmowania korzyści majątkowych; według śledczych przyjmowała pieniądze i markowe alkohole.",
+      "Według RMF FM łapówki miały dotyczyć m.in. miejsca dla dziecka na oddziale.",
+      "Sąd aresztował ją na trzy miesiące; według TVP Info policja nie wyklucza kolejnych zarzutów."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "RMF FM: „Łapówki za miejsce na oddziale dla dziecka. Ponad 300 zarzutów dla lekarki”; Radio ZET: „Lekarka z Rzeszowa aresztowana”; Kanał Zero i TVP Info podkreślają skalę: „307 zarzutów korupcyjnych”, „Kilkaset zarzutów korupcyjnych”.",
+      "right": "Rzeczpospolita: „Lekarka z Rzeszowa z 307 zarzutami. Trafiła do aresztu, grożą jej lata więzienia”."
+    },
+    "match": {
+      "include": "Ponad 300 zarzutów dla lekarki|307 zarzut|Kilkaset zarzutów korupcyjnych|Lekarka z Rzeszowa",
+      "from": "2026-11-12T04:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T08:42:04Z",
+    "updatedAt": "2026-11-12T08:42:04Z"
+  },
+  {
+    "id": "sondaz-ibris-rzeczpospolita-po-kryzysie-tk",
+    "title": "Sondaż IBRiS dla „Rzeczpospolitej”: KO prowadzi z 29 proc., kryzys wokół TK nie zmienił mocno układu sił",
+    "date": "2026-11-12",
+    "location": "Polska",
+    "tags": [
+      "Sondaże",
+      "Partie polityczne",
+      "Trybunał Konstytucyjny"
+    ],
+    "summary": [
+      "Według sondażu IBRiS dla „Rzeczpospolitej” Koalicja Obywatelska ma 29 proc. poparcia i kilkunastopunktową przewagę nad PiS (Interia).",
+      "Według Radia ZET poparcie KO spadło o 1,9 pkt proc. w porównaniu z poprzednim badaniem; TVN24 pisze o spadkach notowań większości ugrupowań.",
+      "WP i Fakt piszą o najgorszym wyniku PiS w historii; według Najwyższego Czasu PiS „ledwie przegania” Konfederację.",
+      "„Rzeczpospolita” ocenia, że kryzys wokół Trybunału Konstytucyjnego nie zmienił mocno układu sił między partiami."
+    ],
+    "framing": {
+      "left": "Onet: „Czołowe partie tracą poparcie”; WP: „PiS z najgorszym wynikiem w historii”; TVN24: „Kryzys w Trybunale Konstytucyjnym a poparcie dla partii”.",
+      "center": "TVP Info: „KO na czele sondażu”; Interia: „Pyrrusowe zwycięstwo partii Tuska”; Fakt: „Historyczny dołek PiS”; Radio ZET i Polsat News pytają, czy kryzys wokół TK zmienił poparcie.",
+      "right": "Rzeczpospolita (Artur Bartkiewicz): o rządach po 2027 r. „mogą zdecydować PSL i Razem”; wPolityce: „Tak wyglądałby Sejm! Obliczono mandaty”; Najwyższy Czas: „KO nie ma szans na stworzenie rządu. Tragiczny wynik PiS i mocna pozycja obu Konfederacji”."
+    },
+    "match": {
+      "include": "układw* sił|Obliczono mandaty|Pyrrusowe zwycięstwo partii Tuska|PiS z najgorszym wynikiem|Historyczny dołek PiS|Czołowe partie tracą poparcie|(Kryzys w Trybunale Konstytucyjnym|Zajścia przed Trybunałem Konstytucyjnym) a poparcie|Kryzys wokół TK namieszał|KO nie ma szans na stworzenie rządu|kto będzie rządził po 2027",
+      "from": "2026-11-12T00:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T08:42:04Z",
+    "updatedAt": "2026-11-12T08:42:04Z"
+  },
+  {
+    "id": "sondaz-opinia24-rmf-nowa-partia",
+    "title": "Sondaż Opinia24 dla RMF FM: 44 proc. Polaków chce nowej partii na scenie politycznej",
+    "date": "2026-11-12",
+    "location": "Polska",
+    "tags": [
+      "Sondaże",
+      "Partie polityczne"
+    ],
+    "summary": [
+      "Według sondażu Opinia24 dla RMF FM 44 proc. badanych chciałoby, by pojawiła się nowa partia lub siła polityczna, stanowiąca alternatywę dla obecnych ugrupowań.",
+      "Wśród osób w wieku 25–29 lat odsetek ten wynosi 65 proc. (Rzeczpospolita)."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "RMF FM: „Polityczny głód alternatywy. Polacy oczekują nowej partii”; TVP Info: „Zaskakujące wyniki. Młodzi Polacy chcą nowej partii politycznej”.",
+      "right": "Rzeczpospolita: „Niemal co drugi Polak chce, by pojawiła się nowa partia. Oczekują tego głównie młodzi”; Najwyższy Czas: „Prawie połowa Polaków chce nowej siły politycznej”."
+    },
+    "match": {
+      "include": "nowej partii|nowa partia|nowej siły politycznej",
+      "from": "2026-11-12T03:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T08:42:04Z",
+    "updatedAt": "2026-11-12T08:42:04Z"
   }
 ]
