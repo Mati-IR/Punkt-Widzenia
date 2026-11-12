@@ -83,3 +83,16 @@ h3.sub { font-size: 1rem; margin: 1rem 0 .35rem; }
 .chain li { margin: .15rem 0; }
 h2 .tag { font-size: .75rem; font-weight: 600; vertical-align: middle; }
 .axes { margin: .5rem 0; }
+
+/* legal pages + consent banner (PUN-64) */
+.footer-links { margin-top: .5rem; }
+.legal h2 { font-size: 1.15rem; }
+.legal .todo { background: #fff3c4; color: #5a4300; padding: 0 .25rem; border-radius: 3px; }
+.consent { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--card); border-top: 1px solid var(--line); box-shadow: 0 -4px 16px rgba(0,0,0,.08); padding: 1rem; }
+.consent p { max-width: var(--max); margin: 0 auto .75rem; }
+.consent-actions { max-width: var(--max); margin: 0 auto; display: flex; flex-wrap: wrap; gap: .75rem; }
+.consent-btn { background: transparent; color: inherit; border: 2px solid var(--fg); min-width: 9rem; }
+.consent-btn:hover { background: var(--fg); color: var(--bg); }
+.data-table { border-collapse: collapse; width: 100%; font-size: .9rem; margin: .5rem 0 1rem; }
+.data-table th, .data-table td { border: 1px solid var(--line); padding: .45rem; vertical-align: top; text-align: left; }
+.data-table th { background: var(--card); }

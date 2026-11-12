@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import '../styles/news.css';
+import Consent from '../components/Consent.astro';
+import { analytics } from '../lib/site';
 
 interface Props {
   title: string;
@@ -64,10 +66,17 @@ const today = new Date().toLocaleDateString('pl-PL', { weekday: 'long', day: 'nu
     <footer class="site">
       <div class="wrap">
         <p>
-          Punkt Widzenia — zobacz każdą stronę każdego wydarzenia. Oceny redakcji mają podane źródła.{" "}
+          Punkt Widzenia — zobacz każdą stronę każdego wydarzenia. Oceny redakcji mają podane źródła.
+          Podsumowania wydarzeń przygotowuje sztuczna inteligencja na podstawie nagłówków; pokazujemy tylko tytuły i linki do oryginałów.
+        </p>
+        <p class="footer-links">
           <a href="/media/">Katalog mediów</a> · <a href="/metodologia/">Jak oceniamy</a> · <a href="/zglos-poprawke/">Zgłoś poprawkę</a>
+          · <a href="/zglos-naruszenie/">Zgłoś naruszenie</a> · <a href="/regulamin/">Regulamin</a>
+          · <a href="/polityka-prywatnosci/">Polityka prywatności</a> · <a href="/kontakt/">Kontakt</a>
+          {analytics.src && analytics.needsConsent && <> · <a href="/polityka-prywatnosci/#cookies" data-consent-open>Ustawienia cookies</a></>}
         </p>
       </div>
     </footer>
+    <Consent />
   </body>
 </html>

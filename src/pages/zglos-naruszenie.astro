@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import { operator, TAKEDOWN_SLA_HOURS } from '../lib/site';
+// Static site, no backend: the form opens the visitor's e-mail app with the report filled in
+// (mailto). Handling procedure and SLA: docs/TAKEDOWN.md.
+const ready = operator.email !== '';
+---
+<Base title="Zgłoś naruszenie lub prośbę o usunięcie" description="Formularz zgłaszania naruszeń praw i próśb o usunięcie treści z serwisu Punkt Widzenia.">
+  <div class="prose">
+    <h1>Zgłoś naruszenie lub prośbę o usunięcie</h1>
+    <p class="lead">
+      Uważasz, że coś w serwisie narusza Twoje prawa — autorskie, prawa wydawcy prasowego, dobra osobiste albo dane osobowe?
+      Jesteś wydawcą i nie chcesz, żebyśmy pokazywali Twoje nagłówki? Daj nam znać.
+    </p>
+    <p class="notice"><strong>Odpowiadamy w ciągu {TAKEDOWN_SLA_HOURS} godzin.</strong> Jeśli zgłoszenie jest wiarygodne, do czasu wyjaśnienia sprawy ukrywamy wskazaną treść.</p>
+    <p>Błąd w ocenie redakcji (orientacja, właściciel, wiarygodność) zgłoś przez stronę <a href="/zglos-poprawke/">Zgłoś poprawkę</a>.</p>
+  </div>
+
+  {ready ? (
+    <form id="takedown" class="form" data-to={operator.email} novalidate>
+      <div class="field">
+        <label for="t-name">Imię i nazwisko lub nazwa podmiotu</label>
+        <input id="t-name" name="name" required autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for="t-email">Twój e-mail (do odpowiedzi)</label>
+        <input id="t-email" name="email" type="email" required autocomplete="email" />
+      </div>
+      <div class="field">
+        <label for="t-kind">Czego dotyczy zgłoszenie</label>
+        <select id="t-kind" name="kind" required>
+          <option value="">— wybierz —</option>
+          <option>Prawo autorskie lub prawo wydawcy prasowego</option>
+          <option>Dobra osobiste</option>
+          <option>Dane osobowe</option>
+          <option>Wydawca nie zgadza się na pokazywanie nagłówków</option>
+          <option>Inne</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="t-where">Adres strony w Punkcie Widzenia, której dotyczy zgłoszenie</label>
+        <input id="t-where" name="where" type="url" required placeholder="https://…" />
+      </div>
+      <div class="field">
+        <label for="t-what">Na czym polega naruszenie i jakie masz do tego prawa</label>
+        <textarea id="t-what" name="what" rows="6" required></textarea>
+        <p class="hint">Np. link do oryginału, kogo dotyczy treść, czego oczekujesz (usunięcie, zmiana).</p>
+      </div>
+      <div class="field">
+        <label><input type="checkbox" name="oath" required style="width:auto" /> Oświadczam, że informacje w zgłoszeniu są zgodne z prawdą.</label>
+      </div>
+      <p class="hint">
+        Po kliknięciu otworzy się Twój program pocztowy z gotową wiadomością do {operator.email} — wystarczy ją wysłać.
+        Dane ze zgłoszenia przetwarzamy tylko po to, by je rozpatrzyć (<a href="/polityka-prywatnosci/">Polityka prywatności</a>).
+      </p>
+      <p id="t-error" class="notice" role="alert" hidden>Uzupełnij wszystkie pola i zaznacz oświadczenie.</p>
+      <div><button type="submit">Przygotuj wiadomość</button></div>
+      <noscript><p>Formularz wymaga JavaScriptu. Napisz bezpośrednio na <a href={`mailto:${operator.email}`}>{operator.email}</a>.</p></noscript>
+    </form>
+  ) : (
+    <p class="notice" role="status">Formularz będzie dostępny po podaniu adresu e-mail usługodawcy. Do tego czasu skorzystaj z danych na stronie <a href="/kontakt/">Kontakt</a>.</p>
+  )}
+</Base>
+
+<script>
+  const form = document.getElementById('takedown') as HTMLFormElement | null;
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const err = document.getElementById('t-error')!;
+    if (!form.checkValidity()) {
+      err.hidden = false;
+      (form.querySelector(':invalid') as HTMLElement | null)?.focus();
+      return;
+    }
+    err.hidden = true;
+    const f = new FormData(form);
+    const v = (k: string) => String(f.get(k) ?? '').trim();
+    const subject = `[Zgłoszenie naruszenia] ${v('kind')}`;
+    const body = [
+      `Zgłaszający: ${v('name')}`,
+      `E-mail: ${v('email')}`,
+      `Rodzaj: ${v('kind')}`,
+      `Strona: ${v('where')}`,
+      '',
+      v('what'),
+      '',
+      'Oświadczam, że informacje w zgłoszeniu są zgodne z prawdą.',
+    ].join('\n');
+    location.href = `mailto:${form.dataset.to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+</script>

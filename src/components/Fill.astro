@@ -1,0 +1,7 @@
+---
+// Shows an operator detail from src/lib/site.ts, or a visible "do uzupełnienia" marker when empty.
+import { TODO } from '../lib/site';
+interface Props { value: string }
+const { value } = Astro.props;
+---
+{value ? value : <span class="todo">{TODO}</span>}

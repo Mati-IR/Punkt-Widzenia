@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import Fill from '../components/Fill.astro';
+import DraftNote from '../components/DraftNote.astro';
+import { operator, analytics } from '../lib/site';
+const usesAnalytics = analytics.src !== '';
+---
+<Base title="Polityka prywatności" description="Jakie dane zbiera Punkt Widzenia, po co i jakie masz prawa. Pliki cookies.">
+  <div class="prose legal">
+    <h1>Polityka prywatności</h1>
+    <DraftNote />
+    <p class="lead">W skrócie: nie zakładamy kont, nie wyświetlamy reklam{!usesAnalytics && <> i nie używamy plików cookies</>}. Twoje dane trafiają do nas tylko wtedy, gdy sam do nas napiszesz.</p>
+
+    <h2>1. Administrator danych</h2>
+    <p>Administratorem danych osobowych jest <Fill value={operator.name} />, <Fill value={operator.address} />, e-mail: <Fill value={operator.email} />.</p>
+
+    <h2>2. Jakie dane, po co i na jakiej podstawie</h2>
+    <table class="data-table">
+      <thead><tr><th scope="col">Dane</th><th scope="col">Cel</th><th scope="col">Podstawa (RODO)</th><th scope="col">Jak długo</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Adres IP, typ przeglądarki, adres odwiedzanej strony, czas (logi techniczne serwera)</td>
+          <td>Wyświetlenie strony, bezpieczeństwo, ochrona przed atakami</td>
+          <td>art. 6 ust. 1 lit. f — prawnie uzasadniony interes</td>
+          <td>Zgodnie z ustawieniami dostawcy hostingu, zwykle kilka dni <span class="todo">do potwierdzenia</span></td>
+        </tr>
+        <tr>
+          <td>Imię i nazwisko lub nazwa, e-mail, treść wiadomości (zgłoszenia poprawek i naruszeń, korespondencja)</td>
+          <td>Rozpatrzenie zgłoszenia i odpowiedź</td>
+          <td>art. 6 ust. 1 lit. f — prawnie uzasadniony interes (obsługa zgłoszeń, obrona przed roszczeniami)</td>
+          <td>Do zamknięcia sprawy, potem maksymalnie do upływu okresu przedawnienia roszczeń</td>
+        </tr>
+        {usesAnalytics && (
+          <tr>
+            <td>Dane o odwiedzinach zbierane przez {analytics.name}</td>
+            <td>Statystyki odwiedzin</td>
+            <td>{analytics.needsConsent ? 'art. 6 ust. 1 lit. a — zgoda' : 'art. 6 ust. 1 lit. f — prawnie uzasadniony interes'}</td>
+            <td>Zgodnie z ustawieniami narzędzia</td>
+          </tr>
+        )}
+      </tbody>
+    </table>
+    <p>Podanie danych w zgłoszeniu jest dobrowolne, ale bez adresu e-mail nie możemy odpowiedzieć. Nie profilujemy i nie podejmujemy decyzji automatycznie.</p>
+
+    <h2>3. Komu przekazujemy dane</h2>
+    <ul>
+      <li><strong>Cloudflare, Inc.</strong> — hosting i dostarczanie strony (logi techniczne).</li>
+      <li><strong>Dostawca poczty e-mail</strong> <Fill value="" /> — gdy do nas piszesz.</li>
+      {usesAnalytics && <li><strong>{analytics.name}</strong> — statystyki odwiedzin.</li>}
+    </ul>
+    <p>
+      Część dostawców ma siedzibę w USA. Dane mogą tam trafić na podstawie decyzji Komisji Europejskiej (EU-US Data Privacy Framework)
+      lub standardowych klauzul umownych. <span class="todo">Do potwierdzenia: umowy powierzenia z dostawcami.</span>
+    </p>
+
+    <h2>4. Twoje prawa</h2>
+    <p>
+      Masz prawo do dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz sprzeciwu
+      wobec przetwarzania opartego na prawnie uzasadnionym interesie. Jeśli przetwarzamy dane na podstawie zgody, możesz ją
+      w każdej chwili wycofać. Napisz na adres e-mail z pkt 1. Możesz też złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych
+      (ul. Stawki 2, 00-193 Warszawa, <a href="https://uodo.gov.pl">uodo.gov.pl</a>).
+    </p>
+
+    <h2 id="cookies">5. Pliki cookies i podobne technologie</h2>
+    {!usesAnalytics ? (
+      <p>
+        Serwis <strong>nie zapisuje plików cookies</strong> ani innych danych na Twoim urządzeniu i nie ładuje skryptów reklamowych ani
+        śledzących. Dlatego nie wyświetlamy banera zgody. Jeśli to się zmieni, przed uruchomieniem czegokolwiek, co nie jest niezbędne
+        do działania strony, poprosimy Cię o zgodę, a „Odrzucam” będzie tak samo łatwe jak „Akceptuję”.
+      </p>
+    ) : analytics.needsConsent ? (
+      <>
+        <p>
+          Za Twoją zgodą używamy narzędzia {analytics.name} do liczenia odwiedzin; zapisuje ono pliki cookies. Do chwili kliknięcia
+          „Akceptuję” narzędzie nie jest ładowane. Twój wybór zapamiętujemy w pamięci przeglądarki (localStorage, klucz
+          <code>pw-consent</code>) — to jest niezbędne, żeby nie pytać ponownie.
+        </p>
+        <p><a href="#cookies" data-consent-open>Zmień ustawienia cookies</a></p>
+      </>
+    ) : (
+      <p>Do liczenia odwiedzin używamy narzędzia {analytics.name}, które nie zapisuje plików cookies na Twoim urządzeniu.</p>
+    )}
+
+    <h2>6. Zmiany</h2>
+    <p>O zmianach tej polityki informujemy na tej stronie, podając datę, od której obowiązuje nowa wersja.</p>
+  </div>
+</Base>

@@ -3,7 +3,7 @@
 
 export const UA = 'Mozilla/5.0 (compatible; PunktWidzeniaBot/0.1; +https://punkt-widzenia.pages.dev/metodologia/)';
 export const ROBOTS_TOKEN = 'punktwidzeniabot';
-export const LEAD_MAX = 300;
+export const LEAD_MAX = 200;   // keep only a very short fragment (PUN-63 legal report: no full leads)
 
 // ---------- text ----------
 

@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import Fill from '../components/Fill.astro';
+import DraftNote from '../components/DraftNote.astro';
+import { operator, TAKEDOWN_SLA_HOURS } from '../lib/site';
+---
+<Base title="Regulamin" description="Regulamin serwisu Punkt Widzenia.">
+  <div class="prose legal">
+    <h1>Regulamin serwisu Punkt Widzenia</h1>
+    <DraftNote />
+
+    <h2>1. Kto prowadzi serwis</h2>
+    <p>
+      Serwis Punkt Widzenia (dalej: „Serwis”) prowadzi <Fill value={operator.name} />, adres: <Fill value={operator.address} />,
+      e-mail: <Fill value={operator.email} /> (dalej: „Usługodawca”). Regulamin jest udostępniany bezpłatnie na podstawie
+      art. 8 ustawy z 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną.
+    </p>
+
+    <h2>2. Co oferuje Serwis</h2>
+    <ul>
+      <li>katalog polskich mediów informacyjnych z oceną orientacji politycznej, własności i wiarygodności, z podanymi źródłami i <a href="/metodologia/">metodologią</a>;</li>
+      <li>zestawienia wydarzeń: tytuły artykułów z różnych redakcji z linkami do oryginałów oraz krótkie podsumowania;</li>
+      <li>formularze zgłaszania poprawek i naruszeń.</li>
+    </ul>
+    <p>Korzystanie z Serwisu jest bezpłatne i nie wymaga zakładania konta. Umowa o korzystanie z Serwisu zawierana jest z chwilą otwarcia strony i wygasa, gdy ją opuścisz.</p>
+
+    <h2>3. Charakter treści</h2>
+    <ul>
+      <li>Oceny mediów są opiniami Usługodawcy opartymi na opublikowanej metodologii i wskazanych źródłach. Nie są stwierdzeniem faktów o konkretnych osobach.</li>
+      <li>Podsumowania i porównania wydarzeń przygotowuje automatycznie sztuczna inteligencja na podstawie tytułów i krótkich zapowiedzi artykułów. Są oznaczone etykietą „Podsumowane przez sztuczną inteligencję” i mogą zawierać błędy.</li>
+      <li>Serwis pokazuje tylko tytuł artykułu, nazwę redakcji i link do oryginału. Prawa do artykułów należą do ich wydawców; Usługodawca nie odpowiada za treść stron, do których prowadzą linki.</li>
+    </ul>
+
+    <h2>4. Wymagania techniczne</h2>
+    <p>Wystarczy urządzenie z dostępem do internetu i aktualna przeglądarka. Niektóre funkcje (filtry, wysyłanie formularzy) wymagają włączonego JavaScriptu.</p>
+
+    <h2>5. Zasady korzystania</h2>
+    <p>Nie wolno dostarczać do Serwisu treści bezprawnych ani zakłócać jego działania (np. automatycznie i masowo pobierać stron w sposób obciążający serwer).</p>
+
+    <h2>6. Reklamacje, poprawki i zgłoszenia naruszeń</h2>
+    <ul>
+      <li>Reklamacje dotyczące działania Serwisu można składać e-mailem na adres podany w pkt 1. Odpowiadamy w ciągu 14 dni.</li>
+      <li>Błędy w ocenach mediów można zgłaszać przez stronę <a href="/zglos-poprawke/">Zgłoś poprawkę</a>.</li>
+      <li>Naruszenia praw (np. autorskich, praw wydawcy, dóbr osobistych) można zgłaszać przez stronę <a href="/zglos-naruszenie/">Zgłoś naruszenie</a>. Odpowiadamy w ciągu {TAKEDOWN_SLA_HOURS} godzin, a w uzasadnionych przypadkach od razu ukrywamy wskazaną treść.</li>
+    </ul>
+
+    <h2>7. Dane osobowe</h2>
+    <p>Zasady przetwarzania danych osobowych i używania plików cookies opisuje <a href="/polityka-prywatnosci/">Polityka prywatności</a>.</p>
+
+    <h2>8. Zmiany regulaminu</h2>
+    <p>Usługodawca może zmienić regulamin, np. po zmianie przepisów lub funkcji Serwisu. Nowa wersja obowiązuje od dnia publikacji na tej stronie. W sprawach nieuregulowanych stosuje się prawo polskie.</p>
+  </div>
+</Base>
