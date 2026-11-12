@@ -70,13 +70,15 @@ const cell = (c: string, p: string) =>
         {POLISH.map((v) => <option value={v}>{polishLabel[v]}</option>)}
       </select>
     </div>
-    <div>
-      <label for="f-ownership">Własność</label>
-      <select id="f-ownership" name="ownership">
-        <option value="">Wszystkie</option>
-        {OWNERSHIP.map((v) => <option value={v}>{ownershipLabel[v]}</option>)}
-      </select>
-    </div>
+    <fieldset class="checks" aria-describedby="f-own-hint">
+      <legend>Własność</legend>
+      <p id="f-own-hint" class="meta hint">Zaznacz kilka, by zobaczyć media, które mają je wszystkie.</p>
+      <div class="check-grid">
+        {OWNERSHIP.map((v) => (
+          <label><input type="checkbox" name="ownership" value={v} /> {ownershipLabel[v]}</label>
+        ))}
+      </div>
+    </fieldset>
     <div>
       <label for="f-segment">Typ</label>
       <select id="f-segment" name="segment">
@@ -108,16 +110,20 @@ const cell = (c: string, p: string) =>
     const q = String(fd.get('q') || '').trim().toLowerCase();
     let shown = 0;
     for (const el of items) {
+      // AND across fields, and AND within a multi-value field (ownership: all ticked categories required).
       const ok =
         (!q || (el.dataset.name || '').includes(q)) &&
-        keys.every((k) => !fd.get(k) || (el.dataset[k] || '').split(' ').includes(String(fd.get(k))));
+        keys.every((k) => {
+          const has = (el.dataset[k] || '').split(' ');
+          return fd.getAll(k).every((v) => !v || has.includes(String(v)));
+        });
       el.hidden = !ok;
       if (ok) shown++;
     }
     count.textContent = `Pokazano ${shown} z ${items.length}.`;
     empty.hidden = shown > 0;
     const params = new URLSearchParams();
-    for (const [k, v] of fd) if (v) params.set(k, String(v));
+    for (const [k, v] of fd) if (v) params.append(k, String(v));
     const qs = params.toString();
     history.replaceState(null, '', qs ? `?${qs}#katalog` : location.pathname);
   }
@@ -125,8 +131,15 @@ const cell = (c: string, p: string) =>
   // Restore filters from the URL so filtered views are shareable.
   const initial = new URLSearchParams(location.search);
   for (const [k, v] of initial) {
-    const field = form.elements.namedItem(k) as HTMLInputElement | HTMLSelectElement | null;
-    if (field) field.value = v;
+    const field = form.elements.namedItem(k);
+    if (field instanceof RadioNodeList) {
+      // Checkbox group: tick every matching value.
+      for (const box of field) if (box instanceof HTMLInputElement && box.value === v) box.checked = true;
+    } else if (field instanceof HTMLInputElement && field.type === 'checkbox') {
+      if (field.value === v) field.checked = true;
+    } else if (field instanceof HTMLInputElement || field instanceof HTMLSelectElement) {
+      field.value = v;
+    }
   }
   form.hidden = false;
   form.addEventListener('input', apply);

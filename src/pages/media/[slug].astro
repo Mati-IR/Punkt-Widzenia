@@ -25,7 +25,8 @@ const avg = (classic.economic + classic.sociocultural) / 2;
 const fix = `/zglos-poprawke/?media=${outlet.id}`;
 const num = new Intl.NumberFormat('pl-PL');
 
-const desc = `${d.name}: orientacja ${classicLabel[classic.value].toLowerCase()}, ${polishLabel[polish.value].toLowerCase()}; własność: ${ownershipLabel[own.category].toLowerCase()}.`;
+const ownCats = [own.category, ...own.secondaryTags.filter((t) => t !== own.category)];
+const desc = `${d.name}: orientacja ${classicLabel[classic.value].toLowerCase()}, ${polishLabel[polish.value].toLowerCase()}; własność: ${ownCats.map((t) => ownershipLabel[t].toLowerCase()).join(', ')}.`;
 const topOwner = [...own.chain].reverse().find((c) => c.level !== 'brand');
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -82,8 +83,14 @@ const jsonLd = {
   <section class="panel" aria-labelledby="h-own">
     <h2 id="h-own">Własność</h2>
     <dl class="kv">
-      <dt>Kategoria</dt>
-      <dd>{ownershipLabel[own.category]}{own.secondaryTags.length > 0 && <span class="meta"> (także: {own.secondaryTags.map((t) => ownershipLabel[t].toLowerCase()).join(', ')})</span>}</dd>
+      <dt>{ownCats.length > 1 ? 'Kategorie' : 'Kategoria'}</dt>
+      <dd>
+        <ul class="tags">
+          {ownCats.map((t, i) => (
+            <li class:list={['tag', 'own-cat', { primary: i === 0 }]}>{ownershipLabel[t]}{i === 0 && ownCats.length > 1 && <span class="tag-note"> · główna</span>}</li>
+          ))}
+        </ul>
+      </dd>
       <dt>Finansowanie</dt><dd>{own.fundingModel.map((f) => fundingLabel[f]).join(' · ')}</dd>
     </dl>
     <h3 class="sub">Łańcuch własności</h3>

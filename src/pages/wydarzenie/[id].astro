@@ -159,6 +159,7 @@ const ownTotal = e.ownership.reduce((n, [, v]) => n + v, 0);
 
       <section class="panel">
         <h2>Własność redakcji</h2>
+        <p class="muted small">Każda redakcja liczona raz, według głównej kategorii własności.</p>
         <ul class="own">
           {e.ownership.map(([k, v]) => (
             <li>
