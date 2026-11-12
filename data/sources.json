@@ -674,5 +674,32 @@
     "date": "2026-05-29",
     "accessed": "2026-11-12",
     "type": "register"
+  },
+  {
+    "id": "fratria-sf-2024",
+    "title": "Fratria sp. z o.o. – sprawozdanie finansowe za 2024 r., nota 21 (struktura przychodów): przychody netto ze sprzedaży 27 036 858 zł, w tym usługi reklamowe 18 532 152 zł, sprzedaż tytułów prasowych 6 952 199 zł, e-gazety i wydania cyfrowe 698 501 zł (razem sprzedaż do odbiorców 28,3%), pozostałe 854 006 zł",
+    "publisher": "Repozytorium Dokumentów Finansowych (KRS 0000429681)",
+    "url": "https://rdf-przegladarka.ms.gov.pl/",
+    "date": "2025-04-09",
+    "accessed": "2026-11-12",
+    "type": "register"
+  },
+  {
+    "id": "republika-sf-2025",
+    "title": "Telewizja Republika S.A. – sprawozdanie finansowe za 2025 r.: przychody netto ze sprzedaży usług 57 236 934 zł, pozostałe przychody operacyjne 55 563 364 zł (49,3% przychodów ogółem), przychody finansowe 0 zł; strata netto 549 370 zł",
+    "publisher": "Repozytorium Dokumentów Finansowych (KRS 0000446368)",
+    "url": "https://rdf-przegladarka.ms.gov.pl/",
+    "date": "2026-06-08",
+    "accessed": "2026-11-12",
+    "type": "register"
+  },
+  {
+    "id": "wirtualnemedia-republika-2025",
+    "title": "Republika zebrała 21 mln więcej od widzów. Bez ich wpłat byłaby potężna strata (pozostałe przychody operacyjne 55,56 mln zł „prawie w całości” to darowizny)",
+    "publisher": "wirtualnemedia.pl",
+    "url": "https://www.wirtualnemedia.pl/telewizja-republika-ile-zarabia-z-reklam-wplaty-od-widzow-tomasz-sakiewicz,7305677522688416a",
+    "date": "2026-07-09",
+    "accessed": "2026-11-12",
+    "type": "press"
   }
 ]

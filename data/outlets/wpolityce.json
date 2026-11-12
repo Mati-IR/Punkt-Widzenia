@@ -40,7 +40,9 @@
   },
   "ownership": {
     "category": "polish-private",
-    "secondaryTags": [],
+    "secondaryTags": [
+      "reader-funded"
+    ],
     "chain": [
       {
         "level": "publisher",
@@ -77,9 +79,9 @@
       "advertising",
       "subscriptions"
     ],
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-12",
   "changelog": [
     {
       "date": "2026-11-08",
@@ -93,6 +95,13 @@
       "change": {
         "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
         "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "change": {
+        "pl": "Kategoria dodatkowa: finansowane przez odbiorców. Sprzedaż tytułów prasowych (6,95 mln zł) oraz e-wydań i wydań cyfrowych (0,70 mln zł) dała w 2024 r. 7,65 mln zł, czyli 28,3% przychodów netto ze sprzedaży wydawcy (próg 25%, metodologia 1.2). Liczymy na poziomie wydawcy: Fratria wydaje kilka tytułów (m.in. tygodnik „Sieci” i portal wPolityce.pl), a sprawozdanie nie podaje danych osobno dla tytułów. Źródło: sprawozdanie finansowe Fratria sp. z o.o. za 2024 r. (nota 21), ostatnie dostępne w Repozytorium Dokumentów Finansowych.",
+        "en": "Secondary category: audience-funded. Press title sales (PLN 6.95m) plus e-editions and digital editions (PLN 0.70m) brought PLN 7.65m in 2024, 28.3% of the publisher's net sales revenue (25% threshold, methodology 1.2). Counted at publisher level: Fratria publishes several titles (incl. Sieci weekly and wPolityce.pl) and the statements do not split revenue by title. Source: Fratria sp. z o.o. 2024 financial statements (note 21), latest available in the court financial-records repository."
       }
     }
   ]
