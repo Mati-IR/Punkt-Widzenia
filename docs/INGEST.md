@@ -1,8 +1,8 @@
 # Headline ingestion
 
-Every 2 hours (and once right after any change to the pipeline is merged to `main`) a GitHub Action (`.github/workflows/ingest.yml`) fetches the latest headlines from all 30 outlets and commits them to the repo. No paid services, no dependencies.
+Every 2 hours (and once right after any change to the pipeline is merged to `master`) a GitHub Action (`.github/workflows/ingest.yml`) fetches the latest headlines from all 30 outlets and commits them to the repo. No paid services, no dependencies.
 
-Since PUN-91 the new headlines go through their own PR into `main` (branch `data/headlines-<time>`). The workflow checks that the PR changes only `data/articles/` and `data/ingest/`, merges it itself (no review, founder decision 2026-11-12), deploys the site and merges `main` into `dev` (`sync-dev.yml`).
+Since PUN-96 the new headlines are committed on a branch `data/headlines-<time>` cut from `master` and go through their own PR into `dev`. The workflow checks that the commit changes only `data/articles/` and `data/ingest/` and merges it itself (no review, founder decision 2026-11-12). Then `promote-data.yml` puts the same commit on `master` through a second automatic PR and deploys the site. See docs/CONTRIBUTING.md.
 
 ## Files
 

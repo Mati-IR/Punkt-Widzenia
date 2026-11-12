@@ -2,7 +2,7 @@
 
 Events are the stories on the home page. Each one has a neutral summary, a left / centre / right framing comparison and a rule that attaches headlines from `data/articles/` to it. Every event on the site carries the label **„Podsumowane przez sztuczną inteligencję”**.
 
-Every 2 hours a Paperclip routine ("AI events routine") opens a task for an agent. The agent follows the procedure below: it reads new headlines, adds new events and extends ongoing ones, and opens a PR into `main` that changes only `data/events/` and merges automatically once CI passes (no review, founder decision PUN-91, 2026-11-12). The merge triggers the Cloudflare build, so new events go live within minutes. Founder decision, PUN-13 / PUN-38 (2026-11-09).
+Every 2 hours a Paperclip routine ("AI events routine") opens a task for an agent. The agent follows the procedure below: it reads new headlines, adds new events and extends ongoing ones, and opens a PR into `dev` that changes only `data/events/` and merges automatically once CI passes (no review, founder decision PUN-91 / PUN-96, 2026-11-12). Then `promote-data.yml` moves it to `master` and deploys the site, so new events go live within minutes. Founder decision, PUN-13 / PUN-38 (2026-11-09).
 
 ## Files
 
@@ -47,11 +47,11 @@ Events with a headline in the last 48 h come first, ranked by number of sources;
 
 Keep each run short. Budget: one pass, no web browsing; work only from the headlines in the repo.
 
-1. **Get a clean copy of `main`** in a separate worktree, so the shared project checkout is not touched:
+1. **Get a clean copy of `master`** (production, not `dev`: only data may go to `master` automatically) in a separate worktree, so the shared project checkout is not touched:
    ```sh
    W=../events-routine
-   [ -d "$W" ] || git worktree add --detach "$W" origin/main
-   cd "$W" && git fetch -q origin && git checkout -q --detach origin/main
+   [ -d "$W" ] || git worktree add --detach "$W" origin/master
+   cd "$W" && git fetch -q origin && git checkout -q --detach origin/master
    ```
 2. **Read the input:** `node scripts/events/headlines.mjs` (add `--leads` only if you need more context for a story).
 3. **Decide.**
@@ -68,7 +68,7 @@ Keep each run short. Budget: one pass, no web browsing; work only from the headl
 5. **Check:** `node scripts/events/check.mjs` must print `OK`; for each new event run `node scripts/events/check.mjs --show <id>` and fix the regex if it caught unrelated headlines or missed obvious ones. Each new event must match ≥ 3 outlets.
 6. **Stamp updates:** `node scripts/events/stamp.mjs` (sets `updatedAt` on new and edited events only).
 7. **Move the cursor:** `node scripts/events/headlines.mjs --mark`.
-8. **Publish through a PR into `main`** (PUN-91: nobody pushes to `main` directly). The PR merges by itself once CI passes; the review gate lets it through without labels because the branch is `events/...` and it changes only `data/events/`. Never put `[skip ci]` in the branch commit (CI would not run and the PR would wait forever):
+8. **Publish through a PR into `dev`** (PUN-96: nobody pushes to `dev` or `master` directly). The PR merges by itself once CI passes; the review gate lets it through without labels because the branch is `events/...` and it changes only `data/events/`. Never put `[skip ci]` in the branch commit (CI would not run and the PR would wait forever):
    ```sh
    B="events/$(date -u +%Y%m%d-%H%M)"
    MSG="events: +N new, M updated (AI routine)"   # cursor only: "events: cursor only"
@@ -76,10 +76,10 @@ Keep each run short. Budget: one pass, no web browsing; work only from the headl
    git add data/events
    git commit -m "$MSG"
    git push -q origin "$B"
-   gh pr create --base main --head "$B" --title "$MSG" --body "AI events routine. Changes only data/events/."
-   gh pr merge "$B" --auto --squash --delete-branch   # add --subject "$MSG [skip ci]" when only the cursor moved
+   gh pr create --base dev --head "$B" --title "$MSG" --body "AI events routine. Changes only data/events/."
+   gh pr merge "$B" --auto --merge --delete-branch   # --merge, not --squash: dev and master must share the commit
    ```
-   After the merge, `main` is merged into `dev` automatically (`sync-dev.yml`). If CI fails, the PR stays open: say so in the routine task and do not open another PR for the same run.
+   After the merge into `dev`, `promote-data.yml` puts the same commit on `master` and deploys the site (Actions → "Promote data to master"). If CI or the promotion fails, the PR stays open: say so in the routine task and do not open another PR for the same run.
 9. Close the routine task with one line: new event ids and updated ids, or "no new events".
 
 ## Corrections
