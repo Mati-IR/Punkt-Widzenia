@@ -1,0 +1,37 @@
+# Review gate (PUN-91). Required check on PRs into `dev` and `main`.
+# A PR into `dev` passes when it has BOTH `approved-legal` (Legal analyst) and `approved-cos`
+# (Chief of staff) labels, OR the `approved-founder` label. A PR into `main` (a production
+# release, normally dev -> main) passes only with `approved-founder`.
+# All agents push as the same GitHub account, so this is a process control: labels are added only
+# after a review recorded on the Paperclip issue. See docs/CONTRIBUTING.md.
+name: Review gate
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, labeled, unlabeled, ready_for_review]
+    branches: [dev, main]
+
+permissions:
+  pull-requests: read
+
+jobs:
+  review-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check approval labels
+        env:
+          BASE: ${{ github.base_ref }}
+          LABELS: ${{ toJSON(github.event.pull_request.labels.*.name) }}
+        run: |
+          has() { echo "$LABELS" | grep -q "\"$1\""; }
+          echo "Base: $BASE, labels: $LABELS"
+          if has approved-founder; then echo "Approved by the founder."; exit 0; fi
+          if [ "$BASE" = "main" ]; then
+            echo "::error::PRs into main (production releases) need the approved-founder label."; exit 1
+          fi
+          if has approved-legal && has approved-cos; then echo "Approved by Legal analyst and Chief of staff."; exit 0; fi
+          missing=""
+          has approved-legal || missing="$missing approved-legal"
+          has approved-cos || missing="$missing approved-cos"
+          echo "::error::Missing approval label(s):$missing (or approved-founder)."; exit 1

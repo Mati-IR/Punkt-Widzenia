@@ -1,11 +1,11 @@
-# Checks every PR and push to main: dataset validation + type check + static build.
+# Checks every PR and every push to main or dev: dataset validation + type check + static build.
 # Deployment is done by Cloudflare Pages' own Git integration (no secrets needed here) — see docs/DEPLOY.md.
 name: CI
 
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, dev]
 
 permissions:
   contents: read
