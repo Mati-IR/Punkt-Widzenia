@@ -1218,7 +1218,8 @@
     "summary": [
       "Wicepremier i szef MON Władysław Kosiniak-Kamysz spotkał się w Waszyngtonie z sekretarzem Pete’em Hegsethem; rozmawiano o stałej obecności wojsk USA w Polsce.",
       "Po spotkaniu minister powiedział, że jest „zielone światło” z Pentagonu dla stałej bazy wojsk USA, a ostateczna decyzja ma zapaść w grudniu.",
-      "Według Radia ZET Hegseth nazwał Polskę „wzorem do naśladowania dla innych sojuszników”."
+      "Według Radia ZET Hegseth nazwał Polskę „wzorem do naśladowania dla innych sojuszników”.",
+      "Wiceministra obrony Magdalena Sobkowiak-Czarnecka powiedziała, że decyzji w sprawie stałej bazy należy się spodziewać 3 lub 4 grudnia, a dokument trafia teraz na biurko Donalda Trumpa; wiceszef MON Stanisław Wziątek zaapelował do prezydenta Nawrockiego o zaangażowanie w rozmowy z Trumpem."
     ],
     "framing": {
       "left": "Gazeta.pl i Wyborcza: „Jest zielone światło… Ostateczna decyzja w grudniu”; Onet: „Tylko Niemcy mają taką umowę”; Polityka: „Hegseth mówi niewiele… nad Pentagonem czarne chmury”.",
@@ -1226,13 +1227,14 @@
       "right": "Rzeczpospolita: „Jest zielone światło z Pentagonu”; wPolityce: „Jasny sygnał z USA! »Polska wzorem«”; Republika pisała wcześniej o rozmowach „ws. stałej bazy”."
     },
     "match": {
-      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA",
+      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA|stałej bazy USA w Polsce|bazie USA w Polsce|Baza wojsk USA w Polsce|słowach Pete'a Hegsetha",
       "from": "2026-11-09T16:00:00Z",
-      "to": "2026-11-12T16:00:00Z"
+      "to": "2026-11-15T16:00:00Z",
+      "exclude": "sankcj"
     },
     "extra": [],
     "addedAt": "2026-11-10T15:55:00Z",
-    "updatedAt": "2026-11-11T00:42:37Z"
+    "updatedAt": "2026-11-12T20:41:07Z"
   },
   {
     "id": "debata-dostep-do-broni-po-zamachu",
@@ -2048,5 +2050,59 @@
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-12T18:42:38Z"
+  },
+  {
+    "id": "prokuratura-przesluchanie-nawrockiego-kawalerka",
+    "title": "Prokuratura chce przesłuchać prezydenta Nawrockiego jako świadka w sprawie kawalerki pana Jerzego",
+    "date": "2026-11-12",
+    "location": "Gdańsk",
+    "tags": [
+      "Prokuratura",
+      "Prezydent"
+    ],
+    "summary": [
+      "Według Onetu Prokuratura Rejonowa Gdańsk Śródmieście uznała za zasadne przesłuchanie prezydenta Karola Nawrockiego w charakterze świadka.",
+      "Śledztwo dotyczy przejęcia mieszkania (kawalerki) należącego do Jerzego Ż.",
+      "Według Rzeczpospolitej i RMF FM pismo w tej sprawie trafiło już do Kancelarii Prezydenta."
+    ],
+    "framing": {
+      "left": "Onet: „Zwrot w sprawie kawalerki pana Jerzego”; Gazeta.pl i Wyborcza: „Karol Nawrocki ma zostać przesłuchany”; WP: „Śledczy chcą przesłuchać prezydenta”.",
+      "center": "Fakt: „Zwrot w sprawie kawalerki pana Jerzego”; RMF FM: „Pismo do kancelarii prezydenta”; Radio ZET i Kanał Zero: „Chcą przesłuchać prezydenta”.",
+      "right": "Rzeczpospolita: „Karol Nawrocki ma być przesłuchany”. Brak innych publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "kawalerw*|przesłuchać (prezydenta|Nawrockiego)",
+      "from": "2026-11-12T14:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T20:40:55Z",
+    "updatedAt": "2026-11-12T20:40:55Z"
+  },
+  {
+    "id": "swieczkowski-nbp-blokada-kont-tk",
+    "title": "Święczkowski prosi prezesa NBP o zablokowanie rachunków Trybunału Konstytucyjnego",
+    "date": "2026-11-12",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny",
+      "NBP"
+    ],
+    "summary": [
+      "Bogdan Święczkowski wysłał do prezesa NBP Adama Glapińskiego pismo z żądaniem zablokowania dostępu do rachunków bankowych Trybunału Konstytucyjnego osobom, które uważa za nieuprawnione.",
+      "Według Gazeta.pl dołączył uchwałę Sądu Najwyższego, która jego zdaniem potwierdza, że pełni funkcję prezesa TK.",
+      "Według Rzeczpospolitej NBP wstrzymał realizację części operacji na rachunkach Trybunału."
+    ],
+    "framing": {
+      "left": "Onet: „Chce odciąć Trybunał Konstytucyjny od pieniędzy”; Gazeta.pl: „Żąda zablokowania kont TK przed »uzurpatorami«”.",
+      "center": "Brak publikacji redakcji centrowych w monitorowanych źródłach.",
+      "right": "Rzeczpospolita: „Święczkowski chce zablokować konta Trybunału Konstytucyjnego. Napisał do Glapińskiego”."
+    },
+    "match": {
+      "include": "prezesa NBP|do Glapińskiego|kontw* (TK|Trybunału)|rachunkw* (bankoww* )?(TK|Trybunału)",
+      "from": "2026-11-12T14:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-12T20:40:55Z",
+    "updatedAt": "2026-11-12T20:40:55Z"
   }
 ]
