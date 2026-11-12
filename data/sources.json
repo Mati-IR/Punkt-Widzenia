@@ -656,5 +656,23 @@
     "date": "2026-09-18",
     "accessed": "2026-11-12",
     "type": "register"
+  },
+  {
+    "id": "agora-szr-2025",
+    "title": "Sprawozdanie Zarządu z działalności Grupy Agora S.A. za rok 2025, rozdz. IV.D (segment Prasa Cyfrowa i Drukowana = Wyborcza sp. z o.o.), tab. 19: przychody segmentu 184,6 mln zł, w tym ze sprzedaży wydawnictw (papierowe i cyfrowe wydania Gazety Wyborczej) 94,8 mln zł (51,4%), z reklam 61,2 mln zł",
+    "publisher": "Agora S.A. – raport roczny (ESPI), 20.03.2026",
+    "url": "https://bonnier.pl/static/att/emitent/2026-03/20260320_073929_1396019651_Skonsolidowane_Sprawozdanie_Zarzadu_Grupa_Agora_2025_pl.xhtml",
+    "date": "2026-03-20",
+    "accessed": "2026-11-12",
+    "type": "register"
+  },
+  {
+    "id": "dorzeczy-sf-2025",
+    "title": "Do Rzeczy S.A. – jednostkowe sprawozdanie finansowe za 2025 r. (raport roczny EBI): przychody netto ze sprzedaży 12 090 573 zł, w tym sprzedaż prasy 8 570 251 zł (70,9%), sprzedaż reklamy 2 578 518 zł, sprzedaż pozostała 941 457 zł",
+    "publisher": "Do Rzeczy S.A. – raport roczny (EBI, NewConnect), 29.05.2026",
+    "url": "https://bonnier.pl/static/att/ebi/2026-05/20260529_131452_0000003074_0000077448.pdf",
+    "date": "2026-05-29",
+    "accessed": "2026-11-12",
+    "type": "register"
   }
 ]

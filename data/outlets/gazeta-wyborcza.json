@@ -39,7 +39,9 @@
   },
   "ownership": {
     "category": "polish-private",
-    "secondaryTags": [],
+    "secondaryTags": [
+      "reader-funded"
+    ],
     "chain": [
       {
         "level": "publisher",
@@ -59,9 +61,9 @@
       "copy-sales",
       "advertising"
     ],
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-12",
   "changelog": [
     {
       "date": "2026-11-08",
@@ -75,6 +77,13 @@
       "change": {
         "pl": "Wersja 0.4.0: publikacja.",
         "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "change": {
+        "pl": "Kategoria dodatkowa: finansowane przez odbiorców. Sprzedaż papierowych i cyfrowych wydań Gazety Wyborczej dała w 2025 r. 94,8 mln zł, czyli 51,4% przychodów segmentu Prasa Cyfrowa i Drukowana (próg 25%, metodologia 1.2). Liczymy na poziomie segmentu, bo raport Agory podaje dane tego tytułu osobno (segment obejmuje Wyborczą sp. z o.o.). Źródło: sprawozdanie zarządu Grupy Agora za 2025 r.",
+        "en": "Secondary category: audience-funded. Print and digital sales of Gazeta Wyborcza brought PLN 94.8m in 2025, 51.4% of the Digital and Print Press segment revenue (25% threshold, methodology 1.2). Counted at segment level because Agora reports the title separately. Source: Agora Group 2025 management report."
       }
     }
   ]
