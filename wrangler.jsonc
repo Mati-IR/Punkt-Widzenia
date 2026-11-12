@@ -14,5 +14,23 @@
   "triggers": {
     "crons": ["17 */2 * * *"]
   },
-  "previews": {}
+  "previews": {},
+  // Matches the dashboard settings so a deploy doesn't reset them: Worker logs on and kept
+  // (so failed cron runs are visible), traces and issue detection off.
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false,
+      "head_sampling_rate": 1,
+      "persist": true
+    },
+    "issue_detection": {
+      "enabled": false
+    }
+  }
 }
