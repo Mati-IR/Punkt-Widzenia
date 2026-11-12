@@ -2,6 +2,8 @@
 
 Every 2 hours (and once right after any change to the pipeline is merged to `main`) a GitHub Action (`.github/workflows/ingest.yml`) fetches the latest headlines from all 30 outlets and commits them to the repo. No paid services, no dependencies.
 
+Since PUN-91 the new headlines go through their own PR into `main` (branch `data/headlines-<time>`). The workflow checks that the PR changes only `data/articles/` and `data/ingest/`, merges it itself (no review, founder decision 2026-11-12), deploys the site and merges `main` into `dev` (`sync-dev.yml`).
+
 ## Files
 
 | Path | Who edits it | What it is |

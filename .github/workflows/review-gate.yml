@@ -1,0 +1,58 @@
+# Review gate (PUN-91). Required check on PRs into `dev` and `main`.
+# A PR into `dev` passes when it has BOTH `approved-legal` (Legal analyst) and `approved-cos`
+# (Chief of staff) labels, OR the `approved-founder` label. A PR into `main` (a production
+# release, normally dev -> main) passes only with `approved-founder`.
+# Exception (founder decision, PUN-91): an AI events routine PR into `main` from a branch
+# `events/...` that changes only files under data/events/ passes without labels; CI must still pass.
+# A PR main -> dev (sync-dev.yml) passes too: main is production, already approved.
+# Headline PRs and sync PRs are opened with the Actions token, so this workflow does not run on them;
+# ingest.yml and sync-dev.yml check them and report `review-gate` as a commit status instead.
+# All agents push as the same GitHub account, so labels are a process control: they are added only
+# after a review recorded on the Paperclip issue. See docs/CONTRIBUTING.md.
+name: Review gate
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, labeled, unlabeled, ready_for_review]
+    branches: [dev, main]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  review-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check approval labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          BASE: ${{ github.base_ref }}
+          HEAD: ${{ github.head_ref }}
+          LABELS: ${{ toJSON(github.event.pull_request.labels.*.name) }}
+        run: |
+          has() { echo "$LABELS" | grep -q "\"$1\""; }
+          echo "Base: $BASE, head: $HEAD, labels: $LABELS"
+          if has approved-founder; then echo "Approved by the founder."; exit 0; fi
+          if [ "$BASE" = "dev" ] && [ "$HEAD" = "main" ] && [ "${{ github.event.pull_request.head.repo.full_name }}" = "$REPO" ]; then
+            echo "Sync of production (main) into dev: already approved."; exit 0
+          fi
+          if [ "$BASE" = "main" ]; then
+            case "$HEAD" in events/*)
+              files=$(gh api --paginate "repos/$REPO/pulls/$PR/files" --jq '.[].filename')
+              echo "Files:"; echo "$files"
+              if [ -n "$files" ] && ! echo "$files" | grep -q -v '^data/events/'; then
+                echo "Events routine PR touching only data/events/: no review needed."; exit 0
+              fi
+              echo "::error::An events/ branch may change only data/events/."; exit 1 ;;
+            esac
+            echo "::error::PRs into main (production releases) need the approved-founder label."; exit 1
+          fi
+          if has approved-legal && has approved-cos; then echo "Approved by Legal analyst and Chief of staff."; exit 0; fi
+          missing=""
+          has approved-legal || missing="$missing approved-legal"
+          has approved-cos || missing="$missing approved-cos"
+          echo "::error::Missing approval label(s):$missing (or approved-founder)."; exit 1

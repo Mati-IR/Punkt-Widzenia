@@ -1,16 +1,19 @@
-# Fetches headlines from every outlet in data/feeds.json every 2 hours and commits
-# them to data/articles/ + the per-source report to data/ingest/health.json. See docs/INGEST.md.
-# Commits carry [skip ci], so they trigger neither CI nor a Cloudflare build. Instead, when a run
-# finds new headlines, the `deploy` job rebuilds the site and deploys it to the Cloudflare Worker
-# (secrets CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, variable SITE_URL; see docs/DEPLOY.md).
-# Without the secrets the deploy job is skipped and ingest works as before.
+# Fetches headlines from every outlet in data/feeds.json every 2 hours. See docs/INGEST.md.
+# New headlines go to `main` through their own PR (branch data/headlines-<time>), which this workflow
+# merges itself once it has checked that the PR touches only data/articles/ and data/ingest/
+# (founder decision, PUN-91). Then `main` is merged into `dev` (sync-dev.yml).
+# The merge commit carries [skip ci], so it triggers neither CI nor a Cloudflare build. Instead the
+# `deploy` job rebuilds the site and deploys it to the Cloudflare Worker (secrets CLOUDFLARE_API_TOKEN
+# + CLOUDFLARE_ACCOUNT_ID, variable SITE_URL; see docs/DEPLOY.md). Without the secrets it is skipped.
+# The rulesets on `main`/`dev` require the checks `build` and `review-gate`. This workflow runs the
+# build and the data-only check itself and reports both as commit statuses (see the merge step).
 name: Ingest headlines
 
 on:
   schedule:
     - cron: '7 */2 * * *' # fallback only: GitHub skips most of these. The punkt-widzenia Worker
                           # starts this workflow every 2 h via workflow_dispatch (docs/DEPLOY.md).
-  push: # run once right after a change to the pipeline lands on main (e.g. merging this PR)
+  push: # run once right after a change to the pipeline lands on main
     branches: [main]
     paths:
       - .github/workflows/ingest.yml
@@ -20,6 +23,8 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
+  statuses: write
 
 concurrency:
   group: ingest
@@ -30,33 +35,77 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     outputs:
-      changed: ${{ steps.commit.outputs.changed }}
+      changed: ${{ steps.merge.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main # always ingest on top of production, whatever branch triggered the run
           fetch-depth: 1
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
       - name: Fetch headlines # no npm install: the script has no dependencies
         run: node scripts/ingest/ingest.mjs
-      - name: Commit new headlines
+      - name: Commit headlines on a PR branch
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A data/articles data/ingest
           if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
-          git commit -q -m "data: headlines $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+          stamp=$(date -u +%Y-%m-%dT%H:%MZ)
+          branch="data/headlines-$(date -u +%Y%m%d-%H%M)"
+          git checkout -q -b "$branch"
+          git commit -q -m "data: headlines $stamp"
+          # Only headline data may go through this automatic path (the review-gate exception).
+          bad=$(git diff --name-only HEAD~1 HEAD | grep -v -E '^data/(articles|ingest)/' || true)
+          if [ -n "$bad" ]; then echo "::error::Headlines PR would touch other files:"; echo "$bad"; exit 1; fi
+          { echo "stamp=$stamp"; echo "branch=$branch"; echo "sha=$(git rev-parse HEAD)"; echo "new=true"; } >> "$GITHUB_OUTPUT"
+      # PRs opened with the Actions token do not start other workflows, so CI does not run on this PR.
+      # This job runs the same build itself and reports the two required checks as commit statuses.
+      - if: steps.commit.outputs.new == 'true'
+        run: npm ci
+      - if: steps.commit.outputs.new == 'true'
+        run: npm run build
+      - name: Open and merge the headlines PR
+        id: merge
+        if: steps.commit.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          STAMP: ${{ steps.commit.outputs.stamp }}
+          BRANCH: ${{ steps.commit.outputs.branch }}
+          SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          git push -q origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" --title "data: headlines $STAMP" \
+            --body "Automatic headlines ingest (only data/articles and data/ingest). Merged by the Ingest workflow, see docs/INGEST.md."
+          gh api -X POST "repos/$REPO/statuses/$SHA" -f state=success -f context=build \
+            -f description="Built by the Ingest workflow" -f target_url="$RUN_URL" >/dev/null
+          gh api -X POST "repos/$REPO/statuses/$SHA" -f state=success -f context=review-gate \
+            -f description="Headlines only (data/articles, data/ingest): no review needed" -f target_url="$RUN_URL" >/dev/null
           for i in 1 2 3; do
-            git pull -q --rebase origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME" && echo "changed=true" >> "$GITHUB_OUTPUT" && exit 0
-            sleep 5
+            if gh pr merge "$BRANCH" --squash --delete-branch --subject "data: headlines $STAMP [skip ci]" --body ""; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            sleep 10
           done
-          echo "Push failed after 3 attempts"; exit 1
+          echo "::error::Could not merge the headlines PR after 3 attempts"; exit 1
+
+  sync-dev:
+    needs: ingest
+    if: needs.ingest.outputs.changed == 'true'
+    uses: ./.github/workflows/sync-dev.yml
+    permissions:
+      contents: write
+      pull-requests: write
+      statuses: write
 
   deploy:
     needs: ingest
-    if: needs.ingest.outputs.changed == 'true' && github.ref_name == 'main'
+    if: needs.ingest.outputs.changed == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     concurrency:
@@ -79,7 +128,7 @@ jobs:
       - uses: actions/checkout@v4
         if: steps.secrets.outputs.ok == 'true'
         with:
-          ref: ${{ github.ref_name }} # the branch tip, which includes the headlines commit just pushed
+          ref: main # the tip of main, which includes the headlines just merged
           fetch-depth: 1
       - uses: actions/setup-node@v4
         if: steps.secrets.outputs.ok == 'true'
