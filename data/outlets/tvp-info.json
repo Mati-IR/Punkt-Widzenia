@@ -80,23 +80,6 @@
     ],
     "asOf": "2026-11-08"
   },
-  "reliability": {
-    "factualRecord": 1,
-    "corrections": 1,
-    "transparency": 1,
-    "total": 3,
-    "label": "mixed",
-    "rationale": {
-      "pl": "Rzetelność faktów: 1 – nadawca publiczny ma ustawowy obowiązek bezstronności; ODIHR stwierdziło jego naruszenie w kampanii 2025. Zaufanie do TVP było historycznie najniższe wśród badanych marek (DNR 2023: 28%). Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: strona TVP podaje spółkę, ale nie znaleziono stopki redakcyjnej TVP Info."
-    },
-    "sourceIds": [
-      "osce-odihr-2025",
-      "demagog-dnr-2023",
-      "tvp-centruminformacji"
-    ],
-    "asOf": "2026-11-08",
-    "contested": true
-  },
   "lastReviewed": "2026-11-08",
   "changelog": [
     {

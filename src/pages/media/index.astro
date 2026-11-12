@@ -14,16 +14,16 @@ const counts = {
 const cell = (c: string, p: string) =>
   outlets.filter((o) => o.data.leaning.classic.value === c && o.data.leaning.polish.value === p);
 ---
-<Base title="Punkt Widzenia" description="Mapa polskich mediów: gdzie stoją politycznie, kto je posiada i na ile są wiarygodne. Każda ocena ze źródłami.">
+<Base title="Punkt Widzenia" description="Mapa polskich mediów: gdzie stoją politycznie i kto je posiada. Każda ocena ze źródłami.">
   <h1>Mapa polskich mediów</h1>
   <p class="lead">
     {outlets.length} redakcji ({counts.mainstream} z głównego nurtu, {counts.independent} niezależnych) na dwóch osiach:
-    klasycznej (lewica–prawica) i polskiej (rząd–opozycja), z informacją o właścicielu i wiarygodności.
+    klasycznej (lewica–prawica) i polskiej (rząd–opozycja), z informacją o właścicielu.
     Każda ocena ma podane źródła — <a href="/metodologia/">zobacz, jak oceniamy</a>.
   </p>
   {isDraft && (
     <p class="notice" role="note">
-      <strong>Wersja wstępna danych:</strong> część ocen jest sporna lub wstępna (oznaczone na kartach) i zostanie uzupełniona w kolejnej wersji.
+      <strong>Wersja wstępna danych:</strong> część ocen jest sporna (oznaczone na kartach) i zostanie uzupełniona w kolejnej wersji.
     </p>
   )}
 

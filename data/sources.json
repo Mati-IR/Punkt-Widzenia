@@ -75,15 +75,6 @@
     "type": "research"
   },
   {
-    "id": "wprost-krrit-2025",
-    "title": "TV Republika na czele niechlubnego zestawienia. KRRiT ujawniła dane (kary nałożone w 2025 r.)",
-    "publisher": "Wprost",
-    "url": "https://www.wprost.pl/12345285",
-    "date": "2026-06-01",
-    "accessed": "2026-11-08",
-    "type": "press"
-  },
-  {
     "id": "eurotopics-gw",
     "title": "euro|topics: Gazeta Wyborcza – profil medium",
     "publisher": "euro|topics",
@@ -213,14 +204,6 @@
     "type": "outlet"
   },
   {
-    "id": "polsat-interia-cbos-2023",
-    "title": "Interia liderem wiarygodności wśród portali w Polsce w 2023 roku według badania CBOS (komunikat wydawcy)",
-    "publisher": "Grupa Polsat Plus",
-    "url": "https://www.polsatmedia.pl/Aktualnosc_6786/Interia-Liderem-Wiarygodnosci-Wsrod-Portali-W-Polsce-W-2023-Roku-Wedlug-Badania-CBOS_1890474/index.html",
-    "accessed": "2026-11-08",
-    "type": "outlet"
-  },
-  {
     "id": "polsat-interia-lider",
     "title": "Grupa Polsat – Interia liderem Internetu (komunikat wydawcy)",
     "publisher": "Grupa Polsat Plus",
@@ -249,14 +232,6 @@
     "title": "TV Republika oazą niezależnych mediów? Sprawdziliśmy jej powiązania (akcjonariat wg KRS z lipca 2023)",
     "publisher": "Money.pl",
     "url": "https://www.money.pl/gospodarka/tv-republika-oaza-niezaleznych-mediow-sprawdzilismy-jej-powiazania-6986411131652864a.html",
-    "accessed": "2026-11-08",
-    "type": "press"
-  },
-  {
-    "id": "moneypl-republika-2025",
-    "title": "55 mln zł od widzów. Tak Telewizja Republika zarabia",
-    "publisher": "Money.pl",
-    "url": "https://www.money.pl/gospodarka/55-mln-zl-od-widzow-tak-telewizja-republika-zarabia-7329625778383008a.html",
     "accessed": "2026-11-08",
     "type": "press"
   },
@@ -415,14 +390,6 @@
     "type": "press"
   },
   {
-    "id": "interia-site",
-    "title": "Interia – serwis",
-    "publisher": "Grupa Interia.pl",
-    "url": "https://www.interia.pl/",
-    "accessed": "2026-11-08",
-    "type": "outlet"
-  },
-  {
     "id": "okopress-karnowscy",
     "title": "Media Karnowskich: optymalizacja podatków (udziałowcy Fratrii)",
     "publisher": "OKO.press",
@@ -437,14 +404,6 @@
     "url": "https://www.money.pl/wiadomosci/bracia-karnowscy.html",
     "accessed": "2026-11-08",
     "type": "press"
-  },
-  {
-    "id": "wpolityce-site",
-    "title": "wPolityce.pl – serwis (redaktor naczelny w stopce)",
-    "publisher": "Fratria",
-    "url": "https://wpolityce.pl/",
-    "accessed": "2026-11-08",
-    "type": "outlet"
   },
   {
     "id": "polityka-redakcja",
@@ -659,33 +618,6 @@
     "title": "Najpopularniejsze stacje radiowe FM 2026 (Radio Track)",
     "publisher": "Antyweb",
     "url": "https://antyweb.pl/najpopularniejsze-stacje-radiowe-fm-2026",
-    "accessed": "2026-11-08",
-    "type": "press"
-  },
-  {
-    "id": "krrit-sprawozdanie-2025",
-    "title": "Sprawozdanie Krajowej Rady Radiofonii i Telewizji z działalności w 2025 roku (druk sejmowy nr 2725; rozdz. 2.1.4: kary i upomnienia; załącznik nr 2: wykaz decyzji o ukaraniu)",
-    "publisher": "Krajowa Rada Radiofonii i Telewizji / Sejm RP",
-    "url": "https://api.sejm.gov.pl/sejm/term10/prints/2725/2725.pdf",
-    "date": "2026-05-29",
-    "accessed": "2026-11-08",
-    "type": "regulator"
-  },
-  {
-    "id": "demagog-republika-2024",
-    "title": "Prawdziwe polskie wiadomości, czyli jak Republika i wPolsce24 opowiadają o świecie. Raport Demagoga (próbka: październik 2024)",
-    "publisher": "Stowarzyszenie Demagog",
-    "url": "https://demagog.org.pl/analizy_i_raporty/prawdziwe-polskie-wiadomosci-czyli-jak-republika-i-wpolsce24-opowiadaja-o-swiecie-raport-demagoga/",
-    "date": "2024-11-21",
-    "accessed": "2026-11-08",
-    "type": "factcheck"
-  },
-  {
-    "id": "wprost-zero-schnepf-2026",
-    "title": "Burza wokół Wysockiej-Schnepf i Stanowskiego. Sąd nie miał wątpliwości (Sąd Apelacyjny w Warszawie oddala zażalenie na zabezpieczenie)",
-    "publisher": "Wprost",
-    "url": "https://www.wprost.pl/12302442",
-    "date": "2026-04-14",
     "accessed": "2026-11-08",
     "type": "press"
   }

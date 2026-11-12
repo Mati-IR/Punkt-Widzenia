@@ -62,22 +62,6 @@
     ],
     "asOf": "2026-11-08"
   },
-  "reliability": {
-    "factualRecord": 2,
-    "corrections": 1,
-    "transparency": 2,
-    "total": 5,
-    "label": "high",
-    "rationale": {
-      "pl": "Demagog (kwiecień 2026) wskazał nagłówki „Do Rzeczy”, które przedstawiały jego oceny w sposób publicystyczny i sugerowały inną wymowę fact-checków, ale nie wykazał fałszywych informacji faktograficznych. Nie znaleziono przegranych procesów ani stanowisk Rady Etyki Mediów z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podany wydawca i redaktor naczelny."
-    },
-    "sourceIds": [
-      "dorzeczy-onas",
-      "demagog-media-2026"
-    ],
-    "asOf": "2026-11-08",
-    "contested": false
-  },
   "lastReviewed": "2026-11-08",
   "changelog": [
     {
@@ -90,15 +74,8 @@
     {
       "date": "2026-11-08",
       "change": {
-        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
         "en": "v0.4.0: founder decisions applied."
-      }
-    },
-    {
-      "date": "2026-11-08",
-      "change": {
-        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (Demagog 2026); usunięto oznaczenie „wstępna”.",
-        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
       }
     }
   ]

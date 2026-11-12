@@ -1,13 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import { Content } from '../data/methodology.md';
-import { CLASSIC, POLISH, OWNERSHIP, RELIABILITY } from '../lib/dataset';
+import { CLASSIC, POLISH, OWNERSHIP } from '../lib/dataset';
 import { meta } from '../lib/data';
-import { classicLabel, polishLabel, ownershipLabel, reliabilityLabel } from '../lib/labels';
+import { classicLabel, polishLabel, ownershipLabel } from '../lib/labels';
 ---
-<Base title="Metodologia" description="Jak Punkt Widzenia ocenia orientację polityczną, własność i wiarygodność polskich mediów.">
+<Base title="Metodologia" description="Jak Punkt Widzenia ocenia orientację polityczną i własność polskich mediów.">
   <h1>Metodologia</h1>
-  <p class="lead">Jak oceniamy media: dwie osie orientacji politycznej, własność i wiarygodność. Każda ocena w katalogu ma podane źródła.</p>
+  <p class="lead">Jak oceniamy media: dwie osie orientacji politycznej i własność. Każda ocena w katalogu ma podane źródła.</p>
 
   <div class="prose">
     <Content />
@@ -17,7 +17,6 @@ import { classicLabel, polishLabel, ownershipLabel, reliabilityLabel } from '../
       <dt>Lewica–prawica</dt><dd>{CLASSIC.map((v) => classicLabel[v]).join(' · ')}</dd>
       <dt>Rząd–opozycja</dt><dd>{POLISH.map((v) => polishLabel[v]).join(' · ')}</dd>
       <dt>Własność</dt><dd>{OWNERSHIP.map((v) => ownershipLabel[v]).join(' · ')}</dd>
-      <dt>Wiarygodność</dt><dd>{RELIABILITY.map((v) => reliabilityLabel[v]).join(' · ')}</dd>
     </dl>
     <p class="meta">Wersja metodologii: {meta.methodologyVersion}. Wersja danych: {meta.datasetVersion} (aktualizacja {meta.updated}).</p>
 

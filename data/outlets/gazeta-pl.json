@@ -57,22 +57,6 @@
     ],
     "asOf": "2026-11-08"
   },
-  "reliability": {
-    "factualRecord": 2,
-    "corrections": 1,
-    "transparency": 1,
-    "total": 4,
-    "label": "mixed",
-    "rationale": {
-      "pl": "W sprawdzonych źródłach (Demagog, sprawozdanie KRRiT za 2025 r., wyszukiwanie orzeczeń) nie znaleziono udokumentowanych powtarzających się fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podany wydawca; nie znaleziono stopki redakcyjnej z redaktorem naczelnym."
-    },
-    "sourceIds": [
-      "gazetapl-site"
-    ],
-    "asOf": "2026-11-08",
-    "contested": false,
-    "provisional": true
-  },
   "lastReviewed": "2026-11-08",
   "changelog": [
     {
@@ -85,15 +69,8 @@
     {
       "date": "2026-11-08",
       "change": {
-        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
         "en": "v0.4.0: founder decisions applied."
-      }
-    },
-    {
-      "date": "2026-11-08",
-      "change": {
-        "pl": "Wersja 0.5.0: przegląd fact-checkerów, KRRiT, Rady Etyki Mediów i orzeczeń nie przyniósł źródła zewnętrznego dotyczącego tej redakcji; ocena pozostaje wstępna.",
-        "en": "v0.5.0: fact-check sweep found no outlet-specific external source; rating stays provisional."
       }
     }
   ]
