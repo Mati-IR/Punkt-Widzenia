@@ -46,21 +46,30 @@
   },
   "ownership": {
     "category": "reader-funded",
-    "secondaryTags": [],
+    "secondaryTags": [
+      "polish-private"
+    ],
     "chain": [
       {
         "level": "publisher",
         "name": "357 sp. z o.o.",
         "country": "PL",
-        "sourceId": "radio357-onas"
+        "sourceId": "krs-357-2026"
+      },
+      {
+        "level": "owner",
+        "name": "Pięć osób fizycznych (twórcy radia), bezpośrednio i przez Radio 357 sp. z o.o.",
+        "country": "PL",
+        "share": 100,
+        "sourceId": "krs-357-2026"
       }
     ],
     "fundingModel": [
       "crowdfunding"
     ],
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-12",
   "changelog": [
     {
       "date": "2026-11-08",
@@ -74,6 +83,13 @@
       "change": {
         "pl": "Wersja 0.4.0: publikacja.",
         "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "change": {
+        "pl": "Kategoria dodatkowa: polskie prywatne. Według KRS 100% udziałów wydawcy (357 sp. z o.o., KRS 0000862598) mają osoby fizyczne: pięciu wspólników po 16,7% bezpośrednio, a 16,7% przez Radio 357 sp. z o.o. (KRS 0001108981), której wspólnikami są te same osoby. Udziały twórców liczą się jak udziały innych osób prywatnych (decyzja wydawcy serwisu z 12.11.2026, metodologia 1.2). Źródła: KRS (odpisy aktualne), strona „O nas”.",
+        "en": "Secondary category: Polish private. The company register shows the publisher is 100% owned by five natural persons (the station's founders), directly and via Radio 357 sp. z o.o. Founders' shares count as private ownership (methodology 1.2). Sources: KRS extracts, About page."
       }
     }
   ]

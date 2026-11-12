@@ -647,5 +647,14 @@
     "date": "2026-06-18",
     "accessed": "2026-11-12",
     "type": "register"
+  },
+  {
+    "id": "krs-357-2026",
+    "title": "KRS – odpisy aktualne: 357 sp. z o.o. (KRS 0000862598), 180 udziałów: pięć osób fizycznych po 30 udziałów i Radio 357 sp. z o.o. 30 udziałów; Radio 357 sp. z o.o. (KRS 0001108981), wspólnicy: te same pięć osób fizycznych po 30 udziałów",
+    "publisher": "Ministerstwo Sprawiedliwości – Krajowy Rejestr Sądowy",
+    "url": "https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/0000862598?rejestr=P&format=json",
+    "date": "2026-09-18",
+    "accessed": "2026-11-12",
+    "type": "register"
   }
 ]

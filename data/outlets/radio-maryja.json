@@ -64,9 +64,9 @@
     "fundingModel": [
       "donations"
     ],
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-12",
   "changelog": [
     {
       "date": "2026-11-08",
@@ -80,6 +80,13 @@
       "change": {
         "pl": "Wersja 0.4.0: publikacja.",
         "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "change": {
+        "pl": "Przegląd kategorii dodatkowych (metodologia 1.2): bez zmian. Radio utrzymuje się z darowizn słuchaczy, ale Zgromadzenie Redemptorystów nie publikuje sprawozdań finansowych, więc nie da się ustalić udziału darowizn w przychodach. Brak danych – kategoria „finansowane przez odbiorców” nie jest przypisana.",
+        "en": "Secondary-category review (methodology 1.2): no change. The station relies on listener donations, but the Redemptorists publish no financial statements, so the share cannot be verified; the audience-funded category is not assigned for lack of data."
       }
     }
   ]
