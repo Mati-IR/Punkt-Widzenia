@@ -1,20 +1,20 @@
 # Fetches headlines from every outlet in data/feeds.json every 2 hours. See docs/INGEST.md.
-# New headlines go to `main` through their own PR (branch data/headlines-<time>), which this workflow
-# merges itself once it has checked that the PR touches only data/articles/ and data/ingest/
-# (founder decision, PUN-91). Then `main` is merged into `dev` (sync-dev.yml).
-# The merge commit carries [skip ci], so it triggers neither CI nor a Cloudflare build. Instead the
-# `deploy` job rebuilds the site and deploys it to the Cloudflare Worker (secrets CLOUDFLARE_API_TOKEN
-# + CLOUDFLARE_ACCOUNT_ID, variable SITE_URL; see docs/DEPLOY.md). Without the secrets it is skipped.
-# The rulesets on `main`/`dev` require the checks `build` and `review-gate`. This workflow runs the
-# build and the data-only check itself and reports both as commit statuses (see the merge step).
+# Flow (founder decision, PUN-96): new headlines are committed on a branch data/headlines-<time> cut
+# from `master` and go through their own PR into `dev`, which this workflow merges itself once it has
+# checked that the commit touches only data/articles/ and data/ingest/. Then promote-data.yml opens the
+# same commits as a PR into `master`, merges it automatically and deploys the site to the Cloudflare
+# Worker (secrets CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID, variable SITE_URL; docs/DEPLOY.md).
+# The rulesets on `master`/`dev` require the checks `build` and `review-gate`. PRs opened with the
+# Actions token start no other workflows, so this workflow runs the build and the data-only check
+# itself and reports both as commit statuses (see the merge step).
 name: Ingest headlines
 
 on:
   schedule:
     - cron: '7 */2 * * *' # fallback only: GitHub skips most of these. The punkt-widzenia Worker
                           # starts this workflow every 2 h via workflow_dispatch (docs/DEPLOY.md).
-  push: # run once right after a change to the pipeline lands on main
-    branches: [main]
+  push: # run once right after a change to the pipeline lands on master
+    branches: [master]
     paths:
       - .github/workflows/ingest.yml
       - scripts/ingest/**
@@ -35,11 +35,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     outputs:
-      changed: ${{ steps.merge.outputs.changed }}
+      pr: ${{ steps.merge.outputs.pr }}
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main # always ingest on top of production, whatever branch triggered the run
+          ref: master # always ingest on top of production, whatever branch triggered the run
           fetch-depth: 1
       - uses: actions/setup-node@v4
         with:
@@ -68,7 +68,7 @@ jobs:
         run: npm ci
       - if: steps.commit.outputs.new == 'true'
         run: npm run build
-      - name: Open and merge the headlines PR
+      - name: Open and merge the headlines PR into dev
         id: merge
         if: steps.commit.outputs.new == 'true'
         env:
@@ -80,65 +80,29 @@ jobs:
           SHA: ${{ steps.commit.outputs.sha }}
         run: |
           git push -q origin "$BRANCH"
-          gh pr create --base main --head "$BRANCH" --title "data: headlines $STAMP" \
-            --body "Automatic headlines ingest (only data/articles and data/ingest). Merged by the Ingest workflow, see docs/INGEST.md."
+          url=$(gh pr create --base dev --head "$BRANCH" --title "data: headlines $STAMP" \
+            --body "Automatic headlines ingest (only data/articles and data/ingest). Merged by the Ingest workflow and promoted to master by promote-data.yml, see docs/INGEST.md.")
           gh api -X POST "repos/$REPO/statuses/$SHA" -f state=success -f context=build \
             -f description="Built by the Ingest workflow" -f target_url="$RUN_URL" >/dev/null
           gh api -X POST "repos/$REPO/statuses/$SHA" -f state=success -f context=review-gate \
             -f description="Headlines only (data/articles, data/ingest): no review needed" -f target_url="$RUN_URL" >/dev/null
           for i in 1 2 3; do
-            if gh pr merge "$BRANCH" --squash --delete-branch --subject "data: headlines $STAMP [skip ci]" --body ""; then
-              echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0
+            # A real merge (not squash), so dev and master share the commit (see promote-data.yml).
+            if gh pr merge "$BRANCH" --merge --delete-branch --subject "data: headlines $STAMP [skip ci]" --body ""; then
+              echo "pr=${url##*/}" >> "$GITHUB_OUTPUT"; exit 0
             fi
             sleep 10
           done
           echo "::error::Could not merge the headlines PR after 3 attempts"; exit 1
 
-  sync-dev:
+  promote:
     needs: ingest
-    if: needs.ingest.outputs.changed == 'true'
-    uses: ./.github/workflows/sync-dev.yml
+    if: needs.ingest.outputs.pr != ''
+    uses: ./.github/workflows/promote-data.yml
+    with:
+      pr: ${{ fromJSON(needs.ingest.outputs.pr) }}
+    secrets: inherit
     permissions:
       contents: write
       pull-requests: write
       statuses: write
-
-  deploy:
-    needs: ingest
-    if: needs.ingest.outputs.changed == 'true'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    concurrency:
-      group: deploy-production
-      cancel-in-progress: true
-    env:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      SITE_URL: ${{ vars.SITE_URL }}
-    steps:
-      - name: Check Cloudflare secrets
-        id: secrets
-        run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "::notice::Cloudflare secrets not set, skipping deploy (see docs/DEPLOY.md)."
-            echo "ok=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "ok=true" >> "$GITHUB_OUTPUT"
-          fi
-      - uses: actions/checkout@v4
-        if: steps.secrets.outputs.ok == 'true'
-        with:
-          ref: main # the tip of main, which includes the headlines just merged
-          fetch-depth: 1
-      - uses: actions/setup-node@v4
-        if: steps.secrets.outputs.ok == 'true'
-        with:
-          node-version: 22
-          cache: npm
-      - if: steps.secrets.outputs.ok == 'true'
-        run: npm ci
-      - if: steps.secrets.outputs.ok == 'true'
-        run: npm run build
-      - name: Deploy to Cloudflare Worker
-        if: steps.secrets.outputs.ok == 'true'
-        run: npx --yes wrangler@4 deploy
