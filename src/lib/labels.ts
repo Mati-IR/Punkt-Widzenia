@@ -1,6 +1,6 @@
 // Polish UI labels for dataset enum values (schema v0.2). Labels live in code, not in data.
 import type {
-  CLASSIC, POLISH, OWNERSHIP, SEGMENT, RELIABILITY, TYPE, CHAIN_LEVEL, FUNDING, REACH_METRIC, SOURCE_TYPE,
+  CLASSIC, POLISH, OWNERSHIP, SEGMENT, TYPE, CHAIN_LEVEL, FUNDING, REACH_METRIC, SOURCE_TYPE,
 } from './dataset';
 
 type Labels<T extends readonly string[]> = Record<T[number], string>;
@@ -30,11 +30,6 @@ export const ownershipLabel: Labels<typeof OWNERSHIP> = {
 export const segmentLabel: Labels<typeof SEGMENT> = {
   mainstream: 'Główny nurt',
   independent: 'Niezależne',
-};
-export const reliabilityLabel: Labels<typeof RELIABILITY> = {
-  high: 'Wysoka',
-  mixed: 'Mieszana',
-  low: 'Niska',
 };
 export const typeLabel: Labels<typeof TYPE> = {
   tv: 'Telewizja',
@@ -83,4 +78,3 @@ export const sourceTypeLabel: Labels<typeof SOURCE_TYPE> = {
   sample: 'próbka treści',
   press: 'prasa',
 };
-export const scoreLabel = ['0 — słabo', '1 — częściowo', '2 — dobrze'] as const;

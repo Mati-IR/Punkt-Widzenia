@@ -1,7 +1,7 @@
 import { z } from 'astro/zod';
 
 /**
- * Dataset schema v0.2 (+ reliability.provisional, PUN-8) — agreed with the Media Research Analyst on PUN-6
+ * Dataset schema v0.3 (reliability removed, PUN-77) — v0.2 agreed with the Media Research Analyst on PUN-6
  * (document `dataset-schema` on PUN-2). Field meanings: docs/DATASET.md.
  *
  * Files (repo root):
@@ -45,7 +45,6 @@ export const REACH_METRIC = [
   'patrons',
   'daily-listeners',
 ] as const;
-export const RELIABILITY = ['high', 'mixed', 'low'] as const;
 export const SOURCE_TYPE = ['research', 'regulator', 'factcheck', 'register', 'court', 'outlet', 'sample', 'press'] as const;
 
 // ---- Primitives ------------------------------------------------------------
@@ -57,7 +56,6 @@ const url = z.url();
 /** PL is required, EN optional — the site falls back to PL. */
 const text = z.object({ pl: z.string().min(1), en: z.string().min(1).optional() }).strict();
 const axis = z.number().int().min(-2).max(2);
-const score = z.number().int().min(0).max(2);
 
 const rated = {
   rationale: text,
@@ -146,26 +144,11 @@ export const outletShape = z
         asOf: date,
       })
       .strict(),
-    reliability: z
-      .object({
-        factualRecord: score,
-        corrections: score,
-        transparency: score,
-        total: z.number().int().min(0).max(6),
-        label: z.enum(RELIABILITY),
-        ...rated,
-        /** true = based only on our check of the outlet's own site, no fact-checker review yet (shown as "Wstępna"). */
-        provisional: z.boolean().default(false),
-      })
-      .strict(),
     lastReviewed: date,
     changelog: z.array(z.object({ date, change: text }).strict()).default([]),
   })
   .strict();
 export type Outlet = z.infer<typeof outletShape>;
-
-/** Reliability label from total (methodology: 5–6 high, 3–4 mixed, 0–2 low). */
-export const labelFor = (total: number) => (total >= 5 ? 'high' : total >= 3 ? 'mixed' : 'low');
 
 /**
  * Allowed classic values for an (economic, sociocultural) pair.
@@ -188,7 +171,6 @@ function sourceRefs(o: Outlet): Array<[string, (string | number)[]]> {
   const lists: Array<[string[], (string | number)[]]> = [
     [o.leaning.classic.sourceIds, ['leaning', 'classic', 'sourceIds']],
     [o.leaning.polish.sourceIds, ['leaning', 'polish', 'sourceIds']],
-    [o.reliability.sourceIds, ['reliability', 'sourceIds']],
   ];
   for (const [ids, path] of lists) ids.forEach((s, i) => refs.push([s, [...path, i]]));
   return refs;
@@ -198,13 +180,6 @@ function sourceRefs(o: Outlet): Array<[string, (string | number)[]]> {
 export const outletSchema = (sourceIds: Set<string>) =>
   outletShape.superRefine((o, ctx) => {
     const fail = (path: (string | number)[], message: string) => ctx.addIssue({ code: 'custom', path, message });
-    const r = o.reliability;
-
-    const sum = r.factualRecord + r.corrections + r.transparency;
-    if (r.total !== sum) fail(['reliability', 'total'], `total is ${r.total} but the 3 scores add up to ${sum}`);
-    if (r.label !== labelFor(r.total))
-      fail(['reliability', 'label'], `label "${r.label}" does not match total ${r.total} (expected "${labelFor(r.total)}")`);
-
     const c = o.leaning.classic;
     const { allowed, boundary } = classicFor(c.economic, c.sociocultural);
     if (!allowed.includes(c.value))

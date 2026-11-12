@@ -79,22 +79,6 @@
     ],
     "asOf": "2026-11-08"
   },
-  "reliability": {
-    "factualRecord": 1,
-    "corrections": 1,
-    "transparency": 1,
-    "total": 3,
-    "label": "mixed",
-    "rationale": {
-      "pl": "Rzetelność faktów: 1 – Demagog udokumentował wybiórcze, manipulacyjne przedstawianie wyników fact-checkingu. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: redaktor naczelny podany; brak informacji o właścicielach na stronie."
-    },
-    "sourceIds": [
-      "demagog-media-2026",
-      "wpolityce-site"
-    ],
-    "asOf": "2026-11-08",
-    "contested": false
-  },
   "lastReviewed": "2026-11-08",
   "changelog": [
     {

@@ -83,25 +83,6 @@
     ],
     "asOf": "2026-11-08"
   },
-  "reliability": {
-    "factualRecord": 1,
-    "corrections": 1,
-    "transparency": 1,
-    "total": 3,
-    "label": "mixed",
-    "rationale": {
-      "pl": "Rzetelność faktów: 1. Sprawozdanie KRRiT za 2025 r.: 10 decyzji o karze (157,5 tys. zł), w tym 2 za treści nawołujące do nienawiści (art. 18 ust. 1, decyzje 1/DPz/2025 i 4/DPz/2025, po 40 tys. zł); pozostałe dotyczyły reklam, udogodnień dla osób z niepełnosprawnościami i kwot europejskich. Ponadto 3 upomnienia dotyczące rzetelności i obiektywizmu audycji informacyjnych. Raport Demagoga (listopad 2024, próbka z października 2024) wskazał wprowadzające w błąd treści w programie „Dzisiaj” (m.in. nieprawdziwe twierdzenie o sędziach powołanych w okresie stalinowskim) i nie odnotował korekt. Ocena sporna: dowody mieszczą się między 0 a 1 pkt. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podany zarząd i redaktor naczelny, brak informacji o akcjonariacie na stronie."
-    },
-    "sourceIds": [
-      "wprost-krrit-2025",
-      "tvrepublika-onas",
-      "moneypl-republika-2025",
-      "krrit-sprawozdanie-2025",
-      "demagog-republika-2024"
-    ],
-    "asOf": "2026-11-08",
-    "contested": true
-  },
   "lastReviewed": "2026-11-08",
   "changelog": [
     {
@@ -114,15 +95,8 @@
     {
       "date": "2026-11-08",
       "change": {
-        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); dodatkowa kategoria własności: partyjne (Srebrna); publikacja.",
+        "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); dodatkowa kategoria własności: partyjne (Srebrna); publikacja.",
         "en": "v0.4.0: founder decisions applied."
-      }
-    },
-    {
-      "date": "2026-11-08",
-      "change": {
-        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (KRRiT 2025, Demagog); usunięto oznaczenie „wstępna”.",
-        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
       }
     }
   ]

@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { classicLabel, polishLabel, ownershipLabel, segmentLabel, reliabilityLabel, typeLabel } from '../lib/labels';
+import { classicLabel, polishLabel, ownershipLabel, segmentLabel, typeLabel } from '../lib/labels';
 
 interface Props {
   outlet: CollectionEntry<'outlets'>;
@@ -9,7 +9,7 @@ const { outlet } = Astro.props;
 const d = outlet.data;
 const signed = (n: number) => (n > 0 ? `+${n}` : n < 0 ? `−${-n}` : '0');
 const c = d.leaning.classic;
-const contested = d.leaning.classic.contested || d.leaning.polish.contested || d.reliability.contested;
+const contested = d.leaning.classic.contested || d.leaning.polish.contested;
 ---
 <li
   data-outlet
@@ -32,8 +32,6 @@ const contested = d.leaning.classic.contested || d.leaning.polish.contested || d
       <dd><span class="lean"><span class:list={['dot', d.leaning.classic.value]} aria-hidden="true"></span>{classicLabel[c.value]}</span> <span class="meta" title="Gospodarka / sprawy społeczne (−2…+2)"><span class="sr-only">gospodarka i sprawy społeczne: </span>{signed(c.economic)} / {signed(c.sociocultural)}</span></dd>
       <dt>Rząd–opozycja</dt>
       <dd>{polishLabel[d.leaning.polish.value]}</dd>
-      <dt>Wiarygodność</dt>
-      <dd>{reliabilityLabel[d.reliability.label]} ({d.reliability.total}/6){d.reliability.provisional && <> <span class="tag prov">wstępna</span></>}</dd>
     </dl>
   </article>
 </li>

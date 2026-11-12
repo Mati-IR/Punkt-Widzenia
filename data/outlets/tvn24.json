@@ -66,22 +66,6 @@
     ],
     "asOf": "2026-11-08"
   },
-  "reliability": {
-    "factualRecord": 2,
-    "corrections": 1,
-    "transparency": 1,
-    "total": 4,
-    "label": "mixed",
-    "rationale": {
-      "pl": "Sprawozdanie KRRiT za 2025 r.: wobec TVN S.A. 1 decyzja o karze (20 tys. zł, niezgłoszenie kanału „Superwizjer” w YouTube do wykazu usług – naruszenie formalne, nie dotyczy treści) oraz 2 upomnienia dotyczące rzetelności i obiektywizmu (spółka TVN; sprawozdanie nie wskazuje kanału). Według zestawienia wyroków dołączonego do sprawozdania sądy w 2026 r. uchyliły kary KRRiT za reportaże TVN24 „Siła kłamstwa” (550 tys. zł) i „29 lat bezkarności” (142,8 tys. zł, wyrok nieprawomocny). Fact-checkerzy (Demagog, AFP Sprawdzam, FakeNews.pl) i Rada Etyki Mediów: nie znaleziono wykazanych fałszywych informacji tej redakcji z ostatnich 24 miesięcy (przegląd 2026-11-08). Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: nie znaleziono stopki redakcyjnej ani strony „o nas” TVN24 (strony zwracały błąd 404)."
-    },
-    "sourceIds": [
-      "wprost-krrit-2025",
-      "krrit-sprawozdanie-2025"
-    ],
-    "asOf": "2026-11-08",
-    "contested": false
-  },
   "lastReviewed": "2026-11-08",
   "changelog": [
     {
@@ -94,15 +78,8 @@
     {
       "date": "2026-11-08",
       "change": {
-        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
+        "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); publikacja.",
         "en": "v0.4.0: founder decisions applied."
-      }
-    },
-    {
-      "date": "2026-11-08",
-      "change": {
-        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (KRRiT 2025, wyroki sądów); usunięto oznaczenie „wstępna”.",
-        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
       }
     }
   ]

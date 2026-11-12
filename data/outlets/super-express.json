@@ -64,22 +64,6 @@
     ],
     "asOf": "2026-11-08"
   },
-  "reliability": {
-    "factualRecord": 1,
-    "corrections": 1,
-    "transparency": 2,
-    "total": 4,
-    "label": "mixed",
-    "rationale": {
-      "pl": "Rzetelność faktów: 1. Sprawozdanie KRRiT za 2025 r.: kara 109 tys. zł dla wydawcy (Time S.A., decyzja DMM-116/2025 z 29.04.2025) za treści dyskryminujące ze względu na religię lub przekonania w audycji „Nocna zmiana” w kanale Super Expressu w YouTube oraz upomnienie dotyczące rzetelności i obiektywizmu dla tego kanału. Metodologia wymienia kary KRRiT w przedziale 0 pkt, ale kara nie dotyczyła nieprawdziwych informacji, a decyzje nie dotyczą wydania drukowanego ani se.pl – stąd 1 pkt i status sporny. Fact-checkerzy (Demagog, AFP Sprawdzam, FakeNews.pl): nie znaleziono wykazanych fałszywych informacji z ostatnich 24 miesięcy. Brak opublikowanej polityki korekt na stronie (sprawdzenie 2026-11-08); sprostowania wymagane prawem prasowym. Przejrzystość: podany wydawca, redaktor naczelny i zespół; materiały sponsorowane oznaczone."
-    },
-    "sourceIds": [
-      "se-redakcja",
-      "krrit-sprawozdanie-2025"
-    ],
-    "asOf": "2026-11-08",
-    "contested": true
-  },
   "lastReviewed": "2026-11-08",
   "changelog": [
     {
@@ -92,15 +76,8 @@
     {
       "date": "2026-11-08",
       "change": {
-        "pl": "Wersja 0.4.0: wiarygodność oznaczona jako wstępna; publikacja.",
+        "pl": "Wersja 0.4.0: publikacja.",
         "en": "v0.4.0: founder decisions applied."
-      }
-    },
-    {
-      "date": "2026-11-08",
-      "change": {
-        "pl": "Wersja 0.5.0: wiarygodność – przegląd zewnętrzny (KRRiT 2025): rzetelność faktów 2 → 1, ocena łączna wysoka → mieszana (sporne); usunięto oznaczenie „wstępna”.",
-        "en": "v0.5.0: reliability backed by external sources; provisional flag removed."
       }
     }
   ]
