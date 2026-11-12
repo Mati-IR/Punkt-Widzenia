@@ -39,7 +39,9 @@
   },
   "ownership": {
     "category": "reader-funded",
-    "secondaryTags": [],
+    "secondaryTags": [
+      "state-public"
+    ],
     "chain": [
       {
         "level": "publisher",
@@ -52,9 +54,9 @@
       "donations",
       "grants"
     ],
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-12",
   "changelog": [
     {
       "date": "2026-11-08",
@@ -68,6 +70,13 @@
       "change": {
         "pl": "Wersja 0.4.0: publikacja.",
         "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "change": {
+        "pl": "Kategoria dodatkowa: państwowe / publiczne. W 2025 r. 28,8% przychodów stowarzyszenia pochodziło z budżetu państwa (542 126 zł z 1 883 920 zł; próg 25%, metodologia 1.2). Źródło: sprawozdanie OPP za 2025 r. (baza NIW-CRSO), opublikowane też na stronie Klubu.",
+        "en": "Secondary category: state/public. In 2025, 28.8% of the association's revenue came from the state budget (25% threshold, methodology 1.2). Source: 2025 public-benefit organisation report (NIW-CRSO)."
       }
     }
   ]
