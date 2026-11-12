@@ -55,7 +55,8 @@
   "ownership": {
     "category": "polish-private",
     "secondaryTags": [
-      "party-linked"
+      "party-linked",
+      "reader-funded"
     ],
     "chain": [
       {
@@ -81,9 +82,9 @@
       "donations",
       "advertising"
     ],
-    "asOf": "2026-11-08"
+    "asOf": "2026-11-12"
   },
-  "lastReviewed": "2026-11-08",
+  "lastReviewed": "2026-11-12",
   "changelog": [
     {
       "date": "2026-11-08",
@@ -97,6 +98,13 @@
       "change": {
         "pl": "Wersja 0.4.0: zatwierdzona wartość na osi lewica–prawica (przypadek graniczny); dodatkowa kategoria własności: partyjne (Srebrna); publikacja.",
         "en": "v0.4.0: founder decisions applied."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "change": {
+        "pl": "Kategoria dodatkowa: finansowane przez odbiorców. W 2025 r. pozostałe przychody operacyjne spółki wyniosły 55,56 mln zł, czyli 49,3% wszystkich przychodów (112,80 mln zł; próg 25%, metodologia 1.2). Według wirtualnemedia.pl ta pozycja to prawie w całości darowizny widzów. Sprawozdanie nie wyodrębnia darowizn, ale nawet przy częściowym udziale darowizn próg jest przekroczony. Źródła: sprawozdanie finansowe Telewizji Republika S.A. za 2025 r. (Repozytorium Dokumentów Finansowych), wirtualnemedia.pl (9.07.2026).",
+        "en": "Secondary category: audience-funded. In 2025 the company's other operating income was PLN 55.56m, 49.3% of total revenue (PLN 112.80m; 25% threshold, methodology 1.2). According to wirtualnemedia.pl this line consists almost entirely of viewer donations. The statements do not itemise donations, but the threshold is exceeded even if only part of the line is donations. Sources: Telewizja Republika S.A. 2025 financial statements (court financial-records repository), wirtualnemedia.pl (9 Jul 2026)."
       }
     }
   ]
