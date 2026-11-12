@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import BiasBar from '../components/BiasBar.astro';
 import EventRow from '../components/EventRow.astro';
-import { getEvents, blindspotLabel, fmtDate, FIRST_PAGE, TOP_HOURS, feedPageCount, feedUrl } from '../lib/events';
+import { getEvents, blindspotLabel, createdHtml, FIRST_PAGE, TOP_HOURS, feedPageCount, feedUrl } from '../lib/events';
 
 const events = await getEvents();
 const [hero, ...rest] = events;
@@ -24,6 +24,7 @@ const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
       <h2 id="brief-h" class="col-h">Przegląd dnia</h2>
       <div class="brief brief-card">
         <p class="brief-stats">{recent.length} wydarzeń · {totalArticles} artykułów · {outletsUsed} redakcji · ostatnie {TOP_HOURS} godz.</p>
+        <p class="muted small brief-created"><Fragment set:html={createdHtml(briefing[0])} /></p>
         <h3><a href={`/wydarzenie/${briefing[0].id}/`}>{briefing[0].title}</a></h3>
         <p class="muted">{briefing[0].summary[0]}</p>
         <p class="brief-more">
@@ -35,17 +36,17 @@ const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
         </p>
       </div>
       <h2 class="col-h">Ostatnio aktualizowane</h2>
-      {latest.slice(5, 9).map((e) => <EventRow event={e} compact aiLabel={false} />)}
+      {latest.slice(5, 9).map((e) => <EventRow event={e} compact aiLabel={false} created />)}
     </aside>
 
     <section class="col-main" aria-label="Najważniejsze wydarzenia">
       <a class="hero" href={`/wydarzenie/${hero.id}/`}>
-        <span class="hero-kicker">{hero.location} · {fmtDate(hero.date)} · {hero.sourceCount} źródeł</span>
+        <span class="hero-kicker">{hero.location} · <Fragment set:html={createdHtml(hero)} /> · {hero.sourceCount} źródeł</span>
         <span class="hero-title">{hero.title}</span>
         <BiasBar pct={hero.pct} />
       </a>
       <div id="feed">
-        {main.map((e) => <EventRow event={e} aiLabel={false} />)}
+        {main.map((e) => <EventRow event={e} aiLabel={false} created />)}
       </div>
       {nextFeed && (
         <div class="feed-more" id="feed-more" data-next={nextFeed}>
@@ -63,7 +64,7 @@ const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
       {blindspots.length === 0 && <p class="muted">Brak ślepych plamek w tym zestawie.</p>}
       {blindspots.slice(0, 4).map((e) => (
         <a class:list={['bs-card', e.blindspot]} href={`/wydarzenie/${e.id}/`}>
-          <span class="bs-tag">{blindspotLabel[e.blindspot!]}</span> <span class="muted small">{e.sourceCount} źródeł</span>
+          <span class="bs-tag">{blindspotLabel[e.blindspot!]}</span> <span class="muted small"><Fragment set:html={createdHtml(e)} /> · {e.sourceCount} źródeł</span>
           <span class="bs-card-title">{e.title}</span>
           <BiasBar pct={e.pct} />
         </a>
@@ -80,6 +81,9 @@ const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
 </Base>
 
 <script>
+  import { formatCreated } from '../lib/created';
+  formatCreated(document);
+
   // Infinite scroll: loads the next 8 events from a static /feed/N.json when the "more" button
   // comes into view (or is clicked). No backend; without JS the button simply does nothing.
   const box = document.getElementById('feed-more');
@@ -101,6 +105,7 @@ const nextFeed = feedPageCount(events) > 0 ? feedUrl(1) : null;
         // Skip rows already shown (the site may have been rebuilt between pages).
         const have = new Set([...feed.querySelectorAll<HTMLElement>('[data-id]')].map((el) => el.dataset.id));
         feed.insertAdjacentHTML('beforeend', page.events.filter((e) => !have.has(e.id)).map((e) => e.html).join(''));
+        formatCreated(feed);
         next = page.next;
         status.textContent = next ? '' : 'To już wszystkie wydarzenia z ostatnich 12 miesięcy.';
         if (!next) { btn.hidden = true; io?.disconnect(); }

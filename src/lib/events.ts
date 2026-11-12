@@ -194,13 +194,14 @@ export const biasBarMiniHtml = (pct: Record<Side, number>) =>
 
 /** One event in a list. Used by <EventRow> and by the feed JSON, so server and scroll-loaded rows look the same.
  *  The homepage hides the AI label (founder, PUN-38); the event page still carries it. */
-export function eventRowHtml(e: NewsEvent, compact = false, showAiLabel = true): string {
+export function eventRowHtml(e: NewsEvent, compact = false, showAiLabel = true, showCreated = false): string {
   const d = dominant(e);
   return (
     `<article class="ev-row${compact ? ' compact' : ''}" data-id="${esc(e.id)}">` +
     (compact ? '' : `<p class="kicker">${esc(e.tags.slice(0, 2).join(' · '))}</p>`) +
     `<h3><a href="/wydarzenie/${esc(e.id)}/">${esc(e.title)}</a></h3>` +
     `<div class="ev-meta">${biasBarMiniHtml(e.pct)}` +
+    (showCreated ? createdHtml(e) : '') +
     `<span>${e.pct[d]}% ${sideLabel[d]} · ${e.sourceCount} źródeł · ${e.articleCount} art.</span>` +
     (e.blindspot ? `<span class="bs-badge">${blindspotLabel[e.blindspot]}</span>` : '') +
     `</div>` +
@@ -217,6 +218,20 @@ export const fmtDate = (iso: string) =>
   new Date(iso.length === 10 ? iso + 'T12:00:00Z' : iso).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: tz });
 export const fmtDateTime = (iso: string) =>
   new Date(iso).toLocaleString('pl-PL', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: tz });
+/** When the event was created: the AI routine's addedAt; older events without it fall back to the first matching headline. */
+export const createdAt = (e: NewsEvent) => e.addedAt ?? e.firstSeen;
+
+/**
+ * Creation time on the homepage (founder, PUN-71): time only if created today, otherwise date + time.
+ * "Today" depends on when the reader opens the page, not on the build, so the HTML carries the full
+ * date + time (correct without JS) and the script in Base.astro shortens it to the hour when it is today.
+ */
+export const createdHtml = (e: NewsEvent) => {
+  const iso = createdAt(e);
+  const dateOnly = iso.length === 10;
+  return `<time class="ev-created" datetime="${esc(iso)}"${dateOnly ? '' : ' data-created'}>${esc(dateOnly ? fmtDate(iso) : fmtDateTime(iso))}</time>`;
+};
+
 export const initials = (name: string) =>
   name
     .replace(/[!.]/g, '')
