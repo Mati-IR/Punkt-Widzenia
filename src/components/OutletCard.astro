@@ -9,6 +9,7 @@ const { outlet } = Astro.props;
 const d = outlet.data;
 const signed = (n: number) => (n > 0 ? `+${n}` : n < 0 ? `−${-n}` : '0');
 const c = d.leaning.classic;
+const ownership = [d.ownership.category, ...d.ownership.secondaryTags.filter((t) => t !== d.ownership.category)];
 const contested = d.leaning.classic.contested || d.leaning.polish.contested;
 ---
 <li
@@ -16,7 +17,7 @@ const contested = d.leaning.classic.contested || d.leaning.polish.contested;
   data-name={d.name.toLowerCase()}
   data-classic={d.leaning.classic.value}
   data-polish={d.leaning.polish.value}
-  data-ownership={[d.ownership.category, ...d.ownership.secondaryTags].join(' ')}
+  data-ownership={ownership.join(' ')}
   data-segment={d.segment}
 >
   <article class="card">
@@ -24,7 +25,7 @@ const contested = d.leaning.classic.contested || d.leaning.polish.contested;
     <p class="meta">{typeLabel[d.type]}</p>
     <ul class="tags" aria-label="Cechy">
       <li class:list={['tag', { indep: d.segment === 'independent' }]}>{segmentLabel[d.segment]}</li>
-      <li class="tag">{ownershipLabel[d.ownership.category]}</li>
+      {ownership.map((t, i) => <li class:list={['tag', 'own-cat', { primary: i === 0 }]}><span class="sr-only">{i === 0 ? 'Własność (główna): ' : 'Własność: '}</span>{ownershipLabel[t]}</li>)}
       {contested && <li class="tag warn">Sporne</li>}
     </ul>
     <dl class="kv">
