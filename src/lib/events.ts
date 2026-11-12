@@ -5,7 +5,7 @@
 // time window, plus hand-picked `extra` links. Matching lives in scripts/events/lib.mjs so the
 // routine's scripts see exactly what the site shows.
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { EVENTS_FILE, readJson, loadArticles, matchArticles, retained, validateEvents } from '../../scripts/events/lib.mjs';
+import { EVENTS_FILE, readJson, loadArticles, matchArticles, retained, validateEvents, lastUpdated } from '../../scripts/events/lib.mjs';
 
 export type Side = 'left' | 'center' | 'right';
 export type Camp = 'gov' | 'mixed' | 'opp';
@@ -146,6 +146,12 @@ async function build(): Promise<NewsEvent[]> {
 
   return rank(events);
 }
+
+/**
+ * When the site's content last changed (ISO, UTC; null if no data): newest headline fetch or
+ * event add/update among what the site shows. Computed from the data, never the build time (PUN-88).
+ */
+export const getLastUpdated = (): string | null => lastUpdated(retained(readJson(EVENTS_FILE)), loadArticles());
 
 /** Events active in the last TOP_HOURS (before the newest headline) lead the front page. */
 export const TOP_HOURS = 48;

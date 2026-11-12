@@ -39,6 +39,21 @@ export const retained = (events, now = Date.now()) => {
 export const visibleContent = (e) =>
   JSON.stringify([e.title, e.date, e.location, e.tags, e.summary, e.framing]);
 
+/**
+ * When the site's content last changed (ISO, UTC), or null if there is no timestamp at all:
+ * the newest of every headline's `fetchedAt` and every event's `updatedAt ?? addedAt` (PUN-88).
+ * Deliberately not the build time: a rebuild without new data must not move it.
+ * Compared as instants, not strings, because the files mix "…:00Z" and "…:00.000Z".
+ */
+export function lastUpdated(events, articles) {
+  let max = -Infinity; // a loop, not Math.max(...): a year of headlines is too many arguments
+  for (const t of [...articles.map((a) => a.fetchedAt), ...events.map((e) => e.updatedAt ?? e.addedAt)]) {
+    const ms = t ? Date.parse(t) : NaN;
+    if (ms > max) max = ms;
+  }
+  return max > -Infinity ? new Date(max).toISOString() : null;
+}
+
 /** Returns a list of problems (empty = valid). */
 // Extremist labels are claims, not facts – on BOTH sides, treated identically:
 //   right: "skrajna prawica", "far-right", "faszyści", "naziści", "prawak"…
