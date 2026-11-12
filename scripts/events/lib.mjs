@@ -40,6 +40,28 @@ export const visibleContent = (e) =>
   JSON.stringify([e.title, e.date, e.location, e.tags, e.summary, e.framing]);
 
 /** Returns a list of problems (empty = valid). */
+// Extremist labels are claims, not facts – on BOTH sides, treated identically:
+//   right: "skrajna prawica", "far-right", "faszyści", "naziści", "prawak"…
+//   left:  "skrajna lewica", "far-left", "komuniści", "marksiści", "bolszewicy", "stalinowcy", "lewak", "komuch"…
+//   either: "ekstremiści", "radykałowie" + side.
+// They may appear in "framing" when attributed to an outlet or person, but not in "title" or "summary"
+// unless the event carries "labelEvidence": a note naming the solid evidence (court ruling, official
+// designation, self-identification – e.g. a party that calls itself communist, or a historical regime).
+const L = '(?<!\\p{L})'; // word start that also works for Polish letters (\b is ASCII-only)
+export const EXTREMIST_LABEL = new RegExp(
+  [
+    `(skrajn\\p{L}*|ultra-?|radykaln\\p{L}*)\\s*-?\\s*(prawic\\p{L}*|lewic\\p{L}*)`,
+    `${L}(far|extreme)[- ](right|left)`,
+    // right-wing labels
+    `${L}faszy\\p{L}*|${L}fascis\\p{L}*|${L}(neo-?)?nazi\\p{L}*|${L}hitlerow\\p{L}*|${L}prawa(k|czk|cy(?!\\p{L})|ck)\\p{L}*|${L}faszol\\p{L}*`,
+    // left-wing labels
+    `${L}komuni[sś]\\p{L}*|${L}communis\\p{L}*|${L}komuch\\p{L}*|${L}marksi[sś]\\p{L}*|${L}marxis\\p{L}*|${L}bolszewi\\p{L}*|${L}bolshevi\\p{L}*|${L}stalini\\p{L}*|${L}stalinow\\p{L}*|${L}trock\\p{L}*|${L}trotsky\\p{L}*|${L}lewa(k|ct|ck|cy(?!\\p{L}))\\p{L}*`,
+    // side-neutral
+    `${L}ekstremi\\p{L}*|${L}extremis\\p{L}*`,
+  ].join('|'),
+  'iu',
+);
+
 export function validateEvents(events) {
   const errs = [];
   if (!Array.isArray(events)) return ['events.json must be an array'];
@@ -74,6 +96,11 @@ export function validateEvents(events) {
       bad('"extra" must be a list of {outletId, title, url, publishedAt}');
     if (e.addedAt !== undefined && !ISO.test(e.addedAt)) bad('"addedAt" must be an ISO UTC time');
     if (e.updatedAt !== undefined && !ISO.test(e.updatedAt)) bad('"updatedAt" must be an ISO UTC time');
+    if (e.labelEvidence !== undefined && !str(e.labelEvidence)) bad('"labelEvidence" must be a non-empty note (or left out)');
+    if (!str(e.labelEvidence)) {
+      const hit = [e.title, ...(Array.isArray(e.summary) ? e.summary : [])].find((t) => typeof t === 'string' && EXTREMIST_LABEL.test(t));
+      if (hit) bad(`extremist label "${hit.match(EXTREMIST_LABEL)[0]}" in title/summary – move it to "framing" with attribution, or add "labelEvidence" citing solid proof`);
+    }
     if (e.broad !== undefined && typeof e.broad !== 'boolean') bad('"broad" must be true or false');
   });
   return errs;
