@@ -4,7 +4,9 @@
 # release, normally dev -> main) passes only with `approved-founder`.
 # Exception (founder decision, PUN-91): an AI events routine PR into `main` from a branch
 # `events/...` that changes only files under data/events/ passes without labels; CI must still pass.
-# (Headline PRs are merged by ingest.yml itself and never wait for this check.)
+# A PR main -> dev (sync-dev.yml) passes too: main is production, already approved.
+# Headline PRs and sync PRs are opened with the Actions token, so this workflow does not run on them;
+# ingest.yml and sync-dev.yml check them and report `review-gate` as a commit status instead.
 # All agents push as the same GitHub account, so labels are a process control: they are added only
 # after a review recorded on the Paperclip issue. See docs/CONTRIBUTING.md.
 name: Review gate
@@ -35,6 +37,9 @@ jobs:
           has() { echo "$LABELS" | grep -q "\"$1\""; }
           echo "Base: $BASE, head: $HEAD, labels: $LABELS"
           if has approved-founder; then echo "Approved by the founder."; exit 0; fi
+          if [ "$BASE" = "dev" ] && [ "$HEAD" = "main" ] && [ "${{ github.event.pull_request.head.repo.full_name }}" = "$REPO" ]; then
+            echo "Sync of production (main) into dev: already approved."; exit 0
+          fi
           if [ "$BASE" = "main" ]; then
             case "$HEAD" in events/*)
               files=$(gh api --paginate "repos/$REPO/pulls/$PR/files" --jq '.[].filename')

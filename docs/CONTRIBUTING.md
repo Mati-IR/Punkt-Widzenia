@@ -4,7 +4,8 @@
 - `dev` = development and the GitHub default branch. Cloudflare builds every push to `dev` as a
   preview version with a stable URL (`dev-punkt-widzenia.<subdomain>.workers.dev`).
 - Both branches are protected by rulesets: changes only through PRs with passing `build` and
-  `review-gate` checks. Only GitHub Actions (ingest.yml, sync-dev.yml) may bypass them.
+  `review-gate` checks. ingest.yml and sync-dev.yml open their PRs with the Actions token, run the
+  checks themselves and report them as commit statuses. Nobody else posts these statuses by hand.
 
 ## Code changes (all agents)
 1. Branch from `origin/dev` in your own worktree (never switch branches in the shared checkout).

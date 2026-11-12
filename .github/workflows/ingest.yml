@@ -5,8 +5,8 @@
 # The merge commit carries [skip ci], so it triggers neither CI nor a Cloudflare build. Instead the
 # `deploy` job rebuilds the site and deploys it to the Cloudflare Worker (secrets CLOUDFLARE_API_TOKEN
 # + CLOUDFLARE_ACCOUNT_ID, variable SITE_URL; see docs/DEPLOY.md). Without the secrets it is skipped.
-# Merging past the branch rules of `main` and `dev` works because GitHub Actions is a bypass actor
-# in their rulesets; only this workflow and sync-dev.yml use that.
+# The rulesets on `main`/`dev` require the checks `build` and `review-gate`. This workflow runs the
+# build and the data-only check itself and reports both as commit statuses (see the merge step).
 name: Ingest headlines
 
 on:
@@ -24,6 +24,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  statuses: write
 
 concurrency:
   group: ingest
@@ -43,12 +44,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
       - name: Fetch headlines # no npm install: the script has no dependencies
         run: node scripts/ingest/ingest.mjs
-      - name: Open and merge the headlines PR
-        id: merge
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Commit headlines on a PR branch
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -58,14 +58,36 @@ jobs:
           branch="data/headlines-$(date -u +%Y%m%d-%H%M)"
           git checkout -q -b "$branch"
           git commit -q -m "data: headlines $stamp"
-          # Only headline data may go through this automatic path.
+          # Only headline data may go through this automatic path (the review-gate exception).
           bad=$(git diff --name-only HEAD~1 HEAD | grep -v -E '^data/(articles|ingest)/' || true)
           if [ -n "$bad" ]; then echo "::error::Headlines PR would touch other files:"; echo "$bad"; exit 1; fi
-          git push -q origin "$branch"
-          gh pr create --base main --head "$branch" --title "data: headlines $stamp" \
+          { echo "stamp=$stamp"; echo "branch=$branch"; echo "sha=$(git rev-parse HEAD)"; echo "new=true"; } >> "$GITHUB_OUTPUT"
+      # PRs opened with the Actions token do not start other workflows, so CI does not run on this PR.
+      # This job runs the same build itself and reports the two required checks as commit statuses.
+      - if: steps.commit.outputs.new == 'true'
+        run: npm ci
+      - if: steps.commit.outputs.new == 'true'
+        run: npm run build
+      - name: Open and merge the headlines PR
+        id: merge
+        if: steps.commit.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          STAMP: ${{ steps.commit.outputs.stamp }}
+          BRANCH: ${{ steps.commit.outputs.branch }}
+          SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          git push -q origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" --title "data: headlines $STAMP" \
             --body "Automatic headlines ingest (only data/articles and data/ingest). Merged by the Ingest workflow, see docs/INGEST.md."
+          gh api -X POST "repos/$REPO/statuses/$SHA" -f state=success -f context=build \
+            -f description="Built by the Ingest workflow" -f target_url="$RUN_URL" >/dev/null
+          gh api -X POST "repos/$REPO/statuses/$SHA" -f state=success -f context=review-gate \
+            -f description="Headlines only (data/articles, data/ingest): no review needed" -f target_url="$RUN_URL" >/dev/null
           for i in 1 2 3; do
-            if gh pr merge "$branch" --squash --admin --delete-branch --subject "data: headlines $stamp [skip ci]" --body ""; then
+            if gh pr merge "$BRANCH" --squash --delete-branch --subject "data: headlines $STAMP [skip ci]" --body ""; then
               echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0
             fi
             sleep 10
@@ -78,6 +100,8 @@ jobs:
     uses: ./.github/workflows/sync-dev.yml
     permissions:
       contents: write
+      pull-requests: write
+      statuses: write
 
   deploy:
     needs: ingest
