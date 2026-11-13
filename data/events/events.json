@@ -1624,7 +1624,7 @@
       "right": "Rzeczpospolita: „Kaczyński: będziemy działali, by była jedna lista do Sejmu”; TV Republika: „Kaczyński zapowiada wielki sojusz prawicy”; wPolityce: „Przełomowa zapowiedź prezesa PiS”."
     },
     "match": {
-      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy|koalicji z Braunem|odpowiada Kaczyńskiemu|współpracy z Braunem|o Braunie|pomysłem Kaczyńskiego|reaguje na słowa Jarosława Kaczyńskiego",
+      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy|koalicji z Braunem|odpowiada Kaczyńskiemu|współpracy z Braunem|o Braunie|pomysłem Kaczyńskiego|reaguje na słowa Jarosława Kaczyńskiego|propozycj\\w* Kaczyńskiego",
       "from": "2026-11-11T10:00:00Z",
       "to": "2026-11-15T10:00:00Z"
     },
@@ -2258,19 +2258,20 @@
       "Prokuratura"
     ],
     "summary": [
-      "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika, jednego z policjantów, którzy powstrzymali zamachowca w Krakowie; według Onetu zgłaszający domaga się zbadania jego interwencji (Kanał Zero).",
-      "Na zawiadomienie zareagował wojewoda (Fakt)."
+      "Do Prokuratury Okręgowej w Krakowie wpłynęło zawiadomienie dotyczące Jakuba Kulika, jednego z policjantów, którzy obezwładnili zamachowca w Krakowie; zgłaszający zarzuca mu przekroczenie uprawnień (Polsat News, Onet).",
+      "Według „Super Expressu” zawiadomienie złożył Polak mieszkający za granicą, Robert T.; Fakt podaje, że posługuje się on pseudonimem „Żarówa”.",
+      "Szef MSWiA Marcin Kierwiński skomentował sprawę w mediach społecznościowych („Oby nigdy”); głos zabrał też Roman Giertych (Onet, Fakt)."
     ],
     "framing": {
-      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
-      "center": "Kanał Zero: „Zatrzymał zamachowca w Krakowie. Teraz wpłynęło na niego zawiadomienie”; Fakt: „Donos do prokuratury na bohaterskiego policjanta”; Super Express: „Wymowne reakcje! »Farmazon dla poklasku«”.",
-      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+      "left": "Onet: „Na policjanta z Krakowa wpłynęło zawiadomienie. Szef MSWiA reaguje. »Oby nigdy«”.",
+      "center": "Fakt: „To on złożył donos na bohaterskiego policjanta. Pseudonim »Żarówa«”; Super Express: „To on doniósł na bohaterskiego policjanta z Krakowa”; Polsat News: „Zawiadomienie w sprawie policjanta z Krakowa. Kierwiński komentuje”.",
+      "right": "wPolityce: „Wstrząsające! Nowy donos na policjanta z Krakowa! Wiemy, kto to zrobił”."
     },
     "match": {
-      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)|Złożono zawiadomienie ws\\. interwencji policjanta|reaguje na zawiadomienie przeciwko policjantowi",
+      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)|Złożono zawiadomienie ws\\. interwencji policjanta|reaguje na zawiadomienie przeciwko policjantowi|(złożył donos|doniósł) na (bohaterskiego )?policjanta|Nowy donos na policjanta|zawiadomienie\\W* (Szef MSWiA|Kierwiński)|Zawiadomienie w sprawie policjanta z Krakowa|Na policjanta z Krakowa wpłynęło zawiadomienie|człowieka, który złożył donos",
       "from": "2026-11-13T04:00:00Z"
     },
-    "updatedAt": "2026-11-13T10:50:00Z"
+    "updatedAt": "2026-11-13T14:42:02Z"
   },
   {
     "extra": [],
@@ -2294,7 +2295,7 @@
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "Gibał|Prezydent Krakowa zwrócił się",
+      "include": "Gibał|Prezydent Krakowa zwrócił się|Miasto chce 10 mln zł od rządu",
       "from": "2026-11-13T04:00:00Z"
     },
     "updatedAt": "2026-11-13T10:50:00Z"
@@ -2391,17 +2392,128 @@
     "summary": [
       "Według niemieckiego dziennika „Bild” Rosja przedstawiła w Abu Zabi propozycję wykraczającą poza Ukrainę, m.in. zablokowanie dalszego rozszerzania NATO (Onet, Rzeczpospolita).",
       "Minister obrony Finlandii Antti Häkkänen odrzucił rzekome żądanie cofnięcia członkostwa Finlandii w NATO, nazywając je „skandalicznym” (Onet, Rzeczpospolita).",
-      "Według OKO.press Europejczycy mają zostać dopuszczeni do kolejnej rundy rozmów w sprawie Ukrainy."
+      "Według OKO.press Europejczycy mają zostać dopuszczeni do kolejnej rundy rozmów w sprawie Ukrainy.",
+      "Rzecznik Kremla Dmitrij Pieskow powiedział, że Rosja jest gotowa do dialogu, jeśli Europejczycy wybiorą przedstawiciela do rozmów z Putinem; szefowa unijnej dyplomacji Kaja Kallas: „Rosjanie sobie mnie nie życzą” (Onet, Polsat News, Radio ZET)."
     ],
     "framing": {
-      "left": "Onet: „Wyciekła długa lista żądań Rosji wobec Europy”; OKO.press: „Skończyły się negocjacje o Ukrainie. Zaczynają negocjacje w sprawie Europy”.",
-      "center": "Brak publikacji redakcji centrowych w monitorowanych źródłach.",
-      "right": "Rzeczpospolita: „„Brutalne żądania”. Kontrowersyjna propozycja Kremla dla Europy”."
+      "left": "Onet: „Wyciekła długa lista żądań Rosji wobec Europy”; Wirtualna Polska: „Koniec wojny za ustępstwa NATO? Wyciekł tajny plan Rosji”; Gazeta.pl: „»Bild«: Rosja stawia warunki i chce urządzić Europę po swojemu”.",
+      "center": "Polsat News: „Media: Rosja przedstawiła żądania w sprawie wojny. Dotyczą NATO”; Radio ZET: „Kreml nie pozwoli na udział Europy w negocjacjach?”.",
+      "right": "Rzeczpospolita: „Rosja chce nowego porządku w Europie. Przywódcy odrzucają żądania Putina”."
     },
     "match": {
-      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi",
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek",
       "from": "2026-11-13T08:00:00Z"
     },
-    "updatedAt": "2026-11-13T12:50:00Z"
+    "updatedAt": "2026-11-13T14:42:02Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T14:50:00Z",
+    "id": "dron-lotnisko-chopina-przerwane-ladowanie",
+    "title": "Dron nad Lotniskiem Chopina, samolot z Pragi przerwał lądowanie",
+    "date": "2026-11-13",
+    "location": "Warszawa",
+    "tags": [
+      "Lotnictwo",
+      "Drony"
+    ],
+    "summary": [
+      "W piątek pilot samolotu lecącego z Pragi do Warszawy przerwał lądowanie na Lotnisku Chopina i poderwał maszynę z powrotem w powietrze (Wirtualna Polska, Onet).",
+      "Jako powód media podają drona w pobliżu lotniska (Wirtualna Polska, TVP Info).",
+      "TVP Info przytacza ocenę, że była to „standardowa procedura”."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska: „Przerwali lądowanie z powodu drona. Incydent na warszawskim Okęciu”; Onet: „Chwile grozy w samolocie z Pragi do Warszawy”.",
+      "center": "TVP Info: „Dron na Lotnisku Chopina. Przerwano lądowanie samolotu”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "lądowanie z powodu drona|Dron na Lotnisku Chopina|samolocie z Pragi do Warszawy",
+      "from": "2026-11-13T09:00:00Z"
+    },
+    "updatedAt": "2026-11-13T14:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T14:50:00Z",
+    "id": "zamach-krakow-prokuratura-ustalila-trase-sprawcy",
+    "title": "Zamach w Krakowie: prokuratura ustaliła trasę przejazdu sprawcy",
+    "date": "2026-11-13",
+    "location": "Kraków",
+    "tags": [
+      "Zamach w Krakowie",
+      "Prokuratura"
+    ],
+    "summary": [
+      "Prokuratura ustaliła trasę przejazdu zamachowca, który w centrum Krakowa zabił sześć osób (Rzeczpospolita, Wirtualna Polska, Najwyższy Czas, Gazeta.pl).",
+      "Śledczy nadal szukają nagrań z monitoringu, które mogą dostarczyć szczegółów (Rzeczpospolita, Wirtualna Polska).",
+      "Media podają różną liczbę rannych: 15 (Rzeczpospolita, Wirtualna Polska) lub 16 (Najwyższy Czas)."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska: „Atak w Krakowie. Prokuratura ustaliła trasę sprawcy strzelaniny”; Gazeta.pl: „Nowe ustalenia śledczych po zamachu w Krakowie”.",
+      "center": "Brak publikacji redakcji centrowych w monitorowanych źródłach.",
+      "right": "Rzeczpospolita: „Śledczy ustalili trasę sprawcy, ale nadal szukają ważnych nagrań”; Najwyższy Czas: „Strzelanina w Krakowie. Prokuratura ustaliła trasę przejazdu zamachowca”."
+    },
+    "match": {
+      "include": "trasę (przejazdu )?(sprawcy|zamachowca)",
+      "from": "2026-11-13T09:00:00Z"
+    },
+    "updatedAt": "2026-11-13T14:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T14:50:00Z",
+    "id": "morawiecki-rozwoj-plus-sam-do-wyborow",
+    "title": "Morawiecki: Rozwój Plus pójdzie do wyborów samodzielnie, bez list PiS",
+    "date": "2026-11-13",
+    "location": "Polska",
+    "tags": [
+      "Wybory 2027",
+      "Rozwój Plus",
+      "PiS"
+    ],
+    "summary": [
+      "Lider Rozwoju Plus, były premier Mateusz Morawiecki, zadeklarował: „Idziemy do wyborów sami”, odrzucając start z list PiS (Onet, Wirtualna Polska, RMF FM).",
+      "Według Morawieckiego na polskiej prawicy nie ma obecnie hegemona (Onet).",
+      "Deklaracja padła m.in. w odniesieniu do sondażu Wirtualnej Polski (Wirtualna Polska)."
+    ],
+    "framing": {
+      "left": "Onet: „Mateusz Morawiecki nie chce iść do wyborów z PiS. Zamierza być alternatywą dla dwóch partii”; Wirtualna Polska: „Sondaż WP daje władzę Morawieckiemu. Lider Rozwoju Plus zabrał głos”.",
+      "center": "RMF FM: „Twarda deklaracja Morawieckiego: Idziemy sami”.",
+      "right": "Telewizja Republika: „Morawiecki ogłasza decyzję w sprawie wyborów 2027”."
+    },
+    "match": {
+      "include": "Morawiecki (nie chce iść do wyborów|ogłasza decyzję)|deklaracja Morawieckiego|Sondaż WP daje władzę Morawieckiemu",
+      "from": "2026-11-13T09:00:00Z"
+    },
+    "updatedAt": "2026-11-13T14:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T14:50:00Z",
+    "id": "swieczkowski-ponownie-niewpuszczony-do-tk",
+    "title": "Święczkowski ponownie nie wszedł do siedziby TK, wzywa do opuszczenia budynku",
+    "date": "2026-11-13",
+    "location": "Warszawa",
+    "tags": [
+      "Trybunał Konstytucyjny"
+    ],
+    "summary": [
+      "Prezes TK Bogdan Święczkowski w piątek ponownie nie został wpuszczony do siedziby Trybunału (Telewizja Republika, Radio Maryja, Wirtualna Polska).",
+      "Święczkowski wezwał osoby przebywające w budynku do jego opuszczenia i skrytykował policjantów pod TK; MSWiA zareagowało na jego słowa (Interia, Fakt). Według Wirtualnej Polski zagroził aktem oskarżenia.",
+      "Według Telewizji Republika wydał też zarządzenie dotyczące pracy Kancelarii i Biura Służby Prawnej TK od 16 listopada.",
+      "Zastępująca prezesa sędzia Anna Korwin-Piotrowska w oświadczeniu przekazała, że Trybunał działa i przegląda sto najpilniejszych spraw (TVP Info)."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska: „Kolejna próba wejścia do TK. Święczkowski grozi aktem oskarżenia”.",
+      "center": "Interia: „Święczkowski przed bramą TK. Domagał się jednego”; Fakt: „Święczkowski znów forsował furtkę TK. Oberwało się policji”; Radio ZET: „Zaskakujący ruch Święczkowskiego ws. TK”; TVP Info: „Oświadczenie Korwin-Piotrowskiej: TK przegląda sto najpilniejszych spraw”.",
+      "right": "Telewizja Republika: „Bogdan Święczkowski znów nie został wpuszczony do TK”, „Mocny cios w uzurpatorkę!”; Radio Maryja: „Święczkowski wezwał wszystkich bezprawnie okupujących gmach Trybunału Konstytucyjnego do jego opuszczenia”."
+    },
+    "match": {
+      "include": "Święczkowsk|Korwin-Piotrowsk",
+      "from": "2026-11-13T09:00:00Z",
+      "exclude": "Tajne spotkanie|Przyłapaliśmy"
+    },
+    "updatedAt": "2026-11-13T14:50:00Z"
   }
 ]
