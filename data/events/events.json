@@ -1935,7 +1935,8 @@
       "Według rzecznika prezydenta Karol Nawrocki zaprasza na poniedziałek przedstawicieli środowisk politycznych na spotkanie w sprawie „uzdrowienia sytuacji” w Trybunale Konstytucyjnym; rozmowy ma prowadzić minister Zbigniew Bogucki (Radio Maryja).",
       "Zaproszenia trafiły do klubów parlamentarnych (TVN24); według Gazety.pl dotyczą wszystkich ugrupowań.",
       "Onet pisze, że „nie wszyscy się zjawią”; według Wirtualnej Polski część ugrupowań zapowiedziała bojkot rozmów.",
-      "Według rzecznika prezydenta Rafała Leśkiewicza spotkanie odbędzie się w poniedziałek o godz. 14.00 w Belwederze (Radio Maryja, WP, Onet, TV Republika)."
+      "Według rzecznika prezydenta Rafała Leśkiewicza spotkanie odbędzie się w poniedziałek o godz. 14.00 w Belwederze (Radio Maryja, WP, Onet, TV Republika).",
+      "Premier Donald Tusk zapowiedział, że nie wybiera się na poniedziałkowe spotkanie w Pałacu Prezydenckim, bo „sprawa Trybunału Konstytucyjnego jest rozstrzygnięta” (Najwyższy Czas!, RMF FM, Gazeta.pl)."
     ],
     "framing": {
       "left": "Gazeta.pl: „Nawrocki zaprasza wszystkie ugrupowania na rozmowy o »uzdrowieniu sytuacji« w TK”; Onet: „Nie wszyscy się zjawią”; Wirtualna Polska: „Nie wszyscy chcą rozmawiać z Nawrockim”.",
@@ -1943,10 +1944,10 @@
       "right": "wPolityce: „Pilna inicjatywa prezydenta!”; TV Republika: „Prezydent chce rozmów z politykami ws. uzdrowienia sytuacji wokół TK”."
     },
     "match": {
-      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK|Belweder|Spotkanie w sprawie Trybunału|spotkanie ws\\. TK|rozmowy u prezydenta|Prezydent zaprasza do rozmowy|Prezydent chce rozmawiać o sytuacji w TK|spotkaniu ws\\. TK|zaproszenie prezydenta do rozmowy o TK",
+      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK|Belweder|Spotkanie w sprawie Trybunału|spotkanie ws\\. TK|rozmowy u prezydenta|Prezydent zaprasza do rozmowy|Prezydent chce rozmawiać o sytuacji w TK|spotkaniu ws\\. TK|zaproszenie prezydenta do rozmowy o TK|nie wybiera się do Pałacu|Ja się nie wybieram|Sprawa (TK|Trybunału Konstytucyjnego) jest rozstrzygnięta",
       "from": "2026-11-12T12:00:00Z"
     },
-    "updatedAt": "2026-11-13T10:41:58Z"
+    "updatedAt": "2026-11-13T20:42:04Z"
   },
   {
     "extra": [],
@@ -2026,7 +2027,7 @@
       "right": "Rzeczpospolita: „11 osób zatrzymanych za wpisy chwalące sprawcę zamachu w Krakowie” i „»Zrobię to, co w Krakowie«. Zarzuty dla mężczyzny grożącego zamachem”."
     },
     "match": {
-      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu",
+      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu|Pochwalał zamach",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-13T10:41:58Z"
@@ -2271,7 +2272,7 @@
       "right": "wPolityce: „Wstrząsające! Nowy donos na policjanta z Krakowa! Wiemy, kto to zrobił”."
     },
     "match": {
-      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)|Złożono zawiadomienie ws\\. interwencji policjanta|reaguje na zawiadomienie przeciwko policjantowi|(złożył donos|doniósł) na (bohaterskiego )?policjanta|Nowy donos na policjanta|zawiadomienie\\W* (Szef MSWiA|Kierwiński)|Zawiadomienie w sprawie policjanta z Krakowa|Na policjanta z Krakowa wpłynęło zawiadomienie|człowieka, który złożył donos|broni bohaterskiego policjanta|złożył donos na bohatera|zawiadomienie na bohaterskiego policjanta",
+      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)|Złożono zawiadomienie ws\\. interwencji policjanta|reaguje na zawiadomienie przeciwko policjantowi|(złożył donos|doniósł) na (bohaterskiego )?policjanta|Nowy donos na policjanta|zawiadomienie\\W* (Szef MSWiA|Kierwiński)|Zawiadomienie w sprawie policjanta z Krakowa|Na policjanta z Krakowa wpłynęło zawiadomienie|człowieka, który złożył donos|broni bohaterskiego policjanta|złożył donos na bohatera|zawiadomienie na bohaterskiego policjanta|Doniósł śledczym na policjanta",
       "from": "2026-11-13T04:00:00Z"
     },
     "updatedAt": "2026-11-13T14:42:02Z"
@@ -2404,7 +2405,7 @@
       "right": "Rzeczpospolita: „Rosja chce nowego porządku w Europie. Przywódcy odrzucają żądania Putina”."
     },
     "match": {
-      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami",
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji",
       "from": "2026-11-13T08:00:00Z"
     },
     "updatedAt": "2026-11-13T14:42:02Z"
@@ -2543,7 +2544,7 @@
       "right": "Telewizja Republika: „Cenzury w sieci nie będzie. Prezydent wetuje ustawę o usługach cyfrowych”; Najwyższy Czas: „Prezydent zawetował cenzorską ustawę rządu, która miała wdrożyć DSA”; Rzeczpospolita: „Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy”."
     },
     "match": {
-      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta",
+      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta",
       "from": "2026-11-13T12:00:00Z"
     },
     "extra": [],
@@ -2591,7 +2592,8 @@
     ],
     "summary": [
       "13 listopada przewodniczący Rady Europejskiej António Costa potwierdził, że Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciwko Ukrainie (WP, Radio ZET, Interia).",
-      "Premier Donald Tusk zapowiedział, że Polska będzie odgrywała „kluczową rolę” w rozmowach USA, Ukrainy i Rosji, i powiedział, że dostał gratulacje (Rzeczpospolita, Onet, Gazeta.pl)."
+      "Premier Donald Tusk zapowiedział, że Polska będzie odgrywała „kluczową rolę” w rozmowach USA, Ukrainy i Rosji, i powiedział, że dostał gratulacje (Rzeczpospolita, Onet, Gazeta.pl).",
+      "Według Radia Maryja Polska ma być częścią unijnego formatu E5; Tusk mówi, że „dostał gratulacje” (Radio ZET)."
     ],
     "framing": {
       "left": "TVN24: „Polska wśród krajów UE negocjujących… »Ucieszyłem się«”; Onet: „Jest decyzja”; Gazeta Wyborcza: „Polska wśród państw, które będą negocjować w sprawie Ukrainy”.",
@@ -2599,11 +2601,90 @@
       "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; brak publikacji pozostałych redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą",
+      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5",
       "from": "2026-11-13T14:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-13T18:41:27Z",
-    "updatedAt": "2026-11-13T18:41:27Z"
+    "updatedAt": "2026-11-13T20:42:04Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T20:45:00Z",
+    "id": "darowizny-ofiary-zamachu-krakow-zwolnione-z-podatku",
+    "title": "Darowizny i zbiórki na rzecz ofiar zamachu w Krakowie mają być zwolnione z podatku",
+    "date": "2026-11-13",
+    "location": "Kraków",
+    "tags": [
+      "Zamach w Krakowie",
+      "Podatki"
+    ],
+    "summary": [
+      "Darowizny i zbiórki na rzecz ofiar ataku w Krakowie mają zostać zwolnione z podatku – wynika z projektu rozporządzenia (TVP Info, Radio ZET).",
+      "Zwolnienie ma obejmować także bliskich ofiar ataku (Fakt); informuje o nim również RMF FM."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "TVP Info: „Zbiórki na ofiary ataku w Krakowie. Zaakceptowano zwolnienie z podatku”; Radio ZET: „Darowizny dla ofiar zamachu zwolnione z podatku”; Fakt: „Ważna decyzja ws. darowizn na rzecz ofiar ataku i ich bliskich”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Darowizn\\S* (na rzecz|dla) ofiar|darowizn na rzecz ofiar|Zbiórki na ofiary ataku",
+      "from": "2026-11-13T14:00:00Z"
+    },
+    "updatedAt": "2026-11-13T20:45:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T20:45:00Z",
+    "id": "projekt-ustawy-ceny-gazu-2027",
+    "title": "Rząd przedstawił projekt ustawy utrzymującej maksymalne ceny gazu w 2027 roku",
+    "date": "2026-11-13",
+    "location": "Polska",
+    "tags": [
+      "Energetyka",
+      "Ceny gazu"
+    ],
+    "summary": [
+      "Według projektu rządowej ustawy maksymalna cena gazu dla gospodarstw domowych ma przez cały 2027 rok pozostać taka sama jak obecnie (TVN24, Rzeczpospolita, RMF FM).",
+      "Minister energii Miłosz Motyka szacuje koszt rozwiązania na „około 6 miliardów” zł (Polsat News)."
+    ],
+    "framing": {
+      "left": "TVN24: „Maksymalne ceny gazu. Takie będą stawki w przyszłym roku”.",
+      "center": "RMF FM: „Dobre wieści dla milionów Polaków. Rząd pokazał projekt ustawy ws. cen gazu”; Polsat News: „„Około 6 miliardów”. Minister Miłosz Motyka zapewnia ws. cen energii”.",
+      "right": "Rzeczpospolita: „Ceny gazu zamrożone na kolejny rok. Jest projekt ustawy”."
+    },
+    "match": {
+      "include": "ustawy ws\\. cen gazu|Maksymalne ceny gazu|Ceny gazu zamrożone|Około 6 miliardów",
+      "from": "2026-11-13T14:00:00Z"
+    },
+    "updatedAt": "2026-11-13T20:45:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T20:45:00Z",
+    "id": "wypadek-s12-janowek-wojskowe-ciezarowki",
+    "title": "Zderzenie sześciu pojazdów, w tym wojskowych ciężarówek, na S12 w Janówku; jedna osoba nie żyje",
+    "date": "2026-11-13",
+    "location": "Janówek (woj. lubelskie)",
+    "tags": [
+      "Wypadki",
+      "Drogi"
+    ],
+    "summary": [
+      "Na drodze ekspresowej S12 w Janówku (woj. lubelskie) zderzyło się sześć pojazdów, w tym wojskowe ciężarówki (Rzeczpospolita, Onet, RMF FM).",
+      "Jedna osoba zginęła (Onet, Rzeczpospolita).",
+      "Według Radia ZET ciężarówka najechała na pojazdy, wywołując „efekt domina”; Rzeczpospolita podaje, że przejazd w kierunku Chełma i Zamościa jest wyłączony z ruchu."
+    ],
+    "framing": {
+      "left": "Onet: „Karambol z udziałem wojskowych ciężarówek. Nie żyje jedna osoba”.",
+      "center": "RMF FM: „Tragiczny wypadek na S12 w Janówku”; Radio ZET: „Ciężarówka najechała na pojazdy. „Efekt domina””.",
+      "right": "Rzeczpospolita: „Tragiczny wypadek na S12. Zderzyło się sześć pojazdów, w tym wojskowe ciężarówki”."
+    },
+    "match": {
+      "include": "\\bS12\\b|Janówk|wojskowych ciężarówek|wypadek w Lubelskiem\\. Ciężarówka najechała",
+      "from": "2026-11-13T14:00:00Z"
+    },
+    "updatedAt": "2026-11-13T20:45:00Z"
   }
 ]
