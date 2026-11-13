@@ -2405,7 +2405,7 @@
       "right": "Rzeczpospolita: „Rosja chce nowego porządku w Europie. Przywódcy odrzucają żądania Putina”."
     },
     "match": {
-      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji",
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda",
       "from": "2026-11-13T08:00:00Z"
     },
     "updatedAt": "2026-11-13T14:42:02Z"
@@ -2598,15 +2598,15 @@
     "framing": {
       "left": "TVN24: „Polska wśród krajów UE negocjujących… »Ucieszyłem się«”; Onet: „Jest decyzja”; Gazeta Wyborcza: „Polska wśród państw, które będą negocjować w sprawie Ukrainy”.",
       "center": "TVP Info: „Polska wybrana do rozmów”; Polsat News: „Polska przy stole rozmów pokojowych ws. Ukrainy? Europa zdecydowała”; Interia: „Bruksela ogłasza”.",
-      "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; brak publikacji pozostałych redakcji prawicowych w monitorowanych źródłach."
+      "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; wPolityce: „Będą negocjować koniec wojny. Wiadomo, co z Polską”; Najwyższy Czas: „Polska w rozmowach dotyczących Ukrainy. Tusk: »Dostałem gratulacje od wielu liderów«”."
     },
     "match": {
-      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5",
+      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny",
       "from": "2026-11-13T14:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-13T18:41:27Z",
-    "updatedAt": "2026-11-13T20:42:04Z"
+    "updatedAt": "2026-11-13T22:41:44Z"
   },
   {
     "extra": [],
@@ -2686,5 +2686,32 @@
       "from": "2026-11-13T14:00:00Z"
     },
     "updatedAt": "2026-11-13T20:45:00Z"
+  },
+  {
+    "id": "czarzasty-zawiesil-kusznieruka-nowa-lewica",
+    "title": "Czarzasty zawiesił posła Piotra Kusznieruka w prawach członka Nowej Lewicy, wnioskuje o jego wykluczenie",
+    "date": "2026-11-13",
+    "location": "Warszawa",
+    "tags": [
+      "Polityka",
+      "Nowa Lewica"
+    ],
+    "summary": [
+      "Przewodniczący Nowej Lewicy Włodzimierz Czarzasty zawiesił w piątek posła Piotra Kusznieruka w prawach i obowiązkach członka partii (Radio ZET, WP, Gazeta.pl, Polsat News).",
+      "Czarzasty skierował też do sądu partyjnego wniosek o wykluczenie Kusznieruka; jako powód podano „rażące naruszenie statutu” (Radio ZET, Gazeta Wyborcza).",
+      "Decyzję przekazał rzecznik partii Łukasz Michnik (Polsat News); Kusznieruk skomentował na X: „Tak się stało” (Gazeta Wyborcza)."
+    ],
+    "framing": {
+      "left": "Gazeta Wyborcza: „»Rażące naruszenie statutu«. Czarzasty zawiesił Piotra Kusznieruka i wnioskuje o jego wykluczenie z partii”; WP: „Czarzasty podjął decyzję: Piotr Kusznieruk zawieszony”.",
+      "center": "RMF FM: „Czarzasty nie miał litości”; Polsat News: „Poseł Kusznieruk wykluczony z Nowej Lewicy”; Radio ZET: „Członek Nowej Lewicy zawieszony przez Czarzastego”.",
+      "right": "Telewizja Republika: „Czarzasty nie toleruje porządnych ludzi w swojej partii”."
+    },
+    "match": {
+      "include": "Kusznieruk|Członek Nowej Lewicy zawieszony|Czarzasty nie toleruje porządnych ludzi",
+      "from": "2026-11-13T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-13T22:50:00Z",
+    "updatedAt": "2026-11-13T22:50:00Z"
   }
 ]
