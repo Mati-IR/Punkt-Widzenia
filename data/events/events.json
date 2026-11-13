@@ -1389,7 +1389,8 @@
     ],
     "summary": [
       "Na pomnikach w Warszawie, Poznaniu i Gdyni pojawiły się namalowane napisy „Sława UPA”; policja szuka sprawców.",
-      "Według Onetu i Rzeczpospolitej serię napisów poprzedziło ogłoszenie w sieci oferujące za takie zlecenie 500 dolarów."
+      "Według Onetu i Rzeczpospolitej serię napisów poprzedziło ogłoszenie w sieci oferujące za takie zlecenie 500 dolarów.",
+      "13 listopada policja zatrzymała autora napisów na pomnikach w Trójmieście; według Radia Maryja to 17-letni obywatel Ukrainy (wPolityce: „zatrzymano Ukraińca”)."
     ],
     "framing": {
       "left": "Onet: „»Sława UPA« za 500 dolarów. Dziennikarz odkrył podejrzane zlecenia w Polsce”.",
@@ -1397,12 +1398,13 @@
       "right": "wPolityce: „Skandal! Namalowali na pomnikach hasło »SŁAWA UPA«”; Najwyższy Czas!: „Policja szuka sprawców”; Rzeczpospolita: „Serię napisów na pomnikach poprzedziło ogłoszenie”."
     },
     "match": {
-      "include": "Sława UPA|SŁAWA UPA",
-      "from": "2026-11-10T04:00:00Z"
+      "include": "Sława UPA|SŁAWA UPA|Slawa UPA|Prowokacyjne hasła na pomnikach",
+      "from": "2026-11-10T04:00:00Z",
+      "to": "2026-11-16T18:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-10T16:50:00Z",
-    "updatedAt": "2026-11-10T16:50:00Z"
+    "updatedAt": "2026-11-13T18:41:35Z"
   },
   {
     "id": "kul-zwolnienie-wykladowczyni-komentarz-zamach",
@@ -1624,7 +1626,7 @@
       "right": "Rzeczpospolita: „Kaczyński: będziemy działali, by była jedna lista do Sejmu”; TV Republika: „Kaczyński zapowiada wielki sojusz prawicy”; wPolityce: „Przełomowa zapowiedź prezesa PiS”."
     },
     "match": {
-      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy|koalicji z Braunem|odpowiada Kaczyńskiemu|współpracy z Braunem|o Braunie|pomysłem Kaczyńskiego|reaguje na słowa Jarosława Kaczyńskiego|propozycj\\w* Kaczyńskiego|wspólną listę|pomysł\\w* Kaczyńskiego|kołem ratunkowym",
+      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy|koalicji z Braunem|odpowiada Kaczyńskiemu|współpracy z Braunem|o Braunie|pomysłem Kaczyńskiego|reaguje na słowa Jarosława Kaczyńskiego|propozycj\\w* Kaczyńskiego|wspólną listę|pomysł\\w* Kaczyńskiego|kołem ratunkowym|odrzucają pomysł PiS",
       "from": "2026-11-11T10:00:00Z",
       "to": "2026-11-15T10:00:00Z"
     },
@@ -1876,7 +1878,8 @@
     "summary": [
       "12 listopada po południu mężczyzna oddał strzały z broni hukowej w kierunku policjantów w Krakowie (TVN24, Gazeta.pl, Radio ZET); według Kanału Zero interwencja miała miejsce przy ul. Wielickiej.",
       "Według TVP Info padły dwa strzały; Super Express podaje, że funkcjonariusze odpowiedzieli ogniem, RMF FM – że padły strzały ostrzegawcze.",
-      "Mężczyzna został zatrzymany (Rzeczpospolita, Onet, Interia, Radio Maryja)."
+      "Mężczyzna został zatrzymany (Rzeczpospolita, Onet, Interia, Radio Maryja).",
+      "13 listopada mężczyzna usłyszał zarzuty; według TVN24 i TVP Info był wcześniej skazany za zabójstwo i odbył karę (Radio Maryja pisze o broni gazowej)."
     ],
     "framing": {
       "left": "TVN24 i Gazeta.pl: „Strzały z broni hukowej w kierunku policjantów”; WP: „Strzały w Krakowie. Napastnik jest już w rękach służb”.",
@@ -1884,10 +1887,10 @@
       "right": "wPolityce: „W Krakowie znów padły strzały! Błyskawiczna akcja policji”; TV Republika: „Ponownie strzały do policjantów w Krakowie. Sprawca zatrzymany”."
     },
     "match": {
-      "include": "broni hukowej|Strzały w Krakowie|strzały (do|w kierunku) (krakowskich )?policjantów|Strzelał do policjantów w Krakowie|W Krakowie znów padły strzały|Akcja (policji|służb) w Krakowie|mężczyzna strzelał do policjantów|Padły strzały, policja zatrzymała|Kolejna strzelanina w Krakowie|Zarzuty za strzały w kierunku policji|Strzelał do policjantów na ulicach Krakowa",
+      "include": "broni hukowej|Strzały w Krakowie|strzały (do|w kierunku) (krakowskich )?policjantów|Strzelał do policjantów w Krakowie|W Krakowie znów padły strzały|Akcja (policji|służb) w Krakowie|mężczyzna strzelał do policjantów|Padły strzały, policja zatrzymała|Kolejna strzelanina w Krakowie|Zarzuty za strzały w kierunku policji|Strzelał do policjantów na ulicach Krakowa|Strzelał w stronę policjantów|strzelał z broni gazowej do policjantów|Atak na policjantów w Krakowie|Kto strzelał do krakowskich policjantów",
       "from": "2026-11-12T12:00:00Z"
     },
-    "updatedAt": "2026-11-12T18:42:38Z"
+    "updatedAt": "2026-11-13T18:41:35Z"
   },
   {
     "extra": [],
@@ -1968,7 +1971,7 @@
       "right": "Rzeczpospolita: „Ranni policjanci z Krakowa dostaną po 100 tys. zł”."
     },
     "match": {
-      "include": "zapomog|100 tys\\. zł|Nagroda pieniężna dla bohaterskich|Ranni policjanci|dwóch policjantach z Krakowa|podatek od zrzutki",
+      "include": "zapomog|100 tys\\. zł|Nagroda pieniężna dla bohaterskich|Ranni policjanci|dwóch policjantach z Krakowa|podatek od zrzutki|Darowizny na rzecz rannych",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-12T18:42:38Z"
@@ -2268,7 +2271,7 @@
       "right": "wPolityce: „Wstrząsające! Nowy donos na policjanta z Krakowa! Wiemy, kto to zrobił”."
     },
     "match": {
-      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)|Złożono zawiadomienie ws\\. interwencji policjanta|reaguje na zawiadomienie przeciwko policjantowi|(złożył donos|doniósł) na (bohaterskiego )?policjanta|Nowy donos na policjanta|zawiadomienie\\W* (Szef MSWiA|Kierwiński)|Zawiadomienie w sprawie policjanta z Krakowa|Na policjanta z Krakowa wpłynęło zawiadomienie|człowieka, który złożył donos|broni bohaterskiego policjanta|złożył donos na bohatera",
+      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)|Złożono zawiadomienie ws\\. interwencji policjanta|reaguje na zawiadomienie przeciwko policjantowi|(złożył donos|doniósł) na (bohaterskiego )?policjanta|Nowy donos na policjanta|zawiadomienie\\W* (Szef MSWiA|Kierwiński)|Zawiadomienie w sprawie policjanta z Krakowa|Na policjanta z Krakowa wpłynęło zawiadomienie|człowieka, który złożył donos|broni bohaterskiego policjanta|złożył donos na bohatera|zawiadomienie na bohaterskiego policjanta",
       "from": "2026-11-13T04:00:00Z"
     },
     "updatedAt": "2026-11-13T14:42:02Z"
@@ -2401,7 +2404,7 @@
       "right": "Rzeczpospolita: „Rosja chce nowego porządku w Europie. Przywódcy odrzucają żądania Putina”."
     },
     "match": {
-      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy",
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami",
       "from": "2026-11-13T08:00:00Z"
     },
     "updatedAt": "2026-11-13T14:42:02Z"
@@ -2483,7 +2486,7 @@
       "right": "Telewizja Republika: „Morawiecki ogłasza decyzję w sprawie wyborów 2027”."
     },
     "match": {
-      "include": "Morawiecki (nie chce iść do wyborów|ogłasza decyzję)|deklaracja Morawieckiego|Sondaż WP daje władzę Morawieckiemu|Morawiecki o kluczowej decyzji",
+      "include": "Morawiecki (nie chce iść do wyborów|ogłasza decyzję)|deklaracja Morawieckiego|Sondaż WP daje władzę Morawieckiemu|Morawiecki o kluczowej decyzji|Rozwój Plus w wyborach bez Kaczyńskiego",
       "from": "2026-11-13T09:00:00Z"
     },
     "updatedAt": "2026-11-13T14:50:00Z"
@@ -2531,7 +2534,8 @@
       "Według opisów ustawa miała umożliwić szybsze blokowanie nielegalnych treści w internecie (Rzeczpospolita, Radio ZET).",
       "„Nie będę ulegał żadnym szantażom rządzących, tym bardziej jeśli zakładnikami ma być bezpieczeństwo i wolność” – oświadczył prezydent (Wirtualna Polska, Polsat News).",
       "Prezydent podpisał jednocześnie sześć innych ustaw, m.in. dotyczącą CPK (Onet, Wirtualna Polska).",
-      "Wicepremier Krzysztof Gawkowski ostro skrytykował weto: „Stawiam panu prezydentowi publiczny akt oskarżenia” (Wirtualna Polska, Polsat News, Onet)."
+      "Wicepremier Krzysztof Gawkowski ostro skrytykował weto: „Stawiam panu prezydentowi publiczny akt oskarżenia” (Wirtualna Polska, Polsat News, Onet).",
+      "Wicepremier Krzysztof Gawkowski: „Stawiam prezydentowi publiczny akt oskarżenia”, zapowiada kolejną ustawę (RMF FM, Onet); Tusk: ochrona dzieci przed przestępcami w internecie powinna łączyć ponad podziałami (Gazeta.pl)."
     ],
     "framing": {
       "left": "Onet: „Karol Nawrocki wetuje ustawę o internecie. »Wykorzystano tragedię, by przepchnąć przepisy«”, „Fala komentarzy po wecie prezydenta. »Wstyd i hańba!«”; Wirtualna Polska: „Gawkowski grzmi po wecie Nawrockiego. »Przyzwolenie na hejt, nienawiść i śmierć«”, „»W obronie internetowego ścieku«. Komentarze po wecie prezydenta”.",
@@ -2539,12 +2543,12 @@
       "right": "Telewizja Republika: „Cenzury w sieci nie będzie. Prezydent wetuje ustawę o usługach cyfrowych”; Najwyższy Czas: „Prezydent zawetował cenzorską ustawę rządu, która miała wdrożyć DSA”; Rzeczpospolita: „Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy”."
     },
     "match": {
-      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.",
+      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta",
       "from": "2026-11-13T12:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-13T16:45:00Z",
-    "updatedAt": "2026-11-13T16:45:00Z"
+    "updatedAt": "2026-11-13T18:41:35Z"
   },
   {
     "id": "sanok-referendum-odwolanie-burmistrza",
@@ -2573,5 +2577,33 @@
     "extra": [],
     "addedAt": "2026-11-13T16:45:00Z",
     "updatedAt": "2026-11-13T16:45:00Z"
+  },
+  {
+    "id": "polska-w-negocjacjach-ws-wojny-w-ukrainie",
+    "title": "Polska wśród państw UE, które wezmą udział w negocjacjach ws. zakończenia wojny w Ukrainie",
+    "date": "2026-11-13",
+    "location": "Bruksela",
+    "tags": [
+      "Dyplomacja",
+      "Wojna w Ukrainie",
+      "Rosja",
+      "UE"
+    ],
+    "summary": [
+      "13 listopada przewodniczący Rady Europejskiej António Costa potwierdził, że Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciwko Ukrainie (WP, Radio ZET, Interia).",
+      "Premier Donald Tusk zapowiedział, że Polska będzie odgrywała „kluczową rolę” w rozmowach USA, Ukrainy i Rosji, i powiedział, że dostał gratulacje (Rzeczpospolita, Onet, Gazeta.pl)."
+    ],
+    "framing": {
+      "left": "TVN24: „Polska wśród krajów UE negocjujących… »Ucieszyłem się«”; Onet: „Jest decyzja”; Gazeta Wyborcza: „Polska wśród państw, które będą negocjować w sprawie Ukrainy”.",
+      "center": "TVP Info: „Polska wybrana do rozmów”; Polsat News: „Polska przy stole rozmów pokojowych ws. Ukrainy? Europa zdecydowała”; Interia: „Bruksela ogłasza”.",
+      "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; brak publikacji pozostałych redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą",
+      "from": "2026-11-13T14:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-13T18:41:27Z",
+    "updatedAt": "2026-11-13T18:41:27Z"
   }
 ]
