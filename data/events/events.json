@@ -1227,7 +1227,7 @@
       "right": "Rzeczpospolita: „Jest zielone światło z Pentagonu”; wPolityce: „Jasny sygnał z USA! »Polska wzorem«”; Republika pisała wcześniej o rozmowach „ws. stałej bazy”."
     },
     "match": {
-      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA|stałej bazy USA w Polsce|bazie USA w Polsce|Baza wojsk USA w Polsce|słowach Pete'a Hegsetha",
+      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA|stałej bazy USA w Polsce|bazie USA w Polsce|Baza wojsk USA w Polsce|słowach Pete'a Hegsetha|Stała baza USA w Polsce|bliżej bazy USA w Polsce",
       "from": "2026-11-09T16:00:00Z",
       "to": "2026-11-15T16:00:00Z",
       "exclude": "sankcj"
@@ -1480,7 +1480,7 @@
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "FSB|polską siatkę szpiegowską|polskich szpiegów|Polacy zatrzymani w obwodzie|Warszawa reaguje na doniesienia z Rosji|Kolejna rosyjska prowokacja",
+      "include": "FSB|polską siatkę szpiegowską|polskich szpiegów|Polacy zatrzymani w obwodzie|Warszawa reaguje na doniesienia z Rosji|Kolejna rosyjska prowokacja|ustawkaW* w Królewcu",
       "from": "2026-11-11T00:00:00Z"
     }
   },
@@ -1800,7 +1800,7 @@
       "right": "TV Republika: „Akcja wymierzona w Republikę?”, „Represje za mówienie prawdy?”; Rzeczpospolita: „Policja chce dokumentów od Telewizji Republika. Stacja protestuje”. wPolityce: „Policja żąda nagrań od wPolsce24!”; TV Republika: „Prawnicy wspierają Republikę po wizycie policji”."
     },
     "match": {
-      "include": "Telewizji Republika|(w|na|całą) Republikę|Republiki z zamachu|Sakiewicz|TV Republik|Republice|Republiki|Republikę|wPolsce24|szturm na media|kolejnej (prawicowej stacji|telewizji)|logów emisyjnych|Wolność to nie immunitet|Żurek zabrał głos",
+      "include": "Telewizji Republika|(w|na|całą) Republikę|Republiki z zamachu|Sakiewicz|TV Republik|Republice|Republiki|Republikę|wPolsce24|szturm na media|kolejnej (prawicowej stacji|telewizji)|logów emisyjnych|Wolność to nie immunitet|Żurek zabrał głos|szturmw* na niezależne media|Tak wykorzystują policję|SDP domaga się wyjaśnień",
       "from": "2026-11-12T09:00:00Z"
     },
     "extra": [],
@@ -1853,7 +1853,7 @@
       "right": "Najwyższy Czas: „Szpital w Krasnystawie prosi o ziemniaki i cebulę, a lekarz bierze ponad milion złotych rocznie”."
     },
     "match": {
-      "include": "Krasnyst|Krasnymstaw|warzywa dla szpitala|Szpital prosi (o ziemniaki|mieszkańców o ziemniaki)",
+      "include": "Krasnyst|Krasnymstaw|warzywa dla szpitala|Szpital prosi (o ziemniaki|mieszkańców o ziemniaki)|Szpital prosi rolników o ziemniaki",
       "from": "2026-11-12T06:00:00Z"
     },
     "extra": [],
@@ -2046,7 +2046,7 @@
       "right": "Rzeczpospolita: „Sąd w Dreźnie: niemieckie kontrole na granicy z Polską łamały prawo”."
     },
     "match": {
-      "include": "Kontrole niezgodne z prawem|kontrole na granic\\w* z Polską",
+      "include": "Kontrole niezgodne z prawem|kontrole na granic\\w* z Polską|niemieckich kontroli na granicach",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-12T18:42:38Z"
@@ -2104,5 +2104,34 @@
     "extra": [],
     "addedAt": "2026-11-12T20:40:55Z",
     "updatedAt": "2026-11-12T20:40:55Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T00:41:00Z",
+    "id": "polska-wygrywa-z-rosja-wybory-onz-wspolna-jednostka-kontrolna",
+    "title": "Polska wygrała z Rosją rywalizację o miejsce we Wspólnej Jednostce Kontrolnej ONZ",
+    "date": "2026-11-12",
+    "location": "Nowy Jork",
+    "tags": [
+      "ONZ",
+      "Rosja",
+      "Dyplomacja"
+    ],
+    "summary": [
+      "Decyzją Zgromadzenia Ogólnego ONZ Polska, jako państwo z Grupy Wschodnioeuropejskiej, otrzymała prawo wskazania przedstawiciela do Wspólnej Jednostki Kontrolnej (Onet).",
+      "Według Onetu i RMF FM o wyniku głosowania zdecydował jeden głos, a stanowisko nie przypadnie Rosji.",
+      "MSZ nazwało wynik „historycznym zwycięstwem” (Gazeta.pl).",
+      "Fakt pisze, że Rosja przegrała takie głosowanie po raz pierwszy od wielu lat."
+    ],
+    "framing": {
+      "left": "Gazeta.pl: „MSZ: Polska pokonała Rosję w wyborach na forum ONZ. «Historyczne zwycięstwo»”; Onet: „Zdecydował jeden głos”.",
+      "center": "RMF FM: „Polska wygrywa o głos. Rosja nie dostanie kluczowego stanowiska w ONZ”; Fakt: „Duży sukces Polski w ONZ”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Polska wygrywa o głos|pokonała Rosję w wyborach|sukces Polski w ONZ|Jednostkw* Kontroln",
+      "from": "2026-11-12T16:00:00Z"
+    },
+    "updatedAt": "2026-11-13T00:41:00Z"
   }
 ]
