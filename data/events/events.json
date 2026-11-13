@@ -1227,7 +1227,7 @@
       "right": "Rzeczpospolita: „Jest zielone światło z Pentagonu”; wPolityce: „Jasny sygnał z USA! »Polska wzorem«”; Republika pisała wcześniej o rozmowach „ws. stałej bazy”."
     },
     "match": {
-      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA|stałej bazy USA w Polsce|bazie USA w Polsce|Baza wojsk USA w Polsce|słowach Pete'a Hegsetha|Stała baza USA w Polsce|bliżej bazy USA w Polsce",
+      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA|stałej bazy USA w Polsce|bazie USA w Polsce|Baza wojsk USA w Polsce|słowach Pete'a Hegsetha|Stała baza USA w Polsce|bliżej bazy USA w Polsce|decyzję ws\\. stałej bazy",
       "from": "2026-11-09T16:00:00Z",
       "to": "2026-11-15T16:00:00Z",
       "exclude": "sankcj"
@@ -1931,7 +1931,8 @@
     "summary": [
       "Według rzecznika prezydenta Karol Nawrocki zaprasza na poniedziałek przedstawicieli środowisk politycznych na spotkanie w sprawie „uzdrowienia sytuacji” w Trybunale Konstytucyjnym; rozmowy ma prowadzić minister Zbigniew Bogucki (Radio Maryja).",
       "Zaproszenia trafiły do klubów parlamentarnych (TVN24); według Gazety.pl dotyczą wszystkich ugrupowań.",
-      "Onet pisze, że „nie wszyscy się zjawią”; według Wirtualnej Polski część ugrupowań zapowiedziała bojkot rozmów."
+      "Onet pisze, że „nie wszyscy się zjawią”; według Wirtualnej Polski część ugrupowań zapowiedziała bojkot rozmów.",
+      "Według rzecznika prezydenta Rafała Leśkiewicza spotkanie odbędzie się w poniedziałek o godz. 14.00 w Belwederze (Radio Maryja, WP, Onet, TV Republika)."
     ],
     "framing": {
       "left": "Gazeta.pl: „Nawrocki zaprasza wszystkie ugrupowania na rozmowy o »uzdrowieniu sytuacji« w TK”; Onet: „Nie wszyscy się zjawią”; Wirtualna Polska: „Nie wszyscy chcą rozmawiać z Nawrockim”.",
@@ -1939,10 +1940,10 @@
       "right": "wPolityce: „Pilna inicjatywa prezydenta!”; TV Republika: „Prezydent chce rozmów z politykami ws. uzdrowienia sytuacji wokół TK”."
     },
     "match": {
-      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK",
+      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK|Belweder|Spotkanie w sprawie Trybunału|spotkanie ws\\. TK|rozmowy u prezydenta|Prezydent zaprasza do rozmowy|Prezydent chce rozmawiać o sytuacji w TK",
       "from": "2026-11-12T12:00:00Z"
     },
-    "updatedAt": "2026-11-13T02:40:52Z"
+    "updatedAt": "2026-11-13T10:41:58Z"
   },
   {
     "extra": [],
@@ -2013,7 +2014,8 @@
     "summary": [
       "Zatrzymano 11 osób w związku z wpisami chwalącymi sprawcę zamachu w Krakowie (Rzeczpospolita, TVN24).",
       "68-latek z Elbląga, który w urzędzie miasta groził, że „zrobi to samo, co w Krakowie”, usłyszał zarzuty (WP, Fakt, Rzeczpospolita).",
-      "Według Onetu zarzut usłyszał też poznański influencer, który pochwalał zamach i groził kolejnymi; WP informuje o zatrzymaniu 34-latka, który groził powtórką z Krakowa."
+      "Według Onetu zarzut usłyszał też poznański influencer, który pochwalał zamach i groził kolejnymi; WP informuje o zatrzymaniu 34-latka, który groził powtórką z Krakowa.",
+      "Krakowska policja zatrzymała dwóch kolejnych mężczyzn, 33- i 50-letniego, którzy mieli publicznie pochwalać zamach; jeden miał mówić o zakupie broni (Rzeczpospolita, WP, Radio Maryja)."
     ],
     "framing": {
       "left": "Onet: „Pochwalali zbrodnię w Krakowie. Teraz czekają na nich surowe konsekwencje”; WP: „Groził powtórką z Krakowa”.",
@@ -2021,10 +2023,10 @@
       "right": "Rzeczpospolita: „11 osób zatrzymanych za wpisy chwalące sprawcę zamachu w Krakowie” i „»Zrobię to, co w Krakowie«. Zarzuty dla mężczyzny grożącego zamachem”."
     },
     "match": {
-      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa",
+      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu",
       "from": "2026-11-12T12:00:00Z"
     },
-    "updatedAt": "2026-11-12T18:42:38Z"
+    "updatedAt": "2026-11-13T10:41:58Z"
   },
   {
     "extra": [],
@@ -2184,11 +2186,168 @@
       "right": "Brak publikacji redakcji prawicowych o tym sondażu w monitorowanych źródłach. „Rzeczpospolita” opisała tego dnia inne badanie (Pollster dla „Super Expressu”): „KO umacnia pozycję, PiS ze spadkiem”."
     },
     "match": {
-      "include": "United Surveys|PiS słabnie, KO rośnie|Rośnie przewaga Tuska|Lider sondażu bez zmian|KO wyraźnie przed PiS|Czarny dzień w historii PiS|PiS z historycznym spadkiem",
+      "include": "United Surveys|PiS słabnie, KO rośnie|Rośnie przewaga Tuska|Lider sondażu bez zmian|KO wyraźnie przed PiS|Czarny dzień w historii PiS|PiS z historycznym spadkiem|PiS ze spadkiem notowań|Sensacyjne wyniki sondażu",
       "from": "2026-11-13T04:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-13T08:41:24Z",
     "updatedAt": "2026-11-13T08:41:24Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T10:50:00Z",
+    "id": "rozmowy-dublin-usa-europa-po-moskwie",
+    "title": "Tusk: w Dublinie Amerykanie poinformowali Europejczyków, w tym Polskę, o rozmowach w Moskwie",
+    "date": "2026-11-12",
+    "location": "Dublin",
+    "tags": [
+      "Wojna w Ukrainie",
+      "USA",
+      "Rząd"
+    ],
+    "summary": [
+      "Według premiera Donalda Tuska w czwartek późnym wieczorem na lotnisku wojskowym w Dublinie odbyły się rozmowy przedstawicieli USA, Wielkiej Brytanii, Polski, Niemiec, Francji, Włoch i instytucji UE (Kanał Zero, Onet).",
+      "Amerykańscy negocjatorzy, w tym wysłannik Jared Kushner, zdali relację ze spotkania w Moskwie (WP, Onet)."
+    ],
+    "framing": {
+      "left": "Onet: „Donald Tusk poinformował o ważnej rozmowie. Rząd otrzymał informacje od wysłanników USA”; WP: „Ważny wpis Tuska po nocnych rozmowach”.",
+      "center": "Kanał Zero: „Nocne rozmowy z udziałem Polski”; RMF FM: „Donald Tusk ujawnia ws. spotkania z Amerykanami”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Dublin|rozmowie\\. Rząd otrzymał informacje|spotkania z Amerykanami|po nocnych rozmowach",
+      "from": "2026-11-13T04:00:00Z"
+    },
+    "updatedAt": "2026-11-13T10:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T10:50:00Z",
+    "id": "sondaz-pollster-se-rozwoj-plus-pod-progiem",
+    "title": "Sondaż Pollster dla „Super Expressu”: KO prowadzi, Rozwój Plus Morawieckiego pod progiem",
+    "date": "2026-11-13",
+    "location": "Polska",
+    "tags": [
+      "Sondaże"
+    ],
+    "summary": [
+      "W sondażu Instytutu Badań Pollster dla „Super Expressu” prowadzi Koalicja Obywatelska z wyraźną przewagą nad PiS (Onet).",
+      "Ugrupowanie Mateusza Morawieckiego Rozwój Plus nie przekracza progu wyborczego (Onet, Najwyższy Czas)."
+    ],
+    "framing": {
+      "left": "Onet: „KO ze stabilnym prowadzeniem. Ugrupowanie Morawieckiego nie weszłoby do Sejmu”.",
+      "center": "Brak publikacji redakcji centrowych w monitorowanych źródłach.",
+      "right": "wPolityce: „Jest nowy sondaż. Wynik tego projektu przykuwa uwagę”; Najwyższy Czas: „KO niemal bez koalicjantów, Rozwój Plus wyprzedzony nawet przez Razem”."
+    },
+    "match": {
+      "include": "Ugrupowanie Morawieckiego nie weszłoby|Wynik tego projektu przykuwa uwagę|Rozwój Plus wyprzedzony|Pollster",
+      "from": "2026-11-13T04:00:00Z"
+    },
+    "updatedAt": "2026-11-13T10:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T10:50:00Z",
+    "id": "zawiadomienie-na-policjanta-kulika",
+    "title": "Zawiadomienie do prokuratury na policjanta, który powstrzymał zamachowca w Krakowie",
+    "date": "2026-11-13",
+    "location": "Kraków",
+    "tags": [
+      "Zamach w Krakowie",
+      "Policja",
+      "Prokuratura"
+    ],
+    "summary": [
+      "Do prokuratury wpłynęło zawiadomienie dotyczące Jakuba Kulika, jednego z policjantów, którzy powstrzymali zamachowca w Krakowie; według Onetu zgłaszający domaga się zbadania jego interwencji (Kanał Zero).",
+      "Na zawiadomienie zareagował wojewoda (Fakt)."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "Kanał Zero: „Zatrzymał zamachowca w Krakowie. Teraz wpłynęło na niego zawiadomienie”; Fakt: „Donos do prokuratury na bohaterskiego policjanta”; Super Express: „Wymowne reakcje! »Farmazon dla poklasku«”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)",
+      "from": "2026-11-13T04:00:00Z"
+    },
+    "updatedAt": "2026-11-13T10:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T10:50:00Z",
+    "id": "gibala-apel-do-tuska-monitoring-krakowa",
+    "title": "Prezydent Krakowa prosi premiera o wsparcie dla miejskiego centrum monitoringu po zamachu",
+    "date": "2026-11-13",
+    "location": "Kraków",
+    "tags": [
+      "Zamach w Krakowie",
+      "Samorząd",
+      "Rząd"
+    ],
+    "summary": [
+      "Prezydent Krakowa Łukasz Gibała zwrócił się do premiera Donalda Tuska o finansowe wsparcie dla Centrum Bezpieczeństwa i Monitoringu Miasta (Onet).",
+      "Według Onetu inicjatywę popierają parlamentarzyści z Krakowa."
+    ],
+    "framing": {
+      "left": "Onet: „Pilny apel Łukasza Gibały do Donalda Tuska po zamachu w Krakowie”.",
+      "center": "RMF FM: „Gibała z pilną prośbą do Tuska. Chodzi o zabezpieczenie Krakowa”; Radio ZET: „Prezydent Krakowa zwrócił się do Donalda Tuska”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Gibał|Prezydent Krakowa zwrócił się",
+      "from": "2026-11-13T04:00:00Z"
+    },
+    "updatedAt": "2026-11-13T10:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T10:50:00Z",
+    "id": "karambol-s6-slupsk",
+    "title": "Zderzenie pięciu samochodów na S6 pod Słupskiem, kilka osób w szpitalu",
+    "date": "2026-11-13",
+    "location": "Słupsk",
+    "tags": [
+      "Wypadki"
+    ],
+    "summary": [
+      "W piątek rano na drodze ekspresowej S6 między węzłami Wrześnica i Sycewice zderzyło się pięć samochodów (WP, Polsat News).",
+      "Według Polsat News kilka osób trafiło do szpitala; trasa w kierunku Gdańska była zablokowana, policja kierowała na objazdy."
+    ],
+    "framing": {
+      "left": "WP: „Karambol na S6 z samego rana. Zderzyło się pięć samochodów”.",
+      "center": "RMF FM: „Pięć aut rozbitych, są poszkodowani”; Fakt: „Są ranni. Trasa jest zablokowana”; TVP Info: „Kilka samochodów zderzyło się na S6”; Polsat News: „Karambol na ekspresówce”.",
+      "right": "Rzeczpospolita: „Karambol pod Słupskiem. Nieoficjalnie: dwie osoby poszkodowane”."
+    },
+    "match": {
+      "include": "\\bS6\\b|ekspresowej „szóstce”|Karambol pod Słupskiem|Karambol na ekspresówce",
+      "from": "2026-11-13T03:00:00Z"
+    },
+    "updatedAt": "2026-11-13T10:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T10:50:00Z",
+    "id": "gwalt-na-17-latce-pociag-kalisz-wroclaw",
+    "title": "Zarzut gwałtu na 17-latce w pociągu Kalisz–Wrocław, podejrzany aresztowany",
+    "date": "2026-11-13",
+    "location": "Wrocław",
+    "tags": [
+      "Przestępczość",
+      "Policja"
+    ],
+    "summary": [
+      "32-letni mężczyzna został zatrzymany i aresztowany pod zarzutem zgwałcenia 17-latki w pociągu relacji Kalisz–Wrocław (Najwyższy Czas).",
+      "Według Najwyższego Czasu działał w warunkach recydywy i grozi mu do 23 lat więzienia; dziewczyna zgłosiła się o pomoc do wrocławskich policjantów (Fakt)."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "Fakt: „Zapłakana 17-latka prosiła o pomoc wrocławskich policjantów”; RMF FM: „Brutalny atak w pociągu. 17-latka padła ofiarą recydywisty”.",
+      "right": "Najwyższy Czas: „Koszmar 17-latki w pociągu do Wrocławia. Została zgwałcona przez recydywistę”."
+    },
+    "match": {
+      "include": "17-latk\\w* (w pociągu|prosiła|padła ofiarą recydywisty)",
+      "from": "2026-11-13T04:00:00Z"
+    },
+    "updatedAt": "2026-11-13T10:50:00Z"
   }
 ]
