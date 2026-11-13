@@ -2129,7 +2129,7 @@
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "Polska wygrywa o głos|pokonała Rosję w wyborach|sukces Polski w ONZ|Jednostkw* Kontroln",
+      "include": "Polska wygrywa o głos|pokonała Rosję w wyborach|sukces Polski w ONZ|Jednostkw* Kontroln|wygrana Polski z Rosją na forum ONZ",
       "from": "2026-11-12T16:00:00Z"
     },
     "updatedAt": "2026-11-13T00:41:00Z"
