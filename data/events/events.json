@@ -1929,18 +1929,18 @@
     "summary": [
       "Według rzecznika prezydenta Karol Nawrocki zaprasza na poniedziałek przedstawicieli środowisk politycznych na spotkanie w sprawie „uzdrowienia sytuacji” w Trybunale Konstytucyjnym; rozmowy ma prowadzić minister Zbigniew Bogucki (Radio Maryja).",
       "Zaproszenia trafiły do klubów parlamentarnych (TVN24); według Gazety.pl dotyczą wszystkich ugrupowań.",
-      "Onet pisze, że „nie wszyscy się zjawią”."
+      "Onet pisze, że „nie wszyscy się zjawią”; według Wirtualnej Polski część ugrupowań zapowiedziała bojkot rozmów."
     ],
     "framing": {
-      "left": "Gazeta.pl: „Nawrocki zaprasza wszystkie ugrupowania na rozmowy o »uzdrowieniu sytuacji« w TK”; Onet: „Nie wszyscy się zjawią”.",
+      "left": "Gazeta.pl: „Nawrocki zaprasza wszystkie ugrupowania na rozmowy o »uzdrowieniu sytuacji« w TK”; Onet: „Nie wszyscy się zjawią”; Wirtualna Polska: „Nie wszyscy chcą rozmawiać z Nawrockim”.",
       "center": "Polsat News: „Wszystkie siły przy jednym stole”; RMF FM: „Zaproszenie goni zaproszenie”; Kanał Zero: „Minister chce rozmawiać o TK”.",
       "right": "wPolityce: „Pilna inicjatywa prezydenta!”; TV Republika: „Prezydent chce rozmów z politykami ws. uzdrowienia sytuacji wokół TK”."
     },
     "match": {
-      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)",
+      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim",
       "from": "2026-11-12T12:00:00Z"
     },
-    "updatedAt": "2026-11-12T18:42:38Z"
+    "updatedAt": "2026-11-13T02:40:52Z"
   },
   {
     "extra": [],
