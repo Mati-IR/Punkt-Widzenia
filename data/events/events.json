@@ -1940,7 +1940,7 @@
       "right": "wPolityce: „Pilna inicjatywa prezydenta!”; TV Republika: „Prezydent chce rozmów z politykami ws. uzdrowienia sytuacji wokół TK”."
     },
     "match": {
-      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK|Belweder|Spotkanie w sprawie Trybunału|spotkanie ws\\. TK|rozmowy u prezydenta|Prezydent zaprasza do rozmowy|Prezydent chce rozmawiać o sytuacji w TK",
+      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK|Belweder|Spotkanie w sprawie Trybunału|spotkanie ws\\. TK|rozmowy u prezydenta|Prezydent zaprasza do rozmowy|Prezydent chce rozmawiać o sytuacji w TK|spotkaniu ws\\. TK|zaproszenie prezydenta do rozmowy o TK",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-13T10:41:58Z"
@@ -2023,7 +2023,7 @@
       "right": "Rzeczpospolita: „11 osób zatrzymanych za wpisy chwalące sprawcę zamachu w Krakowie” i „»Zrobię to, co w Krakowie«. Zarzuty dla mężczyzny grożącego zamachem”."
     },
     "match": {
-      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu",
+      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-13T10:41:58Z"
@@ -2102,7 +2102,7 @@
       "right": "Rzeczpospolita: „Święczkowski chce zablokować konta Trybunału Konstytucyjnego. Napisał do Glapińskiego”."
     },
     "match": {
-      "include": "prezesa NBP|do Glapińskiego|kont\\w* (TK|Trybunału)|rachunk\\w* (bankow\\w* )?(TK|Trybunału)|Szef NBP miał uderzyć w TK",
+      "include": "prezesa NBP|do Glapińskiego|kont\\w* (TK|Trybunału)|rachunk\\w* (bankow\\w* )?(TK|Trybunału)|Szef NBP miał uderzyć w TK|Glapiński uderzy w TK",
       "from": "2026-11-12T14:00:00Z"
     },
     "extra": [],
@@ -2210,15 +2210,15 @@
       "Amerykańscy negocjatorzy, w tym wysłannik Jared Kushner, zdali relację ze spotkania w Moskwie (WP, Onet)."
     ],
     "framing": {
-      "left": "Onet: „Donald Tusk poinformował o ważnej rozmowie. Rząd otrzymał informacje od wysłanników USA”; WP: „Ważny wpis Tuska po nocnych rozmowach”.",
+      "left": "Onet: „Donald Tusk poinformował o ważnej rozmowie. Rząd otrzymał informacje od wysłanników USA”; WP: „Ważny wpis Tuska po nocnych rozmowach”. Gazeta.pl: „Tusk: Amerykanie poinformowali nas o efektach spotkania w Moskwie”.",
       "center": "Kanał Zero: „Nocne rozmowy z udziałem Polski”; RMF FM: „Donald Tusk ujawnia ws. spotkania z Amerykanami”.",
-      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+      "right": "Najwyższy Czas!: „Tusk: Amerykanie poinformowali Polskę i inne kraje Europy o negocjacjach z Rosją”."
     },
     "match": {
-      "include": "Dublin|rozmowie\\. Rząd otrzymał informacje|spotkania z Amerykanami|po nocnych rozmowach",
+      "include": "Dublin|rozmowie\\. Rząd otrzymał informacje|spotkania z Amerykanami|po nocnych rozmowach|Amerykanie poinformowali",
       "from": "2026-11-13T04:00:00Z"
     },
-    "updatedAt": "2026-11-13T10:50:00Z"
+    "updatedAt": "2026-11-13T12:41:50Z"
   },
   {
     "extra": [],
@@ -2267,7 +2267,7 @@
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)",
+      "include": "Zatrzymał zamachowca w Krakowie\\. Teraz|Donos do prokuratury na|Doniósł na policjanta|zawiadomieni\\w* na (policjanta|Jakuba Kulika)|Złożono zawiadomienie ws\\. interwencji policjanta|reaguje na zawiadomienie przeciwko policjantowi",
       "from": "2026-11-13T04:00:00Z"
     },
     "updatedAt": "2026-11-13T10:50:00Z"
@@ -2349,5 +2349,59 @@
       "from": "2026-11-13T04:00:00Z"
     },
     "updatedAt": "2026-11-13T10:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T12:50:00Z",
+    "id": "ceny-maksymalne-paliw-14-16-listopada",
+    "title": "Minister energii ustalił nowe ceny maksymalne paliw na 14–16 listopada",
+    "date": "2026-11-13",
+    "location": "Polska",
+    "tags": [
+      "Gospodarka",
+      "Ceny paliw"
+    ],
+    "summary": [
+      "Obwieszczenie ministra energii ustala maksymalne ceny paliw na stacjach na sobotę, niedzielę i poniedziałek, 14–16 listopada (Rzeczpospolita, TVN24, Radio ZET).",
+      "Według obwieszczenia benzyna i olej napędowy będą nieco tańsze niż dotychczas; Pb95 tanieje (Kanał Zero, Rzeczpospolita, TVP Info)."
+    ],
+    "framing": {
+      "left": "TVN24: „Ceny paliw na weekend. Nowe stawki”.",
+      "center": "TVP Info: „Opłaca się poczekać. Paliwa w weekend będą tańsze niż w piątek”; Fakt: „Zatankujesz taniej w weekend”; Kanał Zero: „Korekta cen paliw na weekend przesądzona”.",
+      "right": "Rzeczpospolita: „Pb 95 tanieje, trzech groszy zabrakło do piątki z przodu”."
+    },
+    "match": {
+      "include": "[Cc]en\\w* paliw\\w* na weekend|nowe ceny maksymalne|Paliwa w weekend",
+      "from": "2026-11-13T09:00:00Z"
+    },
+    "updatedAt": "2026-11-13T12:50:00Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T12:50:00Z",
+    "id": "bild-zadania-rosji-wobec-europy-abu-zabi",
+    "title": "„Bild”: lista żądań Rosji wobec Europy z rozmów w Abu Zabi; Finlandia je odrzuca",
+    "date": "2026-11-13",
+    "location": "Abu Zabi",
+    "tags": [
+      "Wojna w Ukrainie",
+      "Rosja",
+      "NATO"
+    ],
+    "summary": [
+      "Według niemieckiego dziennika „Bild” Rosja przedstawiła w Abu Zabi propozycję wykraczającą poza Ukrainę, m.in. zablokowanie dalszego rozszerzania NATO (Onet, Rzeczpospolita).",
+      "Minister obrony Finlandii Antti Häkkänen odrzucił rzekome żądanie cofnięcia członkostwa Finlandii w NATO, nazywając je „skandalicznym” (Onet, Rzeczpospolita).",
+      "Według OKO.press Europejczycy mają zostać dopuszczeni do kolejnej rundy rozmów w sprawie Ukrainy."
+    ],
+    "framing": {
+      "left": "Onet: „Wyciekła długa lista żądań Rosji wobec Europy”; OKO.press: „Skończyły się negocjacje o Ukrainie. Zaczynają negocjacje w sprawie Europy”.",
+      "center": "Brak publikacji redakcji centrowych w monitorowanych źródłach.",
+      "right": "Rzeczpospolita: „„Brutalne żądania”. Kontrowersyjna propozycja Kremla dla Europy”."
+    },
+    "match": {
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi",
+      "from": "2026-11-13T08:00:00Z"
+    },
+    "updatedAt": "2026-11-13T12:50:00Z"
   }
 ]
