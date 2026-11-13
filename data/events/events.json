@@ -1480,7 +1480,7 @@
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "FSB|polską siatkę szpiegowską|polskich szpiegów|Polacy zatrzymani w obwodzie|Warszawa reaguje na doniesienia z Rosji|Kolejna rosyjska prowokacja|ustawkaW* w Królewcu",
+      "include": "FSB|polską siatkę szpiegowską|polskich szpiegów|Polacy zatrzymani w obwodzie|Warszawa reaguje na doniesienia z Rosji|Kolejna rosyjska prowokacja|ustawka\\W* w Królewcu",
       "from": "2026-11-11T00:00:00Z"
     }
   },
@@ -1622,7 +1622,7 @@
       "right": "Rzeczpospolita: „Kaczyński: będziemy działali, by była jedna lista do Sejmu”; TV Republika: „Kaczyński zapowiada wielki sojusz prawicy”; wPolityce: „Przełomowa zapowiedź prezesa PiS”."
     },
     "match": {
-      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy",
+      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy|koalicji z Braunem|odpowiada Kaczyńskiemu",
       "from": "2026-11-11T10:00:00Z",
       "to": "2026-11-15T10:00:00Z"
     },
@@ -1681,7 +1681,7 @@
       "right": "Rzeczpospolita (Artur Bartkiewicz): o rządach po 2027 r. „mogą zdecydować PSL i Razem”; wPolityce: „Tak wyglądałby Sejm! Obliczono mandaty”; Najwyższy Czas: „KO nie ma szans na stworzenie rządu. Tragiczny wynik PiS i mocna pozycja obu Konfederacji”."
     },
     "match": {
-      "include": "układw* sił|Obliczono mandaty|Pyrrusowe zwycięstwo partii Tuska|PiS z najgorszym wynikiem|Historyczny dołek PiS|Czołowe partie tracą poparcie|(Kryzys w Trybunale Konstytucyjnym|Zajścia przed Trybunałem Konstytucyjnym) a poparcie|Kryzys wokół TK namieszał|KO nie ma szans na stworzenie rządu|kto będzie rządził po 2027|Tusk reaguje na sondaż|Tusk komentuje nowy sondaż|najnowszy sondaż partyjny\\. Tusk|Nowy sondaż partyjny, formacja premiera|poparcie dla partii po awanturze wokół TK|Tusk może wygrać wybory",
+      "include": "układ\\w* sił|Obliczono mandaty|Pyrrusowe zwycięstwo partii Tuska|PiS z najgorszym wynikiem|Historyczny dołek PiS|Czołowe partie tracą poparcie|(Kryzys w Trybunale Konstytucyjnym|Zajścia przed Trybunałem Konstytucyjnym) a poparcie|Kryzys wokół TK namieszał|KO nie ma szans na stworzenie rządu|kto będzie rządził po 2027|Tusk reaguje na sondaż|Tusk komentuje nowy sondaż|najnowszy sondaż partyjny\\. Tusk|Nowy sondaż partyjny, formacja premiera|poparcie dla partii po awanturze wokół TK|Tusk może wygrać wybory",
       "from": "2026-11-12T00:00:00Z"
     },
     "extra": [],
@@ -1800,7 +1800,7 @@
       "right": "TV Republika: „Akcja wymierzona w Republikę?”, „Represje za mówienie prawdy?”; Rzeczpospolita: „Policja chce dokumentów od Telewizji Republika. Stacja protestuje”. wPolityce: „Policja żąda nagrań od wPolsce24!”; TV Republika: „Prawnicy wspierają Republikę po wizycie policji”."
     },
     "match": {
-      "include": "Telewizji Republika|(w|na|całą) Republikę|Republiki z zamachu|Sakiewicz|TV Republik|Republice|Republiki|Republikę|wPolsce24|szturm na media|kolejnej (prawicowej stacji|telewizji)|logów emisyjnych|Wolność to nie immunitet|Żurek zabrał głos|szturmw* na niezależne media|Tak wykorzystują policję|SDP domaga się wyjaśnień",
+      "include": "Telewizji Republika|(w|na|całą) Republikę|Republiki z zamachu|Sakiewicz|TV Republik|Republice|Republiki|Republikę|wPolsce24|szturm na media|kolejnej (prawicowej stacji|telewizji)|logów emisyjnych|Wolność to nie immunitet|Żurek zabrał głos|szturm\\w* na niezależne media|Tak wykorzystują policję|SDP domaga się wyjaśnień",
       "from": "2026-11-12T09:00:00Z"
     },
     "extra": [],
@@ -1882,7 +1882,7 @@
       "right": "wPolityce: „W Krakowie znów padły strzały! Błyskawiczna akcja policji”; TV Republika: „Ponownie strzały do policjantów w Krakowie. Sprawca zatrzymany”."
     },
     "match": {
-      "include": "broni hukowej|Strzały w Krakowie|strzały (do|w kierunku) (krakowskich )?policjantów|Strzelał do policjantów w Krakowie|W Krakowie znów padły strzały|Akcja (policji|służb) w Krakowie|mężczyzna strzelał do policjantów|Padły strzały, policja zatrzymała",
+      "include": "broni hukowej|Strzały w Krakowie|strzały (do|w kierunku) (krakowskich )?policjantów|Strzelał do policjantów w Krakowie|W Krakowie znów padły strzały|Akcja (policji|służb) w Krakowie|mężczyzna strzelał do policjantów|Padły strzały, policja zatrzymała|Kolejna strzelanina w Krakowie",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-12T18:42:38Z"
@@ -1937,7 +1937,7 @@
       "right": "wPolityce: „Pilna inicjatywa prezydenta!”; TV Republika: „Prezydent chce rozmów z politykami ws. uzdrowienia sytuacji wokół TK”."
     },
     "match": {
-      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim",
+      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-13T02:40:52Z"
@@ -2071,7 +2071,7 @@
       "right": "Rzeczpospolita: „Karol Nawrocki ma być przesłuchany”. Brak innych publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "kawalerw*|przesłuchać (prezydenta|Nawrockiego)",
+      "include": "kawaler\\w*|przesłuchać (prezydenta|Nawrockiego)",
       "from": "2026-11-12T14:00:00Z"
     },
     "extra": [],
@@ -2098,7 +2098,7 @@
       "right": "Rzeczpospolita: „Święczkowski chce zablokować konta Trybunału Konstytucyjnego. Napisał do Glapińskiego”."
     },
     "match": {
-      "include": "prezesa NBP|do Glapińskiego|kontw* (TK|Trybunału)|rachunkw* (bankoww* )?(TK|Trybunału)",
+      "include": "prezesa NBP|do Glapińskiego|kont\\w* (TK|Trybunału)|rachunk\\w* (bankow\\w* )?(TK|Trybunału)|Szef NBP miał uderzyć w TK",
       "from": "2026-11-12T14:00:00Z"
     },
     "extra": [],
@@ -2121,17 +2121,45 @@
       "Decyzją Zgromadzenia Ogólnego ONZ Polska, jako państwo z Grupy Wschodnioeuropejskiej, otrzymała prawo wskazania przedstawiciela do Wspólnej Jednostki Kontrolnej (Onet).",
       "Według Onetu i RMF FM o wyniku głosowania zdecydował jeden głos, a stanowisko nie przypadnie Rosji.",
       "MSZ nazwało wynik „historycznym zwycięstwem” (Gazeta.pl).",
-      "Fakt pisze, że Rosja przegrała takie głosowanie po raz pierwszy od wielu lat."
+      "Fakt pisze, że Rosja przegrała takie głosowanie po raz pierwszy od wielu lat.",
+      "Według Radia ZET Rosja opuszcza to gremium po 60 latach."
     ],
     "framing": {
-      "left": "Gazeta.pl: „MSZ: Polska pokonała Rosję w wyborach na forum ONZ. «Historyczne zwycięstwo»”; Onet: „Zdecydował jeden głos”.",
-      "center": "RMF FM: „Polska wygrywa o głos. Rosja nie dostanie kluczowego stanowiska w ONZ”; Fakt: „Duży sukces Polski w ONZ”.",
+      "left": "Gazeta.pl: „MSZ: Polska pokonała Rosję w wyborach na forum ONZ. «Historyczne zwycięstwo»”; Onet: „Zdecydował jeden głos”; TVN24: „W głosowaniu pokonała Rosję”.",
+      "center": "RMF FM: „Polska wygrywa o głos”; Fakt: „Duży sukces Polski w ONZ”; Radio ZET: „Prestiżowa wygrana Polski w ONZ”; TVP Info, Polsat News, Interia: „Polska pokonała Rosję w ONZ”.",
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "Polska wygrywa o głos|pokonała Rosję w wyborach|sukces Polski w ONZ|Jednostkw* Kontroln|wygrana Polski z Rosją na forum ONZ",
+      "include": "Polska wygrywa o głos|pokonała Rosję w wyborach|sukces Polski w ONZ|Jednostk\\w* Kontroln|wygrana Polski z Rosją na forum ONZ|Polska pokonała Rosję w ONZ|Polska wygrywa z Rosją w ONZ|Polska wygrała z Rosją w ONZ|Prestiżowa wygrana Polski w ONZ",
       "from": "2026-11-12T16:00:00Z"
     },
-    "updatedAt": "2026-11-13T00:41:00Z"
+    "updatedAt": "2026-11-13T06:41:46Z"
+  },
+  {
+    "extra": [],
+    "addedAt": "2026-11-13T06:41:30Z",
+    "id": "awaria-uslug-microsoft-outlook-teams",
+    "title": "Awaria usług Microsoftu: problemy z pocztą Outlook, Teams i SharePoint",
+    "date": "2026-11-13",
+    "location": "Polska",
+    "tags": [
+      "Technologia",
+      "Awaria"
+    ],
+    "summary": [
+      "Według Faktu poczta Outlook przestała działać, a tysiące Polaków straciły dostęp do narzędzi pracy; Microsoft wydał komunikat.",
+      "Rzeczpospolita podaje, że problemy objęły także Teams, SharePoint i inne aplikacje.",
+      "Według RMF FM Microsoft nadal usuwa awarię i informuje o „częściowej poprawie sytuacji”."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "Fakt: „Poczta Outlook nie działa. Tysiące Polaków bez dostępu do pracy”; RMF FM: „Microsoft nadal walczy z poważną awarią”.",
+      "right": "Rzeczpospolita: „Awaria usług Microsoft. Problemy z Teams, SharePoint i innymi aplikacjami”."
+    },
+    "match": {
+      "include": "Microsoft|Poczta Outlook",
+      "from": "2026-11-13T02:00:00Z"
+    },
+    "updatedAt": "2026-11-13T06:41:30Z"
   }
 ]
