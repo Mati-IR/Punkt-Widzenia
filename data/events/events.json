@@ -2027,7 +2027,7 @@
       "right": "Rzeczpospolita: „11 osób zatrzymanych za wpisy chwalące sprawcę zamachu w Krakowie” i „»Zrobię to, co w Krakowie«. Zarzuty dla mężczyzny grożącego zamachem”."
     },
     "match": {
-      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu|Pochwalał zamach",
+      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu|Pochwalał zamach|powtórzenie zamachu",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-13T10:41:58Z"
@@ -2406,7 +2406,7 @@
       "right": "Rzeczpospolita: „Rosja chce nowego porządku w Europie. Przywódcy odrzucają żądania Putina”."
     },
     "match": {
-      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda|Rosja chce nowego układu bezpieczeństwa|Rosja postawiła żądania|non-paper|Rosja zażądała wycofania|liście żądań Rosji|Rosja chce zmian, które uderzą w Polskę",
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda|Rosja chce nowego układu bezpieczeństwa|Rosja postawiła żądania|non-paper|Rosja zażądała wycofania|liście żądań Rosji|Rosja chce zmian, które uderzą w Polskę|roszczeń Rosji",
       "from": "2026-11-13T08:00:00Z"
     },
     "updatedAt": "2026-11-14T06:40:50Z"
@@ -2602,7 +2602,7 @@
       "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; wPolityce: „Będą negocjować koniec wojny. Wiadomo, co z Polską”; Najwyższy Czas: „Polska w rozmowach dotyczących Ukrainy. Tusk: »Dostałem gratulacje od wielu liderów«”."
     },
     "match": {
-      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny",
+      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny|Polska będzie uczestniczyć w rozmowach",
       "from": "2026-11-13T14:00:00Z"
     },
     "extra": [],
@@ -2735,7 +2735,7 @@
       "right": "Brak publikacji redakcji prawicowych o tym sondażu w monitorowanych źródłach."
     },
     "match": {
-      "include": "dwóch bloków|dwoma blokami|Zjednoczona Prawica kontra obóz rządzący",
+      "include": "dwóch bloków|dwoma blokami|Zjednoczona Prawica kontra obóz rządzący|^Dwa bloki i scenariusz|Jedyna szansa PiS na powrót do władzy",
       "from": "2026-11-14T04:00:00Z"
     },
     "extra": [],
