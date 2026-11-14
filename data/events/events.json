@@ -2019,7 +2019,8 @@
       "Zatrzymano 11 osób w związku z wpisami chwalącymi sprawcę zamachu w Krakowie (Rzeczpospolita, TVN24).",
       "68-latek z Elbląga, który w urzędzie miasta groził, że „zrobi to samo, co w Krakowie”, usłyszał zarzuty (WP, Fakt, Rzeczpospolita).",
       "Według Onetu zarzut usłyszał też poznański influencer, który pochwalał zamach i groził kolejnymi; WP informuje o zatrzymaniu 34-latka, który groził powtórką z Krakowa.",
-      "Krakowska policja zatrzymała dwóch kolejnych mężczyzn, 33- i 50-letniego, którzy mieli publicznie pochwalać zamach; jeden miał mówić o zakupie broni (Rzeczpospolita, WP, Radio Maryja)."
+      "Krakowska policja zatrzymała dwóch kolejnych mężczyzn, 33- i 50-letniego, którzy mieli publicznie pochwalać zamach; jeden miał mówić o zakupie broni (Rzeczpospolita, WP, Radio Maryja).",
+      "57-latek, który zadzwonił do fundacji i mówił o zamachu podobnym do krakowskiego, został zatrzymany i usłyszał zarzut (Interia, Polsat News, Fakt)."
     ],
     "framing": {
       "left": "Onet: „Pochwalali zbrodnię w Krakowie. Teraz czekają na nich surowe konsekwencje”; WP: „Groził powtórką z Krakowa”.",
@@ -2027,10 +2028,10 @@
       "right": "Rzeczpospolita: „11 osób zatrzymanych za wpisy chwalące sprawcę zamachu w Krakowie” i „»Zrobię to, co w Krakowie«. Zarzuty dla mężczyzny grożącego zamachem”."
     },
     "match": {
-      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu|Pochwalał zamach|powtórzenie zamachu|możliwość podobnego ataku",
+      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu|Pochwalał zamach|powtórzenie zamachu|możliwość podobnego ataku|Groził zamachem takim jak w Krakowie|mówił o zamachu\\. Policja zatrzymała|Zagroził atakiem takim jak w Krakowie",
       "from": "2026-11-12T12:00:00Z"
     },
-    "updatedAt": "2026-11-13T10:41:58Z"
+    "updatedAt": "2026-11-14T14:25:04Z"
   },
   {
     "extra": [],
@@ -2545,7 +2546,7 @@
       "right": "Telewizja Republika: „Cenzury w sieci nie będzie. Prezydent wetuje ustawę o usługach cyfrowych”; Najwyższy Czas: „Prezydent zawetował cenzorską ustawę rządu, która miała wdrożyć DSA”; Rzeczpospolita: „Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy”."
     },
     "match": {
-      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta",
+      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej",
       "from": "2026-11-13T12:00:00Z"
     },
     "extra": [],
@@ -2791,7 +2792,7 @@
       "right": "Najwyższy Czas: „Tydzień po zamachu terrorystycznym w Krakowie. 10 osób nadal w szpitalach”."
     },
     "match": {
-      "include": "Tydzień po zamachu|rannych (wciąż|nadal) w szpitalach|Stan rannych po zamachu|Nowe doniesienia z Krakowa|apel prezydenta Krakowa po zamachu",
+      "include": "Tydzień po zamachu|rannych (wciąż|nadal) w szpitalach|Stan rannych po zamachu|Nowe doniesienia z Krakowa|apel prezydenta Krakowa po zamachu|10 osób pozostaje w szpitalach",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
@@ -2819,7 +2820,7 @@
       "right": "Rzeczpospolita: „Konwencja gospodarcza PiS. Politycy zapowiadają «powrót do normalności»”; Telewizja Republika: „Kaczyński: «polski portfel musi być pełny»”."
     },
     "match": {
-      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd",
+      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd|konwencj\\w* programow\\w* PiS",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
@@ -2839,19 +2840,128 @@
       "Usterka systemu łączności wstrzymała ruch na amerykańskich lotniskach; tysiące lotów odwołano (Super Express, TVP Info).",
       "Według rzecznika PLL LOT Krzysztofa Moczulskiego po wznowieniu operacji wszystkie trzy rejsy powrotne LOT wystartowały do Warszawy, z opóźnieniem (Rzeczpospolita).",
       "Ruch lotniczy do i z USA wraca do normy (TVP Info).",
-      "Według Reutersa administracja Donalda Trumpa zwiększyła po awarii do 50 mld dolarów wniosek o modernizację systemu kontroli ruchu lotniczego (TVN24)."
+      "Według Reutersa administracja Donalda Trumpa zwiększyła po awarii do 50 mld dolarów wniosek o modernizację systemu kontroli ruchu lotniczego (TVN24).",
+      "Zakłócenia dotknęły także Europę, w tym rejsy do Polski (Onet, Polsat News, Radio ZET); według Telewizji Republika starty samolotów w USA są stopniowo wznawiane."
     ],
     "framing": {
-      "left": "TVN24: „Biały Dom podbija stawkę po awarii. 50 miliardów dolarów na modernizację”.",
+      "left": "TVN24: „Biały Dom podbija stawkę po awarii. 50 miliardów dolarów na modernizację”. Onet: „Paraliż lotów w USA, liczby idą w tysiące”.",
       "center": "Super Express: „Awaria na lotniskach w USA sparaliżowała ruch. Opóźnione są także samoloty LOT-u”; TVP Info: „Koniec chaosu na lotniskach”.",
-      "right": "Rzeczpospolita: „Po zakłóceniach w ruchu lotniczym w USA część rejsów LOT-u opóźniona”."
+      "right": "Rzeczpospolita: „Po zakłóceniach w ruchu lotniczym w USA część rejsów LOT-u opóźniona”. Telewizja Republika: „USA: Stopniowo wznawiane są starty samolotów”."
     },
     "match": {
-      "include": "lotniskach w USA|ruchu lotniczym w USA|Ruch lotniczy do i z USA|Koniec chaosu na lotniskach|Biały Dom podbija stawkę po awarii",
+      "include": "lotniskach w USA|ruchu lotniczym w USA|Ruch lotniczy do i z USA|Koniec chaosu na lotniskach|Biały Dom podbija stawkę po awarii|Paraliż lotów w USA|uziemiło amerykańskie samoloty|Stopniowo wznawiane są starty samolotów|Chaos lotniczy uderza w Europę|Lotniczy paraliż w USA",
       "from": "2026-11-14T06:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-14T12:41:46Z",
-    "updatedAt": "2026-11-14T12:41:46Z"
+    "updatedAt": "2026-11-14T14:25:04Z"
+  },
+  {
+    "id": "dorozkarze-wrocili-na-rynek-krakow",
+    "title": "Dorożkarze wrócili na Rynek Główny w Krakowie",
+    "date": "2026-11-14",
+    "location": "Kraków",
+    "tags": [
+      "Kraków",
+      "Zamach w Krakowie"
+    ],
+    "summary": [
+      "Dorożki wróciły na Rynek Główny w Krakowie (RMF FM, WP, TVN24, Super Express).",
+      "Dorożkarze: „Nie damy się sterroryzować” (RMF FM, WP); Polsat News cytuje: „To nie znaczy, że zapomnieliśmy”.",
+      "Według Super Expressu ranni w zamachu wciąż walczą o zdrowie."
+    ],
+    "framing": {
+      "left": "WP: „Dorożkarze wracają na Rynek w Krakowie. »Nie damy się sterroryzować«”; TVN24: „Dorożkarze wrócili na Rynek Główny w Krakowie”.",
+      "center": "Polsat News: „Symboliczny powrót na krakowski rynek”; Super Express: „Dorożki wracają na Rynek Główny w Krakowie. Ranni w zamachu wciąż walczą o zdrowie”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Dorożk\\w*|Symboliczny powrót na krakowski rynek",
+      "from": "2026-11-14T08:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T14:24:34Z",
+    "updatedAt": "2026-11-14T14:24:34Z"
+  },
+  {
+    "id": "czestochowa-oplata-pielgrzymkowa",
+    "title": "Częstochowa wprowadzi opłatę pielgrzymkową",
+    "date": "2026-11-14",
+    "location": "Częstochowa",
+    "tags": [
+      "Samorząd",
+      "Kościół"
+    ],
+    "summary": [
+      "Rządzący Częstochową komisarz zdecydował, że miasto będzie miało opłatę pielgrzymkową (Rzeczpospolita).",
+      "Według RMF FM padła już konkretna kwota opłaty.",
+      "Fakt pyta, czy będzie to opłata miejscowa; WP pisze o „milionach w grze”."
+    ],
+    "framing": {
+      "left": "WP: „Miliony w grze. Częstochowa zarobi na pielgrzymach?”.",
+      "center": "Fakt: „Złe wieści dla pielgrzymów”; RMF FM: „»Opłata pielgrzymkowa« w Częstochowie coraz bliżej”.",
+      "right": "Rzeczpospolita: „Częstochowa będzie miała opłatę pielgrzymkową. Rządzący miastem komisarz zdecydował”."
+    },
+    "match": {
+      "include": "opłat\\S* pielgrzymkow|Częstochowa zarobi na pielgrzymach|opłata miejscowa w Częstochowie",
+      "from": "2026-11-14T08:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T14:24:34Z",
+    "updatedAt": "2026-11-14T14:24:34Z"
+  },
+  {
+    "id": "zniszczone-flagi-pomnik-swidnik-zarzuty",
+    "title": "Zarzuty dla 45-latka za zniszczenie flag i wieńców przed pomnikiem w Świdniku",
+    "date": "2026-11-14",
+    "location": "Świdnik",
+    "tags": [
+      "Policja",
+      "Święto Niepodległości"
+    ],
+    "summary": [
+      "45-latek zniszczył flagi przed Pomnikiem Nieznanego Żołnierza w Świdniku i porozrzucał wieńce oraz znicze (RMF FM, TVN24, Onet).",
+      "Według Radia ZET do zdarzenia doszło w Święto Niepodległości.",
+      "Mężczyzna usłyszał zarzuty (TVN24, Onet, Radio ZET)."
+    ],
+    "framing": {
+      "left": "TVN24: „Zniszczone flagi i wieńce na Pomniku Nieznanego Żołnierza. Zarzuty dla 45-latka”; Onet: „45-latek usłyszał zarzuty”.",
+      "center": "RMF FM: „Zniszczył flagi przed pomnikiem. Porozrzucał wieńce i znicze”; Radio ZET: „Tak potraktował flagi Polski w Święto Niepodległości”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Zniszczył flagi przed pomnikiem|Zniszczone flagi i wieńce|potraktował flagi Polski",
+      "from": "2026-11-14T08:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T14:24:34Z",
+    "updatedAt": "2026-11-14T14:24:34Z"
+  },
+  {
+    "id": "wegry-miliony-bylego-ministra-orbana-w-lesie",
+    "title": "Węgry: przejęto 18 mln euro byłego ministra w rządzie Orbána, część była zakopana w lesie",
+    "date": "2026-11-14",
+    "location": "Węgry",
+    "tags": [
+      "Świat",
+      "Korupcja"
+    ],
+    "summary": [
+      "Władze przejęły 18 mln euro byłego ministra w rządzie Viktora Orbána; część pieniędzy była zakopana w lesie (Gazeta.pl).",
+      "Trwa śledztwo w sprawie byłego ministra (Rzeczpospolita).",
+      "Donald Tusk: „jestem pod wrażeniem” (TVN24)."
+    ],
+    "framing": {
+      "left": "TVN24: „Były minister Viktora Orbana i miliony ukryte w lesie. Donald Tusk: jestem pod wrażeniem”; Gazeta.pl: „Władze przejęły 18 mln euro byłego ministra w rządzie Orbana”.",
+      "center": "TVP Info: „Miliony zakopane w lesie. Szokujące znalezisko u byłego ministra”; Fakt: „Fortuna zakopana w lesie. Minister Orbana w centrum afery”; Polsat News: „Gotówka zakopana w lesie”.",
+      "right": "Rzeczpospolita: „Miliony euro zakopane w lasach na Węgrzech”; wPolityce: „Miliony zakopane w lesie. Magyar pęka z dumy!”."
+    },
+    "match": {
+      "include": "zakopan\\w* w (lesie|lasach)|ukryte w lesie",
+      "from": "2026-11-14T08:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T14:24:34Z",
+    "updatedAt": "2026-11-14T14:24:34Z"
   }
 ]
