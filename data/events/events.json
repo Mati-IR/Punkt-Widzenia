@@ -2397,7 +2397,8 @@
       "Według niemieckiego dziennika „Bild” Rosja przedstawiła w Abu Zabi propozycję wykraczającą poza Ukrainę, m.in. zablokowanie dalszego rozszerzania NATO (Onet, Rzeczpospolita).",
       "Minister obrony Finlandii Antti Häkkänen odrzucił rzekome żądanie cofnięcia członkostwa Finlandii w NATO, nazywając je „skandalicznym” (Onet, Rzeczpospolita).",
       "Według OKO.press Europejczycy mają zostać dopuszczeni do kolejnej rundy rozmów w sprawie Ukrainy.",
-      "Rzecznik Kremla Dmitrij Pieskow powiedział, że Rosja jest gotowa do dialogu, jeśli Europejczycy wybiorą przedstawiciela do rozmów z Putinem; szefowa unijnej dyplomacji Kaja Kallas: „Rosjanie sobie mnie nie życzą” (Onet, Polsat News, Radio ZET)."
+      "Rzecznik Kremla Dmitrij Pieskow powiedział, że Rosja jest gotowa do dialogu, jeśli Europejczycy wybiorą przedstawiciela do rozmów z Putinem; szefowa unijnej dyplomacji Kaja Kallas: „Rosjanie sobie mnie nie życzą” (Onet, Polsat News, Radio ZET).",
+      "Według „New York Timesa” Rosja zażądała wycofania wojsk NATO ze wschodniej flanki; RMF FM podaje, że Rosja przedstawiła dokument „non-paper” z listą żądań, a według Polsat News jedno z nich dotyczy Polski."
     ],
     "framing": {
       "left": "Onet: „Wyciekła długa lista żądań Rosji wobec Europy”; Wirtualna Polska: „Koniec wojny za ustępstwa NATO? Wyciekł tajny plan Rosji”; Gazeta.pl: „»Bild«: Rosja stawia warunki i chce urządzić Europę po swojemu”.",
@@ -2405,10 +2406,10 @@
       "right": "Rzeczpospolita: „Rosja chce nowego porządku w Europie. Przywódcy odrzucają żądania Putina”."
     },
     "match": {
-      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda|Rosja chce nowego układu bezpieczeństwa",
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda|Rosja chce nowego układu bezpieczeństwa|Rosja postawiła żądania|non-paper|Rosja zażądała wycofania",
       "from": "2026-11-13T08:00:00Z"
     },
-    "updatedAt": "2026-11-13T14:42:02Z"
+    "updatedAt": "2026-11-14T06:40:50Z"
   },
   {
     "extra": [],
