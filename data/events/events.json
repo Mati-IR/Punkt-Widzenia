@@ -1398,7 +1398,7 @@
       "right": "wPolityce: „Skandal! Namalowali na pomnikach hasło »SŁAWA UPA«”; Najwyższy Czas!: „Policja szuka sprawców”; Rzeczpospolita: „Serię napisów na pomnikach poprzedziło ogłoszenie”."
     },
     "match": {
-      "include": "Sława UPA|SŁAWA UPA|Slawa UPA|Prowokacyjne hasła na pomnikach",
+      "include": "Sława UPA|SŁAWA UPA|Slawa UPA|Prowokacyjne hasła na pomnikach|Slava UPA|Napisy dotyczące Ukrainy na pomnikach",
       "from": "2026-11-10T04:00:00Z",
       "to": "2026-11-16T18:00:00Z"
     },
@@ -2027,7 +2027,7 @@
       "right": "Rzeczpospolita: „11 osób zatrzymanych za wpisy chwalące sprawcę zamachu w Krakowie” i „»Zrobię to, co w Krakowie«. Zarzuty dla mężczyzny grożącego zamachem”."
     },
     "match": {
-      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu|Pochwalał zamach|powtórzenie zamachu",
+      "include": "wpis\\w* (chwalące|po zamachu)|Pochwal\\w* (zbrodnię|zamach)|(zrobi|Zrobię) to,? co w Krakowie|zrobi to samo, co w Krakowie|powtórką z Krakowa|zamach w Krakowie był potrzebny|Kolejne zatrzymania po zamachu|Kolejni zatrzymani po zamachu|Pochwalał zamach|powtórzenie zamachu|możliwość podobnego ataku",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-13T10:41:58Z"
@@ -2741,5 +2741,117 @@
     "extra": [],
     "addedAt": "2026-11-14T08:41:07Z",
     "updatedAt": "2026-11-14T08:41:07Z"
+  },
+  {
+    "id": "zelenski-usa-nato-w-zamian-za-donbas",
+    "title": "Zełenski: USA po raz pierwszy zaproponowały Ukrainie członkostwo w NATO w zamian za wycofanie się z Donbasu",
+    "date": "2026-11-14",
+    "location": "Ukraina",
+    "tags": [
+      "Świat",
+      "Wojna w Ukrainie",
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "Według prezydenta Ukrainy Wołodymyra Zełenskiego Stany Zjednoczone zaproponowały Ukrainie członkostwo w NATO pod warunkiem (TVN24, Gazeta.pl).",
+      "Warunkiem ma być wycofanie się Ukrainy z Donbasu (Rzeczpospolita, Gazeta Wyborcza, OKO.press).",
+      "Zełenski podkreśla, że taka propozycja pojawiła się po raz pierwszy (Interia, Radio ZET)."
+    ],
+    "framing": {
+      "left": "TVN24: „USA zaproponowały Ukrainie członkostwo w NATO. Jest warunek”; Gazeta Wyborcza: „Taką propozycję USA złożyły Ukrainie”; OKO.press i Gazeta.pl relacjonują słowa Zełenskiego bez komentarza w tytule.",
+      "center": "TVP Info: „Wejście do NATO, ale nie za darmo. Kontrowersyjna propozycja dla Ukrainy”; Interia: „Nietypowa propozycja USA dla Ukrainy”; Radio ZET: „Taka propozycja pojawiła się po raz pierwszy”.",
+      "right": "Rzeczpospolita: „Ukraina w NATO w zamian za rezygnację z Donbasu”; Najwyższy Czas: „Członkostwo w NATO w zamian za Donbas? Zełeński ujawnia sekrety rozmów pokojowych”."
+    },
+    "match": {
+      "include": "członkostw\\w* w NATO|Ukraina w NATO|Wejście do NATO|propozycja USA dla Ukrainy|Zełenski ujawnia szczegóły rozmów z USA",
+      "from": "2026-11-14T08:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T12:41:46Z",
+    "updatedAt": "2026-11-14T12:41:46Z"
+  },
+  {
+    "id": "tydzien-po-zamachu-krakow-ranni-w-szpitalach",
+    "title": "Tydzień po zamachu w Krakowie 10 rannych nadal w szpitalach, ich stan jest stabilny",
+    "date": "2026-11-14",
+    "location": "Kraków",
+    "tags": [
+      "Bezpieczeństwo",
+      "Kraków"
+    ],
+    "summary": [
+      "Według rzecznika wojewody małopolskiego tydzień po ataku na Rynku Głównym w pięciu krakowskich szpitalach przebywa 10 osób, a ich stan jest stabilny (Onet, Wirtualna Polska, Najwyższy Czas).",
+      "Jedna pacjentka opuściła szpital (Najwyższy Czas).",
+      "Prezydent Krakowa Łukasz Gibała zwrócił się z apelem do świadków ataku (Wirtualna Polska, Fakt).",
+      "W sobotę odbywa się koncert ku pamięci ofiar (TVP Info); dorożki wróciły na krakowski rynek (Interia)."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska: „10 rannych wciąż w szpitalach. Tydzień po zamachu w Krakowie”; Onet: „Stan rannych po zamachu w Krakowie. Rzecznik wojewody przekazał nowy komunikat”.",
+      "center": "TVP Info: „Dziesięcioro rannych wciąż w szpitalach”; Interia: „«Jego stan, dzięki Bogu, jest już lepszy». Nowe doniesienia z Krakowa”; Fakt: „Ważny apel prezydenta Krakowa po zamachu”.",
+      "right": "Najwyższy Czas: „Tydzień po zamachu terrorystycznym w Krakowie. 10 osób nadal w szpitalach”."
+    },
+    "match": {
+      "include": "Tydzień po zamachu|rannych (wciąż|nadal) w szpitalach|Stan rannych po zamachu|Nowe doniesienia z Krakowa|apel prezydenta Krakowa po zamachu",
+      "from": "2026-11-14T08:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T12:41:46Z",
+    "updatedAt": "2026-11-14T12:41:46Z"
+  },
+  {
+    "id": "pis-kongres-gospodarczy-katowice",
+    "title": "Kongres gospodarczy PiS w Katowicach, Kaczyński krytykuje politykę gospodarczą rządu",
+    "date": "2026-11-14",
+    "location": "Katowice",
+    "tags": [
+      "Partie polityczne",
+      "Gospodarka"
+    ],
+    "summary": [
+      "W sobotę PiS zorganizował w Katowicach kongres gospodarczy (Rzeczpospolita).",
+      "Jarosław Kaczyński mówił: „Musimy powrócić do tej drogi, którą szliśmy naprawdę efektywnie” (Rzeczpospolita) oraz „polski portfel musi być pełny” (Telewizja Republika).",
+      "Prezes PiS ocenił, że to, co zrobiła obecna władza, to „rzecz prawdziwie niesłychana” (Polsat News).",
+      "Na kongresie przemawiała też Beata Szydło (Rzeczpospolita)."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "Polsat News: „«Rzecz niesłychana». Kaczyński uderza w rząd”.",
+      "right": "Rzeczpospolita: „Konwencja gospodarcza PiS. Politycy zapowiadają «powrót do normalności»”; Telewizja Republika: „Kaczyński: «polski portfel musi być pełny»”."
+    },
+    "match": {
+      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd",
+      "from": "2026-11-14T08:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T12:41:46Z",
+    "updatedAt": "2026-11-14T12:41:46Z"
+  },
+  {
+    "id": "awaria-ruchu-lotniczego-usa-opoznienia-lot",
+    "title": "Awaria systemu łączności sparaliżowała ruch na lotniskach w USA, opóźnione rejsy LOT-u",
+    "date": "2026-11-14",
+    "location": "USA",
+    "tags": [
+      "Świat",
+      "Transport"
+    ],
+    "summary": [
+      "Usterka systemu łączności wstrzymała ruch na amerykańskich lotniskach; tysiące lotów odwołano (Super Express, TVP Info).",
+      "Według rzecznika PLL LOT Krzysztofa Moczulskiego po wznowieniu operacji wszystkie trzy rejsy powrotne LOT wystartowały do Warszawy, z opóźnieniem (Rzeczpospolita).",
+      "Ruch lotniczy do i z USA wraca do normy (TVP Info).",
+      "Według Reutersa administracja Donalda Trumpa zwiększyła po awarii do 50 mld dolarów wniosek o modernizację systemu kontroli ruchu lotniczego (TVN24)."
+    ],
+    "framing": {
+      "left": "TVN24: „Biały Dom podbija stawkę po awarii. 50 miliardów dolarów na modernizację”.",
+      "center": "Super Express: „Awaria na lotniskach w USA sparaliżowała ruch. Opóźnione są także samoloty LOT-u”; TVP Info: „Koniec chaosu na lotniskach”.",
+      "right": "Rzeczpospolita: „Po zakłóceniach w ruchu lotniczym w USA część rejsów LOT-u opóźniona”."
+    },
+    "match": {
+      "include": "lotniskach w USA|ruchu lotniczym w USA|Ruch lotniczy do i z USA|Koniec chaosu na lotniskach|Biały Dom podbija stawkę po awarii",
+      "from": "2026-11-14T06:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T12:41:46Z",
+    "updatedAt": "2026-11-14T12:41:46Z"
   }
 ]
