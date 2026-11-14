@@ -1227,7 +1227,7 @@
       "right": "Rzeczpospolita: „Jest zielone światło z Pentagonu”; wPolityce: „Jasny sygnał z USA! »Polska wzorem«”; Republika pisała wcześniej o rozmowach „ws. stałej bazy”."
     },
     "match": {
-      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA|stałej bazy USA w Polsce|bazie USA w Polsce|Baza wojsk USA w Polsce|słowach Pete'a Hegsetha|Stała baza USA w Polsce|bliżej bazy USA w Polsce|decyzję ws\\. stałej bazy",
+      "include": "Kosiniak-Kamysz( w Waszyngtonie| spotka|: jeżeli)|Szef MON (leci|z wizytą)|Kosiniak-Kamysz w Pentagonie|Kosiniaka-Kamysza z sekretarzem|Szef MON przyjęty|[Zz]ielone światło|Szef MON po (spotkaniu|rozmowach)|Kosiniak-Kamysz (po spotkaniu|mówi o przełomie|wskazał)|stałej bazy wojsk USA|stałą obecność wojsk USA|Polska wzorem|Wzór do naśladowania|amerykańskich wojsk w Polsce|Amerykańskie bazy wojskowe w Polsce|polsko-amerykańskich negocjacji|Co ze stałą bazą USA|stałej bazy USA w Polsce|bazie USA w Polsce|Baza wojsk USA w Polsce|słowach Pete'a Hegsetha|Stała baza USA w Polsce|bliżej bazy USA w Polsce|decyzję ws\\. stałej bazy|baza niemal pewna",
       "from": "2026-11-09T16:00:00Z",
       "to": "2026-11-15T16:00:00Z",
       "exclude": "sankcj"
@@ -1626,7 +1626,7 @@
       "right": "Rzeczpospolita: „Kaczyński: będziemy działali, by była jedna lista do Sejmu”; TV Republika: „Kaczyński zapowiada wielki sojusz prawicy”; wPolityce: „Przełomowa zapowiedź prezesa PiS”."
     },
     "match": {
-      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy|koalicji z Braunem|odpowiada Kaczyńskiemu|współpracy z Braunem|o Braunie|pomysłem Kaczyńskiego|reaguje na słowa Jarosława Kaczyńskiego|propozycj\\w* Kaczyńskiego|wspólną listę|pomysł\\w* Kaczyńskiego|kołem ratunkowym|odrzucają pomysł PiS",
+      "include": "jedn\\w* list\\w* (prawicy|do Sejmu)|sojusz\\w* prawicy|Przełomowa zapowiedź prezesa PiS|wspólnej liście|stawia na Grzegorza Brauna|odpowiada na słowa Jarosława Kaczyńskiego|jednej wielkiej liście|Wspólna lista prawicy|rządzić z Braunem|przemoc\\w* domow|współpracy PiS z Konfederacją|Dobrze, że już nie ukrywa|przymila się do Konfederacji|wspóln\\w* list\\w*|jednej liście|deklaracją Jarosława Kaczyńskiego|po słowach Kaczyńskiego|Jak jednoczy się prawica|Mentzen sam władzy|koalicji z Braunem|odpowiada Kaczyńskiemu|współpracy z Braunem|o Braunie|pomysłem Kaczyńskiego|reaguje na słowa Jarosława Kaczyńskiego|propozycj\\w* Kaczyńskiego|wspólną listę|pomysł\\w* Kaczyńskiego|kołem ratunkowym|odrzucają pomysł PiS|Ocenili deklarację Jarosława Kaczyńskiego",
       "from": "2026-11-11T10:00:00Z",
       "to": "2026-11-15T10:00:00Z"
     },
@@ -2376,7 +2376,7 @@
       "right": "Rzeczpospolita: „Pb 95 tanieje, trzech groszy zabrakło do piątki z przodu”."
     },
     "match": {
-      "include": "[Cc]en\\w* paliw\\w* na weekend|nowe ceny maksymalne|Paliwa w weekend",
+      "include": "[Cc]en\\w* paliw\\w* na weekend|nowe ceny maksymalne|Paliwa w weekend|ceny benzyny i diesla w weekend",
       "from": "2026-11-13T09:00:00Z"
     },
     "updatedAt": "2026-11-13T12:50:00Z"
@@ -2406,7 +2406,7 @@
       "right": "Rzeczpospolita: „Rosja chce nowego porządku w Europie. Przywódcy odrzucają żądania Putina”."
     },
     "match": {
-      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda|Rosja chce nowego układu bezpieczeństwa|Rosja postawiła żądania|non-paper|Rosja zażądała wycofania",
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda|Rosja chce nowego układu bezpieczeństwa|Rosja postawiła żądania|non-paper|Rosja zażądała wycofania|liście żądań Rosji|Rosja chce zmian, które uderzą w Polskę",
       "from": "2026-11-13T08:00:00Z"
     },
     "updatedAt": "2026-11-14T06:40:50Z"
@@ -2714,5 +2714,32 @@
     "extra": [],
     "addedAt": "2026-11-13T22:50:00Z",
     "updatedAt": "2026-11-13T22:50:00Z"
+  },
+  {
+    "id": "sondaz-united-surveys-wp-dwa-bloki",
+    "title": "Sondaż United Surveys dla WP: w starciu dwóch bloków wygrałaby wspólna lista prawicy",
+    "date": "2026-11-14",
+    "location": "Polska",
+    "tags": [
+      "Sondaże",
+      "Partie polityczne"
+    ],
+    "summary": [
+      "Według sondażu United Surveys by IBRiS dla Wirtualnej Polski, gdyby ugrupowania prawicowe wystartowały wspólnie jako Zjednoczona Prawica, uzyskałyby 46,6 proc. głosów (Gazeta.pl).",
+      "Badanie zakładało start dwóch bloków: centrolewicowego z KO na czele i prawicowego z PiS i Konfederacjami; według Onetu wygrałaby lista pod przewodnictwem Jarosława Kaczyńskiego.",
+      "Politolodzy cytowani przez Gazeta.pl i Onet (za PAP) oceniają, że utworzenie wspólnej listy utrudniają różnice programowe i spory."
+    ],
+    "framing": {
+      "left": "Onet: „Starcie dwóch bloków dałoby jednemu pewną większość w Sejmie”; Gazeta.pl: „Sondaż z dwoma blokami korzystny dla PiS i Konfederacji. Politolodzy: To się nie uda”.",
+      "center": "RMF FM: „Zjednoczona Prawica kontra obóz rządzący. Są wyniki najnowszego sondażu”.",
+      "right": "Brak publikacji redakcji prawicowych o tym sondażu w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "dwóch bloków|dwoma blokami|Zjednoczona Prawica kontra obóz rządzący",
+      "from": "2026-11-14T04:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T08:41:07Z",
+    "updatedAt": "2026-11-14T08:41:07Z"
   }
 ]
