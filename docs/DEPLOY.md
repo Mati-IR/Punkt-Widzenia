@@ -1,14 +1,14 @@
 # Deploy — Cloudflare Pages (free tier)
 
 Cost: 0 zł. Free tier = unlimited static requests and bandwidth, 500 builds/month.
-Every push to `main` deploys production; every PR gets its own preview URL.
+Every push to `master` deploys production; every PR gets its own preview URL. Production branch: `master` (renamed from `main` in PUN-96).
 
 ## One-time setup (founder, ~10 min)
 
 1. **GitHub repo.** Create an empty repo (e.g. `punkt-widzenia-site`), then from this folder:
    ```sh
    git remote add origin git@github.com:<you>/punkt-widzenia-site.git
-   git push -u origin main
+   git push -u origin master
    ```
 2. **Cloudflare Pages.** Cloudflare dashboard → *Workers & Pages* → *Create* → *Pages* → *Connect to Git* → pick the repo.
    - Framework preset: **Astro**
@@ -17,7 +17,7 @@ Every push to `main` deploys production; every PR gets its own preview URL.
    - Environment variables (Production and Preview):
      - `NODE_VERSION` = `22`
      - `SITE_URL` = `https://<project>.pages.dev` (or your own domain later)
-3. **Branch protection (optional, recommended).** GitHub → Settings → Branches → protect `main`, require the `CI / build` check.
+3. **Branch protection (optional, recommended).** GitHub → Settings → Branches → protect `master`, require the `CI / build` check.
 
 The site is then live at `https://<project>.pages.dev`.
 
@@ -46,9 +46,9 @@ The production deploy command must be `npx wrangler deploy`. `npx wrangler previ
 preview version and never updates the live site, so keep it for the non-production branch deploy
 command, if you use one. `wrangler.jsonc` has an empty `previews` block so that command works too.
 
-Ingest commits carry `[skip ci]`, so Cloudflare doesn't rebuild for them. Instead the ingest Action
-(`.github/workflows/ingest.yml`, job `deploy`) rebuilds and deploys the Worker itself whenever a run
-on `main` finds new headlines. It needs, in GitHub → Settings → Secrets and variables → Actions:
+Data merges into `master` (headlines and events, promoted from `dev` by
+`.github/workflows/promote-data.yml`) carry `[skip ci]`, so Cloudflare doesn't rebuild for them.
+Instead that Action (job `deploy`) rebuilds and deploys the Worker itself after each promotion. It needs, in GitHub → Settings → Secrets and variables → Actions:
 
 | Name | Kind | Value |
 |---|---|---|
