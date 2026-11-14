@@ -1944,7 +1944,7 @@
       "right": "wPolityce: „Pilna inicjatywa prezydenta!”; TV Republika: „Prezydent chce rozmów z politykami ws. uzdrowienia sytuacji wokół TK”."
     },
     "match": {
-      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK|Belweder|Spotkanie w sprawie Trybunału|spotkanie ws\\. TK|rozmowy u prezydenta|Prezydent zaprasza do rozmowy|Prezydent chce rozmawiać o sytuacji w TK|spotkaniu ws\\. TK|zaproszenie prezydenta do rozmowy o TK|nie wybiera się do Pałacu|Ja się nie wybieram|Sprawa (TK|Trybunału Konstytucyjnego) jest rozstrzygnięta",
+      "include": "uzdrowienia sytuacji|uzdrowić sytuację|\\buzdrowieniu\\W* (TK|w TK)|Ruch prezydenta (ws\\. TK|w sprawie sytuacji wokół Trybunału)|Pilna inicjatywa prezydenta|Prezydent zwołał spotkanie w sprawie TK|Rozmowy ws\\. Trybunału Konstytucyjnego|Zaproszenie goni zaproszenie|zaprasza na (konsultacje|rozmowy o Trybunale)|Nie wszyscy chcą rozmawiać z Nawrockim|zaproszenie Nawrockiego|rozmowach ws\\. TK|Belweder|Spotkanie w sprawie Trybunału|spotkanie ws\\. TK|rozmowy u prezydenta|Prezydent zaprasza do rozmowy|Prezydent chce rozmawiać o sytuacji w TK|spotkaniu ws\\. TK|zaproszenie prezydenta do rozmowy o TK|nie wybiera się do Pałacu|Ja się nie wybieram|Sprawa (TK|Trybunału Konstytucyjnego) jest rozstrzygnięta|Sprawa rozstrzygnięta\\W+ Tusk jasno przed spotkaniem",
       "from": "2026-11-12T12:00:00Z"
     },
     "updatedAt": "2026-11-13T20:42:04Z"
@@ -2405,7 +2405,7 @@
       "right": "Rzeczpospolita: „Rosja chce nowego porządku w Europie. Przywódcy odrzucają żądania Putina”."
     },
     "match": {
-      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda",
+      "include": "żąda\\w* Rosji|Kremla dla Europy|negocjacje w sprawie Europy|Kulisy szczytu w Abu Zabi|Abu Zabi|tajny plan Rosji|nowego porządku w Europie|żądania Putina|Rosja przedstawiła żądania|Kreml ogłosił warunek|Rosjanie sobie mnie nie życzą|Rosja stawia warunek|Rosja wciąż się waha w sprawie Europy|Kreml stawia (żądania|warunek)|Rosyjskie żądania|„Bild”: Rosja|udziale Europy w kolejnej rundzie|wkładzie Europy|Finlandii z NATO|Kreml z żądaniami|Rosja żąda .zapewnienia bezpieczeństwa|tajnej propozycji pokojowej Rosji|czego Putin żąda|Rosja chce nowego układu bezpieczeństwa",
       "from": "2026-11-13T08:00:00Z"
     },
     "updatedAt": "2026-11-13T14:42:02Z"
