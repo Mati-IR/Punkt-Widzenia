@@ -2546,7 +2546,7 @@
       "right": "Telewizja Republika: „Cenzury w sieci nie będzie. Prezydent wetuje ustawę o usługach cyfrowych”; Najwyższy Czas: „Prezydent zawetował cenzorską ustawę rządu, która miała wdrożyć DSA”; Rzeczpospolita: „Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy”."
     },
     "match": {
-      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej|skutki weta|Ofiarami tego weta|Tusk (krytykuje|gorzko podsumowuje) decyzję Nawrockiego|Obrzydliwy atak Tuska na Nawrockiego",
+      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej|skutki weta|Ofiarami tego weta|Tusk (krytykuje|gorzko podsumowuje) decyzję Nawrockiego|Obrzydliwy atak Tuska na Nawrockiego|Tusk grzmiał ws\\. weta",
       "from": "2026-11-13T12:00:00Z"
     },
     "extra": [],
@@ -2821,7 +2821,7 @@
       "right": "Rzeczpospolita: „Konwencja gospodarcza PiS. Politycy zapowiadają «powrót do normalności»”; Telewizja Republika: „Kaczyński: «polski portfel musi być pełny»”."
     },
     "match": {
-      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd|konwencj\\w* programow\\w* PiS|ofensyw\\S* gospodarcz|Zapowiadają .ofensywę|zapowiedział .ofensywę|Musimy wyciągnąć Polskę ze skutków|Trzeba zadbać o całą Polskę",
+      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd|konwencj\\w* programow\\w* PiS|ofensyw\\S* gospodarcz|Zapowiadają .ofensywę|zapowiedział .ofensywę|Musimy wyciągnąć Polskę ze skutków|Trzeba zadbać o całą Polskę|Kaczyński chce .ofensywy",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
@@ -2842,7 +2842,8 @@
       "Według rzecznika PLL LOT Krzysztofa Moczulskiego po wznowieniu operacji wszystkie trzy rejsy powrotne LOT wystartowały do Warszawy, z opóźnieniem (Rzeczpospolita).",
       "Ruch lotniczy do i z USA wraca do normy (TVP Info).",
       "Według Reutersa administracja Donalda Trumpa zwiększyła po awarii do 50 mld dolarów wniosek o modernizację systemu kontroli ruchu lotniczego (TVN24).",
-      "Zakłócenia dotknęły także Europę, w tym rejsy do Polski (Onet, Polsat News, Radio ZET); według Telewizji Republika starty samolotów w USA są stopniowo wznawiane."
+      "Zakłócenia dotknęły także Europę, w tym rejsy do Polski (Onet, Polsat News, Radio ZET); według Telewizji Republika starty samolotów w USA są stopniowo wznawiane.",
+      "Sekretarz transportu USA wstępnie wykluczył cyberatak; jako jedną z możliwych przyczyn wskazał prowadzone prace modernizacyjne (TVN24). Ruch jest stopniowo przywracany (Wirtualna Polska)."
     ],
     "framing": {
       "left": "TVN24: „Biały Dom podbija stawkę po awarii. 50 miliardów dolarów na modernizację”. Onet: „Paraliż lotów w USA, liczby idą w tysiące”.",
@@ -2850,12 +2851,12 @@
       "right": "Rzeczpospolita: „Po zakłóceniach w ruchu lotniczym w USA część rejsów LOT-u opóźniona”. Telewizja Republika: „USA: Stopniowo wznawiane są starty samolotów”."
     },
     "match": {
-      "include": "lotniskach w USA|ruchu lotniczym w USA|Ruch lotniczy do i z USA|Koniec chaosu na lotniskach|Biały Dom podbija stawkę po awarii|Paraliż lotów w USA|uziemiło amerykańskie samoloty|Stopniowo wznawiane są starty samolotów|Chaos lotniczy uderza w Europę|Lotniczy paraliż w USA",
+      "include": "lotniskach w USA|ruchu lotniczym w USA|Ruch lotniczy do i z USA|Koniec chaosu na lotniskach|Biały Dom podbija stawkę po awarii|Paraliż lotów w USA|uziemiło amerykańskie samoloty|Stopniowo wznawiane są starty samolotów|Chaos lotniczy uderza w Europę|Lotniczy paraliż w USA|Paraliż ruchu lotniczego w USA|Awaria samolotów w USA",
       "from": "2026-11-14T06:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-14T12:41:46Z",
-    "updatedAt": "2026-11-14T14:25:04Z"
+    "updatedAt": "2026-11-14T18:41:32Z"
   },
   {
     "id": "dorozkarze-wrocili-na-rynek-krakow",
@@ -2958,7 +2959,7 @@
       "right": "Rzeczpospolita: „Miliony euro zakopane w lasach na Węgrzech”; wPolityce: „Miliony zakopane w lesie. Magyar pęka z dumy!”."
     },
     "match": {
-      "include": "zakopan\\w* w (lesie|lasach)|ukryte w lesie",
+      "include": "zakopan\\w* w (lesie|lasach)|ukryte w lesie|znalezisko u byłego ministra",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
@@ -3005,16 +3006,69 @@
       "Polsat News relacjonuje „poruszające słowa” wypowiedziane podczas uroczystości."
     ],
     "framing": {
-      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "left": "Onet: „Pożegnano ofiary zamachu w Krakowie”; TVN24: „«Ten ból jest bólem nas wszystkich». Pochowali ofiary zamachu”.",
       "center": "Kanał Zero: „Sędziszów Małopolski i Kraśnik w żałobie”; Super Express: „Poruszające pożegnanie ofiary zamachu”; Polsat News: „Pogrzeby ofiar strzelaniny w Krakowie”.",
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "[Pp]ogrzeb\\w* ofiar|[Pp]ożegnanie ofiar|Ewelina zginęła w zamachu|Sędziszów",
+      "include": "[Pp]ogrzeb\\w* ofiar|[Pp]ożegnanie ofiar|Ewelina zginęła w zamachu|Sędziszów|Pożegnano ofiary zamachu|Pochowali ofiary zamachu",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-14T16:41:27Z",
-    "updatedAt": "2026-11-14T16:41:27Z"
+    "updatedAt": "2026-11-14T18:41:32Z"
+  },
+  {
+    "id": "trump-putin-xi-spotkanie-shenzhen",
+    "title": "Kreml potwierdza trójstronne spotkanie Trumpa, Putina i Xi Jinpinga 19 listopada w Shenzhen",
+    "date": "2026-11-14",
+    "location": "Shenzhen, Chiny",
+    "tags": [
+      "Świat"
+    ],
+    "summary": [
+      "Rzecznik Kremla Dmitrij Pieskow potwierdził, że przywódcy USA, Rosji i Chin spotkają się w czwartek 19 listopada w chińskim Shenzhen (Onet, Polsat News, Radio Zet).",
+      "Według OKO.press będzie to pierwsze w historii trójstronne spotkanie tych przywódców, przy okazji szczytu APEC.",
+      "Wcześniej w sprawie rozmów wypowiadał się Biały Dom (Onet).",
+      "Według Wirtualnej Polski światowe media wyrażają obawy przed nowym podziałem świata na strefy wpływów."
+    ],
+    "framing": {
+      "left": "OKO.press: „pierwsze w historii trójstronne spotkanie Trumpa, Putina i Xi”; Onet: „Trump, Xi i Putin usiądą przy jednym stole”; Wirtualna Polska: „Nowy podział świata? Rosną obawy przed spotkaniem”.",
+      "center": "RMF FM: „Trump, Putin i Xi razem przy jednym stole. Kreml potwierdza”; Radio Zet i Polsat News: „Kreml potwierdza”.",
+      "right": "Najwyższy Czas: „Światowe media o spotkaniu przywódców trzech mocarstw. Obawy przed «nową Jałtą»”."
+    },
+    "match": {
+      "include": "Trump\\w*, (Putin|Xi)|Xi-Putin-Trump|Trump-Putin-Xi|przywódców trzech mocarstw",
+      "from": "2026-11-14T12:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T18:41:25Z",
+    "updatedAt": "2026-11-14T18:41:25Z"
+  },
+  {
+    "id": "pozar-hostelu-koszalin",
+    "title": "Pożar hostelu w Koszalinie, blisko 30 osób ewakuowanych",
+    "date": "2026-11-14",
+    "location": "Koszalin",
+    "tags": [
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "W sobotę po południu wybuchł pożar w hostelu przy ul. Żwirki i Wigury w Koszalinie (Wirtualna Polska).",
+      "Blisko 30 osób opuściło budynek przed przybyciem strażaków (Wirtualna Polska, RMF FM).",
+      "Według Kanału Zero ogień zajął jeden pokój i nie rozprzestrzenił się na resztę budynku."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska: „Pożar hostelu w Koszalinie. 30 osób ewakuowanych”.",
+      "center": "Kanał Zero: „Pożar hostelu w Koszalinie. Ewakuowało się blisko 30 osób”; RMF FM: „Blisko 30 osób ewakuowało się z płonącego budynku”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "hostel\\w* w Koszalinie",
+      "from": "2026-11-14T14:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T18:41:25Z",
+    "updatedAt": "2026-11-14T18:41:25Z"
   }
 ]
