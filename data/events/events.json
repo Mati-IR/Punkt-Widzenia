@@ -2546,7 +2546,7 @@
       "right": "Telewizja Republika: „Cenzury w sieci nie będzie. Prezydent wetuje ustawę o usługach cyfrowych”; Najwyższy Czas: „Prezydent zawetował cenzorską ustawę rządu, która miała wdrożyć DSA”; Rzeczpospolita: „Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy”."
     },
     "match": {
-      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej|skutki weta|Ofiarami tego weta|Tusk (krytykuje|gorzko podsumowuje) decyzję Nawrockiego|Obrzydliwy atak Tuska na Nawrockiego|Tusk grzmiał ws\\. weta",
+      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej|skutki weta|Ofiarami tego weta|Tusk (krytykuje|gorzko podsumowuje) decyzję Nawrockiego|Obrzydliwy atak Tuska na Nawrockiego|Tusk grzmiał ws\\. weta|Tusk uderzył w Nawrockiego",
       "from": "2026-11-13T12:00:00Z"
     },
     "extra": [],
@@ -2603,7 +2603,7 @@
       "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; wPolityce: „Będą negocjować koniec wojny. Wiadomo, co z Polską”; Najwyższy Czas: „Polska w rozmowach dotyczących Ukrainy. Tusk: »Dostałem gratulacje od wielu liderów«”."
     },
     "match": {
-      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny|Polska będzie uczestniczyć w rozmowach",
+      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny|Polska będzie uczestniczyć w rozmowach|Polska zaproszona do rozmów pokojowych",
       "from": "2026-11-13T14:00:00Z"
     },
     "extra": [],
@@ -2764,7 +2764,7 @@
       "right": "Rzeczpospolita: „Ukraina w NATO w zamian za rezygnację z Donbasu”; Najwyższy Czas: „Członkostwo w NATO w zamian za Donbas? Zełeński ujawnia sekrety rozmów pokojowych”."
     },
     "match": {
-      "include": "członkostw\\w* w NATO|Ukraina w NATO|Wejście do NATO|propozycja USA dla Ukrainy|Zełenski ujawnia szczegóły rozmów z USA",
+      "include": "członkostw\\w* w NATO|Ukraina w NATO|Wejście do NATO|propozycja USA dla Ukrainy|Zełenski ujawnia szczegóły rozmów z USA|Członkostwo Ukrainy w NATO",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
@@ -2792,7 +2792,7 @@
       "right": "Najwyższy Czas: „Tydzień po zamachu terrorystycznym w Krakowie. 10 osób nadal w szpitalach”."
     },
     "match": {
-      "include": "Tydzień po zamachu|rannych (wciąż|nadal) w szpitalach|Stan rannych po zamachu|Nowe doniesienia z Krakowa|apel prezydenta Krakowa po zamachu|10 osób pozostaje w szpitalach",
+      "include": "Tydzień po zamachu|rannych (wciąż|nadal) w szpitalach|Stan rannych po zamachu|Nowe doniesienia z Krakowa|apel prezydenta Krakowa po zamachu|10 osób pozostaje w szpitalach|opuściła (krakowski )?szpital|poszkodowanych w zamachu w Krakowie",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
@@ -2813,7 +2813,8 @@
       "Jarosław Kaczyński mówił: „Musimy powrócić do tej drogi, którą szliśmy naprawdę efektywnie” (Rzeczpospolita) oraz „polski portfel musi być pełny” (Telewizja Republika).",
       "Prezes PiS ocenił, że to, co zrobiła obecna władza, to „rzecz prawdziwie niesłychana” (Polsat News).",
       "Na kongresie przemawiała też Beata Szydło (Rzeczpospolita).",
-      "Kaczyński zapowiedział „ofensywę” i powiedział: „Zakładam, że przejmiemy władzę” (RMF FM); według Kanału Zero partia chce wyjścia z systemu ETS."
+      "Kaczyński zapowiedział „ofensywę” i powiedział: „Zakładam, że przejmiemy władzę” (RMF FM); według Kanału Zero partia chce wyjścia z systemu ETS.",
+      "Według „Gazety Wyborczej” Przemysław Czarnek zażądał na konwencji od Konfederacji jasnej deklaracji, czy chce współpracować z PiS; według Gazeta.pl obiecywał też niższą składkę zdrowotną i wyższy drugi próg podatkowy."
     ],
     "framing": {
       "left": "Wirtualna Polska: „Na scenie Kaczyński, Czarnek i Szydło. Zapowiadają «ofensywę»”.",
@@ -2821,12 +2822,12 @@
       "right": "Rzeczpospolita: „Konwencja gospodarcza PiS. Politycy zapowiadają «powrót do normalności»”; Telewizja Republika: „Kaczyński: «polski portfel musi być pełny»”."
     },
     "match": {
-      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd|konwencj\\w* programow\\w* PiS|ofensyw\\S* gospodarcz|Zapowiadają .ofensywę|zapowiedział .ofensywę|Musimy wyciągnąć Polskę ze skutków|Trzeba zadbać o całą Polskę|Kaczyński chce .ofensywy",
+      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd|konwencj\\w* programow\\w* PiS|ofensyw\\S* gospodarcz|Zapowiadają .ofensywę|zapowiedział .ofensywę|Musimy wyciągnąć Polskę ze skutków|Trzeba zadbać o całą Polskę|Kaczyński chce .ofensywy|Konwencja PiS w Katowicach|W co wy gracie|konwencja programowa Prawa i Sprawiedliwości",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-14T12:41:46Z",
-    "updatedAt": "2026-11-14T16:42:05Z"
+    "updatedAt": "2026-11-14T20:41:24Z"
   },
   {
     "id": "awaria-ruchu-lotniczego-usa-opoznienia-lot",
@@ -3011,7 +3012,7 @@
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "[Pp]ogrzeb\\w* ofiar|[Pp]ożegnanie ofiar|Ewelina zginęła w zamachu|Sędziszów|Pożegnano ofiary zamachu|Pochowali ofiary zamachu",
+      "include": "[Pp]ogrzeb\\w* ofiar|[Pp]ożegnanie ofiar|Ewelina zginęła w zamachu|Sędziszów|Pożegnano ofiary zamachu|Pochowali ofiary zamachu|Pogrzeb 47-latki",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
@@ -3070,5 +3071,30 @@
     "extra": [],
     "addedAt": "2026-11-14T18:41:25Z",
     "updatedAt": "2026-11-14T18:41:25Z"
+  },
+  {
+    "id": "polska-2050-wybory-przewodniczacego-grudzien",
+    "title": "Polska 2050 zatwierdziła kalendarz wyborczy, nowego przewodniczącego wybierze w grudniu",
+    "date": "2026-11-14",
+    "location": "Polska",
+    "tags": [
+      "Polityka"
+    ],
+    "summary": [
+      "Polska 2050 zatwierdziła kalendarz wyborów wewnętrznych; nowego przewodniczącego partia wybierze w grudniu (RMF FM, Onet, Radio ZET).",
+      "Według Onetu politycy mogą już zgłaszać swoje kandydatury."
+    ],
+    "framing": {
+      "left": "Onet: „Polska 2050 będzie miała nowego lidera. Zapadła decyzja w sprawie wyborów”.",
+      "center": "RMF FM: „Kalendarz wyborczy zatwierdzony. W grudniu Polska 2050 wybierze nowego lidera”; Radio ZET: „Wybory w Polsce 2050. Wiemy już, kiedy partia będzie miała nowego przewodniczącego”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "Wybory w Polsce 2050|Polska 2050 (wybierze nowego|będzie miała nowego)",
+      "from": "2026-11-14T15:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T20:41:11Z",
+    "updatedAt": "2026-11-14T20:41:11Z"
   }
 ]
