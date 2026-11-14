@@ -1515,7 +1515,7 @@
       "right": "Rzeczpospolita: „Polska warta jest tej rozmowy”. TV Republika: „Tusk znowu przypisał sobie nie swoje zasługi” (bez wzmianki o zaproszeniu w tytule). Później TV Republika: „Szefernaker zarzuca Tuskowi unikanie wspólnego gestu z prezydentem”; wPolityce: „Najpierw zaproszenie, a potem zjadliwy wpis”."
     },
     "match": {
-      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Najpierw zaproszenie|Pałac odpowiada Tuskowi|Tusk wyciąga rękę|Nie siada się do stołu|podzielić się opłatkiem|Cwany ruch Tuska|Tusk zaprasza\\. Morawiecki|Polityka miłości Tuska|przy karpiu|opłatku z Nawrockim|ponawia zaproszenie|spotkani[ea] z Tuskiem|TUSK ZAPRASZA",
+      "include": "(zaprasza|zaprosił|Zapraszam)\\S* .*(Nawrockiego|prezydenta|do mnie)|Tusk zaskoczył|Szefernaker|zaprosze\\w* (Tuska|od Tuska|Donalda Tuska)|Tusk zaprasza, jest odpowiedź|Wigilia u Tuska|opłatek bardzo polityczny|Tuska z opłatkiem|Najpierw zaproszenie|Pałac odpowiada Tuskowi|Tusk wyciąga rękę|Nie siada się do stołu|podzielić się opłatkiem|Cwany ruch Tuska|Tusk zaprasza\\. Morawiecki|Polityka miłości Tuska|przy karpiu|opłatku z Nawrockim|ponawia zaproszenie|spotkani[ea] z Tuskiem|TUSK ZAPRASZA",
       "from": "2026-11-11T08:00:00Z",
       "to": "2026-11-15T08:00:00Z"
     }
@@ -2601,7 +2601,7 @@
       "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; wPolityce: „Będą negocjować koniec wojny. Wiadomo, co z Polską”; Najwyższy Czas: „Polska w rozmowach dotyczących Ukrainy. Tusk: »Dostałem gratulacje od wielu liderów«”."
     },
     "match": {
-      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny",
+      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny",
       "from": "2026-11-13T14:00:00Z"
     },
     "extra": [],
@@ -2707,7 +2707,7 @@
       "right": "Telewizja Republika: „Czarzasty nie toleruje porządnych ludzi w swojej partii”."
     },
     "match": {
-      "include": "Kusznieruk|Członek Nowej Lewicy zawieszony|Czarzasty nie toleruje porządnych ludzi",
+      "include": "Kusznieruk|Członek Nowej Lewicy zawieszony|Polityk Lewicy zawieszony przez Czarzastego|Czarzasty nie toleruje porządnych ludzi",
       "from": "2026-11-13T16:00:00Z"
     },
     "extra": [],
