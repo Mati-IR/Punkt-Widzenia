@@ -2537,8 +2537,8 @@
       "Według opisów ustawa miała umożliwić szybsze blokowanie nielegalnych treści w internecie (Rzeczpospolita, Radio ZET).",
       "„Nie będę ulegał żadnym szantażom rządzących, tym bardziej jeśli zakładnikami ma być bezpieczeństwo i wolność” – oświadczył prezydent (Wirtualna Polska, Polsat News).",
       "Prezydent podpisał jednocześnie sześć innych ustaw, m.in. dotyczącą CPK (Onet, Wirtualna Polska).",
-      "Wicepremier Krzysztof Gawkowski ostro skrytykował weto: „Stawiam panu prezydentowi publiczny akt oskarżenia” (Wirtualna Polska, Polsat News, Onet).",
-      "Wicepremier Krzysztof Gawkowski: „Stawiam prezydentowi publiczny akt oskarżenia”, zapowiada kolejną ustawę (RMF FM, Onet); Tusk: ochrona dzieci przed przestępcami w internecie powinna łączyć ponad podziałami (Gazeta.pl)."
+      "Wicepremier Krzysztof Gawkowski ostro skrytykował weto: „Stawiam panu prezydentowi publiczny akt oskarżenia” i zapowiedział kolejną ustawę (Wirtualna Polska, Polsat News, Onet, RMF FM).",
+      "Premier Donald Tusk: ochrona dzieci przed przestępcami w internecie powinna łączyć ponad podziałami (Gazeta.pl); „ofiarami tego weta są polskie dzieci”, a z decyzji prezydenta „zadowoleni są hejterzy i rosyjskie farmy trolli” (Radio Zet, Rzeczpospolita)."
     ],
     "framing": {
       "left": "Onet: „Karol Nawrocki wetuje ustawę o internecie. »Wykorzystano tragedię, by przepchnąć przepisy«”, „Fala komentarzy po wecie prezydenta. »Wstyd i hańba!«”; Wirtualna Polska: „Gawkowski grzmi po wecie Nawrockiego. »Przyzwolenie na hejt, nienawiść i śmierć«”, „»W obronie internetowego ścieku«. Komentarze po wecie prezydenta”.",
@@ -2546,12 +2546,12 @@
       "right": "Telewizja Republika: „Cenzury w sieci nie będzie. Prezydent wetuje ustawę o usługach cyfrowych”; Najwyższy Czas: „Prezydent zawetował cenzorską ustawę rządu, która miała wdrożyć DSA”; Rzeczpospolita: „Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy”."
     },
     "match": {
-      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej",
+      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej|skutki weta|Ofiarami tego weta|Tusk (krytykuje|gorzko podsumowuje) decyzję Nawrockiego|Obrzydliwy atak Tuska na Nawrockiego",
       "from": "2026-11-13T12:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-13T16:45:00Z",
-    "updatedAt": "2026-11-13T18:41:35Z"
+    "updatedAt": "2026-11-14T16:42:05Z"
   },
   {
     "id": "sanok-referendum-odwolanie-burmistrza",
@@ -2812,20 +2812,21 @@
       "W sobotę PiS zorganizował w Katowicach kongres gospodarczy (Rzeczpospolita).",
       "Jarosław Kaczyński mówił: „Musimy powrócić do tej drogi, którą szliśmy naprawdę efektywnie” (Rzeczpospolita) oraz „polski portfel musi być pełny” (Telewizja Republika).",
       "Prezes PiS ocenił, że to, co zrobiła obecna władza, to „rzecz prawdziwie niesłychana” (Polsat News).",
-      "Na kongresie przemawiała też Beata Szydło (Rzeczpospolita)."
+      "Na kongresie przemawiała też Beata Szydło (Rzeczpospolita).",
+      "Kaczyński zapowiedział „ofensywę” i powiedział: „Zakładam, że przejmiemy władzę” (RMF FM); według Kanału Zero partia chce wyjścia z systemu ETS."
     ],
     "framing": {
-      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
-      "center": "Polsat News: „«Rzecz niesłychana». Kaczyński uderza w rząd”.",
+      "left": "Wirtualna Polska: „Na scenie Kaczyński, Czarnek i Szydło. Zapowiadają «ofensywę»”.",
+      "center": "Polsat News: „«Rzecz niesłychana». Kaczyński uderza w rząd”; RMF FM: „Jarosław Kaczyński zapowiedział «ofensywę»: Zakładam, że przejmiemy władzę”.",
       "right": "Rzeczpospolita: „Konwencja gospodarcza PiS. Politycy zapowiadają «powrót do normalności»”; Telewizja Republika: „Kaczyński: «polski portfel musi być pełny»”."
     },
     "match": {
-      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd|konwencj\\w* programow\\w* PiS",
+      "include": "Konwencj\\w* gospodarcz\\w* PiS|kongres\\w* gospodarcz\\w* PiS|polski portfel|Kaczyński uderza w rząd|konwencj\\w* programow\\w* PiS|ofensyw\\S* gospodarcz|Zapowiadają .ofensywę|zapowiedział .ofensywę|Musimy wyciągnąć Polskę ze skutków|Trzeba zadbać o całą Polskę",
       "from": "2026-11-14T08:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-14T12:41:46Z",
-    "updatedAt": "2026-11-14T12:41:46Z"
+    "updatedAt": "2026-11-14T16:42:05Z"
   },
   {
     "id": "awaria-ruchu-lotniczego-usa-opoznienia-lot",
@@ -2963,5 +2964,57 @@
     "extra": [],
     "addedAt": "2026-11-14T14:24:34Z",
     "updatedAt": "2026-11-14T14:24:34Z"
+  },
+  {
+    "id": "napis-krakow-teraz-wsb-gdansk",
+    "title": "Napis nawiązujący do zamachu w Krakowie przed uczelnią WSB Merito w Gdańsku. Sprawę bada policja",
+    "date": "2026-11-14",
+    "location": "Gdańsk",
+    "tags": [
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "Przed Uniwersytetem WSB Merito w Gdańsku pojawił się napis „Kraków teraz WSB” (TVN24, Rzeczpospolita).",
+      "Napis nawiązuje do zamachu w Krakowie sprzed kilku dni (RMF FM, Onet).",
+      "Sprawę bada policja (Radio Zet, Gazeta.pl, Najwyższy Czas)."
+    ],
+    "framing": {
+      "left": "Onet: „Przed gdańską uczelnią pojawił się niepokojący napis”; Wirtualna Polska: „Szokujący napis przed uczelnią w Gdańsku”; TVN24: „«Kraków teraz WSB». Policja bada sprawę napisu”.",
+      "center": "RMF FM i Radio Zet: „Napis nawiązujący do zamachu (w Krakowie) przed uczelnią w Gdańsku”, z informacją, że sprawę bada policja.",
+      "right": "Rzeczpospolita: „Niepokojący napis przed uczelnią w Gdańsku kilka dni po zamachu”; Najwyższy Czas: „Napis odwołujący się do zamachu w Krakowie w Gdańsku. Policja bada sprawę”."
+    },
+    "match": {
+      "include": "uczelni\\S* w Gdańsku|gdańsk\\S* uczelni|Kraków teraz WSB|zamachu w Krakowie w Gdańsku",
+      "from": "2026-11-14T10:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T16:41:27Z",
+    "updatedAt": "2026-11-14T16:41:27Z"
+  },
+  {
+    "id": "pogrzeby-ofiar-zamachu-krakow-sedziszow-krasnik",
+    "title": "Pogrzeby ofiar zamachu w Krakowie w Sędziszowie Małopolskim i Kraśniku",
+    "date": "2026-11-14",
+    "location": "Sędziszów Małopolski, Kraśnik",
+    "tags": [
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "W Sędziszowie Małopolskim i Kraśniku odbyły się pogrzeby ofiar zamachu w Krakowie (Radio Zet, Kanał Zero).",
+      "Super Express pisze o „wzruszającym geście prezydenta” podczas pogrzebu jednej z ofiar, Eweliny.",
+      "Polsat News relacjonuje „poruszające słowa” wypowiedziane podczas uroczystości."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "Kanał Zero: „Sędziszów Małopolski i Kraśnik w żałobie”; Super Express: „Poruszające pożegnanie ofiary zamachu”; Polsat News: „Pogrzeby ofiar strzelaniny w Krakowie”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "[Pp]ogrzeb\\w* ofiar|[Pp]ożegnanie ofiar|Ewelina zginęła w zamachu|Sędziszów",
+      "from": "2026-11-14T08:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-14T16:41:27Z",
+    "updatedAt": "2026-11-14T16:41:27Z"
   }
 ]
