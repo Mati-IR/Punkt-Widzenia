@@ -3121,5 +3121,32 @@
     "extra": [],
     "addedAt": "2026-11-14T22:41:17Z",
     "updatedAt": "2026-11-14T22:41:17Z"
+  },
+  {
+    "id": "iran-atak-baza-usa-bahrajn-miny-ormuz",
+    "title": "Iran ogłasza atak dronów na bazę USA w Bahrajnie; dwa tankowce na minach w cieśninie Ormuz",
+    "date": "2026-11-15",
+    "location": "Bahrajn, cieśnina Ormuz",
+    "tags": [
+      "Świat"
+    ],
+    "summary": [
+      "Według komunikatu irańskiego Korpusu Strażników Rewolucji Islamskiej sześć dronów uderzyło w amerykański radar w bazie Al-Riffa w Bahrajnie (Najwyższy Czas, Kanał Zero).",
+      "Dowództwo USA (CENTCOM) nie potwierdziło ataku (Najwyższy Czas).",
+      "Władze Bahrajnu ogłosiły alarmy; tamtejsze MSW wydało dwa ostrzeżenia (Kanał Zero, Najwyższy Czas).",
+      "Według Reutersa dwa statki wpadły na miny morskie w cieśninie Ormuz i stanęły w płomieniach (Interia, Onet); Wirtualna Polska pisze o trzech tankowcach. Irańska agencja IRNA podała, że tankowce miały wyłączone systemy nawigacyjne (Interia)."
+    ],
+    "framing": {
+      "left": "Onet: „Dwa tankowce wpadły na miny w cieśninie Ormuz”; Wirtualna Polska: „Kolejne incydenty w cieśninie Ormuz. Trzy tankowce w ogniu”. Redakcje lewicowe piszą o incydentach z tankowcami; brak ich publikacji o ogłoszonym ataku na bazę w Bahrajnie.",
+      "center": "Interia: „Eskalacja na Bliskim Wschodzie. Płonące statki i syreny alarmowe”; Kanał Zero: „Iran twierdzi, że uderzył w radar USA. Bahrajn ogłasza alarmy”.",
+      "right": "Najwyższy Czas: „Pomruki wojenne na Bliskim Wschodzie. Strażnicy Rewolucji ogłaszają atak na bazę USA w Bahrajnie. USA nie potwierdzają”."
+    },
+    "match": {
+      "include": "Bahrajn|Eskalacja na Bliskim Wschodzie|Pomruki wojenne na Bliskim Wschodzie|tankowce (wpłynęły na miny|w płomieniach)|cieśnin\\w* Ormuz",
+      "from": "2026-11-15T00:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-15T06:41:21Z",
+    "updatedAt": "2026-11-15T06:41:21Z"
   }
 ]
