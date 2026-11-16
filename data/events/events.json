@@ -2111,7 +2111,7 @@
       "right": "Rzeczpospolita: „Święczkowski chce zablokować konta Trybunału Konstytucyjnego. Napisał do Glapińskiego”."
     },
     "match": {
-      "include": "prezesa NBP|do Glapińskiego|kont\\w* (TK|Trybunału)|rachunk\\w* (bankow\\w* )?(TK|Trybunału)|Szef NBP miał uderzyć w TK|Glapiński uderzy w TK|Glapiński (wstrzymuje|przystopował|ma kolejny problem|nie wymiękł)|(wobec|dla|sytuację) Glapińskiego|wkroczył Glapiński|zleceń płatniczych TK",
+      "include": "prezesa NBP|do Glapińskiego|kont\\w* (TK|Trybunału)|rachunk\\w* (bankow\\w* )?(TK|Trybunału)|Szef NBP miał uderzyć w TK|Glapiński uderzy w TK|Glapiński (wstrzymuje|przystopował|ma kolejny problem|nie wymiękł)|(wobec|dla|sytuację) Glapińskiego|wkroczył Glapiński|zleceń płatniczych TK|decyzj\\S* NBP|NBP wstrzymał|Pracownicy TK mogą nie dostać pensji|z Glapińskim",
       "from": "2026-11-12T14:00:00Z",
       "to": "2026-11-18T00:00:00Z"
     },
@@ -2543,7 +2543,7 @@
       "„Nie będę ulegał żadnym szantażom rządzących, tym bardziej jeśli zakładnikami ma być bezpieczeństwo i wolność” – oświadczył prezydent (Wirtualna Polska, Polsat News).",
       "Prezydent podpisał jednocześnie sześć innych ustaw, m.in. dotyczącą CPK (Onet, Wirtualna Polska).",
       "Wicepremier Krzysztof Gawkowski ostro skrytykował weto: „Stawiam panu prezydentowi publiczny akt oskarżenia” i zapowiedział kolejną ustawę (Wirtualna Polska, Polsat News, Onet, RMF FM).",
-      "Premier Donald Tusk: ochrona dzieci przed przestępcami w internecie powinna łączyć ponad podziałami (Gazeta.pl); „ofiarami tego weta są polskie dzieci”, a z decyzji prezydenta „zadowoleni są hejterzy i rosyjskie farmy trolli” (Radio Zet, Rzeczpospolita)."
+      "Premier Donald Tusk: ochrona dzieci przed przestępcami w internecie powinna łączyć ponad podziałami (Gazeta.pl); „ofiarami tego weta są polskie dzieci”, a z decyzji prezydenta „zadowoleni są hejterzy i rosyjskie farmy trolli” (Radio Zet, Rzeczpospolita). 16 listopada Tusk zaapelował do prezydenta: „Przecież pan też ma dzieci” (TVP Info, RMF FM)."
     ],
     "framing": {
       "left": "Onet: „Karol Nawrocki wetuje ustawę o internecie. »Wykorzystano tragedię, by przepchnąć przepisy«”, „Fala komentarzy po wecie prezydenta. »Wstyd i hańba!«”; Wirtualna Polska: „Gawkowski grzmi po wecie Nawrockiego. »Przyzwolenie na hejt, nienawiść i śmierć«”, „»W obronie internetowego ścieku«. Komentarze po wecie prezydenta”.",
@@ -2551,12 +2551,13 @@
       "right": "Telewizja Republika: „Cenzury w sieci nie będzie. Prezydent wetuje ustawę o usługach cyfrowych”; Najwyższy Czas: „Prezydent zawetował cenzorską ustawę rządu, która miała wdrożyć DSA”; Rzeczpospolita: „Nielegalne treści miały znikać z internetu szybciej. Nawrocki zawetował przepisy”."
     },
     "match": {
-      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej|skutki weta|Ofiarami tego weta|Tusk (krytykuje|gorzko podsumowuje) decyzję Nawrockiego|Obrzydliwy atak Tuska na Nawrockiego|Tusk grzmiał ws\\. weta|Tusk uderzył w Nawrockiego|ws\\. weta|weta Karola Nawrockiego|Nawrocki uległ lobbingowi",
-      "from": "2026-11-13T12:00:00Z"
+      "include": "zawetował|wetuje|wecie|[Ww]eto\\b|\\bDSA\\b|blokowani\\w* (nielegalnych )?treści|blokowaniu w internecie|ustawę o internecie|Ustawa blokująca nielegalne treści|Nawrocki zatwierdza sześć ustaw|Wstyd i hańba|Wicepremier obarcza winą prezydenta|Gawkowski reaguje na decyzję prezydenta|Prezydent zdecydował ws\\. głośnej ustawy|Prezydent podjął decyzję ws\\.|Tusk (skomentował decyzję prezydenta|odpowiada Nawrockiemu|uderza w prezydenta)|publiczny akt oskarżenia|Nawrocki zablokował przepisy|zablokowaniu ustawy cyfrowej|Prezydent sprzeciwił się cenzurze|Ochrona dzieci przed internetowymi przestępcami|ta ustawa mogła oddać państwu|Wściekli się na prezydenta|weta Nawrockiego|Ekspert reaguje na decyzję prezydenta|Tusk grzmi po decyzji prezydenta|ustawy cenzorskiej|skutki weta|Ofiarami tego weta|Tusk (krytykuje|gorzko podsumowuje) decyzję Nawrockiego|Obrzydliwy atak Tuska na Nawrockiego|Tusk grzmiał ws\\. weta|Tusk uderzył w Nawrockiego|ws\\. weta|weta Karola Nawrockiego|Nawrocki uległ lobbingowi|zawetowaniu|Przecież pan też ma dzieci",
+      "from": "2026-11-13T12:00:00Z",
+      "to": "2026-11-18T00:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-13T16:45:00Z",
-    "updatedAt": "2026-11-14T16:42:05Z"
+    "updatedAt": "2026-11-16T22:41:52Z"
   },
   {
     "id": "sanok-referendum-odwolanie-burmistrza",
@@ -2600,7 +2601,8 @@
     "summary": [
       "13 listopada przewodniczący Rady Europejskiej António Costa potwierdził, że Polska znajdzie się wśród państw negocjujących w sprawie wojny Rosji przeciwko Ukrainie (WP, Radio ZET, Interia).",
       "Premier Donald Tusk zapowiedział, że Polska będzie odgrywała „kluczową rolę” w rozmowach USA, Ukrainy i Rosji, i powiedział, że dostał gratulacje (Rzeczpospolita, Onet, Gazeta.pl).",
-      "Według Radia Maryja Polska ma być częścią unijnego formatu E5; Tusk mówi, że „dostał gratulacje” (Radio ZET)."
+      "Według Radia Maryja Polska ma być częścią unijnego formatu E5; Tusk mówi, że „dostał gratulacje” (Radio ZET).",
+      "16 listopada prezydent Ukrainy Wołodymyr Zełenski przekazał, że Europę w rozmowach z Rosją będą reprezentować Francja, Niemcy, Wielka Brytania, Włochy i Polska oraz przedstawiciele Komisji Europejskiej, Rady Europejskiej i NATO (Polsat News, TVN24, Radio Maryja)."
     ],
     "framing": {
       "left": "TVN24: „Polska wśród krajów UE negocjujących… »Ucieszyłem się«”; Onet: „Jest decyzja”; Gazeta Wyborcza: „Polska wśród państw, które będą negocjować w sprawie Ukrainy”.",
@@ -2608,12 +2610,13 @@
       "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; wPolityce: „Będą negocjować koniec wojny. Wiadomo, co z Polską”; Najwyższy Czas: „Polska w rozmowach dotyczących Ukrainy. Tusk: »Dostałem gratulacje od wielu liderów«”."
     },
     "match": {
-      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny|Polska będzie uczestniczyć w rozmowach|Polska zaproszona do rozmów pokojowych|udział Polski w negocjacjach|Udział Polski daje głos|udziale Polski w negocjacjach",
-      "from": "2026-11-13T14:00:00Z"
+      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny|Polska będzie uczestniczyć w rozmowach|Polska zaproszona do rozmów pokojowych|udział Polski w negocjacjach|Udział Polski daje głos|udziale Polski w negocjacjach|negocjatorów przedstawiciel Polski|reprezentować pięć państw",
+      "from": "2026-11-13T14:00:00Z",
+      "to": "2026-11-18T00:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-13T18:41:27Z",
-    "updatedAt": "2026-11-13T22:41:44Z"
+    "updatedAt": "2026-11-16T22:41:52Z"
   },
   {
     "extra": [],
@@ -3426,5 +3429,87 @@
     "extra": [],
     "addedAt": "2026-11-16T22:10:00Z",
     "updatedAt": "2026-11-16T22:10:00Z"
+  },
+  {
+    "id": "topr-poszukiwania-turystki-tatry-krzyzne",
+    "title": "TOPR szuka turystki zaginionej w Tatrach w rejonie Krzyżnego i Granatów",
+    "date": "2026-11-16",
+    "location": "Tatry",
+    "tags": [
+      "Tatry",
+      "Ratownictwo"
+    ],
+    "summary": [
+      "Tatrzańskie Ochotnicze Pogotowie Ratunkowe prowadzi poszukiwania turystki, która zaginęła w poniedziałek w rejonie przełęczy Krzyżne i Granatów (Wirtualna Polska, Gazeta.pl).",
+      "Według RMF FM połączenie z kobietą nagle się zerwało.",
+      "TOPR opublikował zdjęcie turystki i apeluje do osób, które mogły ją spotkać w górach, o kontakt (Onet, Gazeta.pl, Wirtualna Polska)."
+    ],
+    "framing": {
+      "left": "Onet: „Trwają poszukiwania kobiety ze zdjęcia. TOPR apeluje o pomoc”; Gazeta.pl: „TOPR: W Tatrach zaginęła turystka”; Wirtualna Polska: „TOPR szuka zaginionej w Tatrach”.",
+      "center": "RMF FM: „Połączenie nagle się zerwało. TOPR szuka turystki i apeluje o pomoc”; Fakt: „Pilna akcja w Tatrach. Turystka zaginęła na wyjątkowo trudnym szlaku”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "TOPR|[Ww] Tatrach (zaginęła|.{0,20}turystk)|Pilna akcja w Tatrach",
+      "from": "2026-11-16T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-16T22:41:26Z",
+    "updatedAt": "2026-11-16T22:41:26Z"
+  },
+  {
+    "id": "awaria-najwiekszych-bankow-usa",
+    "title": "Awaria systemów kilku największych banków w USA, klienci bez dostępu do kont",
+    "date": "2026-11-16",
+    "location": "USA",
+    "tags": [
+      "Świat",
+      "Banki"
+    ],
+    "summary": [
+      "Klienci kilku największych banków w USA, m.in. Bank of America, JPMorgan Chase, U.S. Bank i Wells Fargo, zgłaszali w poniedziałek awarie (Rzeczpospolita).",
+      "Utrudnienia dotyczyły m.in. logowania do kont, sprawdzania salda i realizacji przelewów (TVN24, Onet).",
+      "RMF FM pisze o „błędzie w systemie”."
+    ],
+    "framing": {
+      "left": "TVN24: „»Pewne usługi nie działają«. Awarie w kilku największych bankach”; Onet: „Pięć największych banków w USA z problemami”.",
+      "center": "RMF FM: „»Błąd w systemie«. Awaria w amerykańskich bankach”.",
+      "right": "Rzeczpospolita: „Awaria największych banków w USA. Klienci odcięci od kont”."
+    },
+    "match": {
+      "include": "[Aa]wari\\w* (w amerykańskich bankach|największych banków|w kilku największych bankach)|banków w USA",
+      "from": "2026-11-16T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-16T22:41:26Z",
+    "updatedAt": "2026-11-16T22:41:26Z"
+  },
+  {
+    "id": "rfi-tajna-misja-francuskich-zolnierzy-ukraina",
+    "title": "RFI: francuscy żołnierze od miesięcy szkolą wojsko w Ukrainie w ramach niejawnej misji",
+    "date": "2026-11-16",
+    "location": "Ukraina",
+    "tags": [
+      "Wojna w Ukrainie",
+      "Francja",
+      "Wojsko"
+    ],
+    "summary": [
+      "Według Radio France Internationale (RFI) francuscy żołnierze od kilku miesięcy przebywają w Ukrainie, gdzie szkolą ukraińskie wojsko i pomagają w utrzymaniu sprzętu (Rzeczpospolita, Kanał Zero).",
+      "Misja ma nosić kryptonim „Wola”; według RFI rząd w Paryżu nie poinformował o niej parlamentu (Kanał Zero, Najwyższy Czas!).",
+      "Według Najwyższego Czasu! oficjalnie żołnierze przebywają w Polsce; Rzeczpospolita wspomina w tym kontekście misję „Gerfaut” w Polsce."
+    ],
+    "framing": {
+      "left": "Brak publikacji redakcji lewicowych w monitorowanych źródłach.",
+      "center": "Kanał Zero: „Tajna operacja Francji w Ukrainie. Żołnierze szkolą Ukraińców od miesięcy”.",
+      "right": "Rzeczpospolita: „Tajne zadania francuskich żołnierzy na Ukrainie. W tle misja »Gerfaut« w Polsce”; Najwyższy Czas!: „Francuscy żołnierze z tajną misją na Ukrainie. Oficjalnie przebywają… w Polsce”."
+    },
+    "match": {
+      "include": "[Ff]rancus\\w* żołnierz\\w* (z tajną misją|na Ukrainie)|Tajna operacja Francji w Ukrainie|Gerfaut",
+      "from": "2026-11-16T16:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-16T22:41:26Z",
+    "updatedAt": "2026-11-16T22:41:26Z"
   }
 ]
