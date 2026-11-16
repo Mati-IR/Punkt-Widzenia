@@ -119,7 +119,8 @@
     "summary": [
       "Prokuratura wszczęła śledztwo w sprawie posła Michała Kołodziejczaka.",
       "Według Kanału Zero postępowanie wszczęto po jego ustaleniach dziennikarskich.",
-      "Gazeta Wyborcza i Gazeta.pl piszą o „problemie z zeznaniami” w tej sprawie."
+      "Gazeta Wyborcza i Gazeta.pl piszą o „problemie z zeznaniami” w tej sprawie.",
+      "16 listopada poseł i adwokat Paweł Jabłoński (Rozwój Plus) poinformował, że złożył w prokuraturze zawiadomienie o podejrzeniu popełnienia przez Kołodziejczaka szeregu przestępstw; według Wirtualnej Polski obejmuje ono m.in. zarzuty gwałtu, znęcania się i gróźb karalnych (WP, Fakt, RMF FM, Interia, Polsat News)."
     ],
     "framing": {
       "left": "Gazeta.pl: „Afera w sprawie Kołodziejczaka… Pojawił się problem”; Wyborcza: „Jest jednak problem z zeznaniami”; WP: „Prokuratura bada poważne zarzuty”.",
@@ -128,11 +129,13 @@
     },
     "match": {
       "include": "Kołodziejczak",
-      "from": "2026-11-10T14:00:00Z"
+      "from": "2026-11-10T14:00:00Z",
+      "to": "2026-11-18T00:00:00Z",
+      "exclude": "urodzinach"
     },
     "extra": [],
     "addedAt": "2026-11-11T00:45:00Z",
-    "updatedAt": "2026-11-11T00:45:00Z"
+    "updatedAt": "2026-11-16T21:59:06Z"
   },
   {
     "id": "zamach-krakow",
@@ -2099,7 +2102,8 @@
     "summary": [
       "Bogdan Święczkowski wysłał do prezesa NBP Adama Glapińskiego pismo z żądaniem zablokowania dostępu do rachunków bankowych Trybunału Konstytucyjnego osobom, które uważa za nieuprawnione.",
       "Według Gazeta.pl dołączył uchwałę Sądu Najwyższego, która jego zdaniem potwierdza, że pełni funkcję prezesa TK.",
-      "Według Rzeczpospolitej NBP wstrzymał realizację części operacji na rachunkach Trybunału."
+      "Według Rzeczpospolitej NBP wstrzymał realizację części operacji na rachunkach Trybunału.",
+      "16 listopada NBP poinformował, że wstrzymuje realizację zleceń płatniczych składanych przez TK (Gazeta Wyborcza, Najwyższy Czas!, Radio ZET); politycy koalicji, m.in. Andrzej Szejna i Roman Giertych, domagają się reakcji wobec Glapińskiego."
     ],
     "framing": {
       "left": "Onet: „Chce odciąć Trybunał Konstytucyjny od pieniędzy”; Gazeta.pl: „Żąda zablokowania kont TK przed »uzurpatorami«”.",
@@ -2107,12 +2111,13 @@
       "right": "Rzeczpospolita: „Święczkowski chce zablokować konta Trybunału Konstytucyjnego. Napisał do Glapińskiego”."
     },
     "match": {
-      "include": "prezesa NBP|do Glapińskiego|kont\\w* (TK|Trybunału)|rachunk\\w* (bankow\\w* )?(TK|Trybunału)|Szef NBP miał uderzyć w TK|Glapiński uderzy w TK",
-      "from": "2026-11-12T14:00:00Z"
+      "include": "prezesa NBP|do Glapińskiego|kont\\w* (TK|Trybunału)|rachunk\\w* (bankow\\w* )?(TK|Trybunału)|Szef NBP miał uderzyć w TK|Glapiński uderzy w TK|Glapiński (wstrzymuje|przystopował|ma kolejny problem|nie wymiękł)|(wobec|dla|sytuację) Glapińskiego|wkroczył Glapiński|zleceń płatniczych TK",
+      "from": "2026-11-12T14:00:00Z",
+      "to": "2026-11-18T00:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-12T20:40:55Z",
-    "updatedAt": "2026-11-12T20:40:55Z"
+    "updatedAt": "2026-11-16T21:59:06Z"
   },
   {
     "extra": [],
@@ -3284,5 +3289,142 @@
     "extra": [],
     "addedAt": "2026-11-15T10:50:00Z",
     "updatedAt": "2026-11-15T10:50:00Z"
+  },
+  {
+    "id": "estonia-zamyka-granice-z-rosja-sabotaz",
+    "title": "Estonia zamknie przejścia graniczne z Rosją po udaremnionej próbie sabotażu",
+    "date": "2026-11-15",
+    "location": "Estonia",
+    "tags": [
+      "Świat",
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "Estonia ogłosiła zamknięcie przejść granicznych z Rosją; według Radia Maryja, powołującego się na estońskie MSZ, od 1 grudnia.",
+      "Powodem jest udaremniona próba sabotażu – według Rzeczpospolitej próba podpalenia firmy zbrojeniowej; władze Estonii wskazują na rosyjski wywiad wojskowy GRU (Onet, Gazeta Wyborcza, Telewizja Republika).",
+      "Kreml krytykuje decyzję i mówi o „bezpodstawnych oskarżeniach” (Polsat News, Gazeta.pl); według Onetu Litwa nie wyklucza podobnego kroku."
+    ],
+    "framing": {
+      "left": "Onet: „Służby udaremniły dywersję GRU”; Gazeta.pl: „Premier: Nie damy się zastraszyć”; WP: „Polska zamknie granicę z Rosją? Estonia już to robi i wzywa do tego innych”.",
+      "center": "RMF FM: „Estonia reaguje na akt sabotażu”; Polsat News: „Rosja przekroczyła granicę. Estonia ogłosiła radykalną decyzję”; Radio ZET: „Estonia zamyka granicę po próbie sabotażu”.",
+      "right": "Rzeczpospolita: „Próba podpalenia firmy zbrojeniowej w Estonii”; Najwyższy Czas!: „To odpowiedź na atak na fabrykę dronów”; Telewizja Republika: „Estonia wskazuje na GRU po próbie sabotażu”."
+    },
+    "match": {
+      "include": "Estoni\\w* (zamyka|zamknie|reaguje na akt|odpowiada na próbę|wskazuje na GRU|ogłosiła radykalną)|[Dd]ecyzj\\w* Estonii|sabotażu w Estonii|Estonia już to robi|zakładów firmy z Estonii",
+      "from": "2026-11-15T12:00:00Z",
+      "exclude": "SKRÓT DNIA|NA POCZĄTEK DNIA|Podsumowanie nocy"
+    },
+    "extra": [],
+    "addedAt": "2026-11-16T22:10:00Z",
+    "updatedAt": "2026-11-16T22:10:00Z"
+  },
+  {
+    "id": "belweder-spotkanie-partii-ws-tk",
+    "title": "Spotkanie partii w Belwederze w sprawie TK bez KO i Lewicy; zapowiedziano kolejne",
+    "date": "2026-11-16",
+    "location": "Warszawa",
+    "tags": [
+      "Polityka",
+      "Praworządność"
+    ],
+    "summary": [
+      "W Belwederze odbyło się spotkanie przedstawicieli ugrupowań parlamentarnych w sprawie „uzdrowienia” Trybunału Konstytucyjnego, prowadzone przez szefa Kancelarii Prezydenta Zbigniewa Boguckiego, bez udziału prezydenta.",
+      "KO i Lewica nie wzięły w nim udziału; lider PSL Władysław Kosiniak-Kamysz nazwał to błędem, a PSL przyszło z własną propozycją (TVN24, Onet, WP).",
+      "Po spotkaniu Bogucki mówił o sukcesie i zapowiedział kolejne spotkanie (Fakt, TVN24, Gazeta Wyborcza)."
+    ],
+    "framing": {
+      "left": "TVN24: „Cezary Tomczyk: to jest trochę żart z państwa”; Onet: „KO nie idzie do Belwederu. »Sprawa zamknięta«”; Gazeta Wyborcza: „Bogucki ogłasza nowe otwarcie w sporze o TK. Na spotkaniu zabrakło KO i Lewicy”.",
+      "center": "Radio ZET: „»Absolutnie niepoważna propozycja«. Spotkanie w Belwederze bez ważnych nazwisk”; Fakt: „Człowiek Nawrockiego grzmi o »rozłamowcach«”; Interia: „Kto nie weźmie udziału w spotkaniu w Belwederze?”.",
+      "right": "Rzeczpospolita: „W Belwederze o Trybunale Konstytucyjnym. Bez KO i Lewicy”; Radio Maryja: „Próba budowania porozumienia wokół TK”."
+    },
+    "match": {
+      "include": "Belweder",
+      "from": "2026-11-15T18:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-16T22:10:00Z",
+    "updatedAt": "2026-11-16T22:10:00Z"
+  },
+  {
+    "id": "darlowo-cialo-kobiety-emilia-koprowska",
+    "title": "Pod Darłowem znaleziono ciało kobiety; według prokuratury to prawdopodobnie zaginiona Emilia Koprowska",
+    "date": "2026-11-15",
+    "location": "Darłowo",
+    "tags": [
+      "Kraj"
+    ],
+    "summary": [
+      "15 listopada w Palczewicach pod Darłowem spacerowicz znalazł ciało kobiety w rejonie poszukiwań zaginionej w sierpniu 37-letniej Emilii Koprowskiej (Interia, Newsweek, TVP Info).",
+      "Według prokuratury odzież i przedmioty znalezione przy zwłokach wskazują, że może to być Emilia Koprowska (Onet, Gazeta Wyborcza, Newsweek).",
+      "Według wstępnych wyników sekcji, na które powołują się Fakt i Onet, czas zgonu zbiega się z czasem zaginięcia; głos zabrał mąż zaginionej."
+    ],
+    "framing": {
+      "left": "Gazeta Wyborcza: „Prokuratura: To prawdopodobnie Emilia Koprowska”; Onet: „10 powodów, dla których zaginięcie Emilii Koprowskiej tak trudno wyjaśnić”; WP: „Prokuratura przyznaje się do błędu w ustaleniach”.",
+      "center": "Fakt: „Niepokojące informacje z Darłowa”; Polsat News: „Makabryczne odkrycie w miejscu poszukiwań”; Radio ZET: „»To nie jest takie oczywiste«”.",
+      "right": "Rzeczpospolita: „To może być 37-latka, która zaginęła na festiwalu techno”; Najwyższy Czas!: „To prawdopodobnie zaginiona w sierpniu Emilia Koprowska”."
+    },
+    "match": {
+      "include": "Koprowsk|Darłow",
+      "exclude": "SKRÓT DNIA|NA POCZĄTEK DNIA",
+      "from": "2026-11-15T06:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-16T22:10:00Z",
+    "updatedAt": "2026-11-16T22:10:00Z"
+  },
+  {
+    "id": "wniosek-uchylenie-immunitetu-mejzy",
+    "title": "Prokurator generalny wnioskuje o uchylenie immunitetu posła Łukasza Mejzy",
+    "date": "2026-11-16",
+    "location": "Warszawa",
+    "tags": [
+      "Polityka",
+      "Prawo"
+    ],
+    "summary": [
+      "Prokurator generalny Waldemar Żurek skierował do marszałka Sejmu wniosek o uchylenie immunitetu posłowi Łukaszowi Mejzy (Onet, TVN24, Radio ZET).",
+      "Według Interii i Gazety Wyborczej wniosek dotyczy uzasadnionego podejrzenia popełnienia czterech przestępstw.",
+      "Rzeczpospolita i TVP Info piszą, że to kolejny taki wniosek wobec tego posła."
+    ],
+    "framing": {
+      "left": "TVN24: „Wniosek o uchylenie immunitetu Łukasza Mejzy”; Gazeta Wyborcza: „Mówi o czterech przestępstwach”; Gazeta.pl: „Łukasz Mejza straci immunitet?”.",
+      "center": "Fakt: „Poważne problemy posła Mejzy. Bulwersująca sprawa”; RMF FM: „Grożą mu poważne zarzuty”; Polsat News: „Kłopoty posła Łukasza Mejzy”.",
+      "right": "Rzeczpospolita: „Jest kolejny wniosek o uchylenie immunitetu Łukasza Mejzy”."
+    },
+    "match": {
+      "include": "Mejz",
+      "exclude": "latają za darmo|skecz",
+      "from": "2026-11-16T10:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-16T22:10:00Z",
+    "updatedAt": "2026-11-16T22:10:00Z"
+  },
+  {
+    "id": "atak-ukrainy-na-most-krymski",
+    "title": "Ukraiński atak na Most Krymski, ruch wstrzymany; Kreml potwierdza uszkodzenia",
+    "date": "2026-11-16",
+    "location": "Krym",
+    "tags": [
+      "Świat",
+      "Wojna w Ukrainie"
+    ],
+    "summary": [
+      "W nocy Ukraina zaatakowała Most Krymski; władze rosyjskie wstrzymały na nim ruch (Onet, Gazeta Wyborcza).",
+      "Rzecznik Kremla Dmitrij Pieskow przyznał, że most został uszkodzony (Rzeczpospolita, WP); według Gazeta.pl jeden z łuków jest odchylony o 15 stopni.",
+      "Według WP w korku utknęło ok. 2 tys. aut; Rzeczpospolita pisze o ok. 600 dronach skierowanych tej nocy w stronę obwodu moskiewskiego."
+    ],
+    "framing": {
+      "left": "Onet: „Nocny atak na Most Krymski. Rosjanie wstrzymali ruch”; Gazeta.pl: „»Jeden łuk odchylony o 15 stopni«”; WP: „Atak na Most Krymski. Okupanci potwierdzają”.",
+      "center": "RMF FM: „Uderzenie w symbol Putina”; Interia: „Paraliżujący atak na Most Krymski”.",
+      "right": "Rzeczpospolita: „Rzecznik Kremla przyznał, że Most Krymski został uszkodzony. Nocny atak na Rosję był rekordowy”."
+    },
+    "match": {
+      "include": "[Mm]ost\\w* Krymsk",
+      "from": "2026-11-16T00:00:00Z"
+    },
+    "extra": [],
+    "addedAt": "2026-11-16T22:10:00Z",
+    "updatedAt": "2026-11-16T22:10:00Z"
   }
 ]
