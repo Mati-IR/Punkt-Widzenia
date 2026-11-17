@@ -3432,7 +3432,7 @@
   },
   {
     "id": "topr-poszukiwania-turystki-tatry-krzyzne",
-    "title": "TOPR szuka turystki zaginionej w Tatrach w rejonie Krzyżnego i Granatów",
+    "title": "TOPR szukał turystki zaginionej w Tatrach w rejonie Krzyżnego; kobieta odnaleziona żywa",
     "date": "2026-11-16",
     "location": "Tatry",
     "tags": [
@@ -3442,20 +3442,21 @@
     "summary": [
       "Tatrzańskie Ochotnicze Pogotowie Ratunkowe prowadzi poszukiwania turystki, która zaginęła w poniedziałek w rejonie przełęczy Krzyżne i Granatów (Wirtualna Polska, Gazeta.pl).",
       "Według RMF FM połączenie z kobietą nagle się zerwało.",
-      "TOPR opublikował zdjęcie turystki i apeluje do osób, które mogły ją spotkać w górach, o kontakt (Onet, Gazeta.pl, Wirtualna Polska)."
+      "TOPR opublikował zdjęcie turystki i apeluje do osób, które mogły ją spotkać w górach, o kontakt (Onet, Gazeta.pl, Wirtualna Polska).",
+      "Według RMF FM poszukiwania zakończyły się w poniedziałek wieczorem – turystka została odnaleziona żywa; Radio ZET podaje, że spadła z wysokości."
     ],
     "framing": {
       "left": "Onet: „Trwają poszukiwania kobiety ze zdjęcia. TOPR apeluje o pomoc”; Gazeta.pl: „TOPR: W Tatrach zaginęła turystka”; Wirtualna Polska: „TOPR szuka zaginionej w Tatrach”.",
-      "center": "RMF FM: „Połączenie nagle się zerwało. TOPR szuka turystki i apeluje o pomoc”; Fakt: „Pilna akcja w Tatrach. Turystka zaginęła na wyjątkowo trudnym szlaku”.",
+      "center": "RMF FM: „Połączenie nagle się zerwało. TOPR szuka turystki i apeluje o pomoc”, „Koniec poszukiwań w Tatrach. Turystka odnaleziona żywa”; Fakt: „Pilna akcja w Tatrach. Turystka zaginęła na wyjątkowo trudnym szlaku”.",
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "TOPR|[Ww] Tatrach (zaginęła|.{0,20}turystk)|Pilna akcja w Tatrach",
+      "include": "TOPR|[Ww] Tatrach (zaginęła|.{0,20}turystk)|Pilna akcja w Tatrach|Koniec poszukiwań w Tatrach",
       "from": "2026-11-16T16:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-16T22:41:26Z",
-    "updatedAt": "2026-11-16T22:41:26Z"
+    "updatedAt": "2026-11-17T04:41:00Z"
   },
   {
     "id": "awaria-najwiekszych-bankow-usa",
