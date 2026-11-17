@@ -3150,7 +3150,7 @@
       "right": "Najwyższy Czas: „Pomruki wojenne na Bliskim Wschodzie. Strażnicy Rewolucji ogłaszają atak na bazę USA w Bahrajnie. USA nie potwierdzają”."
     },
     "match": {
-      "include": "Bahrajn|Eskalacja na Bliskim Wschodzie|Pomruki wojenne na Bliskim Wschodzie|tankowce (wpłynęły na miny|w płomieniach)|cieśnin\\w* Ormuz",
+      "include": "Bahrajn|Eskalacja na Bliskim Wschodzie|Pomruki wojenne na Bliskim Wschodzie|tankowce (wpłynęły na miny|w płomieniach)|cieśnin\\w* Ormuz|tankowce stanęły w ogniu koło Ormuz",
       "from": "2026-11-15T00:00:00Z"
     },
     "extra": [],
@@ -3305,7 +3305,8 @@
     "summary": [
       "Estonia ogłosiła zamknięcie przejść granicznych z Rosją; według Radia Maryja, powołującego się na estońskie MSZ, od 1 grudnia.",
       "Powodem jest udaremniona próba sabotażu – według Rzeczpospolitej próba podpalenia firmy zbrojeniowej; władze Estonii wskazują na rosyjski wywiad wojskowy GRU (Onet, Gazeta Wyborcza, Telewizja Republika).",
-      "Kreml krytykuje decyzję i mówi o „bezpodstawnych oskarżeniach” (Polsat News, Gazeta.pl); według Onetu Litwa nie wyklucza podobnego kroku."
+      "Kreml krytykuje decyzję i mówi o „bezpodstawnych oskarżeniach” (Polsat News, Gazeta.pl); według Onetu Litwa nie wyklucza podobnego kroku.",
+      "MSZ Estonii wezwało szefa ambasady Rosji w Tallinnie w związku z próbą podpalenia budynku firmy zbrojeniowej Threod Systems (Onet, Rzeczpospolita)."
     ],
     "framing": {
       "left": "Onet: „Służby udaremniły dywersję GRU”; Gazeta.pl: „Premier: Nie damy się zastraszyć”; WP: „Polska zamknie granicę z Rosją? Estonia już to robi i wzywa do tego innych”.",
@@ -3313,13 +3314,13 @@
       "right": "Rzeczpospolita: „Próba podpalenia firmy zbrojeniowej w Estonii”; Najwyższy Czas!: „To odpowiedź na atak na fabrykę dronów”; Telewizja Republika: „Estonia wskazuje na GRU po próbie sabotażu”."
     },
     "match": {
-      "include": "Estoni\\w* (zamyka|zamknie|reaguje na akt|odpowiada na próbę|wskazuje na GRU|ogłosiła radykalną)|[Dd]ecyzj\\w* Estonii|sabotażu w Estonii|Estonia już to robi|zakładów firmy z Estonii",
+      "include": "Estoni\\w* (zamyka|zamknie|reaguje na akt|odpowiada na próbę|wskazuje na GRU|ogłosiła radykalną)|[Dd]ecyzj\\w* Estonii|sabotażu w Estonii|Estonia już to robi|zakładów firmy z Estonii|Estonia wzywa na dywanik|MSZ Estonii reaguje|Niewielki kraj ostro odpowiada Putinowi",
       "from": "2026-11-15T12:00:00Z",
       "exclude": "SKRÓT DNIA|NA POCZĄTEK DNIA|Podsumowanie nocy"
     },
     "extra": [],
     "addedAt": "2026-11-16T22:10:00Z",
-    "updatedAt": "2026-11-16T22:10:00Z"
+    "updatedAt": "2026-11-17T06:42:35Z"
   },
   {
     "id": "belweder-spotkanie-partii-ws-tk",
@@ -3341,7 +3342,7 @@
       "right": "Rzeczpospolita: „W Belwederze o Trybunale Konstytucyjnym. Bez KO i Lewicy”; Radio Maryja: „Próba budowania porozumienia wokół TK”."
     },
     "match": {
-      "include": "Belweder",
+      "include": "Belweder|Spotkanie ws\\. TK|Brzemienna w skutki lista obecności",
       "from": "2026-11-15T18:00:00Z"
     },
     "extra": [],
@@ -3443,7 +3444,7 @@
       "Tatrzańskie Ochotnicze Pogotowie Ratunkowe prowadzi poszukiwania turystki, która zaginęła w poniedziałek w rejonie przełęczy Krzyżne i Granatów (Wirtualna Polska, Gazeta.pl).",
       "Według RMF FM połączenie z kobietą nagle się zerwało.",
       "TOPR opublikował zdjęcie turystki i apeluje do osób, które mogły ją spotkać w górach, o kontakt (Onet, Gazeta.pl, Wirtualna Polska).",
-      "Według RMF FM poszukiwania zakończyły się w poniedziałek wieczorem – turystka została odnaleziona żywa; Radio ZET podaje, że spadła z wysokości."
+      "Turystka została odnaleziona w nocy żywa; według Gazety.pl była mocno wychłodzona i w ciężkim stanie po upadku z wysokości (Gazeta.pl, Interia)."
     ],
     "framing": {
       "left": "Onet: „Trwają poszukiwania kobiety ze zdjęcia. TOPR apeluje o pomoc”; Gazeta.pl: „TOPR: W Tatrach zaginęła turystka”; Wirtualna Polska: „TOPR szuka zaginionej w Tatrach”.",
@@ -3451,12 +3452,12 @@
       "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
     },
     "match": {
-      "include": "TOPR|[Ww] Tatrach (zaginęła|.{0,20}turystk)|Pilna akcja w Tatrach|Koniec poszukiwań w Tatrach",
+      "include": "TOPR|[Ww] Tatrach (zaginęła|.{0,20}turystk)|Pilna akcja w Tatrach|Koniec poszukiwań w Tatrach|[Ww] Tatrach, turystka odnaleziona|odnaleziono poszukiwaną turystkę",
       "from": "2026-11-16T16:00:00Z"
     },
     "extra": [],
     "addedAt": "2026-11-16T22:41:26Z",
-    "updatedAt": "2026-11-17T04:41:00Z"
+    "updatedAt": "2026-11-17T06:42:35Z"
   },
   {
     "id": "awaria-najwiekszych-bankow-usa",
@@ -3512,5 +3513,115 @@
     "extra": [],
     "addedAt": "2026-11-16T22:41:26Z",
     "updatedAt": "2026-11-16T22:41:26Z"
+  },
+  {
+    "id": "cnn-iran-plany-ataku-na-urzednikow-trumpa",
+    "title": "CNN: wywiad USA przechwycił informacje o irańskich planach ataku na urzędników Trumpa w Waszyngtonie",
+    "date": "2026-11-17",
+    "location": "USA",
+    "tags": [
+      "Świat",
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "Według CNN amerykański wywiad przechwycił informacje o irańskich planach ataków na wysokich rangą urzędników administracji Donalda Trumpa w Waszyngtonie (Wirtualna Polska, Rzeczpospolita).",
+      "Według stacji rozważane jest użycie tzw. brudnej bomby (Wirtualna Polska, Rzeczpospolita, Super Express).",
+      "Informacje pochodzą z doniesień medialnych powołujących się na wywiad USA; w nagłówkach brak komentarza władz Iranu."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska: „CNN: Iran planuje atak na urzędników Trumpa w Waszyngtonie”.",
+      "center": "RMF FM: „Atak z użyciem »brudnej bomby« w sercu USA? Wywiad przechwycił plany Iranu”; Super Express: „Wywiad USA straszy zamachem”.",
+      "right": "Rzeczpospolita: „Iran rozważa atak bronią chemiczną. Na celowniku najważniejsi współpracownicy Trumpa”."
+    },
+    "match": {
+      "include": "brudn\\S* bomb|Iran planuje atak na urzędników|Iran rozważa atak bronią chemiczną",
+      "from": "2026-11-17T02:00:00Z",
+      "exclude": "SKRÓT DNIA|NA POCZĄTEK DNIA|Podsumowanie nocy"
+    },
+    "extra": [],
+    "addedAt": "2026-11-17T06:42:11Z",
+    "updatedAt": "2026-11-17T06:42:11Z"
+  },
+  {
+    "id": "japonia-naruszenie-przestrzeni-powietrznej-samoloty",
+    "title": "Japonia: dwa samoloty, prawdopodobnie rosyjskie, naruszyły przestrzeń powietrzną kraju",
+    "date": "2026-11-17",
+    "location": "Japonia",
+    "tags": [
+      "Świat",
+      "Bezpieczeństwo"
+    ],
+    "summary": [
+      "Według władz Japonii dwa samoloty, prawdopodobnie rosyjskie, naruszyły we wtorek japońską przestrzeń powietrzną w rejonie prefektury Fukuoka, w pobliżu wyspy Okinoshima (Telewizja Republika, Rzeczpospolita, Wirtualna Polska).",
+      "Do naruszenia doszło o 4.00 czasu lokalnego (Rzeczpospolita).",
+      "Tokio poderwało myśliwce i skierowało protest do Moskwy (Wirtualna Polska)."
+    ],
+    "framing": {
+      "left": "Wirtualna Polska: „Naruszenie nieba Japonii. Władze w Tokio ostro reagują”.",
+      "center": "TVP Info: „Alarm w Japonii. Dwa samoloty wtargnęły w jej przestrzeń powietrzną”.",
+      "right": "Telewizja Republika: „Japonia: Dwa, prawdopodobnie rosyjskie samoloty naruszyły naszą przestrzeń powietrzną”; Rzeczpospolita: „Rosyjskie samoloty wojskowe nad Japonią?”."
+    },
+    "match": {
+      "include": "Japoni\\S*.{0,90}przestrze\\S* powietrzn|nad Japonią|nieba Japonii",
+      "from": "2026-11-17T02:00:00Z",
+      "exclude": "SKRÓT DNIA|NA POCZĄTEK DNIA|Podsumowanie nocy"
+    },
+    "extra": [],
+    "addedAt": "2026-11-17T06:42:11Z",
+    "updatedAt": "2026-11-17T06:42:11Z"
+  },
+  {
+    "id": "sondaz-sw-research-zaufanie-do-policji-po-zamachu",
+    "title": "Sondaż SW Research dla DGP: po zamachu w Krakowie 38,5 proc. badanych deklaruje wzrost zaufania do policji",
+    "date": "2026-11-17",
+    "location": "Polska",
+    "tags": [
+      "Społeczeństwo",
+      "Sondaż"
+    ],
+    "summary": [
+      "Według sondażu SW Research dla „Dziennika Gazety Prawnej” 38,5 proc. respondentów zadeklarowało, że po zamachu w Krakowie wzrosło ich zaufanie do policji (Wirtualna Polska, Radio ZET; Onet podaje 38,4 proc.).",
+      "Spadek zaufania wskazało 20,6 proc. badanych (Wirtualna Polska)."
+    ],
+    "framing": {
+      "left": "Onet: „Polacy ocenili swoje zaufanie do policji. Sondaż przeprowadzono już po zamachu w Krakowie”; Wirtualna Polska: „Nowy sondaż po zamachu w Krakowie”.",
+      "center": "Radio ZET: „Sondaż po zamachu w Krakowie. Tak Polacy ocenili zaufanie do policji”.",
+      "right": "Brak publikacji redakcji prawicowych w monitorowanych źródłach."
+    },
+    "match": {
+      "include": "zaufanie do policji",
+      "from": "2026-11-17T02:00:00Z",
+      "exclude": "SKRÓT DNIA|NA POCZĄTEK DNIA|Podsumowanie nocy"
+    },
+    "extra": [],
+    "addedAt": "2026-11-17T06:42:11Z",
+    "updatedAt": "2026-11-17T06:42:11Z"
+  },
+  {
+    "id": "scenariusze-fali-uchodzcow-z-ukrainy-zima",
+    "title": "Rząd przygotowuje scenariusze na wypadek nowej fali uchodźców z Ukrainy zimą",
+    "date": "2026-11-17",
+    "location": "Polska",
+    "tags": [
+      "Wojna w Ukrainie",
+      "Migracja"
+    ],
+    "summary": [
+      "Według Onetu rząd przygotowuje się na ewentualną falę migracji z Ukrainy i rozważa trzy scenariusze.",
+      "Według „Rzeczpospolitej” rosyjskie ataki na infrastrukturę krytyczną w Ukrainie mogą zimą wywołać trzecią falę uchodźców do Polski, nawet 2,5 mln osób (Rzeczpospolita, RMF FM, Radio ZET)."
+    ],
+    "framing": {
+      "left": "Onet: „Rząd przygotowuje się na ewentualną falę migracji z Ukrainy. »Trzy scenariusze«”.",
+      "center": "RMF FM: „2,5 mln uchodźców przyjedzie do Polski? Trzy scenariusze zimowego exodusu”; Radio ZET: „Polska szykuje się na kolejną falę uchodźców”.",
+      "right": "Rzeczpospolita: „Rosja chce tej zimy zamrozić Ukrainę. Polskę może zalać fala 2,5 mln uchodźców”."
+    },
+    "match": {
+      "include": "fal\\S* (migracji|uchodźców)|mln uchodźców|zimowego exodusu",
+      "from": "2026-11-17T02:00:00Z",
+      "exclude": "SKRÓT DNIA|NA POCZĄTEK DNIA|Podsumowanie nocy"
+    },
+    "extra": [],
+    "addedAt": "2026-11-17T06:42:11Z",
+    "updatedAt": "2026-11-17T06:42:11Z"
   }
 ]
