@@ -2610,7 +2610,7 @@
       "right": "Rzeczpospolita: „Polska weźmie udział w negocjacjach dotyczących zakończenia wojny w Ukrainie”; wPolityce: „Będą negocjować koniec wojny. Wiadomo, co z Polską”; Najwyższy Czas: „Polska w rozmowach dotyczących Ukrainy. Tusk: »Dostałem gratulacje od wielu liderów«”."
     },
     "match": {
-      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny|Polska będzie uczestniczyć w rozmowach|Polska zaproszona do rozmów pokojowych|udział Polski w negocjacjach|Udział Polski daje głos|udziale Polski w negocjacjach|negocjatorów przedstawiciel Polski|reprezentować pięć państw",
+      "include": "Polska (wśród (państw|krajów)|wybrana do rozmów|przy stole (rozmów|negocjacyjnym)|weźmie udział w negocjacjach|dołączy do rozmów|będzie odgrywała kluczową rolę)|udziału Polski w negocjacjach|nowej roli Polski w sprawie wojny|Polska z kluczową rolą|„Kluczowa rola” Polski|Polska znajdzie się przy dużym stole|formatu E5|chcą Polski przy stole|Polska w rozmowach dotyczących Ukrainy|Będą negocjować koniec wojny|Polska będzie uczestniczyć w rozmowach|Polska zaproszona do rozmów pokojowych|udział Polski w negocjacjach|Udział Polski daje głos|udziale Polski w negocjacjach|negocjatorów przedstawiciel Polski|reprezentować pięć państw|negocjacjach z udziałem Polski|Polska włączona w rozmowy",
       "from": "2026-11-13T14:00:00Z",
       "to": "2026-11-18T00:00:00Z"
     },
