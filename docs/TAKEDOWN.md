@@ -17,7 +17,7 @@ Reports come by e-mail from the form at `/zglos-naruszenie/` (subject starts wit
 | All headlines from one publisher (opt-out) | In `data/feeds.json` add `"paused": "opt-out <date>, <who>"` to the outlet's entry. The fetcher then skips it and reports it as `paused`. Delete its existing lines from `data/articles/` if the publisher asks. |
 | An outlet's rating or description | Do not change it yourself: pass the report to the Media Research Analyst (methodology owner). |
 
-Open a PR with the change; the site rebuilds when it is merged to `main`.
+Open a PR with the change; the site rebuilds when it is released to `master`.
 
 ## What we show (keeps reports rare)
 

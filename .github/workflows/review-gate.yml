@@ -1,12 +1,14 @@
-# Review gate (PUN-91). Required check on PRs into `dev` and `main`.
-# A PR into `dev` passes when it has BOTH `approved-legal` (Legal analyst) and `approved-cos`
-# (Chief of staff) labels, OR the `approved-founder` label. A PR into `main` (a production
-# release, normally dev -> main) passes only with `approved-founder`.
-# Exception (founder decision, PUN-91): an AI events routine PR into `main` from a branch
-# `events/...` that changes only files under data/events/ passes without labels; CI must still pass.
-# A PR main -> dev (sync-dev.yml) passes too: main is production, already approved.
-# Headline PRs and sync PRs are opened with the Actions token, so this workflow does not run on them;
-# ingest.yml and sync-dev.yml check them and report `review-gate` as a commit status instead.
+# Review gate (PUN-91, PUN-96). Required check on PRs into `dev` and `master`.
+# - PR into `dev` (code): passes with BOTH `approved-legal` (Legal analyst) and `approved-cos`
+#   (Chief of staff) labels, OR the `approved-founder` label.
+# - PR into `master` (a production release, normally dev -> master): only with `approved-founder`.
+# - Data exception (founder decision, PUN-96): an AI events routine PR into `dev` from a branch
+#   `events/...` that changes only files under data/events/ passes without labels; CI must still pass.
+#   After the merge, promote-data.yml moves it to `master` automatically.
+# - A PR master -> dev (sync-dev.yml) passes too: master is production, already approved.
+# Headline, promotion and sync PRs are opened with the Actions token, so this workflow does not run on
+# them; ingest.yml, promote-data.yml and sync-dev.yml check them and report `review-gate` as a commit
+# status instead.
 # All agents push as the same GitHub account, so labels are a process control: they are added only
 # after a review recorded on the Paperclip issue. See docs/CONTRIBUTING.md.
 name: Review gate
@@ -14,7 +16,7 @@ name: Review gate
 on:
   pull_request:
     types: [opened, reopened, synchronize, labeled, unlabeled, ready_for_review]
-    branches: [dev, main]
+    branches: [dev, master]
 
 permissions:
   contents: read
@@ -26,10 +28,10 @@ jobs:
     timeout-minutes: 2
     steps:
       - name: Check approval labels
+        id: labels
         env:
-          GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
-          PR: ${{ github.event.pull_request.number }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
           BASE: ${{ github.base_ref }}
           HEAD: ${{ github.head_ref }}
           LABELS: ${{ toJSON(github.event.pull_request.labels.*.name) }}
@@ -37,22 +39,32 @@ jobs:
           has() { echo "$LABELS" | grep -q "\"$1\""; }
           echo "Base: $BASE, head: $HEAD, labels: $LABELS"
           if has approved-founder; then echo "Approved by the founder."; exit 0; fi
-          if [ "$BASE" = "dev" ] && [ "$HEAD" = "main" ] && [ "${{ github.event.pull_request.head.repo.full_name }}" = "$REPO" ]; then
-            echo "Sync of production (main) into dev: already approved."; exit 0
+          if [ "$BASE" = "master" ]; then
+            echo "::error::PRs into master (production releases) need the approved-founder label."; exit 1
           fi
-          if [ "$BASE" = "main" ]; then
-            case "$HEAD" in events/*)
-              files=$(gh api --paginate "repos/$REPO/pulls/$PR/files" --jq '.[].filename')
-              echo "Files:"; echo "$files"
-              if [ -n "$files" ] && ! echo "$files" | grep -q -v '^data/events/'; then
-                echo "Events routine PR touching only data/events/: no review needed."; exit 0
-              fi
-              echo "::error::An events/ branch may change only data/events/."; exit 1 ;;
-            esac
-            echo "::error::PRs into main (production releases) need the approved-founder label."; exit 1
+          if [ "$HEAD_REPO" = "$REPO" ] && [ "$HEAD" = "master" ]; then
+            echo "Sync of production (master) into dev: already approved."; exit 0
           fi
+          if [ "$HEAD_REPO" = "$REPO" ]; then case "$HEAD" in events/*)
+            echo "Events routine PR: checking its files in the next step."; echo "events=true" >> "$GITHUB_OUTPUT"; exit 0 ;;
+          esac; fi
           if has approved-legal && has approved-cos; then echo "Approved by Legal analyst and Chief of staff."; exit 0; fi
           missing=""
           has approved-legal || missing="$missing approved-legal"
           has approved-cos || missing="$missing approved-cos"
           echo "::error::Missing approval label(s):$missing (or approved-founder)."; exit 1
+      # Checks out the PR's merge commit (refs/pull/N/merge). Its diff against the first parent is
+      # exactly what the PR would change on dev, by content, whatever the branch history.
+      - uses: actions/checkout@v4
+        if: steps.labels.outputs.events == 'true'
+        with:
+          fetch-depth: 2
+      - name: Events PR may change only data/events/
+        if: steps.labels.outputs.events == 'true'
+        run: |
+          files=$(git diff --name-only HEAD^1 HEAD)
+          echo "Files:"; echo "$files"
+          if [ -n "$files" ] && ! echo "$files" | grep -q -v '^data/events/'; then
+            echo "Events routine PR touching only data/events/: no review needed."; exit 0
+          fi
+          echo "::error::An events/ branch may change only data/events/."; exit 1

@@ -1,0 +1,160 @@
+# Promotes a data-only PR from `dev` to `master` automatically (founder decision, PUN-96).
+# Data PRs (headlines from ingest.yml, events from the AI events routine) go into `dev` first.
+# Once such a PR is merged into `dev`, this workflow opens a PR with the same commits into `master`,
+# checks that it changes only data, builds the merged tree, reports `build` + `review-gate` as
+# commit statuses (the master ruleset requires them; PRs opened with the Actions token start no
+# other workflows), merges it and deploys the site to the Cloudflare Worker.
+# Code never goes this way: code reaches `master` only through a release PR approved by the founder.
+#
+# Data branches are cut from `master`, so their commits contain nothing that is not on `master` yet.
+# Both merges are real merges (not squash), so `dev` and `master` share the data commits and the
+# next data PR merges cleanly into both.
+name: Promote data to master
+
+on:
+  pull_request: # events routine PRs, merged into dev by auto-merge
+    types: [closed]
+    branches: [dev]
+  workflow_call: # ingest.yml, after it merged a headlines PR into dev
+    inputs:
+      pr:
+        type: number
+        required: true
+  workflow_dispatch: # manual retry
+    inputs:
+      pr:
+        description: Number of a merged data PR into dev
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: write
+
+concurrency:
+  group: promote-data
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    if: >-
+      github.event_name != 'pull_request' ||
+      (github.event.pull_request.merged &&
+       startsWith(github.event.pull_request.head.ref, 'events/') &&
+       github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      changed: ${{ steps.merge.outputs.changed }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      PR: ${{ inputs.pr || github.event.pull_request.number }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+      - name: Check the data PR and merge it into master locally
+        id: check
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          IFS=$'\t' read -r base head sha merged title < <(gh pr view "$PR" -R "$REPO" \
+            --json baseRefName,headRefName,headRefOid,mergedAt,title \
+            --jq '[.baseRefName, .headRefName, .headRefOid, (.mergedAt // "-"), .title] | @tsv')
+          echo "PR #$PR: $head -> $base, head $sha, merged $merged"
+          if [ "$base" != dev ] || [ "$merged" = "-" ]; then echo "::error::PR #$PR is not merged into dev."; exit 1; fi
+          case "$head" in
+            data/headlines-*) allowed='^data/(articles|ingest)/' ;;
+            events/*) allowed='^data/events/' ;;
+            *) echo "::error::Only data/headlines-* and events/* PRs are promoted automatically."; exit 1 ;;
+          esac
+          git fetch -q origin "pull/$PR/head"
+          [ "$(git rev-parse FETCH_HEAD)" = "$sha" ] || { echo "::error::PR head moved."; exit 1; }
+          git checkout -q -B promote-check origin/master
+          if ! git merge -q --no-edit "$sha"; then
+            git merge --abort
+            echo "::error::PR #$PR does not merge cleanly into master."; exit 1
+          fi
+          # What the promotion would actually change on master (content, not history).
+          files=$(git diff --name-only origin/master HEAD)
+          if [ -z "$files" ]; then echo "Already on master."; exit 0; fi
+          echo "Files:"; echo "$files"
+          bad=$(echo "$files" | grep -v -E "$allowed" || true)
+          if [ -n "$bad" ]; then echo "::error::Promotion would change more than data:"; echo "$bad"; exit 1; fi
+          { echo "needed=true"; echo "sha=$sha"; echo "branch=promote/$head"
+            echo "title=$(printf '%s' "$title" | sed 's/ *\[skip ci\]//')"; } >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        if: steps.check.outputs.needed == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.check.outputs.needed == 'true'
+        run: npm ci
+      - if: steps.check.outputs.needed == 'true'
+        run: npm run build # the merged tree, i.e. exactly what master will be
+      - name: Open and merge the PR into master
+        id: merge
+        if: steps.check.outputs.needed == 'true'
+        env:
+          SHA: ${{ steps.check.outputs.sha }}
+          BRANCH: ${{ steps.check.outputs.branch }}
+          TITLE: ${{ steps.check.outputs.title }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          git push -q -f origin "$SHA:refs/heads/$BRANCH"
+          gh pr create -R "$REPO" --base master --head "$BRANCH" --title "$TITLE" \
+            --body "Automatic promotion of data PR #$PR from dev (promote-data.yml, PUN-96). Data only, no review needed."
+          gh api -X POST "repos/$REPO/statuses/$SHA" -f state=success -f context=build \
+            -f description="Merged tree built by Promote data to master" -f target_url="$RUN_URL" >/dev/null
+          gh api -X POST "repos/$REPO/statuses/$SHA" -f state=success -f context=review-gate \
+            -f description="Data only (promoted from dev): no review needed" -f target_url="$RUN_URL" >/dev/null
+          for i in 1 2 3; do
+            # [skip ci]: no Cloudflare build for data; the deploy job below deploys instead.
+            if gh pr merge "$BRANCH" -R "$REPO" --merge --delete-branch --subject "$TITLE [skip ci]" --body ""; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::Could not merge the promotion PR after 3 attempts"; exit 1
+
+  deploy:
+    needs: promote
+    if: needs.promote.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: true
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      SITE_URL: ${{ vars.SITE_URL }}
+    steps:
+      - name: Check Cloudflare secrets
+        id: secrets
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::warning::Cloudflare secrets not set, data is on master but not deployed (see docs/DEPLOY.md)."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.secrets.outputs.ok == 'true'
+        with:
+          ref: master # the tip of master, which includes the data just merged
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        if: steps.secrets.outputs.ok == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.secrets.outputs.ok == 'true'
+        run: npm ci
+      - if: steps.secrets.outputs.ok == 'true'
+        run: npm run build
+      - name: Deploy to Cloudflare Worker
+        if: steps.secrets.outputs.ok == 'true'
+        run: npx --yes wrangler@4 deploy

@@ -3,7 +3,7 @@
 // Builds never touch `updatedAt`, so an event's "zaktualizowano" time only moves when its text does.
 //
 //   node scripts/events/stamp.mjs              # compare with HEAD, stamp changed/new events with "now"
-//   node scripts/events/stamp.mjs --base <rev> # compare with another revision, e.g. origin/main
+//   node scripts/events/stamp.mjs --base <rev> # compare with another revision, e.g. origin/master
 import { execFileSync } from 'node:child_process';
 import { writeFileSync } from 'node:fs';
 import { EVENTS_FILE, readJson, visibleContent } from './lib.mjs';
